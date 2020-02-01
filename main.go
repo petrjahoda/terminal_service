@@ -2,6 +2,9 @@ package main
 
 import (
 	"github.com/jinzhu/gorm"
+	"github.com/petrjahoda/zapsi_database"
+	"os"
+	"path/filepath"
 	"strconv"
 	"sync"
 	"time"
@@ -13,8 +16,8 @@ const deleteLogsAfter = 240 * time.Hour
 const downloadInSeconds = 10
 
 var (
-	activeDevices  []Device
-	runningDevices []Device
+	activeDevices  []zapsi_database.Device
+	runningDevices []zapsi_database.Device
 	deviceSync     sync.Mutex
 )
 
@@ -48,8 +51,11 @@ func main() {
 func CompleteDatabaseCheck() {
 	firstRunCheckComplete := false
 	for firstRunCheckComplete == false {
-		databaseOk := CheckDatabase()
-		tablesOk := CheckTables()
+		databaseOk := zapsi_database.CheckDatabase(DatabaseType, DatabaseIpAddress, DatabasePort, DatabaseLogin, DatabaseName, DatabasePassword)
+		tablesOk, err := zapsi_database.CheckTables(DatabaseType, DatabaseIpAddress, DatabasePort, DatabaseLogin, DatabaseName, DatabasePassword)
+		if err != nil {
+			LogInfo("MAIN", "Problem creating tables: "+err.Error())
+		}
 		if databaseOk && tablesOk {
 			WriteProgramVersionIntoSettings()
 			firstRunCheckComplete = true
@@ -58,7 +64,7 @@ func CompleteDatabaseCheck() {
 }
 
 func WriteProgramVersionIntoSettings() {
-	connectionString, dialect := CheckDatabaseType()
+	connectionString, dialect := zapsi_database.CheckDatabaseType(DatabaseType, DatabaseIpAddress, DatabasePort, DatabaseLogin, DatabaseName, DatabasePassword)
 	db, err := gorm.Open(dialect, connectionString)
 	if err != nil {
 		LogError("MAIN", "Problem opening "+DatabaseName+" database: "+err.Error())
@@ -66,7 +72,7 @@ func WriteProgramVersionIntoSettings() {
 		return
 	}
 	defer db.Close()
-	var settings Setting
+	var settings zapsi_database.Setting
 	db.Where("key=?", programName).Find(&settings)
 	settings.Key = programName
 	settings.Value = version
@@ -74,7 +80,7 @@ func WriteProgramVersionIntoSettings() {
 	LogDebug("MAIN", "Updated version in database for "+programName)
 }
 
-func CheckDevice(device Device) bool {
+func CheckDevice(device zapsi_database.Device) bool {
 	for _, runningDevice := range runningDevices {
 		if runningDevice.Name == device.Name {
 			return true
@@ -83,50 +89,50 @@ func CheckDevice(device Device) bool {
 	return false
 }
 
-func RunDevice(device Device) {
+func RunDevice(device zapsi_database.Device) {
 	LogInfo(device.Name, "Device started running")
 	deviceSync.Lock()
 	runningDevices = append(runningDevices, device)
 	deviceSync.Unlock()
 	deviceIsActive := true
-	device.CreateDirectoryIfNotExists()
+	CreateDirectoryIfNotExists(device)
 	for deviceIsActive {
 		start := time.Now()
-		var actualState State := GetActualState()
-		orderIsOpen := CheckOpenOrder()
-		downtimeIsOpen := CheckOpenDowntime()
-		switch actualState.Name {
-		case "PowerOff":
-			{
-				if orderIsOpen {
-					closeOrder()
-				}
-				if downtimeIsOpen {
-					closeDowntime()
-				}
-			}
-		case "Production":
-			{
-				if !orderIsOpen {
-					openOrder()
-				}
-				if downtimeIsOpen {
-					closeDowntime()
-				}
-			}
-		case "Downtime":
-			{
-				if !downtimeIsOpen {
-					openDowntime()
-				}
-			}
-		}
-		if orderIsOpen {
-			updateOrderData()
-		}
+		//var actualState State := GetActualState()
+		//orderIsOpen := CheckOpenOrder()
+		//downtimeIsOpen := CheckOpenDowntime()
+		//switch actualState.Name {
+		//case "PowerOff":
+		//	{
+		//		if orderIsOpen {
+		//			closeOrder(actualState)
+		//		}
+		//		if downtimeIsOpen {
+		//			closeDowntime(actualState)
+		//		}
+		//	}
+		//case "Production":
+		//	{
+		//		if !orderIsOpen {
+		//			openOrder(actualState)
+		//		}
+		//		if downtimeIsOpen {
+		//			closeDowntime(actualState)
+		//		}
+		//	}
+		//case "Downtime":
+		//	{
+		//		if !downtimeIsOpen {
+		//			openDowntime(actualState)
+		//		}
+		//	}
+		//}
+		//if orderIsOpen {
+		//	updateOrderData(actualState)
+		//}
 
 		LogInfo(device.Name, "Processing takes "+time.Since(start).String())
-		device.Sleep(start)
+		Sleep(device, start)
 		deviceIsActive = CheckActive(device)
 	}
 	RemoveDeviceFromRunningDevices(device)
@@ -134,7 +140,33 @@ func RunDevice(device Device) {
 
 }
 
-func CheckActive(device Device) bool {
+func CreateDirectoryIfNotExists(device zapsi_database.Device) {
+	deviceDirectory := filepath.Join(".", strconv.Itoa(int(device.ID))+"-"+device.Name)
+
+	if _, checkPathError := os.Stat(deviceDirectory); checkPathError == nil {
+		LogInfo(device.Name, "Device directory exists")
+	} else if os.IsNotExist(checkPathError) {
+		LogWarning(device.Name, "Device directory not exist, creating")
+		mkdirError := os.MkdirAll(deviceDirectory, 0777)
+		if mkdirError != nil {
+			LogError(device.Name, "Unable to create device directory: "+mkdirError.Error())
+		} else {
+			LogInfo(device.Name, "Device directory created")
+		}
+	} else {
+		LogError(device.Name, "Device directory does not exist")
+	}
+}
+
+func Sleep(device zapsi_database.Device, start time.Time) {
+	if time.Since(start) < (downloadInSeconds * time.Second) {
+		sleepTime := downloadInSeconds*time.Second - time.Since(start)
+		LogInfo(device.Name, "Sleeping for "+sleepTime.String())
+		time.Sleep(sleepTime)
+	}
+}
+
+func CheckActive(device zapsi_database.Device) bool {
 	for _, activeDevice := range activeDevices {
 		if activeDevice.Name == device.Name {
 			LogInfo(device.Name, "Device still active")
@@ -145,7 +177,7 @@ func CheckActive(device Device) bool {
 	return false
 }
 
-func RemoveDeviceFromRunningDevices(device Device) {
+func RemoveDeviceFromRunningDevices(device zapsi_database.Device) {
 	for idx, runningDevice := range runningDevices {
 		if device.Name == runningDevice.Name {
 			deviceSync.Lock()
@@ -156,7 +188,7 @@ func RemoveDeviceFromRunningDevices(device Device) {
 }
 
 func UpdateActiveDevices(reference string) {
-	connectionString, dialect := CheckDatabaseType()
+	connectionString, dialect := zapsi_database.CheckDatabaseType(DatabaseType, DatabaseIpAddress, DatabasePort, DatabaseLogin, DatabaseName, DatabasePassword)
 	db, err := gorm.Open(dialect, connectionString)
 	if err != nil {
 		LogError(reference, "Problem opening "+DatabaseName+" database: "+err.Error())
@@ -164,7 +196,7 @@ func UpdateActiveDevices(reference string) {
 		return
 	}
 	defer db.Close()
-	var deviceType DeviceType
+	var deviceType zapsi_database.DeviceType
 	db.Where("name=?", "Zapsi Touch").Find(&deviceType)
 	db.Where("device_type_id=?", deviceType.ID).Where("activated = true").Where("workplace !=?", 0).Find(&activeDevices)
 	LogDebug("MAIN", "Zapsi touch device type id is "+strconv.Itoa(int(deviceType.ID)))
