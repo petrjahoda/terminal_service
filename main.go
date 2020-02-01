@@ -92,6 +92,38 @@ func RunDevice(device Device) {
 	device.CreateDirectoryIfNotExists()
 	for deviceIsActive {
 		start := time.Now()
+		var actualState State := GetActualState()
+		orderIsOpen := CheckOpenOrder()
+		downtimeIsOpen := CheckOpenDowntime()
+		switch actualState.Name {
+		case "PowerOff":
+			{
+				if orderIsOpen {
+					closeOrder()
+				}
+				if downtimeIsOpen {
+					closeDowntime()
+				}
+			}
+		case "Production":
+			{
+				if !orderIsOpen {
+					openOrder()
+				}
+				if downtimeIsOpen {
+					closeDowntime()
+				}
+			}
+		case "Downtime":
+			{
+				if !downtimeIsOpen {
+					openDowntime()
+				}
+			}
+		}
+		if orderIsOpen {
+			updateOrderData()
+		}
 
 		LogInfo(device.Name, "Processing takes "+time.Since(start).String())
 		device.Sleep(start)

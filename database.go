@@ -9,6 +9,13 @@ import (
 	"time"
 )
 
+type State struct {
+	gorm.Model
+	Name  string `gorm:"unique"`
+	Color string
+	Note  string
+}
+
 type DeviceUserRecord struct {
 	gorm.Model
 	DateTimeStart       time.Time
