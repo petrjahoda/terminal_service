@@ -1,0 +1,18 @@
+2020-02-01 15:30:17.002   CNC 10 Touch   INF   Device started running
+2020-02-01 15:30:17.002   CNC 10 Touch   WRN   Device directory not exist, creating
+2020-02-01 15:30:17.002   CNC 10 Touch   INF   Device directory created
+2020-02-01 15:30:17.002   CNC 10 Touch   INF   Processing takes 67ns
+2020-02-01 15:30:17.002   CNC 10 Touch   INF   Sleeping for 9.999915078s
+2020-02-01 15:30:27.003   CNC 10 Touch   INF   Device still active
+2020-02-01 15:30:27.003   CNC 10 Touch   INF   Processing takes 227ns
+2020-02-01 15:30:27.003   CNC 10 Touch   INF   Sleeping for 9.999903626s
+2020-02-01 15:30:37.006   CNC 10 Touch   INF   Device still active
+2020-02-01 15:30:37.006   CNC 10 Touch   INF   Processing takes 207ns
+2020-02-01 15:30:37.006   CNC 10 Touch   INF   Sleeping for 9.999901503s
+2020-02-01 15:30:47.006   CNC 10 Touch   INF   Device still active
+2020-02-01 15:30:47.006   CNC 10 Touch   INF   Processing takes 139ns
+2020-02-01 15:30:47.006   CNC 10 Touch   INF   Sleeping for 9.999889546s
+2020-02-01 17:09:00.690   CNC 10 Touch   INF   Device started running
+2020-02-01 17:09:00.690   CNC 10 Touch   INF   Device directory exists
+2020-02-01 17:09:00.690   CNC 10 Touch   INF   Processing takes 71ns
+2020-02-01 17:09:00.690   CNC 10 Touch   INF   Sleeping for 9.999949049s

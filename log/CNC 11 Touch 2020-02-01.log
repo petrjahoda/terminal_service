@@ -1,0 +1,15 @@
+2020-02-01 15:30:37.010   CNC 11 Touch   INF   Device started running
+2020-02-01 15:30:37.010   CNC 11 Touch   WRN   Device directory not exist, creating
+2020-02-01 15:30:37.011   CNC 11 Touch   INF   Device directory created
+2020-02-01 15:30:37.011   CNC 11 Touch   INF   Processing takes 66ns
+2020-02-01 15:30:37.011   CNC 11 Touch   INF   Sleeping for 9.999914806s
+2020-02-01 15:30:47.011   CNC 11 Touch   INF   Device not active
+2020-02-01 15:30:47.011   CNC 11 Touch   INF   Device not active, stopped running
+2020-02-01 15:30:47.012   CNC 11 Touch   INF   Device started running
+2020-02-01 15:30:47.012   CNC 11 Touch   INF   Device directory exists
+2020-02-01 15:30:47.012   CNC 11 Touch   INF   Processing takes 99ns
+2020-02-01 15:30:47.012   CNC 11 Touch   INF   Sleeping for 9.999942044s
+2020-02-01 17:09:00.690   CNC 11 Touch   INF   Device started running
+2020-02-01 17:09:00.690   CNC 11 Touch   INF   Device directory exists
+2020-02-01 17:09:00.690   CNC 11 Touch   INF   Processing takes 59ns
+2020-02-01 17:09:00.690   CNC 11 Touch   INF   Sleeping for 9.999926187s
