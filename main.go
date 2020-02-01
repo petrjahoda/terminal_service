@@ -1,6 +1,7 @@
 package main
 
 import (
+	"database/sql"
 	"github.com/jinzhu/gorm"
 	"github.com/petrjahoda/zapsi_database"
 	"os"
@@ -98,7 +99,7 @@ func RunDevice(device zapsi_database.Device) {
 	CreateDirectoryIfNotExists(device)
 	for deviceIsActive {
 		start := time.Now()
-		actualState := GetActualState(device)
+		actualState, actualWorkplaceState := GetActualState(device)
 		LogInfo(device.Name, "Actual workplace state: "+actualState.Name)
 		openOrderId := CheckOpenOrder(device)
 		LogInfo(device.Name, "Actual open order: "+strconv.Itoa(int(openOrderId)))
@@ -110,30 +111,35 @@ func RunDevice(device zapsi_database.Device) {
 		case "PowerOff":
 			{
 				if orderIsOpen {
-					closeOrder(actualState)
+					LogInfo(device.Name, "Poweroff, order record is open, closing order record")
+					CloseOrder(device, openOrderId)
 				}
 				if downtimeIsOpen {
-					closeDowntime(actualState)
+					LogInfo(device.Name, "Poweroff, downtime record is open, closing downtime record")
+					CloseDowntime(device, openDowntimeId)
 				}
 			}
 		case "Production":
 			{
 				if !orderIsOpen {
-					openOrder(actualState)
+					LogInfo(device.Name, "Production, order record is not open, creating order record")
+					OpenOrder(device, actualWorkplaceState)
 				}
 				if downtimeIsOpen {
-					closeDowntime(actualState)
+					LogInfo(device.Name, "Production, downtime record is open, closing downtime record")
+					CloseDowntime(device, openDowntimeId)
 				}
 			}
 		case "Downtime":
 			{
 				if !downtimeIsOpen {
-					openDowntime(actualState)
+					LogInfo(device.Name, "Downtime, downtime record is not open, creating downtime record")
+					OpenDowntime(device, actualWorkplaceState, openOrderId)
 				}
 			}
 		}
 		if orderIsOpen {
-			updateOrderData(actualState)
+			//UpdateOrderData(actualState, openOrderId)
 		}
 
 		LogInfo(device.Name, "Processing takes "+time.Since(start).String())
@@ -143,6 +149,80 @@ func RunDevice(device zapsi_database.Device) {
 	RemoveDeviceFromRunningDevices(device)
 	LogInfo(device.Name, "Device not active, stopped running")
 
+}
+
+func OpenDowntime(device zapsi_database.Device, actualWorkplaceState zapsi_database.WorkplaceState, openOrderId uint) {
+	connectionString, dialect := zapsi_database.CheckDatabaseType(DatabaseType, DatabaseIpAddress, DatabasePort, DatabaseLogin, DatabaseName, DatabasePassword)
+	db, err := gorm.Open(dialect, connectionString)
+	if err != nil {
+		LogError(device.Name, "Problem opening "+DatabaseName+" database: "+err.Error())
+		activeDevices = nil
+		return
+	}
+	defer db.Close()
+	var noReasonDowntime zapsi_database.Downtime
+	db.Where("name = ?", "No reason downtime").Find(&noReasonDowntime)
+	var downtimeToSave zapsi_database.DeviceDowntimeRecord
+	downtimeToSave.DateTimeStart = actualWorkplaceState.DateTimeStart
+	if openOrderId > 0 {
+		downtimeToSave.DeviceOrderRecordId = sql.NullInt32{Int32: int32(openOrderId)}
+		var deviceUserRecord zapsi_database.DeviceUserRecord
+		db.Where("device_order_record_id = ?", openOrderId).Find(&deviceUserRecord)
+		downtimeToSave.UserId = sql.NullInt32{Int32: int32(deviceUserRecord.UserId)}
+	}
+	downtimeToSave.Interval = uint(time.Now().Sub(actualWorkplaceState.DateTimeStart).Seconds())
+	downtimeToSave.DeviceId = device.ID
+	downtimeToSave.DowntimeId = noReasonDowntime.ID
+	db.Debug().Save(&downtimeToSave)
+}
+
+func OpenOrder(device zapsi_database.Device, actualWorkplaceState zapsi_database.WorkplaceState) {
+	connectionString, dialect := zapsi_database.CheckDatabaseType(DatabaseType, DatabaseIpAddress, DatabasePort, DatabaseLogin, DatabaseName, DatabasePassword)
+	db, err := gorm.Open(dialect, connectionString)
+	if err != nil {
+		LogError(device.Name, "Problem opening "+DatabaseName+" database: "+err.Error())
+		activeDevices = nil
+		return
+	}
+	defer db.Close()
+	var orderToSave zapsi_database.DeviceOrderRecord
+	orderToSave.DateTimeStart = actualWorkplaceState.DateTimeStart
+	orderToSave.Interval = uint(time.Now().Sub(actualWorkplaceState.DateTimeStart).Seconds())
+	orderToSave.DeviceId = device.ID
+	orderToSave.WorkplaceId = device.WorkplaceId
+	db.Save(&orderToSave)
+}
+
+func CloseDowntime(device zapsi_database.Device, openDowntimeId uint) {
+	connectionString, dialect := zapsi_database.CheckDatabaseType(DatabaseType, DatabaseIpAddress, DatabasePort, DatabaseLogin, DatabaseName, DatabasePassword)
+	db, err := gorm.Open(dialect, connectionString)
+	if err != nil {
+		LogError(device.Name, "Problem opening "+DatabaseName+" database: "+err.Error())
+		activeDevices = nil
+		return
+	}
+	defer db.Close()
+	var openDowntime zapsi_database.DeviceDowntimeRecord
+	db.Where("id=?", openDowntimeId).Find(&openDowntime)
+	openDowntime.DateTimeEnd = sql.NullTime{Time: time.Now()}
+	openDowntime.Interval = uint(time.Now().Sub(openDowntime.DateTimeStart).Seconds())
+	db.Save(&openDowntime)
+}
+
+func CloseOrder(device zapsi_database.Device, openOrderId uint) {
+	connectionString, dialect := zapsi_database.CheckDatabaseType(DatabaseType, DatabaseIpAddress, DatabasePort, DatabaseLogin, DatabaseName, DatabasePassword)
+	db, err := gorm.Open(dialect, connectionString)
+	if err != nil {
+		LogError(device.Name, "Problem opening "+DatabaseName+" database: "+err.Error())
+		activeDevices = nil
+		return
+	}
+	defer db.Close()
+	var openOrder zapsi_database.DeviceOrderRecord
+	db.Where("id=?", openOrderId).Find(&openOrder)
+	openOrder.DateTimeEnd = sql.NullTime{Time: time.Now()}
+	openOrder.Interval = uint(time.Now().Sub(openOrder.DateTimeStart).Seconds())
+	db.Save(&openOrder)
 }
 
 func CheckOpenDowntime(device zapsi_database.Device) uint {
@@ -168,25 +248,25 @@ func CheckOpenOrder(device zapsi_database.Device) uint {
 		return 0
 	}
 	defer db.Close()
-	var openorder zapsi_database.DeviceOrderRecord
-	db.Where("device_id=?", device.ID).Where("date_time_end is null").Last(&openorder)
-	return openorder.ID
+	var openOrder zapsi_database.DeviceOrderRecord
+	db.Where("device_id=?", device.ID).Where("date_time_end is null").Last(&openOrder)
+	return openOrder.ID
 }
 
-func GetActualState(device zapsi_database.Device) zapsi_database.State {
+func GetActualState(device zapsi_database.Device) (zapsi_database.State, zapsi_database.WorkplaceState) {
 	connectionString, dialect := zapsi_database.CheckDatabaseType(DatabaseType, DatabaseIpAddress, DatabasePort, DatabaseLogin, DatabaseName, DatabasePassword)
 	db, err := gorm.Open(dialect, connectionString)
 	if err != nil {
 		LogError(device.Name, "Problem opening "+DatabaseName+" database: "+err.Error())
 		activeDevices = nil
-		return zapsi_database.State{}
+		return zapsi_database.State{}, zapsi_database.WorkplaceState{}
 	}
 	defer db.Close()
 	var workplaceState zapsi_database.WorkplaceState
 	db.Where("workplace_id=?", device.WorkplaceId).Last(&workplaceState)
 	var actualState zapsi_database.State
-	db.Where("id=?", workplaceState.Id).Last(&actualState)
-	return actualState
+	db.Where("id=?", workplaceState.StateId).Last(&actualState)
+	return actualState, workplaceState
 
 }
 
@@ -248,6 +328,6 @@ func UpdateActiveDevices(reference string) {
 	defer db.Close()
 	var deviceType zapsi_database.DeviceType
 	db.Where("name=?", "Zapsi Touch").Find(&deviceType)
-	db.Where("device_type_id=?", deviceType.ID).Where("activated = true").Where("workplace !=?", 0).Find(&activeDevices)
+	db.Where("device_type_id=?", deviceType.ID).Where("activated = true").Where("workplace_id !=?", 0).Find(&activeDevices)
 	LogDebug("MAIN", "Zapsi touch device type id is "+strconv.Itoa(int(deviceType.ID)))
 }

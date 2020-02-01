@@ -689,3 +689,132 @@
 2020-02-01 19:18:14.877   MAIN   INF   Program running
 2020-02-01 19:18:14.893   MAIN   INF   Active devices: 2, running devices: 2
 2020-02-01 19:18:14.893   MAIN   INF   Sleeping for 9.983239922s
+2020-02-01 19:50:38.264   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 19:50:40.194   MAIN   INF   Program running
+2020-02-01 19:50:40.207   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 19:50:40.207   MAIN   INF   Sleeping for 9.986620676s
+2020-02-01 19:53:06.248   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 19:53:07.918   MAIN   INF   Program running
+2020-02-01 19:53:07.927   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 19:53:07.927   MAIN   INF   Sleeping for 9.990767713s
+2020-02-01 19:54:33.235   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 19:54:35.355   MAIN   INF   Program running
+2020-02-01 19:54:35.365   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 19:54:35.365   MAIN   INF   Sleeping for 9.989794058s
+2020-02-01 19:54:46.732   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 19:54:48.422   MAIN   INF   Program running
+2020-02-01 19:54:48.434   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 19:54:48.434   MAIN   INF   Sleeping for 9.988435487s
+2020-02-01 19:56:13.756   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 19:56:15.840   MAIN   INF   Program running
+2020-02-01 19:56:15.854   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 19:56:15.854   MAIN   INF   Sleeping for 9.986701334s
+2020-02-01 19:56:25.844   MAIN   INF   Program running
+2020-02-01 19:56:25.868   MAIN   INF   Active devices: 2, running devices: 2
+2020-02-01 19:56:25.868   MAIN   INF   Sleeping for 9.975904941s
+2020-02-01 19:56:39.250   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 19:56:40.987   MAIN   INF   Program running
+2020-02-01 19:56:40.998   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 19:56:40.998   MAIN   INF   Sleeping for 9.988580198s
+2020-02-01 19:57:01.942   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 19:57:03.610   MAIN   INF   Program running
+2020-02-01 19:57:03.624   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 19:57:03.624   MAIN   INF   Sleeping for 9.985977992s
+2020-02-01 19:57:57.019   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 19:57:58.802   MAIN   INF   Program running
+2020-02-01 19:57:58.814   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 19:57:58.814   MAIN   INF   Sleeping for 9.987902526s
+2020-02-01 19:59:51.218   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 19:59:52.869   MAIN   INF   Program running
+2020-02-01 19:59:52.882   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 19:59:52.882   MAIN   INF   Sleeping for 9.986611806s
+2020-02-01 20:00:38.479   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:00:40.077   MAIN   INF   Program running
+2020-02-01 20:00:40.087   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 20:00:40.087   MAIN   INF   Sleeping for 9.989977862s
+2020-02-01 20:02:57.755   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:02:59.570   MAIN   INF   Program running
+2020-02-01 20:02:59.584   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 20:02:59.584   MAIN   INF   Sleeping for 9.985830523s
+2020-02-01 20:06:55.515   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:06:57.187   MAIN   INF   Program running
+2020-02-01 20:06:57.198   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 20:06:57.198   MAIN   INF   Sleeping for 9.989082659s
+2020-02-01 20:07:13.022   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:07:15.208   MAIN   INF   Program running
+2020-02-01 20:07:15.219   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 20:07:15.219   MAIN   INF   Sleeping for 9.988810324s
+2020-02-01 20:08:19.155   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:08:20.952   MAIN   INF   Program running
+2020-02-01 20:08:20.962   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 20:08:20.962   MAIN   INF   Sleeping for 9.990327151s
+2020-02-01 20:08:35.215   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:08:36.817   MAIN   INF   Program running
+2020-02-01 20:08:36.826   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 20:08:36.826   MAIN   INF   Sleeping for 9.991158278s
+2020-02-01 20:11:19.594   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:11:21.321   MAIN   INF   Program running
+2020-02-01 20:11:21.334   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 20:11:21.334   MAIN   INF   Sleeping for 9.987354069s
+2020-02-01 20:11:32.399   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:11:34.547   MAIN   INF   Program running
+2020-02-01 20:11:34.563   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 20:11:34.564   MAIN   INF   Sleeping for 9.983082236s
+2020-02-01 20:13:33.626   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:13:35.679   MAIN   INF   Program running
+2020-02-01 20:13:35.689   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 20:13:35.689   MAIN   INF   Sleeping for 9.990481638s
+2020-02-01 20:14:35.014   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:14:36.617   MAIN   INF   Program running
+2020-02-01 20:14:36.628   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 20:14:36.628   MAIN   INF   Sleeping for 9.988891922s
+2020-02-01 20:22:36.364   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:22:38.239   MAIN   INF   Program running
+2020-02-01 20:22:38.251   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 20:22:38.251   MAIN   INF   Sleeping for 9.98801682s
+2020-02-01 20:24:30.963   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:24:32.857   MAIN   INF   Program running
+2020-02-01 20:24:32.868   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 20:24:32.868   MAIN   INF   Sleeping for 9.988800397s
+2020-02-01 20:24:53.889   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:25:14.251   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:25:17.050   MAIN   INF   Program running
+2020-02-01 20:25:17.060   MAIN   INF   Active devices: 2, running devices: 0
+2020-02-01 20:25:17.060   MAIN   INF   Sleeping for 9.990338138s
+2020-02-01 20:29:23.491   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:29:25.302   MAIN   INF   Program running
+2020-02-01 20:29:25.326   MAIN   INF   Active devices: 0, running devices: 0
+2020-02-01 20:29:25.326   MAIN   INF   Sleeping for 9.975388833s
+2020-02-01 20:31:22.389   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:31:24.412   MAIN   INF   Program running
+2020-02-01 20:31:24.429   MAIN   INF   Active devices: 0, running devices: 0
+2020-02-01 20:31:24.429   MAIN   INF   Sleeping for 9.982322014s
+2020-02-01 20:32:57.516   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:33:07.772   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:33:09.347   MAIN   INF   Program running
+2020-02-01 20:33:09.379   MAIN   INF   Active devices: 0, running devices: 0
+2020-02-01 20:33:09.379   MAIN   INF   Sleeping for 9.967787658s
+2020-02-01 20:35:13.074   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:35:15.098   MAIN   INF   Program running
+2020-02-01 20:35:15.130   MAIN   INF   Active devices: 0, running devices: 0
+2020-02-01 20:35:15.130   MAIN   INF   Sleeping for 9.967186905s
+2020-02-01 20:39:59.950   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:40:01.410   MAIN   INF   Program running
+2020-02-01 20:40:01.430   MAIN   INF   Active devices: 0, running devices: 0
+2020-02-01 20:40:01.430   MAIN   INF   Sleeping for 9.979351854s
+2020-02-01 20:44:07.162   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:44:08.778   MAIN   INF   Program running
+2020-02-01 20:44:08.794   MAIN   INF   Active devices: 0, running devices: 0
+2020-02-01 20:44:08.794   MAIN   INF   Sleeping for 9.983259014s
+2020-02-01 20:52:19.431   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:52:20.903   MAIN   INF   Program running
+2020-02-01 20:52:20.914   MAIN   INF   Active devices: 0, running devices: 0
+2020-02-01 20:52:20.914   MAIN   INF   Sleeping for 9.989212724s
+2020-02-01 20:53:32.714   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:53:34.126   MAIN   INF   Program running
+2020-02-01 20:53:34.137   MAIN   INF   Active devices: 0, running devices: 0
+2020-02-01 20:53:34.137   MAIN   INF   Sleeping for 9.988859523s
+2020-02-01 20:54:33.766   MAIN   INF   Terminal Service version 2020.1.2.1 started
+2020-02-01 20:54:35.146   MAIN   INF   Program running
+2020-02-01 20:54:35.160   MAIN   INF   Active devices: 0, running devices: 0
+2020-02-01 20:54:35.160   MAIN   INF   Sleeping for 9.985513559s

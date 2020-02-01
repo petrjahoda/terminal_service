@@ -59,3 +59,177 @@
 2020-02-01 19:18:14.963   CNC 11 Touch   INF   Actual open downtime: 0
 2020-02-01 19:18:14.963   CNC 11 Touch   INF   Processing takes 75.734207ms
 2020-02-01 19:18:14.963   CNC 11 Touch   INF   Sleeping for 9.92417118s
+2020-02-01 19:50:40.207   CNC 11 Touch   INF   Device started running
+2020-02-01 19:50:40.207   CNC 11 Touch   INF   Device directory exists
+2020-02-01 19:50:40.230   CNC 11 Touch   INF   Actual workplace state: 
+2020-02-01 19:50:40.245   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 19:50:40.264   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 19:50:40.264   CNC 11 Touch   INF   Processing takes 56.867649ms
+2020-02-01 19:50:40.264   CNC 11 Touch   INF   Sleeping for 9.943045338s
+2020-02-01 19:53:07.927   CNC 11 Touch   INF   Device started running
+2020-02-01 19:53:07.927   CNC 11 Touch   INF   Device directory exists
+2020-02-01 19:53:07.947   CNC 11 Touch   INF   Actual workplace state: 
+2020-02-01 19:53:07.964   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 19:53:07.973   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 19:53:07.974   CNC 11 Touch   INF   Processing takes 46.047943ms
+2020-02-01 19:53:07.974   CNC 11 Touch   INF   Sleeping for 9.953866617s
+2020-02-01 19:54:35.365   CNC 11 Touch   INF   Device started running
+2020-02-01 19:54:35.365   CNC 11 Touch   INF   Device directory exists
+2020-02-01 19:54:35.397   CNC 11 Touch   INF   Actual workplace state: 
+2020-02-01 19:54:35.430   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 19:54:35.453   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 19:54:35.453   CNC 11 Touch   INF   Processing takes 88.071933ms
+2020-02-01 19:54:35.453   CNC 11 Touch   INF   Sleeping for 9.911835308s
+2020-02-01 19:54:48.434   CNC 11 Touch   INF   Device started running
+2020-02-01 19:54:48.434   CNC 11 Touch   INF   Device directory exists
+2020-02-01 19:54:48.452   CNC 11 Touch   INF   Actual workplace state: 
+2020-02-01 19:54:48.466   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 19:54:48.481   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 19:54:48.481   CNC 11 Touch   INF   Processing takes 46.77361ms
+2020-02-01 19:54:48.481   CNC 11 Touch   INF   Sleeping for 9.953124532s
+2020-02-01 19:56:15.854   CNC 11 Touch   INF   Device started running
+2020-02-01 19:56:15.854   CNC 11 Touch   INF   Device directory exists
+2020-02-01 19:56:15.867   CNC 11 Touch   INF   Actual workplace state: 
+2020-02-01 19:56:15.884   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 19:56:15.900   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 19:56:15.900   CNC 11 Touch   INF   Processing takes 46.591567ms
+2020-02-01 19:56:15.901   CNC 11 Touch   INF   Sleeping for 9.953307165s
+2020-02-01 19:56:25.859   CNC 11 Touch   INF   Device still active
+2020-02-01 19:56:25.887   CNC 11 Touch   INF   Actual workplace state: 
+2020-02-01 19:56:25.905   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 19:56:25.924   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 19:56:25.924   CNC 11 Touch   INF   Processing takes 65.259158ms
+2020-02-01 19:56:25.925   CNC 11 Touch   INF   Sleeping for 9.934612279s
+2020-02-01 19:56:40.998   CNC 11 Touch   INF   Device started running
+2020-02-01 19:56:40.998   CNC 11 Touch   INF   Device directory exists
+2020-02-01 19:56:41.012   CNC 11 Touch   INF   Actual workplace state: 
+2020-02-01 19:56:41.024   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 19:56:41.043   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 19:56:41.043   CNC 11 Touch   INF   Processing takes 44.278645ms
+2020-02-01 19:56:41.043   CNC 11 Touch   INF   Sleeping for 9.955616903s
+2020-02-01 19:57:03.624   CNC 11 Touch   INF   Device started running
+2020-02-01 19:57:03.624   CNC 11 Touch   INF   Device directory exists
+2020-02-01 19:57:03.645   CNC 11 Touch   INF   Actual workplace state: 
+2020-02-01 19:57:03.663   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 19:57:03.686   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 19:57:03.686   CNC 11 Touch   INF   Processing takes 62.469902ms
+2020-02-01 19:57:03.687   CNC 11 Touch   INF   Sleeping for 9.937445315s
+2020-02-01 19:57:58.814   CNC 11 Touch   INF   Device started running
+2020-02-01 19:57:58.814   CNC 11 Touch   INF   Device directory exists
+2020-02-01 19:57:58.826   CNC 11 Touch   INF   Actual workplace state: Poweroff
+2020-02-01 19:57:58.837   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 19:57:58.848   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 19:57:58.848   CNC 11 Touch   INF   Processing takes 33.435535ms
+2020-02-01 19:57:58.848   CNC 11 Touch   INF   Sleeping for 9.966443623s
+2020-02-01 19:59:52.882   CNC 11 Touch   INF   Device started running
+2020-02-01 19:59:52.882   CNC 11 Touch   INF   Device directory exists
+2020-02-01 19:59:52.898   CNC 11 Touch   INF   Actual workplace state: Production
+2020-02-01 19:59:52.915   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 19:59:52.934   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 19:59:52.934   CNC 11 Touch   INF   Production, order record is not open, creating order record
+2020-02-01 19:59:52.949   CNC 11 Touch   INF   Processing takes 66.439269ms
+2020-02-01 19:59:52.949   CNC 11 Touch   INF   Sleeping for 9.933438001s
+2020-02-01 20:00:40.087   CNC 11 Touch   INF   Device started running
+2020-02-01 20:00:40.087   CNC 11 Touch   INF   Device directory exists
+2020-02-01 20:00:40.104   CNC 11 Touch   INF   Actual workplace state: Production
+2020-02-01 20:00:40.118   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 20:00:40.132   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 20:00:40.132   CNC 11 Touch   INF   Production, order record is not open, creating order record
+2020-02-01 20:00:40.146   CNC 11 Touch   INF   Processing takes 58.898078ms
+2020-02-01 20:00:40.146   CNC 11 Touch   INF   Sleeping for 9.940977561s
+2020-02-01 20:02:59.585   CNC 11 Touch   INF   Device started running
+2020-02-01 20:02:59.585   CNC 11 Touch   INF   Device directory exists
+2020-02-01 20:02:59.602   CNC 11 Touch   INF   Actual workplace state: Production
+2020-02-01 20:02:59.615   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 20:02:59.634   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 20:02:59.634   CNC 11 Touch   INF   Production, order record is not open, creating order record
+2020-02-01 20:02:59.661   CNC 11 Touch   INF   Processing takes 75.815558ms
+2020-02-01 20:02:59.661   CNC 11 Touch   INF   Sleeping for 9.924007729s
+2020-02-01 20:06:57.198   CNC 11 Touch   INF   Device started running
+2020-02-01 20:06:57.199   CNC 11 Touch   INF   Device directory exists
+2020-02-01 20:06:57.213   CNC 11 Touch   INF   Actual workplace state: Production
+2020-02-01 20:06:57.225   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 20:06:57.236   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 20:06:57.236   CNC 11 Touch   INF   Production, order record is not open, creating order record
+2020-02-01 20:06:57.252   CNC 11 Touch   INF   Processing takes 53.29019ms
+2020-02-01 20:06:57.252   CNC 11 Touch   INF   Sleeping for 9.946436906s
+2020-02-01 20:07:15.219   CNC 11 Touch   INF   Device started running
+2020-02-01 20:07:15.219   CNC 11 Touch   INF   Device directory exists
+2020-02-01 20:07:15.242   CNC 11 Touch   INF   Actual workplace state: Production
+2020-02-01 20:07:15.256   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 20:07:15.272   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 20:07:15.272   CNC 11 Touch   INF   Production, order record is not open, creating order record
+2020-02-01 20:07:15.320   CNC 11 Touch   INF   Processing takes 100.487227ms
+2020-02-01 20:07:15.320   CNC 11 Touch   INF   Sleeping for 9.899399372s
+2020-02-01 20:08:20.962   CNC 11 Touch   INF   Device started running
+2020-02-01 20:08:20.962   CNC 11 Touch   INF   Device directory exists
+2020-02-01 20:08:20.977   CNC 11 Touch   INF   Actual workplace state: Production
+2020-02-01 20:08:20.988   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 20:08:20.999   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 20:08:20.999   CNC 11 Touch   INF   Production, order record is not open, creating order record
+2020-02-01 20:08:21.018   CNC 11 Touch   INF   Processing takes 55.621704ms
+2020-02-01 20:08:21.018   CNC 11 Touch   INF   Sleeping for 9.944270315s
+2020-02-01 20:08:36.826   CNC 11 Touch   INF   Device started running
+2020-02-01 20:08:36.826   CNC 11 Touch   INF   Device directory exists
+2020-02-01 20:08:36.838   CNC 11 Touch   INF   Actual workplace state: Production
+2020-02-01 20:08:36.852   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 20:08:36.862   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 20:08:36.862   CNC 11 Touch   INF   Production, order record is not open, creating order record
+2020-02-01 20:08:36.877   CNC 11 Touch   INF   Processing takes 50.320697ms
+2020-02-01 20:08:36.877   CNC 11 Touch   INF   Sleeping for 9.949545377s
+2020-02-01 20:11:21.334   CNC 11 Touch   INF   Device started running
+2020-02-01 20:11:21.335   CNC 11 Touch   INF   Device directory exists
+2020-02-01 20:11:21.347   CNC 11 Touch   INF   Actual workplace state: Production
+2020-02-01 20:11:21.364   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 20:11:21.377   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 20:11:21.377   CNC 11 Touch   INF   Production, order record is not open, creating order record
+2020-02-01 20:11:21.395   CNC 11 Touch   INF   Processing takes 59.742907ms
+2020-02-01 20:11:21.395   CNC 11 Touch   INF   Sleeping for 9.940118836s
+2020-02-01 20:11:34.564   CNC 11 Touch   INF   Device started running
+2020-02-01 20:11:34.564   CNC 11 Touch   INF   Device directory exists
+2020-02-01 20:11:34.591   CNC 11 Touch   INF   Actual workplace state: Production
+2020-02-01 20:11:34.606   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 20:11:34.625   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 20:11:34.625   CNC 11 Touch   INF   Production, order record is not open, creating order record
+2020-02-01 20:11:34.654   CNC 11 Touch   INF   Processing takes 90.554535ms
+2020-02-01 20:11:34.655   CNC 11 Touch   INF   Sleeping for 9.909300445s
+2020-02-01 20:13:35.689   CNC 11 Touch   INF   Device started running
+2020-02-01 20:13:35.689   CNC 11 Touch   INF   Device directory exists
+2020-02-01 20:13:35.701   CNC 11 Touch   INF   Actual workplace state: Production
+2020-02-01 20:13:35.715   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 20:13:35.727   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 20:13:35.727   CNC 11 Touch   INF   Production, order record is not open, creating order record
+2020-02-01 20:13:35.741   CNC 11 Touch   INF   Processing takes 51.660039ms
+2020-02-01 20:13:35.741   CNC 11 Touch   INF   Sleeping for 9.94821313s
+2020-02-01 20:14:36.628   CNC 11 Touch   INF   Device started running
+2020-02-01 20:14:36.628   CNC 11 Touch   INF   Device directory exists
+2020-02-01 20:14:36.643   CNC 11 Touch   INF   Actual workplace state: Production
+2020-02-01 20:14:36.657   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 20:14:36.667   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 20:14:36.667   CNC 11 Touch   INF   Production, order record is not open, creating order record
+2020-02-01 20:14:36.683   CNC 11 Touch   INF   Processing takes 54.364835ms
+2020-02-01 20:14:36.683   CNC 11 Touch   INF   Sleeping for 9.945476387s
+2020-02-01 20:22:38.251   CNC 11 Touch   INF   Device started running
+2020-02-01 20:22:38.252   CNC 11 Touch   INF   Device directory exists
+2020-02-01 20:22:38.265   CNC 11 Touch   INF   Actual workplace state: Production
+2020-02-01 20:22:38.285   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 20:22:38.299   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 20:22:38.299   CNC 11 Touch   INF   Production, order record is not open, creating order record
+2020-02-01 20:22:38.320   CNC 11 Touch   INF   Processing takes 67.548794ms
+2020-02-01 20:22:38.320   CNC 11 Touch   INF   Sleeping for 9.93224388s
+2020-02-01 20:24:32.868   CNC 11 Touch   INF   Device started running
+2020-02-01 20:24:32.868   CNC 11 Touch   INF   Device directory exists
+2020-02-01 20:24:32.889   CNC 11 Touch   INF   Actual workplace state: Production
+2020-02-01 20:24:32.909   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 20:24:32.930   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 20:24:32.930   CNC 11 Touch   INF   Production, order record is not open, creating order record
+2020-02-01 20:24:32.955   CNC 11 Touch   INF   Processing takes 86.258835ms
+2020-02-01 20:24:32.955   CNC 11 Touch   INF   Sleeping for 9.913335014s
+2020-02-01 20:25:17.060   CNC 11 Touch   INF   Device started running
+2020-02-01 20:25:17.061   CNC 11 Touch   INF   Device directory exists
+2020-02-01 20:25:17.075   CNC 11 Touch   INF   Actual workplace state: Production
+2020-02-01 20:25:17.093   CNC 11 Touch   INF   Actual open order: 0
+2020-02-01 20:25:17.107   CNC 11 Touch   INF   Actual open downtime: 0
+2020-02-01 20:25:17.108   CNC 11 Touch   INF   Production, order record is not open, creating order record
+2020-02-01 20:25:17.133   CNC 11 Touch   INF   Processing takes 71.799141ms
+2020-02-01 20:25:17.133   CNC 11 Touch   INF   Sleeping for 9.928031909s
