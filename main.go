@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-const version = "2020.1.2.1"
+const version = "2020.1.2.2"
 const programName = "Terminal Service"
 const deleteLogsAfter = 240 * time.Hour
 const downloadInSeconds = 10
