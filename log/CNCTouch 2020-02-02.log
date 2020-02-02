@@ -1,0 +1,40 @@
+2020-02-02 08:17:16.910   CNCTouch   INF   Device started running
+2020-02-02 08:17:16.910   CNCTouch   WRN   Device directory not exist, creating
+2020-02-02 08:17:16.910   CNCTouch   INF   Device directory created
+2020-02-02 08:17:16.924   CNCTouch   INF   Actual workplace state: Downtime
+2020-02-02 08:17:16.933   CNCTouch   INF   Actual open order: 0
+2020-02-02 08:17:16.943   CNCTouch   INF   Actual open downtime: 0
+2020-02-02 08:17:16.943   CNCTouch   INF   Downtime, downtime record is not open, creating downtime record
+2020-02-02 08:17:16.956   CNCTouch   INF   Processing takes 45.923092ms
+2020-02-02 08:17:16.956   CNCTouch   INF   Sleeping for 9.953977907s
+2020-02-02 08:17:57.007   CNCTouch   INF   Device started running
+2020-02-02 08:17:57.008   CNCTouch   INF   Device directory exists
+2020-02-02 08:17:57.019   CNCTouch   INF   Actual workplace state: Downtime
+2020-02-02 08:17:57.028   CNCTouch   INF   Actual open order: 0
+2020-02-02 08:17:57.037   CNCTouch   INF   Actual open downtime: 1
+2020-02-02 08:17:57.037   CNCTouch   INF   Processing takes 29.430791ms
+2020-02-02 08:17:57.037   CNCTouch   INF   Sleeping for 9.970483296s
+2020-02-02 08:18:07.012   CNCTouch   INF   Device still active
+2020-02-02 08:18:07.029   CNCTouch   INF   Actual workplace state: Downtime
+2020-02-02 08:18:07.041   CNCTouch   INF   Actual open order: 0
+2020-02-02 08:18:07.051   CNCTouch   INF   Actual open downtime: 1
+2020-02-02 08:18:07.051   CNCTouch   INF   Processing takes 39.30481ms
+2020-02-02 08:18:07.051   CNCTouch   INF   Sleeping for 9.960603734s
+2020-02-02 08:18:17.015   CNCTouch   INF   Device not active
+2020-02-02 08:18:17.015   CNCTouch   INF   Device not active, stopped running
+2020-02-02 08:18:17.019   CNCTouch   INF   Device started running
+2020-02-02 08:18:17.019   CNCTouch   INF   Device directory exists
+2020-02-02 08:18:17.038   CNCTouch   INF   Actual workplace state: Downtime
+2020-02-02 08:18:17.052   CNCTouch   INF   Actual open order: 0
+2020-02-02 08:18:17.067   CNCTouch   INF   Actual open downtime: 1
+2020-02-02 08:18:17.068   CNCTouch   INF   Processing takes 48.801018ms
+2020-02-02 08:18:17.068   CNCTouch   INF   Sleeping for 9.951084242s
+2020-02-02 08:18:27.019   CNCTouch   INF   Device not active
+2020-02-02 08:18:27.019   CNCTouch   INF   Device not active, stopped running
+2020-02-02 08:18:27.020   CNCTouch   INF   Device started running
+2020-02-02 08:18:27.020   CNCTouch   INF   Device directory exists
+2020-02-02 08:18:27.034   CNCTouch   INF   Actual workplace state: Downtime
+2020-02-02 08:18:27.046   CNCTouch   INF   Actual open order: 0
+2020-02-02 08:18:27.066   CNCTouch   INF   Actual open downtime: 1
+2020-02-02 08:18:27.067   CNCTouch   INF   Processing takes 46.579543ms
+2020-02-02 08:18:27.067   CNCTouch   INF   Sleeping for 9.953305903s

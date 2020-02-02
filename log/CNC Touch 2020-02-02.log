@@ -1,0 +1,18 @@
+2020-02-02 08:06:07.167   CNC Touch   INF   Device started running
+2020-02-02 08:06:07.167   CNC Touch   WRN   Device directory not exist, creating
+2020-02-02 08:06:07.167   CNC Touch   INF   Device directory created
+2020-02-02 08:06:07.179   CNC Touch   INF   Actual workplace state: Production
+2020-02-02 08:06:07.191   CNC Touch   INF   Actual open order: 0
+2020-02-02 08:06:07.199   CNC Touch   INF   Actual open downtime: 0
+2020-02-02 08:06:07.199   CNC Touch   INF   Production, order record is not open, creating order record
+2020-02-02 08:06:07.213   CNC Touch   INF   Processing takes 45.653233ms
+2020-02-02 08:06:07.213   CNC Touch   INF   Sleeping for 9.954254805s
+2020-02-02 08:06:17.168   CNC Touch   INF   Device not active
+2020-02-02 08:06:17.168   CNC Touch   INF   Device not active, stopped running
+2020-02-02 08:06:17.170   CNC Touch   INF   Device started running
+2020-02-02 08:06:17.170   CNC Touch   INF   Device directory exists
+2020-02-02 08:06:17.183   CNC Touch   INF   Actual workplace state: Production
+2020-02-02 08:06:17.194   CNC Touch   INF   Actual open order: 1
+2020-02-02 08:06:17.213   CNC Touch   INF   Actual open downtime: 0
+2020-02-02 08:06:17.213   CNC Touch   INF   Processing takes 43.020661ms
+2020-02-02 08:06:17.213   CNC Touch   INF   Sleeping for 9.956905591s
