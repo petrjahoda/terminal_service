@@ -7,12 +7,50 @@ import (
 	"time"
 )
 
-func UpdateDowntimeData(device zapsi_database.Device, id uint) {
-	// TODO
+func UpdateDowntimeData(device zapsi_database.Device, deviceDowntimeRecordId uint) {
+	connectionString, dialect := zapsi_database.CheckDatabaseType(DatabaseType, DatabaseIpAddress, DatabasePort, DatabaseLogin, DatabaseName, DatabasePassword)
+	db, err := gorm.Open(dialect, connectionString)
+	if err != nil {
+		LogError(device.Name, "Problem opening "+DatabaseName+" database: "+err.Error())
+		activeDevices = nil
+		return
+	}
+	defer db.Close()
+	var openDowntime zapsi_database.DeviceDowntimeRecord
+	db.Where("id=?", deviceDowntimeRecordId).Find(&openDowntime)
+	openDowntime.Duration = time.Now().Sub(openDowntime.DateTimeStart)
+	db.Save(&openDowntime)
 }
 
-func UpdateOrderData(device zapsi_database.Device, id uint) {
-	// TODO
+func UpdateOrderData(device zapsi_database.Device, deviceOrderRecordId uint) {
+	connectionString, dialect := zapsi_database.CheckDatabaseType(DatabaseType, DatabaseIpAddress, DatabasePort, DatabaseLogin, DatabaseName, DatabasePassword)
+	db, err := gorm.Open(dialect, connectionString)
+	if err != nil {
+		LogError(device.Name, "Problem opening "+DatabaseName+" database: "+err.Error())
+		activeDevices = nil
+		return
+	}
+	defer db.Close()
+	var openOrder zapsi_database.DeviceOrderRecord
+	db.Where("id=?", deviceOrderRecordId).Find(&openOrder)
+	var workplacePortOk zapsi_database.WorkplacePort
+	db.Where("workplace_id = ?", device.WorkplaceId).Where("counter_ok is true").Find(&workplacePortOk)
+	countOk := 0
+	db.Model(&zapsi_database.DeviceDigitalRecord{}).Where("device_port_id = ?", workplacePortOk.DevicePortId).Where("date_time>?", openOrder.DateTimeStart).Where("data = 0").Count(&countOk)
+	var workplacePortNok zapsi_database.WorkplacePort
+	db.Where("workplace_id = ?", device.WorkplaceId).Where("counter_nok is true").Find(&workplacePortNok)
+	countNok := 0
+	db.Model(&zapsi_database.DeviceDigitalRecord{}).Where("device_port_id = ?", workplacePortNok.DevicePortId).Where("date_time>?", openOrder.DateTimeStart).Where("data = 0").Count(&countNok)
+	averageCycle := 0.0
+	if countOk > 0 {
+		averageCycle = time.Now().Sub(openOrder.DateTimeStart).Seconds() / float64(countOk)
+	}
+	openOrder.AverageCycle = float32(averageCycle)
+	openOrder.CountOk = uint(countOk)
+	openOrder.CountNok = uint(countNok)
+	openOrder.Duration = time.Now().Sub(openOrder.DateTimeStart)
+	openOrder.WorkplaceId = device.WorkplaceId
+	db.Save(&openOrder)
 }
 
 func OpenDowntime(device zapsi_database.Device, actualWorkplaceState zapsi_database.WorkplaceState, openOrderId uint) {
@@ -54,6 +92,7 @@ func OpenOrder(device zapsi_database.Device, actualWorkplaceState zapsi_database
 	orderToSave.Duration = time.Now().Sub(actualWorkplaceState.DateTimeStart)
 	orderToSave.DeviceId = device.ID
 	orderToSave.WorkplaceId = device.WorkplaceId
+	orderToSave.Cavity = 1
 	db.Save(&orderToSave)
 }
 
@@ -84,6 +123,15 @@ func CloseOrder(device zapsi_database.Device, openOrderId uint) {
 	defer db.Close()
 	var openOrder zapsi_database.DeviceOrderRecord
 	db.Where("id=?", openOrderId).Find(&openOrder)
+	var workplacePortOk zapsi_database.WorkplacePort
+	db.Where("workplace_id = ?", device.WorkplaceId).Where("counter_ok is true").Find(&workplacePortOk)
+	countOk := 0
+	db.Model(&zapsi_database.DeviceDigitalRecord{}).Where("device_port_id = ?", workplacePortOk.DevicePortId).Where("date_time>?", openOrder.DateTimeStart).Where("data = 0").Count(&countOk)
+	averageCycle := 0.0
+	if countOk > 0 {
+		averageCycle = time.Now().Sub(openOrder.DateTimeStart).Seconds() / float64(countOk)
+	}
+	openOrder.AverageCycle = float32(averageCycle)
 	openOrder.DateTimeEnd = sql.NullTime{Time: time.Now()}
 	openOrder.Duration = time.Now().Sub(openOrder.DateTimeStart)
 	db.Save(&openOrder)

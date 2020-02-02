@@ -137,8 +137,12 @@ func RunDevice(device zapsi_database.Device) {
 				}
 			}
 		}
-		UpdateOrderData(device, openOrderId)
-		UpdateDowntimeData(device, openDowntimeId)
+		if downtimeIsOpen {
+			UpdateDowntimeData(device, openDowntimeId)
+		}
+		if orderIsOpen {
+			UpdateOrderData(device, openOrderId)
+		}
 
 		LogInfo(device.Name, "Processing takes "+time.Since(start).String())
 		Sleep(device, start)
