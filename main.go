@@ -11,7 +11,7 @@ import (
 	"time"
 )
 
-const version = "2020.1.2.8"
+const version = "2020.1.2.29"
 const programName = "Terminal Service"
 const programDesription = "Created default data for terminals"
 const deleteLogsAfter = 240 * time.Hour
@@ -88,6 +88,8 @@ func main() {
 }
 
 func WriteProgramVersionIntoSettings() {
+	LogInfo("MAIN", "Updating program version in database")
+	timer := time.Now()
 	connectionString, dialect := zapsi_database.CheckDatabaseType(DatabaseType, DatabaseIpAddress, DatabasePort, DatabaseLogin, DatabaseName, DatabasePassword)
 	db, err := gorm.Open(dialect, connectionString)
 	if err != nil {
@@ -101,7 +103,7 @@ func WriteProgramVersionIntoSettings() {
 	settings.Name = programName
 	settings.Value = version
 	db.Save(&settings)
-	LogDebug("MAIN", "Updated version in database for "+programName)
+	LogInfo("MAIN", "Program version updated, elapsed: "+time.Since(timer).String())
 }
 
 func CheckDevice(device zapsi_database.Device) bool {
@@ -121,42 +123,41 @@ func RunDevice(device zapsi_database.Device) {
 	deviceIsActive := true
 	CreateDirectoryIfNotExists(device)
 	for deviceIsActive && serviceRunning {
-		start := time.Now()
+		LogInfo(device.Name, "Starting device loop")
+		timer := time.Now()
 		actualState, actualWorkplaceState := GetActualState(device)
 		LogInfo(device.Name, "Actual workplace state: "+actualState.Name)
 		openOrderId := CheckOpenOrder(device)
-		LogInfo(device.Name, "Actual open order: "+strconv.Itoa(int(openOrderId)))
+		LogInfo(device.Name, "Actual open order: "+strconv.Itoa(openOrderId))
 		openDowntimeId := CheckOpenDowntime(device)
-		LogInfo(device.Name, "Actual open downtime: "+strconv.Itoa(int(openDowntimeId)))
+		LogInfo(device.Name, "Actual open downtime: "+strconv.Itoa(openDowntimeId))
 		orderIsOpen := openOrderId > 0
 		downtimeIsOpen := openDowntimeId > 0
 		switch actualState.Name {
-		case "PowerOff":
+		case "Poweroff":
 			{
+				LogInfo(device.Name, "Poweroff state")
 				if orderIsOpen {
-					LogInfo(device.Name, "Poweroff, order record is open, closing order record")
 					CloseOrder(device, openOrderId)
 				}
 				if downtimeIsOpen {
-					LogInfo(device.Name, "Poweroff, downtime record is open, closing downtime record")
 					CloseDowntime(device, openDowntimeId)
 				}
 			}
 		case "Production":
 			{
+				LogInfo(device.Name, "Production state")
 				if !orderIsOpen {
-					LogInfo(device.Name, "Production, order record is not open, creating order record")
 					OpenOrder(device, actualWorkplaceState)
 				}
 				if downtimeIsOpen {
-					LogInfo(device.Name, "Production, downtime record is open, closing downtime record")
 					CloseDowntime(device, openDowntimeId)
 				}
 			}
 		case "Downtime":
 			{
+				LogInfo(device.Name, "Downtime state")
 				if !downtimeIsOpen {
-					LogInfo(device.Name, "Downtime, downtime record is not open, creating downtime record")
 					OpenDowntime(device, actualWorkplaceState, openOrderId)
 				}
 			}
@@ -168,8 +169,8 @@ func RunDevice(device zapsi_database.Device) {
 			UpdateOrderData(device, openOrderId)
 		}
 
-		LogInfo(device.Name, "Processing takes "+time.Since(start).String())
-		Sleep(device, start)
+		LogInfo(device.Name, "Loop ended, elapsed: "+time.Since(timer).String())
+		Sleep(device, timer)
 		deviceIsActive = CheckActive(device)
 	}
 	RemoveDeviceFromRunningDevices(device)
@@ -225,6 +226,8 @@ func RemoveDeviceFromRunningDevices(device zapsi_database.Device) {
 }
 
 func UpdateActiveDevices(reference string) {
+	LogInfo("MAIN", "Updating active devices")
+	timer := time.Now()
 	connectionString, dialect := zapsi_database.CheckDatabaseType(DatabaseType, DatabaseIpAddress, DatabasePort, DatabaseLogin, DatabaseName, DatabasePassword)
 	db, err := gorm.Open(dialect, connectionString)
 	if err != nil {
@@ -235,6 +238,6 @@ func UpdateActiveDevices(reference string) {
 	defer db.Close()
 	var deviceType zapsi_database.DeviceType
 	db.Where("name=?", "Zapsi Touch").Find(&deviceType)
-	db.Where("device_type_id=?", deviceType.ID).Where("activated = true").Where("workplace_id !=?", 0).Find(&activeDevices)
-	LogDebug("MAIN", "Zapsi touch device type id is "+strconv.Itoa(int(deviceType.ID)))
+	db.Where("device_type_id=?", deviceType.ID).Where("activated = ?", "1").Find(&activeDevices)
+	LogInfo("MAIN", "Active devices updated, elapsed: "+time.Since(timer).String())
 }

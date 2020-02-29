@@ -1,0 +1,2587 @@
+2020-02-29 11:17:59.359   CNC 0 Touch   INF   Device started running
+2020-02-29 11:17:59.359   CNC 0 Touch   WRN   Device directory not exist, creating
+2020-02-29 11:17:59.359   CNC 0 Touch   INF   Device directory created
+2020-02-29 11:17:59.359   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:17:59.359   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:17:59.371   CNC 0 Touch   INF   Actual state downloaded, elapsed: 11.469659ms
+2020-02-29 11:17:59.371   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:17:59.371   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:17:59.379   CNC 0 Touch   INF   Open order checked, elapsed: 7.825365ms
+2020-02-29 11:17:59.379   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:17:59.379   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:17:59.387   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.096432ms
+2020-02-29 11:17:59.387   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:17:59.387   CNC 0 Touch   INF   Loop ended, elapsed: 28.199021ms
+2020-02-29 11:17:59.387   CNC 0 Touch   INF   Sleeping for 9.971749555s
+2020-02-29 11:18:09.359   CNC 0 Touch   INF   Device still active
+2020-02-29 11:18:09.359   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:18:09.359   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:18:09.384   CNC 0 Touch   INF   Actual state downloaded, elapsed: 24.647632ms
+2020-02-29 11:18:09.384   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:18:09.385   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:18:09.410   CNC 0 Touch   INF   Open order checked, elapsed: 25.063516ms
+2020-02-29 11:18:09.410   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:18:09.410   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:18:09.432   CNC 0 Touch   INF   Open downtime checked, elapsed: 21.564439ms
+2020-02-29 11:18:09.432   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:18:09.432   CNC 0 Touch   INF   Loop ended, elapsed: 72.46636ms
+2020-02-29 11:18:09.432   CNC 0 Touch   INF   Sleeping for 9.927463619s
+2020-02-29 11:18:19.360   CNC 0 Touch   INF   Device still active
+2020-02-29 11:18:19.360   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:18:19.360   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:18:19.418   CNC 0 Touch   INF   Actual state downloaded, elapsed: 57.318199ms
+2020-02-29 11:18:19.418   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:18:19.419   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:18:19.456   CNC 0 Touch   INF   Open order checked, elapsed: 36.647166ms
+2020-02-29 11:18:19.456   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:18:19.456   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:18:19.479   CNC 0 Touch   INF   Open downtime checked, elapsed: 22.367492ms
+2020-02-29 11:18:19.479   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:18:19.479   CNC 0 Touch   INF   Loop ended, elapsed: 119.215401ms
+2020-02-29 11:18:19.479   CNC 0 Touch   INF   Sleeping for 9.880677846s
+2020-02-29 11:18:29.361   CNC 0 Touch   INF   Device still active
+2020-02-29 11:18:29.361   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:18:29.361   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:18:29.395   CNC 0 Touch   INF   Actual state downloaded, elapsed: 33.907648ms
+2020-02-29 11:18:29.396   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:18:29.396   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:18:29.416   CNC 0 Touch   INF   Open order checked, elapsed: 19.747541ms
+2020-02-29 11:18:29.416   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:18:29.416   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:18:29.432   CNC 0 Touch   INF   Open downtime checked, elapsed: 16.390113ms
+2020-02-29 11:18:29.433   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:18:29.433   CNC 0 Touch   INF   Loop ended, elapsed: 71.570207ms
+2020-02-29 11:18:29.433   CNC 0 Touch   INF   Sleeping for 9.928304749s
+2020-02-29 11:18:39.361   CNC 0 Touch   INF   Device still active
+2020-02-29 11:18:39.362   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:18:39.362   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:18:39.395   CNC 0 Touch   INF   Actual state downloaded, elapsed: 33.177125ms
+2020-02-29 11:18:39.395   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:18:39.395   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:18:39.422   CNC 0 Touch   INF   Open order checked, elapsed: 25.808414ms
+2020-02-29 11:18:39.423   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:18:39.424   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:18:39.450   CNC 0 Touch   INF   Open downtime checked, elapsed: 25.16279ms
+2020-02-29 11:18:39.451   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:18:39.451   CNC 0 Touch   INF   Loop ended, elapsed: 89.067627ms
+2020-02-29 11:18:39.451   CNC 0 Touch   INF   Sleeping for 9.910743526s
+2020-02-29 11:18:49.362   CNC 0 Touch   INF   Device still active
+2020-02-29 11:18:49.362   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:18:49.362   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:18:49.380   CNC 0 Touch   INF   Actual state downloaded, elapsed: 17.474376ms
+2020-02-29 11:18:49.380   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:18:49.380   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:18:49.390   CNC 0 Touch   INF   Open order checked, elapsed: 9.548922ms
+2020-02-29 11:18:49.390   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:18:49.390   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:18:49.399   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.601599ms
+2020-02-29 11:18:49.399   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:18:49.399   CNC 0 Touch   INF   Loop ended, elapsed: 36.617765ms
+2020-02-29 11:18:49.399   CNC 0 Touch   INF   Sleeping for 9.96332358s
+2020-02-29 11:18:59.363   CNC 0 Touch   INF   Device still active
+2020-02-29 11:18:59.363   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:18:59.363   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:18:59.384   CNC 0 Touch   INF   Actual state downloaded, elapsed: 21.239624ms
+2020-02-29 11:18:59.384   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:18:59.385   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:18:59.395   CNC 0 Touch   INF   Open order checked, elapsed: 9.897405ms
+2020-02-29 11:18:59.395   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:18:59.395   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:18:59.406   CNC 0 Touch   INF   Open downtime checked, elapsed: 10.571183ms
+2020-02-29 11:18:59.406   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:18:59.406   CNC 0 Touch   INF   Loop ended, elapsed: 42.81973ms
+2020-02-29 11:18:59.406   CNC 0 Touch   INF   Sleeping for 9.957066769s
+2020-02-29 11:19:09.363   CNC 0 Touch   INF   Device still active
+2020-02-29 11:19:09.363   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:19:09.363   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:19:09.380   CNC 0 Touch   INF   Actual state downloaded, elapsed: 16.183692ms
+2020-02-29 11:19:09.380   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:19:09.380   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:19:09.390   CNC 0 Touch   INF   Open order checked, elapsed: 9.978793ms
+2020-02-29 11:19:09.390   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:19:09.390   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:19:09.399   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.366134ms
+2020-02-29 11:19:09.399   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:19:09.399   CNC 0 Touch   INF   Loop ended, elapsed: 35.529234ms
+2020-02-29 11:19:09.399   CNC 0 Touch   INF   Sleeping for 9.96441507s
+2020-02-29 11:19:19.364   CNC 0 Touch   INF   Device still active
+2020-02-29 11:19:19.364   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:19:19.364   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:19:19.399   CNC 0 Touch   INF   Actual state downloaded, elapsed: 35.116184ms
+2020-02-29 11:19:19.400   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:19:19.400   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:19:19.411   CNC 0 Touch   INF   Open order checked, elapsed: 11.471478ms
+2020-02-29 11:19:19.412   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:19:19.412   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:19:19.434   CNC 0 Touch   INF   Open downtime checked, elapsed: 22.316679ms
+2020-02-29 11:19:19.434   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:19:19.434   CNC 0 Touch   INF   Production state
+2020-02-29 11:19:19.434   CNC 0 Touch   INF   Opening order
+2020-02-29 11:19:19.466   CNC 0 Touch   INF   Order opened, elapsed: 31.670968ms
+2020-02-29 11:19:19.466   CNC 0 Touch   INF   Loop ended, elapsed: 102.324447ms
+2020-02-29 11:19:19.466   CNC 0 Touch   INF   Sleeping for 9.897588875s
+2020-02-29 11:19:29.364   CNC 0 Touch   INF   Device still active
+2020-02-29 11:19:29.365   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:19:29.365   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:19:29.395   CNC 0 Touch   INF   Actual state downloaded, elapsed: 29.599046ms
+2020-02-29 11:19:29.395   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:19:29.395   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:19:29.416   CNC 0 Touch   INF   Open order checked, elapsed: 21.04383ms
+2020-02-29 11:19:29.416   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:19:29.416   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:19:29.430   CNC 0 Touch   INF   Open downtime checked, elapsed: 13.371613ms
+2020-02-29 11:19:29.431   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:19:29.431   CNC 0 Touch   INF   Production state
+2020-02-29 11:19:29.431   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:19:29.476   CNC 0 Touch   INF   Order data updated, elapsed: 44.62602ms
+2020-02-29 11:19:29.476   CNC 0 Touch   INF   Loop ended, elapsed: 111.247022ms
+2020-02-29 11:19:29.476   CNC 0 Touch   INF   Sleeping for 9.888670908s
+2020-02-29 11:19:39.366   CNC 0 Touch   INF   Device still active
+2020-02-29 11:19:39.366   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:19:39.366   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:19:39.391   CNC 0 Touch   INF   Actual state downloaded, elapsed: 24.30856ms
+2020-02-29 11:19:39.391   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:19:39.391   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:19:39.400   CNC 0 Touch   INF   Open order checked, elapsed: 9.413955ms
+2020-02-29 11:19:39.400   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:19:39.401   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:19:39.413   CNC 0 Touch   INF   Open downtime checked, elapsed: 11.994508ms
+2020-02-29 11:19:39.413   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:19:39.414   CNC 0 Touch   INF   Production state
+2020-02-29 11:19:39.414   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:19:39.449   CNC 0 Touch   INF   Order data updated, elapsed: 35.140871ms
+2020-02-29 11:19:39.449   CNC 0 Touch   INF   Loop ended, elapsed: 82.889292ms
+2020-02-29 11:19:39.449   CNC 0 Touch   INF   Sleeping for 9.917000095s
+2020-02-29 11:19:49.367   CNC 0 Touch   INF   Device still active
+2020-02-29 11:19:49.367   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:19:49.367   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:19:49.389   CNC 0 Touch   INF   Actual state downloaded, elapsed: 21.963404ms
+2020-02-29 11:19:49.389   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:19:49.389   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:19:49.404   CNC 0 Touch   INF   Open order checked, elapsed: 14.196209ms
+2020-02-29 11:19:49.404   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:19:49.404   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:19:49.422   CNC 0 Touch   INF   Open downtime checked, elapsed: 17.441994ms
+2020-02-29 11:19:49.422   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:19:49.422   CNC 0 Touch   INF   Production state
+2020-02-29 11:19:49.422   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:19:49.468   CNC 0 Touch   INF   Order data updated, elapsed: 46.023095ms
+2020-02-29 11:19:49.468   CNC 0 Touch   INF   Loop ended, elapsed: 101.422817ms
+2020-02-29 11:19:49.469   CNC 0 Touch   INF   Sleeping for 9.898459652s
+2020-02-29 11:19:59.367   CNC 0 Touch   INF   Device still active
+2020-02-29 11:19:59.368   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:19:59.368   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:19:59.397   CNC 0 Touch   INF   Actual state downloaded, elapsed: 29.20842ms
+2020-02-29 11:19:59.397   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:19:59.397   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:19:59.412   CNC 0 Touch   INF   Open order checked, elapsed: 14.156087ms
+2020-02-29 11:19:59.412   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:19:59.412   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:19:59.430   CNC 0 Touch   INF   Open downtime checked, elapsed: 17.646504ms
+2020-02-29 11:19:59.430   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:19:59.430   CNC 0 Touch   INF   Production state
+2020-02-29 11:19:59.430   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:19:59.471   CNC 0 Touch   INF   Order data updated, elapsed: 40.465231ms
+2020-02-29 11:19:59.471   CNC 0 Touch   INF   Loop ended, elapsed: 103.492946ms
+2020-02-29 11:19:59.471   CNC 0 Touch   INF   Sleeping for 9.896406717s
+2020-02-29 11:20:09.369   CNC 0 Touch   INF   Device still active
+2020-02-29 11:20:09.369   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:20:09.369   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:20:09.393   CNC 0 Touch   INF   Actual state downloaded, elapsed: 23.189254ms
+2020-02-29 11:20:09.393   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:20:09.393   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:20:09.409   CNC 0 Touch   INF   Open order checked, elapsed: 15.486108ms
+2020-02-29 11:20:09.409   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:20:09.409   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:20:09.420   CNC 0 Touch   INF   Open downtime checked, elapsed: 10.505833ms
+2020-02-29 11:20:09.420   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:20:09.420   CNC 0 Touch   INF   Production state
+2020-02-29 11:20:09.420   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:20:09.468   CNC 0 Touch   INF   Order data updated, elapsed: 47.716395ms
+2020-02-29 11:20:09.468   CNC 0 Touch   INF   Loop ended, elapsed: 98.577424ms
+2020-02-29 11:20:09.468   CNC 0 Touch   INF   Sleeping for 9.90133583s
+2020-02-29 11:20:19.373   CNC 0 Touch   INF   Device still active
+2020-02-29 11:20:19.373   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:20:19.373   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:20:19.395   CNC 0 Touch   INF   Actual state downloaded, elapsed: 21.260141ms
+2020-02-29 11:20:19.395   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:20:19.395   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:20:19.417   CNC 0 Touch   INF   Open order checked, elapsed: 21.977377ms
+2020-02-29 11:20:19.418   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:20:19.418   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:20:19.435   CNC 0 Touch   INF   Open downtime checked, elapsed: 17.259725ms
+2020-02-29 11:20:19.436   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:20:19.436   CNC 0 Touch   INF   Production state
+2020-02-29 11:20:19.436   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:20:19.493   CNC 0 Touch   INF   Order data updated, elapsed: 57.27344ms
+2020-02-29 11:20:19.494   CNC 0 Touch   INF   Loop ended, elapsed: 120.503467ms
+2020-02-29 11:20:19.494   CNC 0 Touch   INF   Sleeping for 9.87923268s
+2020-02-29 11:20:29.374   CNC 0 Touch   INF   Device still active
+2020-02-29 11:20:29.374   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:20:29.374   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:20:29.402   CNC 0 Touch   INF   Actual state downloaded, elapsed: 26.901213ms
+2020-02-29 11:20:29.402   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:20:29.402   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:20:29.422   CNC 0 Touch   INF   Open order checked, elapsed: 19.563342ms
+2020-02-29 11:20:29.422   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:20:29.422   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:20:29.435   CNC 0 Touch   INF   Open downtime checked, elapsed: 12.70997ms
+2020-02-29 11:20:29.436   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:20:29.436   CNC 0 Touch   INF   Production state
+2020-02-29 11:20:29.436   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:20:29.483   CNC 0 Touch   INF   Order data updated, elapsed: 46.167551ms
+2020-02-29 11:20:29.483   CNC 0 Touch   INF   Loop ended, elapsed: 108.833617ms
+2020-02-29 11:20:29.484   CNC 0 Touch   INF   Sleeping for 9.890769639s
+2020-02-29 11:20:39.375   CNC 0 Touch   INF   Device still active
+2020-02-29 11:20:39.375   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:20:39.375   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:20:39.400   CNC 0 Touch   INF   Actual state downloaded, elapsed: 24.415689ms
+2020-02-29 11:20:39.401   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:20:39.401   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:20:39.418   CNC 0 Touch   INF   Open order checked, elapsed: 17.195423ms
+2020-02-29 11:20:39.419   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:20:39.419   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:20:39.431   CNC 0 Touch   INF   Open downtime checked, elapsed: 12.394544ms
+2020-02-29 11:20:39.432   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:20:39.432   CNC 0 Touch   INF   Production state
+2020-02-29 11:20:39.432   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:20:39.476   CNC 0 Touch   INF   Order data updated, elapsed: 43.53538ms
+2020-02-29 11:20:39.477   CNC 0 Touch   INF   Loop ended, elapsed: 101.271478ms
+2020-02-29 11:20:39.477   CNC 0 Touch   INF   Sleeping for 9.898336s
+2020-02-29 11:20:49.377   CNC 0 Touch   INF   Device still active
+2020-02-29 11:20:49.378   CNC 0 Touch   INF   Device not active, stopped running
+2020-02-29 11:20:49.412   CNC 0 Touch   INF   Device started running
+2020-02-29 11:20:49.412   CNC 0 Touch   INF   Device directory exists
+2020-02-29 11:20:49.412   CNC 0 Touch   INF   Device not active, stopped running
+2020-02-29 11:21:21.934   CNC 0 Touch   INF   Device started running
+2020-02-29 11:21:21.934   CNC 0 Touch   INF   Device directory exists
+2020-02-29 11:21:21.934   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:21:21.934   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:21:21.957   CNC 0 Touch   INF   Actual state downloaded, elapsed: 23.200902ms
+2020-02-29 11:21:21.957   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:21:21.957   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:21:21.968   CNC 0 Touch   INF   Open order checked, elapsed: 10.053792ms
+2020-02-29 11:21:21.968   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:21:21.968   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:21:21.979   CNC 0 Touch   INF   Open downtime checked, elapsed: 10.651216ms
+2020-02-29 11:21:21.979   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:21:21.979   CNC 0 Touch   INF   Production state
+2020-02-29 11:21:21.979   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:21:22.011   CNC 0 Touch   INF   Order data updated, elapsed: 32.19011ms
+2020-02-29 11:21:22.011   CNC 0 Touch   INF   Loop ended, elapsed: 77.576244ms
+2020-02-29 11:21:22.012   CNC 0 Touch   INF   Sleeping for 9.922251545s
+2020-02-29 11:21:31.936   CNC 0 Touch   INF   Device still active
+2020-02-29 11:21:31.936   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:21:31.936   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:21:31.953   CNC 0 Touch   INF   Actual state downloaded, elapsed: 16.762039ms
+2020-02-29 11:21:31.953   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:21:31.953   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:21:31.963   CNC 0 Touch   INF   Open order checked, elapsed: 9.446774ms
+2020-02-29 11:21:31.963   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:21:31.963   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:21:31.972   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.502467ms
+2020-02-29 11:21:31.972   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:21:31.972   CNC 0 Touch   INF   Production state
+2020-02-29 11:21:31.972   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:21:32.008   CNC 0 Touch   INF   Order data updated, elapsed: 35.820491ms
+2020-02-29 11:21:32.008   CNC 0 Touch   INF   Loop ended, elapsed: 71.973574ms
+2020-02-29 11:21:32.008   CNC 0 Touch   INF   Sleeping for 9.927867332s
+2020-02-29 11:21:41.937   CNC 0 Touch   INF   Device still active
+2020-02-29 11:21:41.937   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:21:41.937   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:21:41.949   CNC 0 Touch   INF   Actual state downloaded, elapsed: 11.889934ms
+2020-02-29 11:21:41.950   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:21:41.950   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:21:41.968   CNC 0 Touch   INF   Open order checked, elapsed: 18.261962ms
+2020-02-29 11:21:41.968   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:21:41.968   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:21:41.980   CNC 0 Touch   INF   Open downtime checked, elapsed: 11.092712ms
+2020-02-29 11:21:41.980   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:21:41.980   CNC 0 Touch   INF   Production state
+2020-02-29 11:21:41.980   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:21:42.019   CNC 0 Touch   INF   Order data updated, elapsed: 38.644732ms
+2020-02-29 11:21:42.019   CNC 0 Touch   INF   Loop ended, elapsed: 81.47744ms
+2020-02-29 11:21:42.019   CNC 0 Touch   INF   Sleeping for 9.918445363s
+2020-02-29 11:21:51.939   CNC 0 Touch   INF   Device still active
+2020-02-29 11:21:51.939   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:21:51.939   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:21:51.952   CNC 0 Touch   INF   Actual state downloaded, elapsed: 13.08185ms
+2020-02-29 11:21:51.952   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:21:51.952   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:21:51.964   CNC 0 Touch   INF   Open order checked, elapsed: 11.598601ms
+2020-02-29 11:21:51.964   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:21:51.964   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:21:51.976   CNC 0 Touch   INF   Open downtime checked, elapsed: 11.840366ms
+2020-02-29 11:21:51.977   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:21:51.977   CNC 0 Touch   INF   Production state
+2020-02-29 11:21:51.977   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:21:52.001   CNC 0 Touch   INF   Order data updated, elapsed: 24.111249ms
+2020-02-29 11:21:52.001   CNC 0 Touch   INF   Loop ended, elapsed: 62.284261ms
+2020-02-29 11:21:52.001   CNC 0 Touch   INF   Sleeping for 9.937628326s
+2020-02-29 11:22:01.940   CNC 0 Touch   INF   Device still active
+2020-02-29 11:22:01.940   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:22:01.940   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:22:01.953   CNC 0 Touch   INF   Actual state downloaded, elapsed: 13.100427ms
+2020-02-29 11:22:01.953   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:22:01.953   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:22:01.963   CNC 0 Touch   INF   Open order checked, elapsed: 9.293256ms
+2020-02-29 11:22:01.963   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:22:01.963   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:22:01.976   CNC 0 Touch   INF   Open downtime checked, elapsed: 12.747249ms
+2020-02-29 11:22:01.976   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:22:01.976   CNC 0 Touch   INF   Production state
+2020-02-29 11:22:01.976   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:22:02.004   CNC 0 Touch   INF   Order data updated, elapsed: 27.930916ms
+2020-02-29 11:22:02.004   CNC 0 Touch   INF   Loop ended, elapsed: 64.428558ms
+2020-02-29 11:22:02.004   CNC 0 Touch   INF   Sleeping for 9.935502551s
+2020-02-29 11:22:11.941   CNC 0 Touch   INF   Device still active
+2020-02-29 11:22:11.941   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:22:11.941   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:22:11.954   CNC 0 Touch   INF   Actual state downloaded, elapsed: 12.889595ms
+2020-02-29 11:22:11.954   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:22:11.954   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:22:11.968   CNC 0 Touch   INF   Open order checked, elapsed: 13.484643ms
+2020-02-29 11:22:11.968   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:22:11.968   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:22:11.981   CNC 0 Touch   INF   Open downtime checked, elapsed: 12.762143ms
+2020-02-29 11:22:11.981   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:22:11.981   CNC 0 Touch   INF   Production state
+2020-02-29 11:22:11.981   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:22:12.008   CNC 0 Touch   INF   Order data updated, elapsed: 26.802414ms
+2020-02-29 11:22:12.009   CNC 0 Touch   INF   Loop ended, elapsed: 67.684936ms
+2020-02-29 11:22:12.009   CNC 0 Touch   INF   Sleeping for 9.932119444s
+2020-02-29 11:22:21.941   CNC 0 Touch   INF   Device still active
+2020-02-29 11:22:21.942   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:22:21.942   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:22:21.954   CNC 0 Touch   INF   Actual state downloaded, elapsed: 12.245336ms
+2020-02-29 11:22:21.954   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:22:21.954   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:22:21.967   CNC 0 Touch   INF   Open order checked, elapsed: 12.866723ms
+2020-02-29 11:22:21.967   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:22:21.968   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:22:21.981   CNC 0 Touch   INF   Open downtime checked, elapsed: 13.301531ms
+2020-02-29 11:22:21.981   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:22:21.981   CNC 0 Touch   INF   Production state
+2020-02-29 11:22:21.982   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:22:22.009   CNC 0 Touch   INF   Order data updated, elapsed: 27.06701ms
+2020-02-29 11:22:22.009   CNC 0 Touch   INF   Loop ended, elapsed: 67.710715ms
+2020-02-29 11:22:22.010   CNC 0 Touch   INF   Sleeping for 9.93213277s
+2020-02-29 11:22:31.942   CNC 0 Touch   INF   Device still active
+2020-02-29 11:22:31.942   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:22:31.942   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:22:31.957   CNC 0 Touch   INF   Actual state downloaded, elapsed: 14.459171ms
+2020-02-29 11:22:31.957   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:22:31.957   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:22:31.967   CNC 0 Touch   INF   Open order checked, elapsed: 9.689757ms
+2020-02-29 11:22:31.967   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:22:31.967   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:22:31.976   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.298702ms
+2020-02-29 11:22:31.976   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:22:31.976   CNC 0 Touch   INF   Production state
+2020-02-29 11:22:31.976   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:22:32.000   CNC 0 Touch   INF   Order data updated, elapsed: 23.564385ms
+2020-02-29 11:22:32.000   CNC 0 Touch   INF   Loop ended, elapsed: 57.600554ms
+2020-02-29 11:22:32.000   CNC 0 Touch   INF   Sleeping for 9.942304039s
+2020-02-29 11:22:41.943   CNC 0 Touch   INF   Device still active
+2020-02-29 11:22:41.943   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:22:41.943   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:22:41.958   CNC 0 Touch   INF   Actual state downloaded, elapsed: 14.147953ms
+2020-02-29 11:22:41.958   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:22:41.958   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:22:41.970   CNC 0 Touch   INF   Open order checked, elapsed: 12.129954ms
+2020-02-29 11:22:41.970   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:22:41.970   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:22:41.983   CNC 0 Touch   INF   Open downtime checked, elapsed: 12.050058ms
+2020-02-29 11:22:41.983   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:22:41.983   CNC 0 Touch   INF   Production state
+2020-02-29 11:22:41.983   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:22:42.012   CNC 0 Touch   INF   Order data updated, elapsed: 28.677798ms
+2020-02-29 11:22:42.012   CNC 0 Touch   INF   Loop ended, elapsed: 68.748001ms
+2020-02-29 11:22:42.012   CNC 0 Touch   INF   Sleeping for 9.93117214s
+2020-02-29 11:22:51.944   CNC 0 Touch   INF   Device still active
+2020-02-29 11:22:51.944   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:22:51.944   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:22:51.958   CNC 0 Touch   INF   Actual state downloaded, elapsed: 14.077249ms
+2020-02-29 11:22:51.958   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:22:51.958   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:22:51.968   CNC 0 Touch   INF   Open order checked, elapsed: 9.194985ms
+2020-02-29 11:22:51.968   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:22:51.968   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:22:51.977   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.533299ms
+2020-02-29 11:22:51.977   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:22:51.977   CNC 0 Touch   INF   Production state
+2020-02-29 11:22:51.977   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:22:51.998   CNC 0 Touch   INF   Order data updated, elapsed: 20.718873ms
+2020-02-29 11:22:51.998   CNC 0 Touch   INF   Loop ended, elapsed: 54.021978ms
+2020-02-29 11:22:51.998   CNC 0 Touch   INF   Sleeping for 9.945895906s
+2020-02-29 11:23:01.944   CNC 0 Touch   INF   Device still active
+2020-02-29 11:23:01.944   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:23:01.944   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:23:01.958   CNC 0 Touch   INF   Actual state downloaded, elapsed: 13.561548ms
+2020-02-29 11:23:01.958   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:23:01.958   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:23:01.970   CNC 0 Touch   INF   Open order checked, elapsed: 12.155282ms
+2020-02-29 11:23:01.971   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:23:01.971   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:23:01.980   CNC 0 Touch   INF   Open downtime checked, elapsed: 9.213792ms
+2020-02-29 11:23:01.980   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:23:01.980   CNC 0 Touch   INF   Production state
+2020-02-29 11:23:01.980   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:23:02.006   CNC 0 Touch   INF   Order data updated, elapsed: 25.635839ms
+2020-02-29 11:23:02.007   CNC 0 Touch   INF   Loop ended, elapsed: 62.539758ms
+2020-02-29 11:23:02.007   CNC 0 Touch   INF   Sleeping for 9.937353208s
+2020-02-29 11:23:11.944   CNC 0 Touch   INF   Device still active
+2020-02-29 11:23:11.945   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:23:11.945   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:23:11.969   CNC 0 Touch   INF   Actual state downloaded, elapsed: 24.25244ms
+2020-02-29 11:23:11.969   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:23:11.969   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:23:11.979   CNC 0 Touch   INF   Open order checked, elapsed: 9.968627ms
+2020-02-29 11:23:11.980   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:23:11.980   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:23:11.996   CNC 0 Touch   INF   Open downtime checked, elapsed: 16.462669ms
+2020-02-29 11:23:11.997   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:23:11.997   CNC 0 Touch   INF   Production state
+2020-02-29 11:23:11.997   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:23:12.027   CNC 0 Touch   INF   Order data updated, elapsed: 29.282491ms
+2020-02-29 11:23:12.028   CNC 0 Touch   INF   Loop ended, elapsed: 82.703262ms
+2020-02-29 11:23:12.028   CNC 0 Touch   INF   Sleeping for 9.916935788s
+2020-02-29 11:23:21.945   CNC 0 Touch   INF   Device still active
+2020-02-29 11:23:21.945   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:23:21.945   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:23:21.963   CNC 0 Touch   INF   Actual state downloaded, elapsed: 17.377299ms
+2020-02-29 11:23:21.963   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:23:21.963   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:23:21.973   CNC 0 Touch   INF   Open order checked, elapsed: 9.423962ms
+2020-02-29 11:23:21.973   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:23:21.973   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:23:21.982   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.539137ms
+2020-02-29 11:23:21.982   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:23:21.982   CNC 0 Touch   INF   Production state
+2020-02-29 11:23:21.982   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:23:22.004   CNC 0 Touch   INF   Order data updated, elapsed: 21.722981ms
+2020-02-29 11:23:22.004   CNC 0 Touch   INF   Loop ended, elapsed: 58.65358ms
+2020-02-29 11:23:22.004   CNC 0 Touch   INF   Sleeping for 9.941282104s
+2020-02-29 11:23:31.946   CNC 0 Touch   INF   Device still active
+2020-02-29 11:23:31.946   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:23:31.946   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:23:31.963   CNC 0 Touch   INF   Actual state downloaded, elapsed: 16.766179ms
+2020-02-29 11:23:31.963   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:23:31.963   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:23:31.975   CNC 0 Touch   INF   Open order checked, elapsed: 11.524596ms
+2020-02-29 11:23:31.975   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:23:31.975   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:23:31.985   CNC 0 Touch   INF   Open downtime checked, elapsed: 9.877191ms
+2020-02-29 11:23:31.985   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:23:31.985   CNC 0 Touch   INF   Production state
+2020-02-29 11:23:31.985   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:23:32.009   CNC 0 Touch   INF   Order data updated, elapsed: 23.548989ms
+2020-02-29 11:23:32.009   CNC 0 Touch   INF   Loop ended, elapsed: 63.111695ms
+2020-02-29 11:23:32.009   CNC 0 Touch   INF   Sleeping for 9.936818866s
+2020-02-29 11:23:41.946   CNC 0 Touch   INF   Device still active
+2020-02-29 11:23:41.946   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:23:41.946   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:23:41.966   CNC 0 Touch   INF   Actual state downloaded, elapsed: 19.617372ms
+2020-02-29 11:23:41.966   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:23:41.966   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:23:41.976   CNC 0 Touch   INF   Open order checked, elapsed: 10.090849ms
+2020-02-29 11:23:41.977   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:23:41.977   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:23:41.991   CNC 0 Touch   INF   Open downtime checked, elapsed: 13.981255ms
+2020-02-29 11:23:41.991   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:23:41.991   CNC 0 Touch   INF   Production state
+2020-02-29 11:23:41.991   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:23:42.028   CNC 0 Touch   INF   Order data updated, elapsed: 36.396674ms
+2020-02-29 11:23:42.028   CNC 0 Touch   INF   Loop ended, elapsed: 81.580115ms
+2020-02-29 11:23:42.028   CNC 0 Touch   INF   Sleeping for 9.91830571s
+2020-02-29 11:23:51.947   CNC 0 Touch   INF   Device still active
+2020-02-29 11:23:51.947   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:23:51.947   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:23:51.985   CNC 0 Touch   INF   Actual state downloaded, elapsed: 37.629178ms
+2020-02-29 11:23:51.985   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:23:51.985   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:23:52.004   CNC 0 Touch   INF   Open order checked, elapsed: 18.058395ms
+2020-02-29 11:23:52.005   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:23:52.005   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:23:52.021   CNC 0 Touch   INF   Open downtime checked, elapsed: 16.096668ms
+2020-02-29 11:23:52.021   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:23:52.021   CNC 0 Touch   INF   Production state
+2020-02-29 11:23:52.022   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:23:52.075   CNC 0 Touch   INF   Order data updated, elapsed: 53.698256ms
+2020-02-29 11:23:52.076   CNC 0 Touch   INF   Loop ended, elapsed: 128.209558ms
+2020-02-29 11:23:52.076   CNC 0 Touch   INF   Sleeping for 9.871706911s
+2020-02-29 11:24:01.948   CNC 0 Touch   INF   Device still active
+2020-02-29 11:24:01.948   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:24:01.948   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:24:01.976   CNC 0 Touch   INF   Actual state downloaded, elapsed: 28.081561ms
+2020-02-29 11:24:01.976   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:24:01.976   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:24:01.990   CNC 0 Touch   INF   Open order checked, elapsed: 13.350422ms
+2020-02-29 11:24:01.990   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:24:01.990   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:24:02.006   CNC 0 Touch   INF   Open downtime checked, elapsed: 15.82696ms
+2020-02-29 11:24:02.006   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:24:02.006   CNC 0 Touch   INF   Production state
+2020-02-29 11:24:02.007   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:24:02.032   CNC 0 Touch   INF   Order data updated, elapsed: 25.048598ms
+2020-02-29 11:24:02.032   CNC 0 Touch   INF   Loop ended, elapsed: 84.023343ms
+2020-02-29 11:24:02.032   CNC 0 Touch   INF   Sleeping for 9.915892922s
+2020-02-29 11:24:11.948   CNC 0 Touch   INF   Device still active
+2020-02-29 11:24:11.948   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:24:11.949   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:24:11.968   CNC 0 Touch   INF   Actual state downloaded, elapsed: 19.190269ms
+2020-02-29 11:24:11.968   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:24:11.968   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:24:11.981   CNC 0 Touch   INF   Open order checked, elapsed: 12.402442ms
+2020-02-29 11:24:11.981   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:24:11.981   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:24:11.991   CNC 0 Touch   INF   Open downtime checked, elapsed: 10.113207ms
+2020-02-29 11:24:11.991   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:24:11.991   CNC 0 Touch   INF   Production state
+2020-02-29 11:24:11.991   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:24:12.015   CNC 0 Touch   INF   Order data updated, elapsed: 23.005422ms
+2020-02-29 11:24:12.015   CNC 0 Touch   INF   Loop ended, elapsed: 66.121648ms
+2020-02-29 11:24:12.015   CNC 0 Touch   INF   Sleeping for 9.933756577s
+2020-02-29 11:24:21.949   CNC 0 Touch   INF   Device still active
+2020-02-29 11:24:21.949   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:24:21.949   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:24:21.969   CNC 0 Touch   INF   Actual state downloaded, elapsed: 19.608915ms
+2020-02-29 11:24:21.969   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:24:21.969   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:24:21.980   CNC 0 Touch   INF   Open order checked, elapsed: 11.082807ms
+2020-02-29 11:24:21.980   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:24:21.980   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:24:21.989   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.901359ms
+2020-02-29 11:24:21.990   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:24:21.990   CNC 0 Touch   INF   Production state
+2020-02-29 11:24:21.990   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:24:22.010   CNC 0 Touch   INF   Order data updated, elapsed: 20.289223ms
+2020-02-29 11:24:22.010   CNC 0 Touch   INF   Loop ended, elapsed: 61.228058ms
+2020-02-29 11:24:22.010   CNC 0 Touch   INF   Sleeping for 9.938699451s
+2020-02-29 11:24:31.952   CNC 0 Touch   INF   Device still active
+2020-02-29 11:24:31.952   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:24:31.953   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:24:31.973   CNC 0 Touch   INF   Actual state downloaded, elapsed: 19.862308ms
+2020-02-29 11:24:31.973   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:24:31.973   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:24:31.984   CNC 0 Touch   INF   Open order checked, elapsed: 10.738819ms
+2020-02-29 11:24:31.984   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:24:31.984   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:24:31.993   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.730983ms
+2020-02-29 11:24:31.993   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:24:31.993   CNC 0 Touch   INF   Production state
+2020-02-29 11:24:31.994   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:24:32.014   CNC 0 Touch   INF   Order data updated, elapsed: 20.168812ms
+2020-02-29 11:24:32.014   CNC 0 Touch   INF   Loop ended, elapsed: 61.147845ms
+2020-02-29 11:24:32.014   CNC 0 Touch   INF   Sleeping for 9.938782254s
+2020-02-29 11:24:41.956   CNC 0 Touch   INF   Device still active
+2020-02-29 11:24:41.956   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:24:41.956   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:24:41.977   CNC 0 Touch   INF   Actual state downloaded, elapsed: 20.285076ms
+2020-02-29 11:24:41.977   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:24:41.977   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:24:41.991   CNC 0 Touch   INF   Open order checked, elapsed: 13.795987ms
+2020-02-29 11:24:41.991   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:24:41.991   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:24:42.002   CNC 0 Touch   INF   Open downtime checked, elapsed: 10.527319ms
+2020-02-29 11:24:42.002   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:24:42.002   CNC 0 Touch   INF   Production state
+2020-02-29 11:24:42.002   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:24:42.028   CNC 0 Touch   INF   Order data updated, elapsed: 25.384188ms
+2020-02-29 11:24:42.028   CNC 0 Touch   INF   Loop ended, elapsed: 71.586851ms
+2020-02-29 11:24:42.028   CNC 0 Touch   INF   Sleeping for 9.92833956s
+2020-02-29 11:24:51.958   CNC 0 Touch   INF   Device still active
+2020-02-29 11:24:51.958   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:24:51.958   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:24:51.978   CNC 0 Touch   INF   Actual state downloaded, elapsed: 19.399342ms
+2020-02-29 11:24:51.978   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:24:51.978   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:24:51.991   CNC 0 Touch   INF   Open order checked, elapsed: 12.197657ms
+2020-02-29 11:24:51.991   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:24:51.991   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:24:52.003   CNC 0 Touch   INF   Open downtime checked, elapsed: 12.078474ms
+2020-02-29 11:24:52.003   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:24:52.003   CNC 0 Touch   INF   Production state
+2020-02-29 11:24:52.003   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:24:52.030   CNC 0 Touch   INF   Order data updated, elapsed: 26.563521ms
+2020-02-29 11:24:52.030   CNC 0 Touch   INF   Loop ended, elapsed: 71.712986ms
+2020-02-29 11:24:52.030   CNC 0 Touch   INF   Sleeping for 9.92821771s
+2020-02-29 11:25:01.959   CNC 0 Touch   INF   Device still active
+2020-02-29 11:25:01.959   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:25:01.959   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:25:01.984   CNC 0 Touch   INF   Actual state downloaded, elapsed: 24.339883ms
+2020-02-29 11:25:01.984   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:25:01.984   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:25:01.994   CNC 0 Touch   INF   Open order checked, elapsed: 9.787544ms
+2020-02-29 11:25:01.994   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:25:01.994   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:25:02.008   CNC 0 Touch   INF   Open downtime checked, elapsed: 13.244033ms
+2020-02-29 11:25:02.009   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:25:02.009   CNC 0 Touch   INF   Production state
+2020-02-29 11:25:02.009   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:25:02.049   CNC 0 Touch   INF   Order data updated, elapsed: 39.471231ms
+2020-02-29 11:25:02.049   CNC 0 Touch   INF   Loop ended, elapsed: 89.640138ms
+2020-02-29 11:25:02.049   CNC 0 Touch   INF   Sleeping for 9.910267706s
+2020-02-29 11:25:11.960   CNC 0 Touch   INF   Device still active
+2020-02-29 11:25:11.960   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:25:11.961   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:25:11.989   CNC 0 Touch   INF   Actual state downloaded, elapsed: 28.190921ms
+2020-02-29 11:25:11.989   CNC 0 Touch   INF   Actual workplace state: Production
+2020-02-29 11:25:11.989   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:25:12.001   CNC 0 Touch   INF   Open order checked, elapsed: 11.761563ms
+2020-02-29 11:25:12.001   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:25:12.001   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:25:12.017   CNC 0 Touch   INF   Open downtime checked, elapsed: 15.931398ms
+2020-02-29 11:25:12.018   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:25:12.018   CNC 0 Touch   INF   Production state
+2020-02-29 11:25:12.018   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:25:12.046   CNC 0 Touch   INF   Order data updated, elapsed: 27.867111ms
+2020-02-29 11:25:12.046   CNC 0 Touch   INF   Loop ended, elapsed: 85.42939ms
+2020-02-29 11:25:12.046   CNC 0 Touch   INF   Sleeping for 9.914490404s
+2020-02-29 11:25:21.962   CNC 0 Touch   INF   Device still active
+2020-02-29 11:25:21.963   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:25:21.963   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:25:21.988   CNC 0 Touch   INF   Actual state downloaded, elapsed: 25.137236ms
+2020-02-29 11:25:21.989   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:25:21.989   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:25:22.002   CNC 0 Touch   INF   Open order checked, elapsed: 13.473663ms
+2020-02-29 11:25:22.003   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:25:22.003   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:25:22.013   CNC 0 Touch   INF   Open downtime checked, elapsed: 10.423886ms
+2020-02-29 11:25:22.013   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:25:22.014   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:25:22.037   CNC 0 Touch   INF   Order data updated, elapsed: 23.739267ms
+2020-02-29 11:25:22.038   CNC 0 Touch   INF   Loop ended, elapsed: 74.654053ms
+2020-02-29 11:25:22.038   CNC 0 Touch   INF   Sleeping for 9.9252762s
+2020-02-29 11:25:31.963   CNC 0 Touch   INF   Device still active
+2020-02-29 11:25:31.963   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:25:31.963   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:25:31.985   CNC 0 Touch   INF   Actual state downloaded, elapsed: 21.044338ms
+2020-02-29 11:25:31.985   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:25:31.985   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:25:32.000   CNC 0 Touch   INF   Open order checked, elapsed: 15.409755ms
+2020-02-29 11:25:32.001   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:25:32.001   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:25:32.012   CNC 0 Touch   INF   Open downtime checked, elapsed: 11.019394ms
+2020-02-29 11:25:32.012   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:25:32.012   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:25:32.048   CNC 0 Touch   INF   Order data updated, elapsed: 35.484874ms
+2020-02-29 11:25:32.048   CNC 0 Touch   INF   Loop ended, elapsed: 84.436313ms
+2020-02-29 11:25:32.048   CNC 0 Touch   INF   Sleeping for 9.91547697s
+2020-02-29 11:25:41.966   CNC 0 Touch   INF   Device still active
+2020-02-29 11:25:41.966   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:25:41.966   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:25:41.987   CNC 0 Touch   INF   Actual state downloaded, elapsed: 20.552237ms
+2020-02-29 11:25:41.987   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:25:41.987   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:25:42.000   CNC 0 Touch   INF   Open order checked, elapsed: 12.758097ms
+2020-02-29 11:25:42.000   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:25:42.000   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:25:42.016   CNC 0 Touch   INF   Open downtime checked, elapsed: 15.51716ms
+2020-02-29 11:25:42.016   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:25:42.016   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:25:42.048   CNC 0 Touch   INF   Order data updated, elapsed: 31.655642ms
+2020-02-29 11:25:42.048   CNC 0 Touch   INF   Loop ended, elapsed: 81.959254ms
+2020-02-29 11:25:42.048   CNC 0 Touch   INF   Sleeping for 9.917955352s
+2020-02-29 11:25:51.970   CNC 0 Touch   INF   Device still active
+2020-02-29 11:25:51.970   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:25:51.971   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:25:51.998   CNC 0 Touch   INF   Actual state downloaded, elapsed: 26.861256ms
+2020-02-29 11:25:51.998   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:25:51.998   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:25:52.014   CNC 0 Touch   INF   Open order checked, elapsed: 15.417197ms
+2020-02-29 11:25:52.014   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:25:52.014   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:25:52.026   CNC 0 Touch   INF   Open downtime checked, elapsed: 12.11741ms
+2020-02-29 11:25:52.027   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:25:52.027   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:25:52.083   CNC 0 Touch   INF   Order data updated, elapsed: 56.56385ms
+2020-02-29 11:25:52.084   CNC 0 Touch   INF   Loop ended, elapsed: 112.694335ms
+2020-02-29 11:25:52.084   CNC 0 Touch   INF   Sleeping for 9.887180667s
+2020-02-29 11:26:01.972   CNC 0 Touch   INF   Device still active
+2020-02-29 11:26:01.973   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:26:01.973   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:26:02.000   CNC 0 Touch   INF   Actual state downloaded, elapsed: 26.317513ms
+2020-02-29 11:26:02.000   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:26:02.000   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:26:02.010   CNC 0 Touch   INF   Open order checked, elapsed: 10.399848ms
+2020-02-29 11:26:02.011   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:26:02.011   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:26:02.019   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.586667ms
+2020-02-29 11:26:02.020   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:26:02.020   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:26:02.049   CNC 0 Touch   INF   Order data updated, elapsed: 29.437569ms
+2020-02-29 11:26:02.049   CNC 0 Touch   INF   Loop ended, elapsed: 76.359169ms
+2020-02-29 11:26:02.050   CNC 0 Touch   INF   Sleeping for 9.923577285s
+2020-02-29 11:26:11.973   CNC 0 Touch   INF   Device still active
+2020-02-29 11:26:11.974   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:26:11.974   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:26:11.995   CNC 0 Touch   INF   Actual state downloaded, elapsed: 20.892615ms
+2020-02-29 11:26:11.995   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:26:11.995   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:26:12.012   CNC 0 Touch   INF   Open order checked, elapsed: 16.678198ms
+2020-02-29 11:26:12.012   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:26:12.012   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:26:12.023   CNC 0 Touch   INF   Open downtime checked, elapsed: 10.635094ms
+2020-02-29 11:26:12.023   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:26:12.023   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:26:12.062   CNC 0 Touch   INF   Order data updated, elapsed: 38.710201ms
+2020-02-29 11:26:12.062   CNC 0 Touch   INF   Loop ended, elapsed: 88.413232ms
+2020-02-29 11:26:12.062   CNC 0 Touch   INF   Sleeping for 9.911469177s
+2020-02-29 11:26:21.974   CNC 0 Touch   INF   Device still active
+2020-02-29 11:26:21.974   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:26:21.974   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:26:21.996   CNC 0 Touch   INF   Actual state downloaded, elapsed: 21.721333ms
+2020-02-29 11:26:21.996   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:26:21.996   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:26:22.006   CNC 0 Touch   INF   Open order checked, elapsed: 9.630087ms
+2020-02-29 11:26:22.006   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:26:22.006   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:26:22.016   CNC 0 Touch   INF   Open downtime checked, elapsed: 9.343517ms
+2020-02-29 11:26:22.016   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:26:22.016   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:26:22.044   CNC 0 Touch   INF   Order data updated, elapsed: 27.89962ms
+2020-02-29 11:26:22.044   CNC 0 Touch   INF   Loop ended, elapsed: 69.880584ms
+2020-02-29 11:26:22.044   CNC 0 Touch   INF   Sleeping for 9.930058275s
+2020-02-29 11:26:31.975   CNC 0 Touch   INF   Device still active
+2020-02-29 11:26:31.975   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:26:31.976   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:26:31.999   CNC 0 Touch   INF   Actual state downloaded, elapsed: 23.654051ms
+2020-02-29 11:26:32.000   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:26:32.000   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:26:32.010   CNC 0 Touch   INF   Open order checked, elapsed: 9.838011ms
+2020-02-29 11:26:32.010   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:26:32.010   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:26:32.021   CNC 0 Touch   INF   Open downtime checked, elapsed: 11.39072ms
+2020-02-29 11:26:32.022   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:26:32.022   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:26:32.052   CNC 0 Touch   INF   Order data updated, elapsed: 30.035103ms
+2020-02-29 11:26:32.052   CNC 0 Touch   INF   Loop ended, elapsed: 76.338234ms
+2020-02-29 11:26:32.052   CNC 0 Touch   INF   Sleeping for 9.923522435s
+2020-02-29 11:26:41.979   CNC 0 Touch   INF   Device still active
+2020-02-29 11:26:41.979   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:26:41.980   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:26:42.000   CNC 0 Touch   INF   Actual state downloaded, elapsed: 19.927982ms
+2020-02-29 11:26:42.000   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:26:42.000   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:26:42.011   CNC 0 Touch   INF   Open order checked, elapsed: 11.167366ms
+2020-02-29 11:26:42.012   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:26:42.012   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:26:42.025   CNC 0 Touch   INF   Open downtime checked, elapsed: 13.137145ms
+2020-02-29 11:26:42.025   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:26:42.025   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:26:42.054   CNC 0 Touch   INF   Order data updated, elapsed: 28.902407ms
+2020-02-29 11:26:42.054   CNC 0 Touch   INF   Loop ended, elapsed: 74.712742ms
+2020-02-29 11:26:42.054   CNC 0 Touch   INF   Sleeping for 9.925214649s
+2020-02-29 11:26:51.980   CNC 0 Touch   INF   Device still active
+2020-02-29 11:26:51.980   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:26:51.980   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:26:52.020   CNC 0 Touch   INF   Actual state downloaded, elapsed: 39.876691ms
+2020-02-29 11:26:52.021   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:26:52.021   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:26:52.034   CNC 0 Touch   INF   Open order checked, elapsed: 13.187574ms
+2020-02-29 11:26:52.034   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:26:52.034   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:26:52.058   CNC 0 Touch   INF   Open downtime checked, elapsed: 23.639807ms
+2020-02-29 11:26:52.058   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:26:52.058   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:26:52.103   CNC 0 Touch   INF   Order data updated, elapsed: 44.870993ms
+2020-02-29 11:26:52.104   CNC 0 Touch   INF   Loop ended, elapsed: 123.5384ms
+2020-02-29 11:26:52.104   CNC 0 Touch   INF   Sleeping for 9.876332747s
+2020-02-29 11:27:01.984   CNC 0 Touch   INF   Device still active
+2020-02-29 11:27:01.985   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:27:01.985   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:27:02.026   CNC 0 Touch   INF   Actual state downloaded, elapsed: 41.310154ms
+2020-02-29 11:27:02.027   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:27:02.027   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:27:02.045   CNC 0 Touch   INF   Open order checked, elapsed: 17.818008ms
+2020-02-29 11:27:02.045   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:27:02.045   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:27:02.067   CNC 0 Touch   INF   Open downtime checked, elapsed: 21.392907ms
+2020-02-29 11:27:02.067   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:27:02.067   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:27:02.112   CNC 0 Touch   INF   Order data updated, elapsed: 44.563155ms
+2020-02-29 11:27:02.112   CNC 0 Touch   INF   Loop ended, elapsed: 127.051717ms
+2020-02-29 11:27:02.112   CNC 0 Touch   INF   Sleeping for 9.872842318s
+2020-02-29 11:27:11.985   CNC 0 Touch   INF   Device still active
+2020-02-29 11:27:11.985   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:27:11.986   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:27:12.016   CNC 0 Touch   INF   Actual state downloaded, elapsed: 30.523047ms
+2020-02-29 11:27:12.016   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:27:12.016   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:27:12.039   CNC 0 Touch   INF   Open order checked, elapsed: 22.721333ms
+2020-02-29 11:27:12.040   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:27:12.040   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:27:12.057   CNC 0 Touch   INF   Open downtime checked, elapsed: 16.749913ms
+2020-02-29 11:27:12.057   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:27:12.057   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:27:12.094   CNC 0 Touch   INF   Order data updated, elapsed: 36.642121ms
+2020-02-29 11:27:12.094   CNC 0 Touch   INF   Loop ended, elapsed: 108.390392ms
+2020-02-29 11:27:12.094   CNC 0 Touch   INF   Sleeping for 9.891519507s
+2020-02-29 11:27:21.987   CNC 0 Touch   INF   Device still active
+2020-02-29 11:27:21.987   CNC 0 Touch   INF   Device not active, stopped running
+2020-02-29 11:27:22.002   CNC 0 Touch   INF   Device started running
+2020-02-29 11:27:22.002   CNC 0 Touch   INF   Device directory exists
+2020-02-29 11:27:22.002   CNC 0 Touch   INF   Device not active, stopped running
+2020-02-29 11:27:30.246   CNC 0 Touch   INF   Device started running
+2020-02-29 11:27:30.246   CNC 0 Touch   INF   Device directory exists
+2020-02-29 11:27:30.246   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:27:30.246   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:27:30.264   CNC 0 Touch   INF   Actual state downloaded, elapsed: 16.98213ms
+2020-02-29 11:27:30.264   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:27:30.264   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:27:30.278   CNC 0 Touch   INF   Open order checked, elapsed: 13.923835ms
+2020-02-29 11:27:30.278   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:27:30.278   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:27:30.286   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.289475ms
+2020-02-29 11:27:30.287   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:27:30.287   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:27:30.287   CNC 0 Touch   INF   Closing order
+2020-02-29 11:27:30.305   CNC 0 Touch   INF   Order closed, elapsed: 18.154517ms
+2020-02-29 11:27:30.305   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:27:30.335   CNC 0 Touch   INF   Order data updated, elapsed: 30.247509ms
+2020-02-29 11:27:30.336   CNC 0 Touch   INF   Loop ended, elapsed: 89.167828ms
+2020-02-29 11:27:30.336   CNC 0 Touch   INF   Sleeping for 9.910761948s
+2020-02-29 11:27:40.247   CNC 0 Touch   INF   Device still active
+2020-02-29 11:27:40.247   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:27:40.247   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:27:40.265   CNC 0 Touch   INF   Actual state downloaded, elapsed: 17.653147ms
+2020-02-29 11:27:40.265   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:27:40.265   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:27:40.273   CNC 0 Touch   INF   Open order checked, elapsed: 8.369488ms
+2020-02-29 11:27:40.274   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:27:40.274   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:27:40.285   CNC 0 Touch   INF   Open downtime checked, elapsed: 10.88166ms
+2020-02-29 11:27:40.285   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:27:40.285   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:27:40.285   CNC 0 Touch   INF   Closing order
+2020-02-29 11:27:40.309   CNC 0 Touch   INF   Order closed, elapsed: 24.397144ms
+2020-02-29 11:27:40.310   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:27:40.337   CNC 0 Touch   INF   Order data updated, elapsed: 27.380562ms
+2020-02-29 11:27:40.337   CNC 0 Touch   INF   Loop ended, elapsed: 90.456197ms
+2020-02-29 11:27:40.337   CNC 0 Touch   INF   Sleeping for 9.909481169s
+2020-02-29 11:27:50.247   CNC 0 Touch   INF   Device still active
+2020-02-29 11:27:50.247   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:27:50.248   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:27:50.282   CNC 0 Touch   INF   Actual state downloaded, elapsed: 33.67236ms
+2020-02-29 11:27:50.282   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:27:50.283   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:27:50.301   CNC 0 Touch   INF   Open order checked, elapsed: 17.718564ms
+2020-02-29 11:27:50.301   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:27:50.301   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:27:50.320   CNC 0 Touch   INF   Open downtime checked, elapsed: 18.771094ms
+2020-02-29 11:27:50.321   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:27:50.321   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:27:50.321   CNC 0 Touch   INF   Closing order
+2020-02-29 11:27:50.365   CNC 0 Touch   INF   Order closed, elapsed: 44.282512ms
+2020-02-29 11:27:50.366   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:27:50.400   CNC 0 Touch   INF   Order data updated, elapsed: 34.579325ms
+2020-02-29 11:27:50.401   CNC 0 Touch   INF   Loop ended, elapsed: 153.089108ms
+2020-02-29 11:27:50.401   CNC 0 Touch   INF   Sleeping for 9.846835035s
+2020-02-29 11:28:00.248   CNC 0 Touch   INF   Device still active
+2020-02-29 11:28:00.248   CNC 0 Touch   INF   Device not active, stopped running
+2020-02-29 11:28:00.261   CNC 0 Touch   INF   Device started running
+2020-02-29 11:28:00.261   CNC 0 Touch   INF   Device directory exists
+2020-02-29 11:28:00.261   CNC 0 Touch   INF   Device not active, stopped running
+2020-02-29 11:28:07.940   CNC 0 Touch   INF   Device started running
+2020-02-29 11:28:07.940   CNC 0 Touch   INF   Device directory exists
+2020-02-29 11:28:07.940   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:28:07.940   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:28:07.953   CNC 0 Touch   INF   Actual state downloaded, elapsed: 12.595983ms
+2020-02-29 11:28:07.953   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:28:07.953   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:28:07.963   CNC 0 Touch   INF   Open order checked, elapsed: 10.702849ms
+2020-02-29 11:28:07.964   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:28:07.964   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:28:07.975   CNC 0 Touch   INF   Open downtime checked, elapsed: 11.272381ms
+2020-02-29 11:28:07.975   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:28:07.976   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:28:07.976   CNC 0 Touch   INF   Closing order
+2020-02-29 11:28:07.997   CNC 0 Touch   INF   Order closed, elapsed: 21.148305ms
+2020-02-29 11:28:07.997   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:28:08.025   CNC 0 Touch   INF   Order data updated, elapsed: 28.252877ms
+2020-02-29 11:28:08.025   CNC 0 Touch   INF   Loop ended, elapsed: 85.687152ms
+2020-02-29 11:28:08.026   CNC 0 Touch   INF   Sleeping for 9.914251159s
+2020-02-29 11:28:17.940   CNC 0 Touch   INF   Device still active
+2020-02-29 11:28:17.940   CNC 0 Touch   INF   Device not active, stopped running
+2020-02-29 11:28:17.944   CNC 0 Touch   INF   Device started running
+2020-02-29 11:28:17.944   CNC 0 Touch   INF   Device directory exists
+2020-02-29 11:28:17.944   CNC 0 Touch   INF   Device not active, stopped running
+2020-02-29 11:30:07.533   CNC 0 Touch   INF   Device started running
+2020-02-29 11:30:07.533   CNC 0 Touch   INF   Device directory exists
+2020-02-29 11:30:07.533   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:30:07.534   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:30:07.545   CNC 0 Touch   INF   Actual state downloaded, elapsed: 11.595936ms
+2020-02-29 11:30:07.545   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:30:07.545   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:30:07.556   CNC 0 Touch   INF   Open order checked, elapsed: 10.020546ms
+2020-02-29 11:30:07.556   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:30:07.556   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:30:07.566   CNC 0 Touch   INF   Open downtime checked, elapsed: 10.000777ms
+2020-02-29 11:30:07.567   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:30:07.567   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:30:07.567   CNC 0 Touch   INF   Closing order
+2020-02-29 11:30:07.586   CNC 0 Touch   INF   Order closed, elapsed: 19.090404ms
+2020-02-29 11:30:07.586   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:30:07.609   CNC 0 Touch   INF   Order data updated, elapsed: 22.410471ms
+2020-02-29 11:30:07.609   CNC 0 Touch   INF   Loop ended, elapsed: 75.23227ms
+2020-02-29 11:30:07.609   CNC 0 Touch   INF   Sleeping for 9.924629672s
+2020-02-29 11:30:17.534   CNC 0 Touch   INF   Device still active
+2020-02-29 11:30:17.534   CNC 0 Touch   INF   Device not active, stopped running
+2020-02-29 11:30:17.547   CNC 0 Touch   INF   Device started running
+2020-02-29 11:30:17.547   CNC 0 Touch   INF   Device directory exists
+2020-02-29 11:30:17.547   CNC 0 Touch   INF   Device not active, stopped running
+2020-02-29 11:31:10.659   CNC 0 Touch   INF   Device started running
+2020-02-29 11:31:10.659   CNC 0 Touch   INF   Device directory exists
+2020-02-29 11:31:10.659   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:31:10.660   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:31:10.671   CNC 0 Touch   INF   Actual state downloaded, elapsed: 11.246253ms
+2020-02-29 11:31:10.671   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:31:10.671   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:31:10.680   CNC 0 Touch   INF   Open order checked, elapsed: 9.096916ms
+2020-02-29 11:31:10.681   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:31:10.681   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:31:10.692   CNC 0 Touch   INF   Open downtime checked, elapsed: 11.67926ms
+2020-02-29 11:31:10.693   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:31:10.693   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:31:10.693   CNC 0 Touch   INF   Closing order
+2020-02-29 11:31:10.713   CNC 0 Touch   INF   Order closed, elapsed: 19.859598ms
+2020-02-29 11:31:10.713   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:31:10.734   CNC 0 Touch   INF   Order data updated, elapsed: 20.781934ms
+2020-02-29 11:31:10.734   CNC 0 Touch   INF   Loop ended, elapsed: 74.17977ms
+2020-02-29 11:31:10.734   CNC 0 Touch   INF   Sleeping for 9.925747679s
+2020-02-29 11:31:20.660   CNC 0 Touch   INF   Device still active
+2020-02-29 11:31:20.660   CNC 0 Touch   INF   Device not active, stopped running
+2020-02-29 11:31:20.670   CNC 0 Touch   INF   Device started running
+2020-02-29 11:31:20.670   CNC 0 Touch   INF   Device directory exists
+2020-02-29 11:31:20.671   CNC 0 Touch   INF   Device not active, stopped running
+2020-02-29 11:33:54.547   CNC 0 Touch   INF   Device started running
+2020-02-29 11:33:54.547   CNC 0 Touch   INF   Device directory exists
+2020-02-29 11:33:54.547   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:33:54.547   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:33:54.559   CNC 0 Touch   INF   Actual state downloaded, elapsed: 11.764975ms
+2020-02-29 11:33:54.559   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:33:54.559   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:33:54.568   CNC 0 Touch   INF   Open order checked, elapsed: 9.186675ms
+2020-02-29 11:33:54.569   CNC 0 Touch   INF   Actual open order: 1
+2020-02-29 11:33:54.569   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:33:54.582   CNC 0 Touch   INF   Open downtime checked, elapsed: 13.07575ms
+2020-02-29 11:33:54.582   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:33:54.582   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:33:54.582   CNC 0 Touch   INF   Closing order
+2020-02-29 11:33:54.604   CNC 0 Touch   INF   Order closed, elapsed: 21.517237ms
+2020-02-29 11:33:54.604   CNC 0 Touch   INF   Updating order data
+2020-02-29 11:33:54.624   CNC 0 Touch   INF   Order data updated, elapsed: 20.041815ms
+2020-02-29 11:33:54.624   CNC 0 Touch   INF   Loop ended, elapsed: 77.265961ms
+2020-02-29 11:33:54.624   CNC 0 Touch   INF   Sleeping for 9.922671924s
+2020-02-29 11:34:04.547   CNC 0 Touch   INF   Device still active
+2020-02-29 11:34:04.547   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:34:04.547   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:34:04.568   CNC 0 Touch   INF   Actual state downloaded, elapsed: 20.276737ms
+2020-02-29 11:34:04.568   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:34:04.568   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:34:04.578   CNC 0 Touch   INF   Open order checked, elapsed: 10.040573ms
+2020-02-29 11:34:04.578   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:34:04.579   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:34:04.587   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.768419ms
+2020-02-29 11:34:04.588   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:34:04.588   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:34:04.588   CNC 0 Touch   INF   Loop ended, elapsed: 40.270437ms
+2020-02-29 11:34:04.588   CNC 0 Touch   INF   Sleeping for 9.959642126s
+2020-02-29 11:34:14.548   CNC 0 Touch   INF   Device still active
+2020-02-29 11:34:14.548   CNC 0 Touch   INF   Device not active, stopped running
+2020-02-29 11:34:14.587   CNC 0 Touch   INF   Device started running
+2020-02-29 11:34:14.587   CNC 0 Touch   INF   Device directory exists
+2020-02-29 11:34:14.587   CNC 0 Touch   INF   Device not active, stopped running
+2020-02-29 11:37:17.575   CNC 0 Touch   INF   Device started running
+2020-02-29 11:37:17.575   CNC 0 Touch   WRN   Device directory not exist, creating
+2020-02-29 11:37:17.575   CNC 0 Touch   INF   Device directory created
+2020-02-29 11:37:17.575   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:37:17.575   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:37:17.586   CNC 0 Touch   INF   Actual state downloaded, elapsed: 10.503112ms
+2020-02-29 11:37:17.586   CNC 0 Touch   INF   Actual workplace state: 
+2020-02-29 11:37:17.586   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:37:17.592   CNC 0 Touch   INF   Open order checked, elapsed: 5.810148ms
+2020-02-29 11:37:17.592   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:37:17.592   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:37:17.598   CNC 0 Touch   INF   Open downtime checked, elapsed: 5.546071ms
+2020-02-29 11:37:17.598   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:37:17.598   CNC 0 Touch   INF   Loop ended, elapsed: 22.665096ms
+2020-02-29 11:37:17.598   CNC 0 Touch   INF   Sleeping for 9.977274519s
+2020-02-29 11:37:27.578   CNC 0 Touch   INF   Device still active
+2020-02-29 11:37:27.578   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:37:27.578   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:37:27.593   CNC 0 Touch   INF   Actual state downloaded, elapsed: 14.775035ms
+2020-02-29 11:37:27.593   CNC 0 Touch   INF   Actual workplace state: 
+2020-02-29 11:37:27.593   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:37:27.601   CNC 0 Touch   INF   Open order checked, elapsed: 7.913204ms
+2020-02-29 11:37:27.601   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:37:27.602   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:37:27.609   CNC 0 Touch   INF   Open downtime checked, elapsed: 7.351168ms
+2020-02-29 11:37:27.609   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:37:27.609   CNC 0 Touch   INF   Loop ended, elapsed: 31.05344ms
+2020-02-29 11:37:27.609   CNC 0 Touch   INF   Sleeping for 9.968843203s
+2020-02-29 11:37:37.582   CNC 0 Touch   INF   Device still active
+2020-02-29 11:37:37.582   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:37:37.582   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:37:37.600   CNC 0 Touch   INF   Actual state downloaded, elapsed: 17.805948ms
+2020-02-29 11:37:37.600   CNC 0 Touch   INF   Actual workplace state: 
+2020-02-29 11:37:37.600   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:37:37.606   CNC 0 Touch   INF   Open order checked, elapsed: 5.795378ms
+2020-02-29 11:37:37.606   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:37:37.606   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:37:37.614   CNC 0 Touch   INF   Open downtime checked, elapsed: 7.24588ms
+2020-02-29 11:37:37.614   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:37:37.614   CNC 0 Touch   INF   Loop ended, elapsed: 31.909883ms
+2020-02-29 11:37:37.614   CNC 0 Touch   INF   Sleeping for 9.968035594s
+2020-02-29 11:37:47.584   CNC 0 Touch   INF   Device still active
+2020-02-29 11:37:47.584   CNC 0 Touch   INF   Device not active, stopped running
+2020-02-29 11:37:47.588   CNC 0 Touch   INF   Device started running
+2020-02-29 11:37:47.588   CNC 0 Touch   INF   Device directory exists
+2020-02-29 11:37:47.588   CNC 0 Touch   INF   Device not active, stopped running
+2020-02-29 11:38:18.753   CNC 0 Touch   INF   Device started running
+2020-02-29 11:38:18.754   CNC 0 Touch   INF   Device directory exists
+2020-02-29 11:38:18.754   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:38:18.754   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:38:18.765   CNC 0 Touch   INF   Actual state downloaded, elapsed: 11.349469ms
+2020-02-29 11:38:18.765   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:38:18.765   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:38:18.772   CNC 0 Touch   INF   Open order checked, elapsed: 6.457458ms
+2020-02-29 11:38:18.772   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:38:18.772   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:38:18.780   CNC 0 Touch   INF   Open downtime checked, elapsed: 7.433087ms
+2020-02-29 11:38:18.780   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:38:18.780   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:38:18.780   CNC 0 Touch   INF   Loop ended, elapsed: 26.176342ms
+2020-02-29 11:38:18.780   CNC 0 Touch   INF   Sleeping for 9.973772377s
+2020-02-29 11:38:28.754   CNC 0 Touch   INF   Device still active
+2020-02-29 11:38:28.754   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:38:28.754   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:38:28.766   CNC 0 Touch   INF   Actual state downloaded, elapsed: 12.058501ms
+2020-02-29 11:38:28.767   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:38:28.767   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:38:28.773   CNC 0 Touch   INF   Open order checked, elapsed: 6.542763ms
+2020-02-29 11:38:28.774   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:38:28.774   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:38:28.780   CNC 0 Touch   INF   Open downtime checked, elapsed: 6.349749ms
+2020-02-29 11:38:28.780   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:38:28.780   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:38:28.781   CNC 0 Touch   INF   Loop ended, elapsed: 26.185678ms
+2020-02-29 11:38:28.781   CNC 0 Touch   INF   Sleeping for 9.973698625s
+2020-02-29 11:38:38.755   CNC 0 Touch   INF   Device still active
+2020-02-29 11:38:38.755   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:38:38.755   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:38:38.773   CNC 0 Touch   INF   Actual state downloaded, elapsed: 17.802293ms
+2020-02-29 11:38:38.773   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:38:38.773   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:38:38.781   CNC 0 Touch   INF   Open order checked, elapsed: 7.075526ms
+2020-02-29 11:38:38.781   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:38:38.781   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:38:38.788   CNC 0 Touch   INF   Open downtime checked, elapsed: 7.384549ms
+2020-02-29 11:38:38.789   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:38:38.789   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:38:38.789   CNC 0 Touch   INF   Loop ended, elapsed: 33.581972ms
+2020-02-29 11:38:38.789   CNC 0 Touch   INF   Sleeping for 9.966357674s
+2020-02-29 11:38:48.756   CNC 0 Touch   INF   Device still active
+2020-02-29 11:38:48.756   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:38:48.756   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:38:48.771   CNC 0 Touch   INF   Actual state downloaded, elapsed: 14.668225ms
+2020-02-29 11:38:48.771   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:38:48.771   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:38:48.779   CNC 0 Touch   INF   Open order checked, elapsed: 7.471813ms
+2020-02-29 11:38:48.779   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:38:48.779   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:38:48.786   CNC 0 Touch   INF   Open downtime checked, elapsed: 7.219707ms
+2020-02-29 11:38:48.787   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:38:48.787   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:38:48.787   CNC 0 Touch   INF   Loop ended, elapsed: 30.839105ms
+2020-02-29 11:38:48.787   CNC 0 Touch   INF   Sleeping for 9.969094018s
+2020-02-29 11:38:58.756   CNC 0 Touch   INF   Device still active
+2020-02-29 11:38:58.756   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:38:58.756   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:38:58.770   CNC 0 Touch   INF   Actual state downloaded, elapsed: 13.234976ms
+2020-02-29 11:38:58.770   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:38:58.770   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:38:58.775   CNC 0 Touch   INF   Open order checked, elapsed: 5.203866ms
+2020-02-29 11:38:58.776   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:38:58.776   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:38:58.783   CNC 0 Touch   INF   Open downtime checked, elapsed: 7.098354ms
+2020-02-29 11:38:58.783   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:38:58.783   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:38:58.783   CNC 0 Touch   INF   Loop ended, elapsed: 26.922446ms
+2020-02-29 11:38:58.783   CNC 0 Touch   INF   Sleeping for 9.973024521s
+2020-02-29 11:39:08.759   CNC 0 Touch   INF   Device still active
+2020-02-29 11:39:08.760   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:39:08.760   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:39:08.775   CNC 0 Touch   INF   Actual state downloaded, elapsed: 15.184283ms
+2020-02-29 11:39:08.776   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:39:08.776   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:39:08.783   CNC 0 Touch   INF   Open order checked, elapsed: 7.120366ms
+2020-02-29 11:39:08.783   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:39:08.783   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:39:08.791   CNC 0 Touch   INF   Open downtime checked, elapsed: 7.698129ms
+2020-02-29 11:39:08.791   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:39:08.791   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:39:08.792   CNC 0 Touch   INF   Loop ended, elapsed: 31.588272ms
+2020-02-29 11:39:08.792   CNC 0 Touch   INF   Sleeping for 9.968314044s
+2020-02-29 11:39:18.760   CNC 0 Touch   INF   Device still active
+2020-02-29 11:39:18.761   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:39:18.761   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:39:18.779   CNC 0 Touch   INF   Actual state downloaded, elapsed: 17.820246ms
+2020-02-29 11:39:18.779   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:39:18.779   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:39:18.788   CNC 0 Touch   INF   Open order checked, elapsed: 8.113192ms
+2020-02-29 11:39:18.788   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:39:18.788   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:39:18.795   CNC 0 Touch   INF   Open downtime checked, elapsed: 6.652571ms
+2020-02-29 11:39:18.795   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:39:18.795   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:39:18.795   CNC 0 Touch   INF   Loop ended, elapsed: 33.693558ms
+2020-02-29 11:39:18.795   CNC 0 Touch   INF   Sleeping for 9.966253682s
+2020-02-29 11:39:28.762   CNC 0 Touch   INF   Device still active
+2020-02-29 11:39:28.762   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:39:28.762   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:39:28.791   CNC 0 Touch   INF   Actual state downloaded, elapsed: 28.909551ms
+2020-02-29 11:39:28.791   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:39:28.791   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:39:28.798   CNC 0 Touch   INF   Open order checked, elapsed: 6.353199ms
+2020-02-29 11:39:28.798   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:39:28.798   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:39:28.811   CNC 0 Touch   INF   Open downtime checked, elapsed: 12.492646ms
+2020-02-29 11:39:28.811   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:39:28.811   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:39:28.811   CNC 0 Touch   INF   Loop ended, elapsed: 49.251008ms
+2020-02-29 11:39:28.811   CNC 0 Touch   INF   Sleeping for 9.950652595s
+2020-02-29 11:39:38.766   CNC 0 Touch   INF   Device still active
+2020-02-29 11:39:38.766   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:39:38.767   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:39:38.784   CNC 0 Touch   INF   Actual state downloaded, elapsed: 16.596142ms
+2020-02-29 11:39:38.784   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:39:38.784   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:39:38.791   CNC 0 Touch   INF   Open order checked, elapsed: 7.335104ms
+2020-02-29 11:39:38.791   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:39:38.792   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:39:38.799   CNC 0 Touch   INF   Open downtime checked, elapsed: 7.308627ms
+2020-02-29 11:39:38.799   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:39:38.799   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:39:38.799   CNC 0 Touch   INF   Loop ended, elapsed: 32.562804ms
+2020-02-29 11:39:38.799   CNC 0 Touch   INF   Sleeping for 9.967367137s
+2020-02-29 11:39:48.767   CNC 0 Touch   INF   Device still active
+2020-02-29 11:39:48.768   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:39:48.768   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:39:48.788   CNC 0 Touch   INF   Actual state downloaded, elapsed: 19.173267ms
+2020-02-29 11:39:48.788   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:39:48.788   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:39:48.797   CNC 0 Touch   INF   Open order checked, elapsed: 8.739802ms
+2020-02-29 11:39:48.797   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:39:48.797   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:39:48.812   CNC 0 Touch   INF   Open downtime checked, elapsed: 15.014586ms
+2020-02-29 11:39:48.812   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:39:48.812   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:39:48.812   CNC 0 Touch   INF   Loop ended, elapsed: 44.346601ms
+2020-02-29 11:39:48.813   CNC 0 Touch   INF   Sleeping for 9.955557086s
+2020-02-29 11:39:58.769   CNC 0 Touch   INF   Device still active
+2020-02-29 11:39:58.770   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:39:58.770   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:39:58.784   CNC 0 Touch   INF   Actual state downloaded, elapsed: 14.194615ms
+2020-02-29 11:39:58.784   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:39:58.785   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:39:58.792   CNC 0 Touch   INF   Open order checked, elapsed: 7.421283ms
+2020-02-29 11:39:58.792   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:39:58.792   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:39:58.799   CNC 0 Touch   INF   Open downtime checked, elapsed: 6.15315ms
+2020-02-29 11:39:58.799   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:39:58.799   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:39:58.799   CNC 0 Touch   INF   Loop ended, elapsed: 29.179768ms
+2020-02-29 11:39:58.799   CNC 0 Touch   INF   Sleeping for 9.970756988s
+2020-02-29 11:40:08.773   CNC 0 Touch   INF   Device still active
+2020-02-29 11:40:08.773   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:40:08.774   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:40:08.800   CNC 0 Touch   INF   Actual state downloaded, elapsed: 25.981894ms
+2020-02-29 11:40:08.800   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:40:08.800   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:40:08.813   CNC 0 Touch   INF   Open order checked, elapsed: 12.92783ms
+2020-02-29 11:40:08.814   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:40:08.814   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:40:08.827   CNC 0 Touch   INF   Open downtime checked, elapsed: 13.527011ms
+2020-02-29 11:40:08.827   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:40:08.828   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:40:08.828   CNC 0 Touch   INF   Loop ended, elapsed: 54.165431ms
+2020-02-29 11:40:08.828   CNC 0 Touch   INF   Sleeping for 9.945740379s
+2020-02-29 11:40:18.774   CNC 0 Touch   INF   Device still active
+2020-02-29 11:40:18.774   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:40:18.775   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:40:18.794   CNC 0 Touch   INF   Actual state downloaded, elapsed: 19.277503ms
+2020-02-29 11:40:18.794   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:40:18.794   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:40:18.802   CNC 0 Touch   INF   Open order checked, elapsed: 7.346654ms
+2020-02-29 11:40:18.802   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:40:18.802   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:40:18.816   CNC 0 Touch   INF   Open downtime checked, elapsed: 13.764323ms
+2020-02-29 11:40:18.816   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:40:18.816   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:40:18.817   CNC 0 Touch   INF   Loop ended, elapsed: 42.012939ms
+2020-02-29 11:40:18.817   CNC 0 Touch   INF   Sleeping for 9.957891407s
+2020-02-29 11:40:28.775   CNC 0 Touch   INF   Device still active
+2020-02-29 11:40:28.775   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:40:28.775   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:40:28.796   CNC 0 Touch   INF   Actual state downloaded, elapsed: 20.170599ms
+2020-02-29 11:40:28.796   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:40:28.796   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:40:28.805   CNC 0 Touch   INF   Open order checked, elapsed: 8.857928ms
+2020-02-29 11:40:28.805   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:40:28.805   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:40:28.818   CNC 0 Touch   INF   Open downtime checked, elapsed: 12.701531ms
+2020-02-29 11:40:28.818   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:40:28.818   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:40:28.819   CNC 0 Touch   INF   Loop ended, elapsed: 43.33477ms
+2020-02-29 11:40:28.819   CNC 0 Touch   INF   Sleeping for 9.956544914s
+2020-02-29 11:40:38.775   CNC 0 Touch   INF   Device still active
+2020-02-29 11:40:38.776   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:40:38.776   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:40:38.791   CNC 0 Touch   INF   Actual state downloaded, elapsed: 14.517857ms
+2020-02-29 11:40:38.791   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:40:38.791   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:40:38.796   CNC 0 Touch   INF   Open order checked, elapsed: 5.414531ms
+2020-02-29 11:40:38.796   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:40:38.797   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:40:38.802   CNC 0 Touch   INF   Open downtime checked, elapsed: 5.36235ms
+2020-02-29 11:40:38.802   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:40:38.802   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:40:38.802   CNC 0 Touch   INF   Loop ended, elapsed: 26.388561ms
+2020-02-29 11:40:38.802   CNC 0 Touch   INF   Sleeping for 9.973507522s
+2020-02-29 11:40:48.777   CNC 0 Touch   INF   Device still active
+2020-02-29 11:40:48.777   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:40:48.777   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:40:48.795   CNC 0 Touch   INF   Actual state downloaded, elapsed: 17.873178ms
+2020-02-29 11:40:48.796   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:40:48.796   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:40:48.802   CNC 0 Touch   INF   Open order checked, elapsed: 6.487669ms
+2020-02-29 11:40:48.802   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:40:48.803   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:40:48.809   CNC 0 Touch   INF   Open downtime checked, elapsed: 6.300315ms
+2020-02-29 11:40:48.810   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:40:48.810   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:40:48.810   CNC 0 Touch   INF   Loop ended, elapsed: 32.413621ms
+2020-02-29 11:40:48.810   CNC 0 Touch   INF   Sleeping for 9.967484292s
+2020-02-29 11:40:58.781   CNC 0 Touch   INF   Device still active
+2020-02-29 11:40:58.781   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:40:58.781   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:40:58.795   CNC 0 Touch   INF   Actual state downloaded, elapsed: 13.887029ms
+2020-02-29 11:40:58.795   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:40:58.796   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:40:58.802   CNC 0 Touch   INF   Open order checked, elapsed: 6.143202ms
+2020-02-29 11:40:58.802   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:40:58.802   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:40:58.812   CNC 0 Touch   INF   Open downtime checked, elapsed: 9.659101ms
+2020-02-29 11:40:58.812   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:40:58.812   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:40:58.812   CNC 0 Touch   INF   Loop ended, elapsed: 31.110608ms
+2020-02-29 11:40:58.812   CNC 0 Touch   INF   Sleeping for 9.968799107s
+2020-02-29 11:41:08.784   CNC 0 Touch   INF   Device still active
+2020-02-29 11:41:08.784   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:41:08.785   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:41:08.806   CNC 0 Touch   INF   Actual state downloaded, elapsed: 21.359312ms
+2020-02-29 11:41:08.806   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:41:08.806   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:41:08.817   CNC 0 Touch   INF   Open order checked, elapsed: 9.866325ms
+2020-02-29 11:41:08.817   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:41:08.817   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:41:08.829   CNC 0 Touch   INF   Open downtime checked, elapsed: 11.650993ms
+2020-02-29 11:41:08.829   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:41:08.829   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:41:08.829   CNC 0 Touch   INF   Loop ended, elapsed: 45.011032ms
+2020-02-29 11:41:08.829   CNC 0 Touch   INF   Sleeping for 9.954879332s
+2020-02-29 11:41:18.785   CNC 0 Touch   INF   Device still active
+2020-02-29 11:41:18.785   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:41:18.785   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:41:18.801   CNC 0 Touch   INF   Actual state downloaded, elapsed: 16.07704ms
+2020-02-29 11:41:18.801   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:41:18.801   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:41:18.809   CNC 0 Touch   INF   Open order checked, elapsed: 7.504208ms
+2020-02-29 11:41:18.809   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:41:18.809   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:41:18.818   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.080417ms
+2020-02-29 11:41:18.818   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:41:18.818   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:41:18.818   CNC 0 Touch   INF   Loop ended, elapsed: 32.893262ms
+2020-02-29 11:41:18.818   CNC 0 Touch   INF   Sleeping for 9.967044904s
+2020-02-29 11:41:28.788   CNC 0 Touch   INF   Device still active
+2020-02-29 11:41:28.788   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:41:28.788   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:41:28.804   CNC 0 Touch   INF   Actual state downloaded, elapsed: 15.694626ms
+2020-02-29 11:41:28.804   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:41:28.804   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:41:28.810   CNC 0 Touch   INF   Open order checked, elapsed: 5.714799ms
+2020-02-29 11:41:28.810   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:41:28.810   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:41:28.819   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.565871ms
+2020-02-29 11:41:28.819   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:41:28.819   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:41:28.819   CNC 0 Touch   INF   Loop ended, elapsed: 31.048288ms
+2020-02-29 11:41:28.820   CNC 0 Touch   INF   Sleeping for 9.968856781s
+2020-02-29 11:41:38.789   CNC 0 Touch   INF   Device still active
+2020-02-29 11:41:38.789   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:41:38.789   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:41:38.806   CNC 0 Touch   INF   Actual state downloaded, elapsed: 16.756277ms
+2020-02-29 11:41:38.806   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:41:38.806   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:41:38.822   CNC 0 Touch   INF   Open order checked, elapsed: 15.974741ms
+2020-02-29 11:41:38.823   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:41:38.823   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:41:38.846   CNC 0 Touch   INF   Open downtime checked, elapsed: 23.561382ms
+2020-02-29 11:41:38.847   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:41:38.847   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:41:38.847   CNC 0 Touch   INF   Loop ended, elapsed: 57.702468ms
+2020-02-29 11:41:38.847   CNC 0 Touch   INF   Sleeping for 9.942200578s
+2020-02-29 11:41:48.790   CNC 0 Touch   INF   Device still active
+2020-02-29 11:41:48.790   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:41:48.791   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:41:48.805   CNC 0 Touch   INF   Actual state downloaded, elapsed: 13.665421ms
+2020-02-29 11:41:48.805   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:41:48.805   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:41:48.811   CNC 0 Touch   INF   Open order checked, elapsed: 6.33144ms
+2020-02-29 11:41:48.812   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:41:48.812   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:41:48.820   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.472837ms
+2020-02-29 11:41:48.820   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:41:48.820   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:41:48.821   CNC 0 Touch   INF   Loop ended, elapsed: 30.057442ms
+2020-02-29 11:41:48.821   CNC 0 Touch   INF   Sleeping for 9.969854854s
+2020-02-29 11:41:58.792   CNC 0 Touch   INF   Device still active
+2020-02-29 11:41:58.792   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:41:58.792   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:41:58.809   CNC 0 Touch   INF   Actual state downloaded, elapsed: 16.20352ms
+2020-02-29 11:41:58.809   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:41:58.809   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:41:58.816   CNC 0 Touch   INF   Open order checked, elapsed: 6.689056ms
+2020-02-29 11:41:58.816   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:41:58.816   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:41:58.824   CNC 0 Touch   INF   Open downtime checked, elapsed: 7.344183ms
+2020-02-29 11:41:58.824   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:41:58.824   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:41:58.824   CNC 0 Touch   INF   Loop ended, elapsed: 31.547644ms
+2020-02-29 11:41:58.824   CNC 0 Touch   INF   Sleeping for 9.968383523s
+2020-02-29 11:42:08.793   CNC 0 Touch   INF   Device still active
+2020-02-29 11:42:08.793   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:42:08.794   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:42:08.817   CNC 0 Touch   INF   Actual state downloaded, elapsed: 22.882457ms
+2020-02-29 11:42:08.817   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:42:08.817   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:42:08.830   CNC 0 Touch   INF   Open order checked, elapsed: 13.403372ms
+2020-02-29 11:42:08.831   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:42:08.831   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:42:08.839   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.380264ms
+2020-02-29 11:42:08.839   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:42:08.839   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:42:08.840   CNC 0 Touch   INF   Loop ended, elapsed: 46.06489ms
+2020-02-29 11:42:08.840   CNC 0 Touch   INF   Sleeping for 9.9538191s
+2020-02-29 11:42:18.794   CNC 0 Touch   INF   Device still active
+2020-02-29 11:42:18.794   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:42:18.794   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:42:18.811   CNC 0 Touch   INF   Actual state downloaded, elapsed: 16.85458ms
+2020-02-29 11:42:18.811   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:42:18.811   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:42:18.819   CNC 0 Touch   INF   Open order checked, elapsed: 7.460252ms
+2020-02-29 11:42:18.819   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:42:18.819   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:42:18.826   CNC 0 Touch   INF   Open downtime checked, elapsed: 6.615666ms
+2020-02-29 11:42:18.826   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:42:18.826   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:42:18.826   CNC 0 Touch   INF   Loop ended, elapsed: 32.144969ms
+2020-02-29 11:42:18.826   CNC 0 Touch   INF   Sleeping for 9.967768307s
+2020-02-29 11:42:28.794   CNC 0 Touch   INF   Device still active
+2020-02-29 11:42:28.795   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:42:28.795   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:42:28.811   CNC 0 Touch   INF   Actual state downloaded, elapsed: 16.328201ms
+2020-02-29 11:42:28.811   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:42:28.812   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:42:28.821   CNC 0 Touch   INF   Open order checked, elapsed: 9.723343ms
+2020-02-29 11:42:28.821   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:42:28.822   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:42:28.827   CNC 0 Touch   INF   Open downtime checked, elapsed: 5.797911ms
+2020-02-29 11:42:28.828   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:42:28.828   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:42:28.828   CNC 0 Touch   INF   Loop ended, elapsed: 32.935185ms
+2020-02-29 11:42:28.828   CNC 0 Touch   INF   Sleeping for 9.966979165s
+2020-02-29 11:42:38.797   CNC 0 Touch   INF   Device still active
+2020-02-29 11:42:38.797   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:42:38.798   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:42:38.814   CNC 0 Touch   INF   Actual state downloaded, elapsed: 16.49004ms
+2020-02-29 11:42:38.815   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:42:38.815   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:42:38.822   CNC 0 Touch   INF   Open order checked, elapsed: 7.23461ms
+2020-02-29 11:42:38.822   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:42:38.822   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:42:38.829   CNC 0 Touch   INF   Open downtime checked, elapsed: 7.029764ms
+2020-02-29 11:42:38.830   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:42:38.830   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:42:38.830   CNC 0 Touch   INF   Loop ended, elapsed: 32.017513ms
+2020-02-29 11:42:38.830   CNC 0 Touch   INF   Sleeping for 9.967885145s
+2020-02-29 11:42:48.798   CNC 0 Touch   INF   Device still active
+2020-02-29 11:42:48.798   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:42:48.798   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:42:48.812   CNC 0 Touch   INF   Actual state downloaded, elapsed: 14.104591ms
+2020-02-29 11:42:48.813   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:42:48.813   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:42:48.820   CNC 0 Touch   INF   Open order checked, elapsed: 6.832807ms
+2020-02-29 11:42:48.820   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:42:48.820   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:42:48.827   CNC 0 Touch   INF   Open downtime checked, elapsed: 7.018527ms
+2020-02-29 11:42:48.827   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:42:48.827   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:42:48.827   CNC 0 Touch   INF   Loop ended, elapsed: 29.172434ms
+2020-02-29 11:42:48.827   CNC 0 Touch   INF   Sleeping for 9.97076709s
+2020-02-29 11:42:58.799   CNC 0 Touch   INF   Device still active
+2020-02-29 11:42:58.800   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:42:58.800   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:42:58.817   CNC 0 Touch   INF   Actual state downloaded, elapsed: 16.479529ms
+2020-02-29 11:42:58.817   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:42:58.817   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:42:58.824   CNC 0 Touch   INF   Open order checked, elapsed: 6.90658ms
+2020-02-29 11:42:58.824   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:42:58.824   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:42:58.831   CNC 0 Touch   INF   Open downtime checked, elapsed: 6.609449ms
+2020-02-29 11:42:58.831   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:42:58.831   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:42:58.831   CNC 0 Touch   INF   Loop ended, elapsed: 31.346581ms
+2020-02-29 11:42:58.831   CNC 0 Touch   INF   Sleeping for 9.968557489s
+2020-02-29 11:43:08.801   CNC 0 Touch   INF   Device still active
+2020-02-29 11:43:08.801   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:43:08.802   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:43:08.816   CNC 0 Touch   INF   Actual state downloaded, elapsed: 13.970989ms
+2020-02-29 11:43:08.816   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:43:08.816   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:43:08.823   CNC 0 Touch   INF   Open order checked, elapsed: 6.414464ms
+2020-02-29 11:43:08.823   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:43:08.823   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:43:08.828   CNC 0 Touch   INF   Open downtime checked, elapsed: 5.399228ms
+2020-02-29 11:43:08.828   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:43:08.829   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:43:08.829   CNC 0 Touch   INF   Loop ended, elapsed: 27.100725ms
+2020-02-29 11:43:08.829   CNC 0 Touch   INF   Sleeping for 9.972829315s
+2020-02-29 11:43:18.806   CNC 0 Touch   INF   Device still active
+2020-02-29 11:43:18.806   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:43:18.807   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:43:18.825   CNC 0 Touch   INF   Actual state downloaded, elapsed: 17.666223ms
+2020-02-29 11:43:18.825   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:43:18.825   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:43:18.832   CNC 0 Touch   INF   Open order checked, elapsed: 7.317171ms
+2020-02-29 11:43:18.833   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:43:18.833   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:43:18.840   CNC 0 Touch   INF   Open downtime checked, elapsed: 6.773439ms
+2020-02-29 11:43:18.840   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:43:18.840   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:43:18.840   CNC 0 Touch   INF   Loop ended, elapsed: 33.028651ms
+2020-02-29 11:43:18.840   CNC 0 Touch   INF   Sleeping for 9.966916218s
+2020-02-29 11:43:28.811   CNC 0 Touch   INF   Device still active
+2020-02-29 11:43:28.811   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:43:28.812   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:43:28.837   CNC 0 Touch   INF   Actual state downloaded, elapsed: 24.787101ms
+2020-02-29 11:43:28.837   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:43:28.837   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:43:28.845   CNC 0 Touch   INF   Open order checked, elapsed: 7.208878ms
+2020-02-29 11:43:28.845   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:43:28.845   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:43:28.852   CNC 0 Touch   INF   Open downtime checked, elapsed: 7.244914ms
+2020-02-29 11:43:28.853   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:43:28.853   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:43:28.853   CNC 0 Touch   INF   Loop ended, elapsed: 40.992047ms
+2020-02-29 11:43:28.853   CNC 0 Touch   INF   Sleeping for 9.958894896s
+2020-02-29 11:43:38.815   CNC 0 Touch   INF   Device still active
+2020-02-29 11:43:38.815   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:43:38.815   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:43:38.837   CNC 0 Touch   INF   Actual state downloaded, elapsed: 21.187534ms
+2020-02-29 11:43:38.837   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:43:38.837   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:43:38.843   CNC 0 Touch   INF   Open order checked, elapsed: 6.05026ms
+2020-02-29 11:43:38.843   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:43:38.843   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:43:38.850   CNC 0 Touch   INF   Open downtime checked, elapsed: 6.254252ms
+2020-02-29 11:43:38.850   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:43:38.850   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:43:38.850   CNC 0 Touch   INF   Loop ended, elapsed: 34.812219ms
+2020-02-29 11:43:38.850   CNC 0 Touch   INF   Sleeping for 9.965121707s
+2020-02-29 11:43:48.818   CNC 0 Touch   INF   Device still active
+2020-02-29 11:43:48.818   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:43:48.819   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:43:48.838   CNC 0 Touch   INF   Actual state downloaded, elapsed: 19.311788ms
+2020-02-29 11:43:48.838   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:43:48.838   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:43:48.851   CNC 0 Touch   INF   Open order checked, elapsed: 13.038889ms
+2020-02-29 11:43:48.852   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:43:48.852   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:43:48.873   CNC 0 Touch   INF   Open downtime checked, elapsed: 20.943001ms
+2020-02-29 11:43:48.873   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:43:48.873   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:43:48.874   CNC 0 Touch   INF   Loop ended, elapsed: 55.087782ms
+2020-02-29 11:43:48.874   CNC 0 Touch   INF   Sleeping for 9.944822806s
+2020-02-29 11:43:58.819   CNC 0 Touch   INF   Device still active
+2020-02-29 11:43:58.820   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:43:58.820   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:43:58.836   CNC 0 Touch   INF   Actual state downloaded, elapsed: 15.935139ms
+2020-02-29 11:43:58.836   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:43:58.836   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:43:58.843   CNC 0 Touch   INF   Open order checked, elapsed: 7.020819ms
+2020-02-29 11:43:58.843   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:43:58.844   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:43:58.851   CNC 0 Touch   INF   Open downtime checked, elapsed: 7.127997ms
+2020-02-29 11:43:58.851   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:43:58.851   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:43:58.851   CNC 0 Touch   INF   Loop ended, elapsed: 31.317718ms
+2020-02-29 11:43:58.851   CNC 0 Touch   INF   Sleeping for 9.968624381s
+2020-02-29 11:44:08.823   CNC 0 Touch   INF   Device still active
+2020-02-29 11:44:08.823   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:44:08.823   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:44:08.845   CNC 0 Touch   INF   Actual state downloaded, elapsed: 21.104487ms
+2020-02-29 11:44:08.845   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:44:08.845   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:44:08.853   CNC 0 Touch   INF   Open order checked, elapsed: 7.52629ms
+2020-02-29 11:44:08.853   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:44:08.853   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:44:08.860   CNC 0 Touch   INF   Open downtime checked, elapsed: 7.503546ms
+2020-02-29 11:44:08.861   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:44:08.861   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:44:08.861   CNC 0 Touch   INF   Loop ended, elapsed: 37.464139ms
+2020-02-29 11:44:08.861   CNC 0 Touch   INF   Sleeping for 9.962436131s
+2020-02-29 11:44:18.826   CNC 0 Touch   INF   Device still active
+2020-02-29 11:44:18.827   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:44:18.827   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:44:18.851   CNC 0 Touch   INF   Actual state downloaded, elapsed: 24.317713ms
+2020-02-29 11:44:18.852   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:44:18.852   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:44:18.863   CNC 0 Touch   INF   Open order checked, elapsed: 11.492953ms
+2020-02-29 11:44:18.864   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:44:18.864   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:44:18.877   CNC 0 Touch   INF   Open downtime checked, elapsed: 13.699555ms
+2020-02-29 11:44:18.878   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:44:18.878   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:44:18.878   CNC 0 Touch   INF   Loop ended, elapsed: 50.773299ms
+2020-02-29 11:44:18.878   CNC 0 Touch   INF   Sleeping for 9.949164918s
+2020-02-29 11:44:28.829   CNC 0 Touch   INF   Device still active
+2020-02-29 11:44:28.829   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:44:28.829   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:44:28.852   CNC 0 Touch   INF   Actual state downloaded, elapsed: 22.024072ms
+2020-02-29 11:44:28.852   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:44:28.852   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:44:28.876   CNC 0 Touch   INF   Open order checked, elapsed: 23.695182ms
+2020-02-29 11:44:28.876   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:44:28.876   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:44:28.887   CNC 0 Touch   INF   Open downtime checked, elapsed: 10.680147ms
+2020-02-29 11:44:28.887   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:44:28.887   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:44:28.887   CNC 0 Touch   INF   Loop ended, elapsed: 58.018319ms
+2020-02-29 11:44:28.887   CNC 0 Touch   INF   Sleeping for 9.941888824s
+2020-02-29 11:44:38.831   CNC 0 Touch   INF   Device still active
+2020-02-29 11:44:38.831   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:44:38.831   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:44:38.856   CNC 0 Touch   INF   Actual state downloaded, elapsed: 24.901892ms
+2020-02-29 11:44:38.856   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:44:38.856   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:44:38.872   CNC 0 Touch   INF   Open order checked, elapsed: 15.282956ms
+2020-02-29 11:44:38.872   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:44:38.872   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:44:38.885   CNC 0 Touch   INF   Open downtime checked, elapsed: 13.183188ms
+2020-02-29 11:44:38.886   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:44:38.886   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:44:38.886   CNC 0 Touch   INF   Loop ended, elapsed: 54.863274ms
+2020-02-29 11:44:38.886   CNC 0 Touch   INF   Sleeping for 9.945041048s
+2020-02-29 11:44:48.831   CNC 0 Touch   INF   Device still active
+2020-02-29 11:44:48.832   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:44:48.832   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:44:48.874   CNC 0 Touch   INF   Actual state downloaded, elapsed: 41.533239ms
+2020-02-29 11:44:48.874   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:44:48.874   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:44:48.882   CNC 0 Touch   INF   Open order checked, elapsed: 8.322743ms
+2020-02-29 11:44:48.882   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:44:48.883   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:44:48.893   CNC 0 Touch   INF   Open downtime checked, elapsed: 10.146562ms
+2020-02-29 11:44:48.893   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:44:48.893   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:44:48.893   CNC 0 Touch   INF   Loop ended, elapsed: 61.18601ms
+2020-02-29 11:44:48.893   CNC 0 Touch   INF   Sleeping for 9.938720496s
+2020-02-29 11:44:58.836   CNC 0 Touch   INF   Device still active
+2020-02-29 11:44:58.836   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:44:58.837   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:44:58.862   CNC 0 Touch   INF   Actual state downloaded, elapsed: 25.622845ms
+2020-02-29 11:44:58.863   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:44:58.863   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:44:58.876   CNC 0 Touch   INF   Open order checked, elapsed: 12.779139ms
+2020-02-29 11:44:58.876   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:44:58.876   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:44:58.895   CNC 0 Touch   INF   Open downtime checked, elapsed: 18.461999ms
+2020-02-29 11:44:58.895   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:44:58.895   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:44:58.895   CNC 0 Touch   INF   Loop ended, elapsed: 58.38867ms
+2020-02-29 11:44:58.895   CNC 0 Touch   INF   Sleeping for 9.941539089s
+2020-02-29 11:45:08.837   CNC 0 Touch   INF   Device still active
+2020-02-29 11:45:08.837   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:45:08.837   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:45:08.850   CNC 0 Touch   INF   Actual state downloaded, elapsed: 12.384298ms
+2020-02-29 11:45:08.850   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:45:08.850   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:45:08.858   CNC 0 Touch   INF   Open order checked, elapsed: 7.796327ms
+2020-02-29 11:45:08.858   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:45:08.858   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:45:08.876   CNC 0 Touch   INF   Open downtime checked, elapsed: 17.915608ms
+2020-02-29 11:45:08.876   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:45:08.876   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:45:08.877   CNC 0 Touch   INF   Loop ended, elapsed: 39.124761ms
+2020-02-29 11:45:08.877   CNC 0 Touch   INF   Sleeping for 9.96075716s
+2020-02-29 11:45:18.838   CNC 0 Touch   INF   Device still active
+2020-02-29 11:45:18.838   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:45:18.839   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:45:18.857   CNC 0 Touch   INF   Actual state downloaded, elapsed: 18.626928ms
+2020-02-29 11:45:18.858   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:45:18.858   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:45:18.865   CNC 0 Touch   INF   Open order checked, elapsed: 6.942896ms
+2020-02-29 11:45:18.865   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:45:18.865   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:45:18.873   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.29311ms
+2020-02-29 11:45:18.873   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:45:18.873   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:45:18.874   CNC 0 Touch   INF   Loop ended, elapsed: 34.965698ms
+2020-02-29 11:45:18.874   CNC 0 Touch   INF   Sleeping for 9.964970672s
+2020-02-29 11:45:28.840   CNC 0 Touch   INF   Device still active
+2020-02-29 11:45:28.840   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:45:28.841   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:45:28.894   CNC 0 Touch   INF   Actual state downloaded, elapsed: 53.339434ms
+2020-02-29 11:45:28.894   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:45:28.894   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:45:28.903   CNC 0 Touch   INF   Open order checked, elapsed: 8.465966ms
+2020-02-29 11:45:28.903   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:45:28.903   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:45:28.910   CNC 0 Touch   INF   Open downtime checked, elapsed: 6.437141ms
+2020-02-29 11:45:28.910   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:45:28.910   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:45:28.910   CNC 0 Touch   INF   Loop ended, elapsed: 69.488816ms
+2020-02-29 11:45:28.910   CNC 0 Touch   INF   Sleeping for 9.930452498s
+2020-02-29 11:45:38.841   CNC 0 Touch   INF   Device still active
+2020-02-29 11:45:38.841   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:45:38.841   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:45:38.863   CNC 0 Touch   INF   Actual state downloaded, elapsed: 21.865332ms
+2020-02-29 11:45:38.864   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:45:38.864   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:45:38.873   CNC 0 Touch   INF   Open order checked, elapsed: 9.363244ms
+2020-02-29 11:45:38.873   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:45:38.873   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:45:38.880   CNC 0 Touch   INF   Open downtime checked, elapsed: 6.540367ms
+2020-02-29 11:45:38.880   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:45:38.880   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:45:38.880   CNC 0 Touch   INF   Loop ended, elapsed: 38.688617ms
+2020-02-29 11:45:38.880   CNC 0 Touch   INF   Sleeping for 9.961201162s
+2020-02-29 11:45:48.846   CNC 0 Touch   INF   Device still active
+2020-02-29 11:45:48.846   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:45:48.847   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:45:48.888   CNC 0 Touch   INF   Actual state downloaded, elapsed: 40.445126ms
+2020-02-29 11:45:48.888   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:45:48.888   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:45:48.898   CNC 0 Touch   INF   Open order checked, elapsed: 9.636861ms
+2020-02-29 11:45:48.898   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:45:48.898   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:45:48.906   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.442604ms
+2020-02-29 11:45:48.906   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:45:48.907   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:45:48.907   CNC 0 Touch   INF   Loop ended, elapsed: 59.723822ms
+2020-02-29 11:45:48.907   CNC 0 Touch   INF   Sleeping for 9.940194243s
+2020-02-29 11:45:58.847   CNC 0 Touch   INF   Device still active
+2020-02-29 11:45:58.847   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:45:58.848   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:45:58.863   CNC 0 Touch   INF   Actual state downloaded, elapsed: 15.473488ms
+2020-02-29 11:45:58.863   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:45:58.863   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:45:58.881   CNC 0 Touch   INF   Open order checked, elapsed: 17.479312ms
+2020-02-29 11:45:58.881   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:45:58.881   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:45:58.890   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.829273ms
+2020-02-29 11:45:58.891   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:45:58.891   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:45:58.891   CNC 0 Touch   INF   Loop ended, elapsed: 43.173798ms
+2020-02-29 11:45:58.891   CNC 0 Touch   INF   Sleeping for 9.956768437s
+2020-02-29 11:46:08.849   CNC 0 Touch   INF   Device still active
+2020-02-29 11:46:08.849   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:46:08.849   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:46:08.866   CNC 0 Touch   INF   Actual state downloaded, elapsed: 16.076673ms
+2020-02-29 11:46:08.866   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:46:08.866   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:46:08.877   CNC 0 Touch   INF   Open order checked, elapsed: 10.503986ms
+2020-02-29 11:46:08.877   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:46:08.877   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:46:08.886   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.758028ms
+2020-02-29 11:46:08.886   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:46:08.886   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:46:08.886   CNC 0 Touch   INF   Loop ended, elapsed: 36.759572ms
+2020-02-29 11:46:08.886   CNC 0 Touch   INF   Sleeping for 9.963164893s
+2020-02-29 11:46:18.853   CNC 0 Touch   INF   Device still active
+2020-02-29 11:46:18.854   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:46:18.855   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:46:18.876   CNC 0 Touch   INF   Actual state downloaded, elapsed: 21.139996ms
+2020-02-29 11:46:18.876   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:46:18.876   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:46:18.886   CNC 0 Touch   INF   Open order checked, elapsed: 9.337985ms
+2020-02-29 11:46:18.886   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:46:18.886   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:46:18.895   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.849268ms
+2020-02-29 11:46:18.895   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:46:18.895   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:46:18.895   CNC 0 Touch   INF   Loop ended, elapsed: 40.616099ms
+2020-02-29 11:46:18.895   CNC 0 Touch   INF   Sleeping for 9.95930699s
+2020-02-29 11:46:28.857   CNC 0 Touch   INF   Device still active
+2020-02-29 11:46:28.858   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:46:28.858   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:46:28.879   CNC 0 Touch   INF   Actual state downloaded, elapsed: 20.838878ms
+2020-02-29 11:46:28.879   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:46:28.879   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:46:28.890   CNC 0 Touch   INF   Open order checked, elapsed: 10.028758ms
+2020-02-29 11:46:28.890   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:46:28.890   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:46:28.901   CNC 0 Touch   INF   Open downtime checked, elapsed: 10.390343ms
+2020-02-29 11:46:28.901   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:46:28.901   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:46:28.901   CNC 0 Touch   INF   Loop ended, elapsed: 42.996971ms
+2020-02-29 11:46:28.901   CNC 0 Touch   INF   Sleeping for 9.956937804s
+2020-02-29 11:46:38.862   CNC 0 Touch   INF   Device still active
+2020-02-29 11:46:38.862   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:46:38.863   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:46:38.881   CNC 0 Touch   INF   Actual state downloaded, elapsed: 18.208456ms
+2020-02-29 11:46:38.881   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:46:38.881   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:46:38.897   CNC 0 Touch   INF   Open order checked, elapsed: 16.106934ms
+2020-02-29 11:46:38.897   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:46:38.898   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:46:38.913   CNC 0 Touch   INF   Open downtime checked, elapsed: 15.093383ms
+2020-02-29 11:46:38.913   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:46:38.913   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:46:38.913   CNC 0 Touch   INF   Loop ended, elapsed: 50.682942ms
+2020-02-29 11:46:38.913   CNC 0 Touch   INF   Sleeping for 9.949195122s
+2020-02-29 11:46:48.863   CNC 0 Touch   INF   Device still active
+2020-02-29 11:46:48.863   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:46:48.863   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:46:48.890   CNC 0 Touch   INF   Actual state downloaded, elapsed: 26.767234ms
+2020-02-29 11:46:48.890   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:46:48.890   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:46:48.902   CNC 0 Touch   INF   Open order checked, elapsed: 11.416029ms
+2020-02-29 11:46:48.902   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:46:48.902   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:46:48.910   CNC 0 Touch   INF   Open downtime checked, elapsed: 7.634555ms
+2020-02-29 11:46:48.910   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:46:48.910   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:46:48.910   CNC 0 Touch   INF   Loop ended, elapsed: 46.677383ms
+2020-02-29 11:46:48.910   CNC 0 Touch   INF   Sleeping for 9.953267421s
+2020-02-29 11:46:58.865   CNC 0 Touch   INF   Device still active
+2020-02-29 11:46:58.866   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:46:58.866   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:46:58.899   CNC 0 Touch   INF   Actual state downloaded, elapsed: 32.168773ms
+2020-02-29 11:46:58.899   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:46:58.899   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:46:58.919   CNC 0 Touch   INF   Open order checked, elapsed: 20.032626ms
+2020-02-29 11:46:58.920   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:46:58.920   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:46:58.933   CNC 0 Touch   INF   Open downtime checked, elapsed: 12.612978ms
+2020-02-29 11:46:58.933   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:46:58.933   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:46:58.933   CNC 0 Touch   INF   Loop ended, elapsed: 66.701123ms
+2020-02-29 11:46:58.933   CNC 0 Touch   INF   Sleeping for 9.933211477s
+2020-02-29 11:47:08.868   CNC 0 Touch   INF   Device still active
+2020-02-29 11:47:08.868   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:47:08.868   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:47:08.904   CNC 0 Touch   INF   Actual state downloaded, elapsed: 35.47958ms
+2020-02-29 11:47:08.904   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:47:08.904   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:47:08.916   CNC 0 Touch   INF   Open order checked, elapsed: 11.524043ms
+2020-02-29 11:47:08.916   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:47:08.916   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:47:08.924   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.002011ms
+2020-02-29 11:47:08.925   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:47:08.925   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:47:08.925   CNC 0 Touch   INF   Loop ended, elapsed: 56.334311ms
+2020-02-29 11:47:08.925   CNC 0 Touch   INF   Sleeping for 9.943541406s
+2020-02-29 11:47:18.871   CNC 0 Touch   INF   Device still active
+2020-02-29 11:47:18.871   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:47:18.872   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:47:18.899   CNC 0 Touch   INF   Actual state downloaded, elapsed: 26.750403ms
+2020-02-29 11:47:18.899   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:47:18.899   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:47:18.909   CNC 0 Touch   INF   Open order checked, elapsed: 9.284292ms
+2020-02-29 11:47:18.909   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:47:18.909   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:47:18.924   CNC 0 Touch   INF   Open downtime checked, elapsed: 15.071522ms
+2020-02-29 11:47:18.924   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:47:18.924   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:47:18.924   CNC 0 Touch   INF   Loop ended, elapsed: 52.610547ms
+2020-02-29 11:47:18.924   CNC 0 Touch   INF   Sleeping for 9.94729676s
+2020-02-29 11:47:28.872   CNC 0 Touch   INF   Device still active
+2020-02-29 11:47:28.872   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:47:28.873   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:47:28.896   CNC 0 Touch   INF   Actual state downloaded, elapsed: 22.890353ms
+2020-02-29 11:47:28.896   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:47:28.896   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:47:28.907   CNC 0 Touch   INF   Open order checked, elapsed: 10.713006ms
+2020-02-29 11:47:28.907   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:47:28.907   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:47:28.926   CNC 0 Touch   INF   Open downtime checked, elapsed: 18.736699ms
+2020-02-29 11:47:28.927   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:47:28.927   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:47:28.927   CNC 0 Touch   INF   Loop ended, elapsed: 54.695149ms
+2020-02-29 11:47:28.927   CNC 0 Touch   INF   Sleeping for 9.945208351s
+2020-02-29 11:47:38.873   CNC 0 Touch   INF   Device still active
+2020-02-29 11:47:38.873   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:47:38.874   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:47:38.911   CNC 0 Touch   INF   Actual state downloaded, elapsed: 37.235906ms
+2020-02-29 11:47:38.911   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:47:38.911   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:47:38.923   CNC 0 Touch   INF   Open order checked, elapsed: 11.264346ms
+2020-02-29 11:47:38.923   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:47:38.923   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:47:38.936   CNC 0 Touch   INF   Open downtime checked, elapsed: 13.435852ms
+2020-02-29 11:47:38.937   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:47:38.937   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:47:38.937   CNC 0 Touch   INF   Loop ended, elapsed: 63.31198ms
+2020-02-29 11:47:38.937   CNC 0 Touch   INF   Sleeping for 9.936618332s
+2020-02-29 11:47:48.874   CNC 0 Touch   INF   Device still active
+2020-02-29 11:47:48.874   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:47:48.874   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:47:48.910   CNC 0 Touch   INF   Actual state downloaded, elapsed: 35.459189ms
+2020-02-29 11:47:48.910   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:47:48.910   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:47:48.938   CNC 0 Touch   INF   Open order checked, elapsed: 27.552761ms
+2020-02-29 11:47:48.938   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:47:48.938   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:47:48.953   CNC 0 Touch   INF   Open downtime checked, elapsed: 14.573233ms
+2020-02-29 11:47:48.953   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:47:48.953   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:47:48.953   CNC 0 Touch   INF   Loop ended, elapsed: 79.066271ms
+2020-02-29 11:47:48.953   CNC 0 Touch   INF   Sleeping for 9.920829922s
+2020-02-29 11:47:58.877   CNC 0 Touch   INF   Device still active
+2020-02-29 11:47:58.878   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:47:58.878   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:47:58.907   CNC 0 Touch   INF   Actual state downloaded, elapsed: 29.174955ms
+2020-02-29 11:47:58.908   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:47:58.908   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:47:58.921   CNC 0 Touch   INF   Open order checked, elapsed: 13.550723ms
+2020-02-29 11:47:58.922   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:47:58.922   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:47:58.931   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.971462ms
+2020-02-29 11:47:58.931   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:47:58.931   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:47:58.931   CNC 0 Touch   INF   Loop ended, elapsed: 53.01792ms
+2020-02-29 11:47:58.931   CNC 0 Touch   INF   Sleeping for 9.946859102s
+2020-02-29 11:48:08.882   CNC 0 Touch   INF   Device still active
+2020-02-29 11:48:08.882   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:48:08.883   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:48:08.908   CNC 0 Touch   INF   Actual state downloaded, elapsed: 25.389903ms
+2020-02-29 11:48:08.908   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:48:08.909   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:48:08.918   CNC 0 Touch   INF   Open order checked, elapsed: 9.783988ms
+2020-02-29 11:48:08.919   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:48:08.919   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:48:08.933   CNC 0 Touch   INF   Open downtime checked, elapsed: 14.401714ms
+2020-02-29 11:48:08.933   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:48:08.933   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:48:08.933   CNC 0 Touch   INF   Loop ended, elapsed: 50.792782ms
+2020-02-29 11:48:08.934   CNC 0 Touch   INF   Sleeping for 9.949137875s
+2020-02-29 11:48:18.883   CNC 0 Touch   INF   Device still active
+2020-02-29 11:48:18.884   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:48:18.884   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:48:18.902   CNC 0 Touch   INF   Actual state downloaded, elapsed: 17.75641ms
+2020-02-29 11:48:18.902   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:48:18.902   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:48:18.914   CNC 0 Touch   INF   Open order checked, elapsed: 11.667631ms
+2020-02-29 11:48:18.914   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:48:18.914   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:48:18.926   CNC 0 Touch   INF   Open downtime checked, elapsed: 11.27588ms
+2020-02-29 11:48:18.926   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:48:18.926   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:48:18.926   CNC 0 Touch   INF   Loop ended, elapsed: 41.941459ms
+2020-02-29 11:48:18.926   CNC 0 Touch   INF   Sleeping for 9.957974474s
+2020-02-29 11:48:28.887   CNC 0 Touch   INF   Device still active
+2020-02-29 11:48:28.887   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:48:28.888   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:48:28.909   CNC 0 Touch   INF   Actual state downloaded, elapsed: 21.050998ms
+2020-02-29 11:48:28.909   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:48:28.909   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:48:28.917   CNC 0 Touch   INF   Open order checked, elapsed: 7.881894ms
+2020-02-29 11:48:28.917   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:48:28.917   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:48:28.924   CNC 0 Touch   INF   Open downtime checked, elapsed: 6.558322ms
+2020-02-29 11:48:28.924   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:48:28.924   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:48:28.924   CNC 0 Touch   INF   Loop ended, elapsed: 36.850693ms
+2020-02-29 11:48:28.924   CNC 0 Touch   INF   Sleeping for 9.963071804s
+2020-02-29 11:48:38.892   CNC 0 Touch   INF   Device still active
+2020-02-29 11:48:38.892   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:48:38.893   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:48:38.918   CNC 0 Touch   INF   Actual state downloaded, elapsed: 24.927361ms
+2020-02-29 11:48:38.918   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:48:38.918   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:48:38.929   CNC 0 Touch   INF   Open order checked, elapsed: 10.864308ms
+2020-02-29 11:48:38.929   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:48:38.929   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:48:38.936   CNC 0 Touch   INF   Open downtime checked, elapsed: 6.854658ms
+2020-02-29 11:48:38.936   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:48:38.936   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:48:38.936   CNC 0 Touch   INF   Loop ended, elapsed: 43.870237ms
+2020-02-29 11:48:38.937   CNC 0 Touch   INF   Sleeping for 9.956017204s
+2020-02-29 11:48:48.893   CNC 0 Touch   INF   Device still active
+2020-02-29 11:48:48.893   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:48:48.893   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:48:48.910   CNC 0 Touch   INF   Actual state downloaded, elapsed: 17.03422ms
+2020-02-29 11:48:48.910   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:48:48.911   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:48:48.928   CNC 0 Touch   INF   Open order checked, elapsed: 17.246848ms
+2020-02-29 11:48:48.928   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:48:48.928   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:48:48.945   CNC 0 Touch   INF   Open downtime checked, elapsed: 17.20386ms
+2020-02-29 11:48:48.945   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:48:48.946   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:48:48.946   CNC 0 Touch   INF   Loop ended, elapsed: 52.536908ms
+2020-02-29 11:48:48.946   CNC 0 Touch   INF   Sleeping for 9.947375969s
+2020-02-29 11:48:58.897   CNC 0 Touch   INF   Device still active
+2020-02-29 11:48:58.898   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:48:58.898   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:48:58.944   CNC 0 Touch   INF   Actual state downloaded, elapsed: 46.192168ms
+2020-02-29 11:48:58.944   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:48:58.944   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:48:58.966   CNC 0 Touch   INF   Open order checked, elapsed: 21.637237ms
+2020-02-29 11:48:58.967   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:48:58.967   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:48:58.975   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.202452ms
+2020-02-29 11:48:58.976   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:48:58.976   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:48:58.976   CNC 0 Touch   INF   Loop ended, elapsed: 77.80867ms
+2020-02-29 11:48:58.976   CNC 0 Touch   INF   Sleeping for 9.922126594s
+2020-02-29 11:49:08.898   CNC 0 Touch   INF   Device still active
+2020-02-29 11:49:08.898   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:49:08.899   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:49:08.929   CNC 0 Touch   INF   Actual state downloaded, elapsed: 30.514599ms
+2020-02-29 11:49:08.929   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:49:08.929   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:49:08.944   CNC 0 Touch   INF   Open order checked, elapsed: 14.04307ms
+2020-02-29 11:49:08.944   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:49:08.944   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:49:08.952   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.231517ms
+2020-02-29 11:49:08.952   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:49:08.952   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:49:08.952   CNC 0 Touch   INF   Loop ended, elapsed: 53.781934ms
+2020-02-29 11:49:08.952   CNC 0 Touch   INF   Sleeping for 9.946137118s
+2020-02-29 11:49:18.899   CNC 0 Touch   INF   Device still active
+2020-02-29 11:49:18.899   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:49:18.899   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:49:18.919   CNC 0 Touch   INF   Actual state downloaded, elapsed: 19.225666ms
+2020-02-29 11:49:18.919   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:49:18.919   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:49:18.930   CNC 0 Touch   INF   Open order checked, elapsed: 11.213532ms
+2020-02-29 11:49:18.930   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:49:18.930   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:49:18.942   CNC 0 Touch   INF   Open downtime checked, elapsed: 11.728265ms
+2020-02-29 11:49:18.942   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:49:18.943   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:49:18.943   CNC 0 Touch   INF   Loop ended, elapsed: 43.231724ms
+2020-02-29 11:49:18.943   CNC 0 Touch   INF   Sleeping for 9.956694584s
+2020-02-29 11:49:28.900   CNC 0 Touch   INF   Device still active
+2020-02-29 11:49:28.900   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:49:28.900   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:49:28.937   CNC 0 Touch   INF   Actual state downloaded, elapsed: 36.343622ms
+2020-02-29 11:49:28.937   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:49:28.937   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:49:28.944   CNC 0 Touch   INF   Open order checked, elapsed: 7.407324ms
+2020-02-29 11:49:28.944   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:49:28.944   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:49:28.949   CNC 0 Touch   INF   Open downtime checked, elapsed: 4.912329ms
+2020-02-29 11:49:28.950   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:49:28.950   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:49:28.950   CNC 0 Touch   INF   Loop ended, elapsed: 49.568315ms
+2020-02-29 11:49:28.950   CNC 0 Touch   INF   Sleeping for 9.950382244s
+2020-02-29 11:49:38.900   CNC 0 Touch   INF   Device still active
+2020-02-29 11:49:38.901   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:49:38.901   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:49:38.926   CNC 0 Touch   INF   Actual state downloaded, elapsed: 25.071467ms
+2020-02-29 11:49:38.926   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:49:38.926   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:49:38.935   CNC 0 Touch   INF   Open order checked, elapsed: 9.303311ms
+2020-02-29 11:49:38.936   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:49:38.936   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:49:38.944   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.53369ms
+2020-02-29 11:49:38.944   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:49:38.945   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:49:38.945   CNC 0 Touch   INF   Loop ended, elapsed: 43.941955ms
+2020-02-29 11:49:38.945   CNC 0 Touch   INF   Sleeping for 9.955971863s
+2020-02-29 11:49:48.902   CNC 0 Touch   INF   Device still active
+2020-02-29 11:49:48.902   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:49:48.903   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:49:48.930   CNC 0 Touch   INF   Actual state downloaded, elapsed: 27.322922ms
+2020-02-29 11:49:48.930   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:49:48.930   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:49:48.940   CNC 0 Touch   INF   Open order checked, elapsed: 9.430532ms
+2020-02-29 11:49:48.940   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:49:48.940   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:49:48.956   CNC 0 Touch   INF   Open downtime checked, elapsed: 15.30708ms
+2020-02-29 11:49:48.956   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:49:48.956   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:49:48.956   CNC 0 Touch   INF   Loop ended, elapsed: 53.583004ms
+2020-02-29 11:49:48.956   CNC 0 Touch   INF   Sleeping for 9.946341972s
+2020-02-29 11:49:58.903   CNC 0 Touch   INF   Device still active
+2020-02-29 11:49:58.903   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:49:58.903   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:49:58.921   CNC 0 Touch   INF   Actual state downloaded, elapsed: 17.437758ms
+2020-02-29 11:49:58.921   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:49:58.921   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:49:58.932   CNC 0 Touch   INF   Open order checked, elapsed: 10.848495ms
+2020-02-29 11:49:58.932   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:49:58.932   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:49:58.942   CNC 0 Touch   INF   Open downtime checked, elapsed: 9.854455ms
+2020-02-29 11:49:58.942   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:49:58.943   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:49:58.943   CNC 0 Touch   INF   Loop ended, elapsed: 39.44398ms
+2020-02-29 11:49:58.943   CNC 0 Touch   INF   Sleeping for 9.960499566s
+2020-02-29 11:50:08.906   CNC 0 Touch   INF   Device still active
+2020-02-29 11:50:08.907   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:50:08.907   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:50:08.943   CNC 0 Touch   INF   Actual state downloaded, elapsed: 36.132093ms
+2020-02-29 11:50:08.943   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:50:08.943   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:50:08.958   CNC 0 Touch   INF   Open order checked, elapsed: 14.21624ms
+2020-02-29 11:50:08.958   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:50:08.958   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:50:08.972   CNC 0 Touch   INF   Open downtime checked, elapsed: 14.310597ms
+2020-02-29 11:50:08.973   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:50:08.973   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:50:08.973   CNC 0 Touch   INF   Loop ended, elapsed: 66.02953ms
+2020-02-29 11:50:08.973   CNC 0 Touch   INF   Sleeping for 9.933900141s
+2020-02-29 11:50:18.908   CNC 0 Touch   INF   Device still active
+2020-02-29 11:50:18.908   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:50:18.909   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:50:18.926   CNC 0 Touch   INF   Actual state downloaded, elapsed: 17.426178ms
+2020-02-29 11:50:18.926   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:50:18.926   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:50:18.934   CNC 0 Touch   INF   Open order checked, elapsed: 7.936993ms
+2020-02-29 11:50:18.935   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:50:18.935   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:50:18.945   CNC 0 Touch   INF   Open downtime checked, elapsed: 10.542753ms
+2020-02-29 11:50:18.945   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:50:18.945   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:50:18.946   CNC 0 Touch   INF   Loop ended, elapsed: 36.823212ms
+2020-02-29 11:50:18.946   CNC 0 Touch   INF   Sleeping for 9.963057352s
+2020-02-29 11:50:28.910   CNC 0 Touch   INF   Device still active
+2020-02-29 11:50:28.911   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:50:28.911   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:50:28.970   CNC 0 Touch   INF   Actual state downloaded, elapsed: 58.862858ms
+2020-02-29 11:50:28.971   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:50:28.971   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:50:28.996   CNC 0 Touch   INF   Open order checked, elapsed: 25.279445ms
+2020-02-29 11:50:28.996   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:50:28.997   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:50:29.012   CNC 0 Touch   INF   Open downtime checked, elapsed: 15.091807ms
+2020-02-29 11:50:29.013   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:50:29.013   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:50:29.013   CNC 0 Touch   INF   Loop ended, elapsed: 101.590575ms
+2020-02-29 11:50:29.013   CNC 0 Touch   INF   Sleeping for 9.898315735s
+2020-02-29 11:50:38.913   CNC 0 Touch   INF   Device still active
+2020-02-29 11:50:38.915   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:50:38.915   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:50:38.939   CNC 0 Touch   INF   Actual state downloaded, elapsed: 23.329232ms
+2020-02-29 11:50:38.939   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:50:38.939   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:50:38.954   CNC 0 Touch   INF   Open order checked, elapsed: 14.349288ms
+2020-02-29 11:50:38.955   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:50:38.955   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:50:38.971   CNC 0 Touch   INF   Open downtime checked, elapsed: 15.768829ms
+2020-02-29 11:50:38.971   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:50:38.971   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:50:38.971   CNC 0 Touch   INF   Loop ended, elapsed: 55.993269ms
+2020-02-29 11:50:38.971   CNC 0 Touch   INF   Sleeping for 9.943938684s
+2020-02-29 11:50:48.916   CNC 0 Touch   INF   Device still active
+2020-02-29 11:50:48.917   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:50:48.918   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:50:48.977   CNC 0 Touch   INF   Actual state downloaded, elapsed: 59.172077ms
+2020-02-29 11:50:48.977   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:50:48.977   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:50:48.993   CNC 0 Touch   INF   Open order checked, elapsed: 15.914309ms
+2020-02-29 11:50:48.993   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:50:48.993   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:50:49.002   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.178552ms
+2020-02-29 11:50:49.002   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:50:49.002   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:50:49.002   CNC 0 Touch   INF   Loop ended, elapsed: 84.613447ms
+2020-02-29 11:50:49.002   CNC 0 Touch   INF   Sleeping for 9.915322292s
+2020-02-29 11:50:58.918   CNC 0 Touch   INF   Device still active
+2020-02-29 11:50:58.918   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:50:58.919   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:50:58.941   CNC 0 Touch   INF   Actual state downloaded, elapsed: 22.412333ms
+2020-02-29 11:50:58.942   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:50:58.942   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:50:58.952   CNC 0 Touch   INF   Open order checked, elapsed: 10.724833ms
+2020-02-29 11:50:58.953   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:50:58.953   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:50:58.961   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.438465ms
+2020-02-29 11:50:58.961   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:50:58.962   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:50:58.962   CNC 0 Touch   INF   Loop ended, elapsed: 42.983295ms
+2020-02-29 11:50:58.962   CNC 0 Touch   INF   Sleeping for 9.956919579s
+2020-02-29 11:51:08.919   CNC 0 Touch   INF   Device still active
+2020-02-29 11:51:08.919   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:51:08.919   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:51:08.949   CNC 0 Touch   INF   Actual state downloaded, elapsed: 29.8284ms
+2020-02-29 11:51:08.949   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:51:08.949   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:51:08.961   CNC 0 Touch   INF   Open order checked, elapsed: 10.957816ms
+2020-02-29 11:51:08.961   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:51:08.961   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:51:08.967   CNC 0 Touch   INF   Open downtime checked, elapsed: 6.572231ms
+2020-02-29 11:51:08.968   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:51:08.968   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:51:08.968   CNC 0 Touch   INF   Loop ended, elapsed: 48.436032ms
+2020-02-29 11:51:08.968   CNC 0 Touch   INF   Sleeping for 9.951462488s
+2020-02-29 11:51:18.920   CNC 0 Touch   INF   Device still active
+2020-02-29 11:51:18.920   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:51:18.920   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:51:18.949   CNC 0 Touch   INF   Actual state downloaded, elapsed: 28.400445ms
+2020-02-29 11:51:18.949   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:51:18.949   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:51:18.982   CNC 0 Touch   INF   Open order checked, elapsed: 32.256441ms
+2020-02-29 11:51:18.982   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:51:18.982   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:51:18.991   CNC 0 Touch   INF   Open downtime checked, elapsed: 9.014803ms
+2020-02-29 11:51:18.991   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:51:18.991   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:51:18.991   CNC 0 Touch   INF   Loop ended, elapsed: 71.179275ms
+2020-02-29 11:51:18.992   CNC 0 Touch   INF   Sleeping for 9.928748758s
+2020-02-29 11:51:28.921   CNC 0 Touch   INF   Device still active
+2020-02-29 11:51:28.921   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:51:28.921   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:51:28.957   CNC 0 Touch   INF   Actual state downloaded, elapsed: 35.985514ms
+2020-02-29 11:51:28.957   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:51:28.958   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:51:28.968   CNC 0 Touch   INF   Open order checked, elapsed: 9.99229ms
+2020-02-29 11:51:28.968   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:51:28.968   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:51:28.979   CNC 0 Touch   INF   Open downtime checked, elapsed: 10.824651ms
+2020-02-29 11:51:28.979   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:51:28.979   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:51:28.979   CNC 0 Touch   INF   Loop ended, elapsed: 58.399764ms
+2020-02-29 11:51:28.980   CNC 0 Touch   INF   Sleeping for 9.941515175s
+2020-02-29 11:51:38.921   CNC 0 Touch   INF   Device still active
+2020-02-29 11:51:38.921   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:51:38.922   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:51:38.942   CNC 0 Touch   INF   Actual state downloaded, elapsed: 20.401638ms
+2020-02-29 11:51:38.943   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:51:38.943   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:51:38.956   CNC 0 Touch   INF   Open order checked, elapsed: 13.320566ms
+2020-02-29 11:51:38.956   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:51:38.956   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:51:38.966   CNC 0 Touch   INF   Open downtime checked, elapsed: 9.721519ms
+2020-02-29 11:51:38.966   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:51:38.967   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:51:38.967   CNC 0 Touch   INF   Loop ended, elapsed: 45.144522ms
+2020-02-29 11:51:38.967   CNC 0 Touch   INF   Sleeping for 9.954787292s
+2020-02-29 11:51:48.922   CNC 0 Touch   INF   Device still active
+2020-02-29 11:51:48.922   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:51:48.923   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:51:48.978   CNC 0 Touch   INF   Actual state downloaded, elapsed: 55.445662ms
+2020-02-29 11:51:48.979   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:51:48.979   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:51:48.990   CNC 0 Touch   INF   Open order checked, elapsed: 11.363508ms
+2020-02-29 11:51:48.990   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:51:48.990   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:51:49.005   CNC 0 Touch   INF   Open downtime checked, elapsed: 14.043476ms
+2020-02-29 11:51:49.005   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:51:49.005   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:51:49.005   CNC 0 Touch   INF   Loop ended, elapsed: 82.472273ms
+2020-02-29 11:51:49.005   CNC 0 Touch   INF   Sleeping for 9.917407542s
+2020-02-29 11:51:58.923   CNC 0 Touch   INF   Device still active
+2020-02-29 11:51:58.923   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:51:58.924   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:51:58.949   CNC 0 Touch   INF   Actual state downloaded, elapsed: 25.169647ms
+2020-02-29 11:51:58.949   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:51:58.949   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:51:58.958   CNC 0 Touch   INF   Open order checked, elapsed: 8.023459ms
+2020-02-29 11:51:58.958   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:51:58.958   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:51:58.970   CNC 0 Touch   INF   Open downtime checked, elapsed: 11.912006ms
+2020-02-29 11:51:58.970   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:51:58.970   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:51:58.970   CNC 0 Touch   INF   Loop ended, elapsed: 46.298972ms
+2020-02-29 11:51:58.970   CNC 0 Touch   INF   Sleeping for 9.953645851s
+2020-02-29 11:52:08.924   CNC 0 Touch   INF   Device still active
+2020-02-29 11:52:08.924   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:52:08.925   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:52:08.959   CNC 0 Touch   INF   Actual state downloaded, elapsed: 33.771807ms
+2020-02-29 11:52:08.959   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:52:08.959   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:52:08.970   CNC 0 Touch   INF   Open order checked, elapsed: 10.674704ms
+2020-02-29 11:52:08.970   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:52:08.970   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:52:08.976   CNC 0 Touch   INF   Open downtime checked, elapsed: 6.509642ms
+2020-02-29 11:52:08.977   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:52:08.977   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:52:08.977   CNC 0 Touch   INF   Loop ended, elapsed: 52.171927ms
+2020-02-29 11:52:08.977   CNC 0 Touch   INF   Sleeping for 9.947743282s
+2020-02-29 11:52:18.928   CNC 0 Touch   INF   Device still active
+2020-02-29 11:52:18.928   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:52:18.929   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:52:18.949   CNC 0 Touch   INF   Actual state downloaded, elapsed: 20.716079ms
+2020-02-29 11:52:18.950   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:52:18.950   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:52:18.971   CNC 0 Touch   INF   Open order checked, elapsed: 20.676097ms
+2020-02-29 11:52:18.971   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:52:18.971   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:52:18.985   CNC 0 Touch   INF   Open downtime checked, elapsed: 14.146019ms
+2020-02-29 11:52:18.985   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:52:18.985   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:52:18.985   CNC 0 Touch   INF   Loop ended, elapsed: 56.929309ms
+2020-02-29 11:52:18.986   CNC 0 Touch   INF   Sleeping for 9.943004648s
+2020-02-29 11:52:28.929   CNC 0 Touch   INF   Device still active
+2020-02-29 11:52:28.930   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:52:28.930   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:52:28.953   CNC 0 Touch   INF   Actual state downloaded, elapsed: 23.254311ms
+2020-02-29 11:52:28.954   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:52:28.954   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:52:28.963   CNC 0 Touch   INF   Open order checked, elapsed: 9.401572ms
+2020-02-29 11:52:28.963   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:52:28.963   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:52:28.971   CNC 0 Touch   INF   Open downtime checked, elapsed: 7.406301ms
+2020-02-29 11:52:28.971   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:52:28.971   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:52:28.971   CNC 0 Touch   INF   Loop ended, elapsed: 41.201792ms
+2020-02-29 11:52:28.971   CNC 0 Touch   INF   Sleeping for 9.958733756s
+2020-02-29 11:52:38.930   CNC 0 Touch   INF   Device still active
+2020-02-29 11:52:38.931   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:52:38.931   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:52:38.953   CNC 0 Touch   INF   Actual state downloaded, elapsed: 21.897071ms
+2020-02-29 11:52:38.953   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:52:38.953   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:52:38.974   CNC 0 Touch   INF   Open order checked, elapsed: 21.074901ms
+2020-02-29 11:52:38.974   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:52:38.974   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:52:38.982   CNC 0 Touch   INF   Open downtime checked, elapsed: 7.478152ms
+2020-02-29 11:52:38.982   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:52:38.982   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:52:38.982   CNC 0 Touch   INF   Loop ended, elapsed: 51.572026ms
+2020-02-29 11:52:38.982   CNC 0 Touch   INF   Sleeping for 9.948374548s
+2020-02-29 11:52:48.932   CNC 0 Touch   INF   Device still active
+2020-02-29 11:52:48.933   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:52:48.933   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:52:48.998   CNC 0 Touch   INF   Actual state downloaded, elapsed: 64.379939ms
+2020-02-29 11:52:48.998   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:52:48.998   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:52:49.023   CNC 0 Touch   INF   Open order checked, elapsed: 25.210913ms
+2020-02-29 11:52:49.024   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:52:49.024   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:52:49.035   CNC 0 Touch   INF   Open downtime checked, elapsed: 10.710511ms
+2020-02-29 11:52:49.035   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:52:49.035   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:52:49.035   CNC 0 Touch   INF   Loop ended, elapsed: 102.061547ms
+2020-02-29 11:52:49.035   CNC 0 Touch   INF   Sleeping for 9.89784801s
+2020-02-29 11:52:58.935   CNC 0 Touch   INF   Device still active
+2020-02-29 11:52:58.935   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:52:58.936   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:52:58.956   CNC 0 Touch   INF   Actual state downloaded, elapsed: 20.194804ms
+2020-02-29 11:52:58.956   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:52:58.956   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:52:58.967   CNC 0 Touch   INF   Open order checked, elapsed: 10.721424ms
+2020-02-29 11:52:58.967   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:52:58.967   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:52:58.976   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.232655ms
+2020-02-29 11:52:58.976   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:52:58.976   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:52:58.976   CNC 0 Touch   INF   Loop ended, elapsed: 40.684858ms
+2020-02-29 11:52:58.976   CNC 0 Touch   INF   Sleeping for 9.959255942s
+2020-02-29 11:53:08.939   CNC 0 Touch   INF   Device still active
+2020-02-29 11:53:08.940   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:53:08.940   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:53:08.959   CNC 0 Touch   INF   Actual state downloaded, elapsed: 18.668949ms
+2020-02-29 11:53:08.959   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:53:08.959   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:53:08.973   CNC 0 Touch   INF   Open order checked, elapsed: 13.905916ms
+2020-02-29 11:53:08.974   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:53:08.974   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:53:08.985   CNC 0 Touch   INF   Open downtime checked, elapsed: 11.416349ms
+2020-02-29 11:53:08.985   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:53:08.985   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:53:08.985   CNC 0 Touch   INF   Loop ended, elapsed: 45.29667ms
+2020-02-29 11:53:08.986   CNC 0 Touch   INF   Sleeping for 9.954638081s
+2020-02-29 11:53:18.941   CNC 0 Touch   INF   Device still active
+2020-02-29 11:53:18.941   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:53:18.941   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:53:18.966   CNC 0 Touch   INF   Actual state downloaded, elapsed: 24.644065ms
+2020-02-29 11:53:18.966   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:53:18.966   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:53:18.975   CNC 0 Touch   INF   Open order checked, elapsed: 8.801796ms
+2020-02-29 11:53:18.975   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:53:18.976   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:53:19.003   CNC 0 Touch   INF   Open downtime checked, elapsed: 27.50296ms
+2020-02-29 11:53:19.003   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:53:19.003   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:53:19.004   CNC 0 Touch   INF   Loop ended, elapsed: 62.546791ms
+2020-02-29 11:53:19.004   CNC 0 Touch   INF   Sleeping for 9.937340366s
+2020-02-29 11:53:28.941   CNC 0 Touch   INF   Device still active
+2020-02-29 11:53:28.942   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:53:28.942   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:53:28.966   CNC 0 Touch   INF   Actual state downloaded, elapsed: 23.910795ms
+2020-02-29 11:53:28.966   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:53:28.966   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:53:28.976   CNC 0 Touch   INF   Open order checked, elapsed: 9.665844ms
+2020-02-29 11:53:28.976   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:53:28.976   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:53:28.987   CNC 0 Touch   INF   Open downtime checked, elapsed: 10.446776ms
+2020-02-29 11:53:28.987   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:53:28.987   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:53:28.987   CNC 0 Touch   INF   Loop ended, elapsed: 45.589498ms
+2020-02-29 11:53:28.987   CNC 0 Touch   INF   Sleeping for 9.95436071s
+2020-02-29 11:53:38.944   CNC 0 Touch   INF   Device still active
+2020-02-29 11:53:38.944   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:53:38.945   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:53:38.964   CNC 0 Touch   INF   Actual state downloaded, elapsed: 19.5827ms
+2020-02-29 11:53:38.964   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:53:38.965   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:53:38.978   CNC 0 Touch   INF   Open order checked, elapsed: 12.901867ms
+2020-02-29 11:53:38.978   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:53:38.978   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:53:38.992   CNC 0 Touch   INF   Open downtime checked, elapsed: 14.069803ms
+2020-02-29 11:53:38.992   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:53:38.992   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:53:38.992   CNC 0 Touch   INF   Loop ended, elapsed: 47.751199ms
+2020-02-29 11:53:38.992   CNC 0 Touch   INF   Sleeping for 9.952187706s
+2020-02-29 11:53:48.946   CNC 0 Touch   INF   Device still active
+2020-02-29 11:53:48.946   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:53:48.947   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:53:48.965   CNC 0 Touch   INF   Actual state downloaded, elapsed: 18.311481ms
+2020-02-29 11:53:48.966   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:53:48.966   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:53:48.974   CNC 0 Touch   INF   Open order checked, elapsed: 8.53109ms
+2020-02-29 11:53:48.974   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:53:48.975   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:53:48.986   CNC 0 Touch   INF   Open downtime checked, elapsed: 11.71118ms
+2020-02-29 11:53:48.987   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:53:48.987   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:53:48.987   CNC 0 Touch   INF   Loop ended, elapsed: 40.205967ms
+2020-02-29 11:53:48.987   CNC 0 Touch   INF   Sleeping for 9.959650024s
+2020-02-29 11:53:58.948   CNC 0 Touch   INF   Device still active
+2020-02-29 11:53:58.948   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:53:58.949   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:53:58.967   CNC 0 Touch   INF   Actual state downloaded, elapsed: 18.71228ms
+2020-02-29 11:53:58.968   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:53:58.968   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:53:58.975   CNC 0 Touch   INF   Open order checked, elapsed: 7.292849ms
+2020-02-29 11:53:58.975   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:53:58.975   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:53:58.985   CNC 0 Touch   INF   Open downtime checked, elapsed: 9.208817ms
+2020-02-29 11:53:58.985   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:53:58.985   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:53:58.985   CNC 0 Touch   INF   Loop ended, elapsed: 36.788204ms
+2020-02-29 11:53:58.985   CNC 0 Touch   INF   Sleeping for 9.963065665s
+2020-02-29 11:54:08.949   CNC 0 Touch   INF   Device still active
+2020-02-29 11:54:08.949   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:54:08.950   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:54:08.967   CNC 0 Touch   INF   Actual state downloaded, elapsed: 17.376519ms
+2020-02-29 11:54:08.967   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:54:08.967   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:54:08.980   CNC 0 Touch   INF   Open order checked, elapsed: 12.074876ms
+2020-02-29 11:54:08.980   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:54:08.980   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:54:08.987   CNC 0 Touch   INF   Open downtime checked, elapsed: 7.372006ms
+2020-02-29 11:54:08.987   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:54:08.988   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:54:08.988   CNC 0 Touch   INF   Loop ended, elapsed: 38.014121ms
+2020-02-29 11:54:08.988   CNC 0 Touch   INF   Sleeping for 9.96188959s
+2020-02-29 11:54:18.950   CNC 0 Touch   INF   Device still active
+2020-02-29 11:54:18.950   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:54:18.951   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:54:18.978   CNC 0 Touch   INF   Actual state downloaded, elapsed: 26.682809ms
+2020-02-29 11:54:18.978   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:54:18.978   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:54:18.986   CNC 0 Touch   INF   Open order checked, elapsed: 8.376478ms
+2020-02-29 11:54:18.986   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:54:18.986   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:54:18.995   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.144694ms
+2020-02-29 11:54:18.995   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:54:18.995   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:54:18.995   CNC 0 Touch   INF   Loop ended, elapsed: 44.284102ms
+2020-02-29 11:54:18.995   CNC 0 Touch   INF   Sleeping for 9.955649282s
+2020-02-29 11:54:28.952   CNC 0 Touch   INF   Device still active
+2020-02-29 11:54:28.952   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:54:28.952   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:54:28.976   CNC 0 Touch   INF   Actual state downloaded, elapsed: 23.343733ms
+2020-02-29 11:54:28.976   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:54:28.976   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:54:28.989   CNC 0 Touch   INF   Open order checked, elapsed: 13.098681ms
+2020-02-29 11:54:28.989   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:54:28.989   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:54:28.999   CNC 0 Touch   INF   Open downtime checked, elapsed: 10.008952ms
+2020-02-29 11:54:29.000   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:54:29.000   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:54:29.000   CNC 0 Touch   INF   Loop ended, elapsed: 47.436164ms
+2020-02-29 11:54:29.000   CNC 0 Touch   INF   Sleeping for 9.952511892s
+2020-02-29 11:54:38.955   CNC 0 Touch   INF   Device still active
+2020-02-29 11:54:38.955   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:54:38.956   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:54:38.988   CNC 0 Touch   INF   Actual state downloaded, elapsed: 32.321221ms
+2020-02-29 11:54:38.989   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:54:38.989   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:54:38.997   CNC 0 Touch   INF   Open order checked, elapsed: 8.798471ms
+2020-02-29 11:54:38.998   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:54:38.998   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:54:39.010   CNC 0 Touch   INF   Open downtime checked, elapsed: 12.074929ms
+2020-02-29 11:54:39.010   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:54:39.010   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:54:39.010   CNC 0 Touch   INF   Loop ended, elapsed: 54.473642ms
+2020-02-29 11:54:39.010   CNC 0 Touch   INF   Sleeping for 9.945408232s
+2020-02-29 11:54:48.957   CNC 0 Touch   INF   Device still active
+2020-02-29 11:54:48.957   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:54:48.957   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:54:49.001   CNC 0 Touch   INF   Actual state downloaded, elapsed: 43.362413ms
+2020-02-29 11:54:49.001   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:54:49.001   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:54:49.024   CNC 0 Touch   INF   Open order checked, elapsed: 22.866203ms
+2020-02-29 11:54:49.024   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:54:49.024   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:54:49.035   CNC 0 Touch   INF   Open downtime checked, elapsed: 10.293411ms
+2020-02-29 11:54:49.035   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:54:49.035   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:54:49.035   CNC 0 Touch   INF   Loop ended, elapsed: 77.903444ms
+2020-02-29 11:54:49.035   CNC 0 Touch   INF   Sleeping for 9.922028904s
+2020-02-29 11:54:58.960   CNC 0 Touch   INF   Device still active
+2020-02-29 11:54:58.960   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:54:58.960   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:54:58.979   CNC 0 Touch   INF   Actual state downloaded, elapsed: 18.736836ms
+2020-02-29 11:54:58.979   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:54:58.979   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:54:58.989   CNC 0 Touch   INF   Open order checked, elapsed: 9.568194ms
+2020-02-29 11:54:58.989   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:54:58.989   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:54:59.002   CNC 0 Touch   INF   Open downtime checked, elapsed: 12.061938ms
+2020-02-29 11:54:59.002   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:54:59.002   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:54:59.002   CNC 0 Touch   INF   Loop ended, elapsed: 41.681178ms
+2020-02-29 11:54:59.002   CNC 0 Touch   INF   Sleeping for 9.95823185s
+2020-02-29 11:55:08.965   CNC 0 Touch   INF   Device still active
+2020-02-29 11:55:08.965   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:55:08.965   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:55:08.997   CNC 0 Touch   INF   Actual state downloaded, elapsed: 31.779829ms
+2020-02-29 11:55:08.998   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:55:08.998   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:55:09.009   CNC 0 Touch   INF   Open order checked, elapsed: 10.838544ms
+2020-02-29 11:55:09.009   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:55:09.009   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:55:09.020   CNC 0 Touch   INF   Open downtime checked, elapsed: 11.037574ms
+2020-02-29 11:55:09.020   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:55:09.020   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:55:09.020   CNC 0 Touch   INF   Loop ended, elapsed: 54.640556ms
+2020-02-29 11:55:09.020   CNC 0 Touch   INF   Sleeping for 9.945301821s
+2020-02-29 11:55:18.969   CNC 0 Touch   INF   Device still active
+2020-02-29 11:55:18.970   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:55:18.970   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:55:18.995   CNC 0 Touch   INF   Actual state downloaded, elapsed: 24.527491ms
+2020-02-29 11:55:18.995   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:55:18.995   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:55:19.003   CNC 0 Touch   INF   Open order checked, elapsed: 7.52322ms
+2020-02-29 11:55:19.003   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:55:19.003   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:55:19.012   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.740218ms
+2020-02-29 11:55:19.012   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:55:19.012   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:55:19.012   CNC 0 Touch   INF   Loop ended, elapsed: 41.922919ms
+2020-02-29 11:55:19.012   CNC 0 Touch   INF   Sleeping for 9.958020144s
+2020-02-29 11:55:28.970   CNC 0 Touch   INF   Device still active
+2020-02-29 11:55:28.970   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:55:28.970   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:55:29.007   CNC 0 Touch   INF   Actual state downloaded, elapsed: 36.781315ms
+2020-02-29 11:55:29.008   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:55:29.008   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:55:29.019   CNC 0 Touch   INF   Open order checked, elapsed: 11.626742ms
+2020-02-29 11:55:29.019   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:55:29.020   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:55:29.028   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.46856ms
+2020-02-29 11:55:29.028   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:55:29.029   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:55:29.029   CNC 0 Touch   INF   Loop ended, elapsed: 58.169968ms
+2020-02-29 11:55:29.029   CNC 0 Touch   INF   Sleeping for 9.941751839s
+2020-02-29 11:55:38.971   CNC 0 Touch   INF   Device still active
+2020-02-29 11:55:38.971   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:55:38.972   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:55:38.993   CNC 0 Touch   INF   Actual state downloaded, elapsed: 21.285741ms
+2020-02-29 11:55:38.993   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:55:38.993   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:55:39.002   CNC 0 Touch   INF   Open order checked, elapsed: 8.59101ms
+2020-02-29 11:55:39.002   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:55:39.002   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:55:39.010   CNC 0 Touch   INF   Open downtime checked, elapsed: 8.225434ms
+2020-02-29 11:55:39.011   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:55:39.011   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:55:39.011   CNC 0 Touch   INF   Loop ended, elapsed: 39.278764ms
+2020-02-29 11:55:39.011   CNC 0 Touch   INF   Sleeping for 9.960670294s
+2020-02-29 11:55:48.972   CNC 0 Touch   INF   Device still active
+2020-02-29 11:55:48.972   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:55:48.972   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:55:48.991   CNC 0 Touch   INF   Actual state downloaded, elapsed: 19.223917ms
+2020-02-29 11:55:48.992   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:55:48.992   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:55:49.003   CNC 0 Touch   INF   Open order checked, elapsed: 11.577867ms
+2020-02-29 11:55:49.004   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:55:49.004   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:55:49.015   CNC 0 Touch   INF   Open downtime checked, elapsed: 11.206185ms
+2020-02-29 11:55:49.015   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:55:49.015   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:55:49.015   CNC 0 Touch   INF   Loop ended, elapsed: 43.183866ms
+2020-02-29 11:55:49.015   CNC 0 Touch   INF   Sleeping for 9.956714967s
+2020-02-29 11:55:58.972   CNC 0 Touch   INF   Device still active
+2020-02-29 11:55:58.972   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:55:58.973   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:55:58.993   CNC 0 Touch   INF   Actual state downloaded, elapsed: 19.943219ms
+2020-02-29 11:55:58.993   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:55:58.993   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:55:59.003   CNC 0 Touch   INF   Open order checked, elapsed: 10.309014ms
+2020-02-29 11:55:59.003   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:55:59.004   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:55:59.015   CNC 0 Touch   INF   Open downtime checked, elapsed: 11.218366ms
+2020-02-29 11:55:59.015   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:55:59.015   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:55:59.015   CNC 0 Touch   INF   Loop ended, elapsed: 42.626921ms
+2020-02-29 11:55:59.015   CNC 0 Touch   INF   Sleeping for 9.957320056s
+2020-02-29 11:56:08.973   CNC 0 Touch   INF   Device still active
+2020-02-29 11:56:08.973   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:56:08.973   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:56:08.995   CNC 0 Touch   INF   Actual state downloaded, elapsed: 22.106997ms
+2020-02-29 11:56:08.995   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:56:08.995   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:56:09.007   CNC 0 Touch   INF   Open order checked, elapsed: 11.64777ms
+2020-02-29 11:56:09.007   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:56:09.007   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:56:09.020   CNC 0 Touch   INF   Open downtime checked, elapsed: 12.149018ms
+2020-02-29 11:56:09.020   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:56:09.020   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:56:09.020   CNC 0 Touch   INF   Loop ended, elapsed: 46.995199ms
+2020-02-29 11:56:09.020   CNC 0 Touch   INF   Sleeping for 9.952931299s
+2020-02-29 11:56:18.973   CNC 0 Touch   INF   Device still active
+2020-02-29 11:56:18.973   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:56:18.974   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:56:19.003   CNC 0 Touch   INF   Actual state downloaded, elapsed: 28.989418ms
+2020-02-29 11:56:19.003   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:56:19.004   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:56:19.022   CNC 0 Touch   INF   Open order checked, elapsed: 18.238652ms
+2020-02-29 11:56:19.023   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:56:19.023   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:56:19.035   CNC 0 Touch   INF   Open downtime checked, elapsed: 12.062317ms
+2020-02-29 11:56:19.035   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:56:19.035   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:56:19.035   CNC 0 Touch   INF   Loop ended, elapsed: 61.481937ms
+2020-02-29 11:56:19.035   CNC 0 Touch   INF   Sleeping for 9.93838653s
+2020-02-29 11:56:28.976   CNC 0 Touch   INF   Device still active
+2020-02-29 11:56:28.976   CNC 0 Touch   INF   Starting device loop
+2020-02-29 11:56:28.977   CNC 0 Touch   INF   Downloading actual state
+2020-02-29 11:56:29.029   CNC 0 Touch   INF   Actual state downloaded, elapsed: 52.335647ms
+2020-02-29 11:56:29.029   CNC 0 Touch   INF   Actual workplace state: Poweroff
+2020-02-29 11:56:29.029   CNC 0 Touch   INF   Checking open order
+2020-02-29 11:56:29.048   CNC 0 Touch   INF   Open order checked, elapsed: 18.638438ms
+2020-02-29 11:56:29.048   CNC 0 Touch   INF   Actual open order: 0
+2020-02-29 11:56:29.048   CNC 0 Touch   INF   Checking open downtime
+2020-02-29 11:56:29.056   CNC 0 Touch   INF   Open downtime checked, elapsed: 7.593056ms
+2020-02-29 11:56:29.056   CNC 0 Touch   INF   Actual open downtime: 0
+2020-02-29 11:56:29.056   CNC 0 Touch   INF   Poweroff state
+2020-02-29 11:56:29.057   CNC 0 Touch   INF   Loop ended, elapsed: 80.132801ms
+2020-02-29 11:56:29.057   CNC 0 Touch   INF   Sleeping for 9.919748342s
+2020-02-29 11:56:38.979   CNC 0 Touch   INF   Device still active
+2020-02-29 11:56:38.979   CNC 0 Touch   INF   Device not active, stopped running
+2020-02-29 11:56:38.991   CNC 0 Touch   INF   Device started running
+2020-02-29 11:56:38.991   CNC 0 Touch   INF   Device directory exists
+2020-02-29 11:56:38.991   CNC 0 Touch   INF   Device not active, stopped running

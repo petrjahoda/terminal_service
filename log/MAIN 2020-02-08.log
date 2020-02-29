@@ -1,6 +1,0 @@
-2020-02-08 09:05:53.498   MAIN   INF   Starting Terminal Service on darwin-launchd
-2020-02-08 09:06:03.501   MAIN   INF   Terminal Service version 2020.1.2.8 started
-2020-02-08 09:06:05.334   MAIN   INF   Program running
-2020-02-08 09:06:05.344   MAIN   INF   Active devices: 0, running devices: 0
-2020-02-08 09:06:05.344   MAIN   INF   Sleeping for 9.990365691s
-2020-02-08 09:06:08.320   MAIN   INF   Stopped on platform darwin-launchd
