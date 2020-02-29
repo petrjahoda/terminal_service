@@ -1,0 +1,758 @@
+2020-02-29 12:40:03.981   2   INF   Device started running
+2020-02-29 12:40:03.982   2   WRN   Device directory not exist, creating
+2020-02-29 12:40:03.982   2   INF   Device directory created
+2020-02-29 12:40:03.982   2   INF   Starting device loop
+2020-02-29 12:40:03.982   2   INF   Downloading actual state
+2020-02-29 12:40:04.040   2   INF   Actual state downloaded, elapsed: 58.044921ms
+2020-02-29 12:40:04.040   2   INF   Actual workplace state: 
+2020-02-29 12:40:04.040   2   INF   Checking open order
+2020-02-29 12:40:04.068   2   INF   Open order checked, elapsed: 27.077085ms
+2020-02-29 12:40:04.068   2   INF   Actual open order: 0
+2020-02-29 12:40:04.068   2   INF   Checking open downtime
+2020-02-29 12:40:04.081   2   INF   Open downtime checked, elapsed: 13.265157ms
+2020-02-29 12:40:04.081   2   INF   Actual open downtime: 0
+2020-02-29 12:40:04.081   2   INF   Loop ended, elapsed: 99.325395ms
+2020-02-29 12:40:04.081   2   INF   Sleeping for 9.900620898s
+2020-02-29 12:40:13.982   2   INF   Device still active
+2020-02-29 12:40:13.982   2   INF   Starting device loop
+2020-02-29 12:40:13.982   2   INF   Downloading actual state
+2020-02-29 12:40:14.014   2   INF   Actual state downloaded, elapsed: 31.221234ms
+2020-02-29 12:40:14.014   2   INF   Actual workplace state: 
+2020-02-29 12:40:14.014   2   INF   Checking open order
+2020-02-29 12:40:14.061   2   INF   Open order checked, elapsed: 47.035549ms
+2020-02-29 12:40:14.061   2   INF   Actual open order: 0
+2020-02-29 12:40:14.061   2   INF   Checking open downtime
+2020-02-29 12:40:14.102   2   INF   Open downtime checked, elapsed: 40.080961ms
+2020-02-29 12:40:14.102   2   INF   Actual open downtime: 0
+2020-02-29 12:40:14.102   2   INF   Loop ended, elapsed: 119.580731ms
+2020-02-29 12:40:14.102   2   INF   Sleeping for 9.880355578s
+2020-02-29 12:40:23.983   2   INF   Device not active
+2020-02-29 12:40:23.983   2   INF   Device not active, stopped running
+2020-02-29 12:40:23.984   2   INF   Device started running
+2020-02-29 12:40:23.984   2   INF   Device directory exists
+2020-02-29 12:40:23.984   2   INF   Starting device loop
+2020-02-29 12:40:23.984   2   INF   Downloading actual state
+2020-02-29 12:40:24.030   2   INF   Actual state downloaded, elapsed: 45.99726ms
+2020-02-29 12:40:24.030   2   INF   Actual workplace state: 
+2020-02-29 12:40:24.030   2   INF   Checking open order
+2020-02-29 12:40:24.065   2   INF   Open order checked, elapsed: 33.964806ms
+2020-02-29 12:40:24.065   2   INF   Actual open order: 0
+2020-02-29 12:40:24.065   2   INF   Checking open downtime
+2020-02-29 12:40:24.081   2   INF   Open downtime checked, elapsed: 16.311515ms
+2020-02-29 12:40:24.081   2   INF   Actual open downtime: 0
+2020-02-29 12:40:24.081   2   INF   Loop ended, elapsed: 97.266356ms
+2020-02-29 12:40:24.081   2   INF   Sleeping for 9.90268361s
+2020-02-29 12:40:33.984   2   INF   Device still active
+2020-02-29 12:40:33.985   2   INF   Starting device loop
+2020-02-29 12:40:33.985   2   INF   Downloading actual state
+2020-02-29 12:40:34.021   2   INF   Actual state downloaded, elapsed: 35.483947ms
+2020-02-29 12:40:34.021   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:40:34.021   2   INF   Checking open order
+2020-02-29 12:40:34.055   2   INF   Open order checked, elapsed: 33.766684ms
+2020-02-29 12:40:34.055   2   INF   Actual open order: 0
+2020-02-29 12:40:34.055   2   INF   Checking open downtime
+2020-02-29 12:40:34.083   2   INF   Open downtime checked, elapsed: 27.563333ms
+2020-02-29 12:40:34.083   2   INF   Actual open downtime: 0
+2020-02-29 12:40:34.083   2   INF   Poweroff state
+2020-02-29 12:40:34.083   2   INF   Loop ended, elapsed: 97.769271ms
+2020-02-29 12:40:34.083   2   INF   Sleeping for 9.902142029s
+2020-02-29 12:40:43.985   2   INF   Device still active
+2020-02-29 12:40:43.985   2   INF   Starting device loop
+2020-02-29 12:40:43.985   2   INF   Downloading actual state
+2020-02-29 12:40:44.020   2   INF   Actual state downloaded, elapsed: 34.08836ms
+2020-02-29 12:40:44.020   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:40:44.020   2   INF   Checking open order
+2020-02-29 12:40:44.053   2   INF   Open order checked, elapsed: 32.640749ms
+2020-02-29 12:40:44.053   2   INF   Actual open order: 0
+2020-02-29 12:40:44.053   2   INF   Checking open downtime
+2020-02-29 12:40:44.087   2   INF   Open downtime checked, elapsed: 33.666924ms
+2020-02-29 12:40:44.087   2   INF   Actual open downtime: 0
+2020-02-29 12:40:44.087   2   INF   Poweroff state
+2020-02-29 12:40:44.087   2   INF   Loop ended, elapsed: 101.513766ms
+2020-02-29 12:40:44.087   2   INF   Sleeping for 9.898434703s
+2020-02-29 12:40:53.986   2   INF   Device still active
+2020-02-29 12:40:53.986   2   INF   Starting device loop
+2020-02-29 12:40:53.986   2   INF   Downloading actual state
+2020-02-29 12:40:54.012   2   INF   Actual state downloaded, elapsed: 26.150995ms
+2020-02-29 12:40:54.012   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:40:54.012   2   INF   Checking open order
+2020-02-29 12:40:54.031   2   INF   Open order checked, elapsed: 18.74125ms
+2020-02-29 12:40:54.031   2   INF   Actual open order: 0
+2020-02-29 12:40:54.031   2   INF   Checking open downtime
+2020-02-29 12:40:54.053   2   INF   Open downtime checked, elapsed: 21.694263ms
+2020-02-29 12:40:54.053   2   INF   Actual open downtime: 0
+2020-02-29 12:40:54.053   2   INF   Poweroff state
+2020-02-29 12:40:54.053   2   INF   Loop ended, elapsed: 67.599372ms
+2020-02-29 12:40:54.054   2   INF   Sleeping for 9.932287906s
+2020-02-29 12:41:03.986   2   INF   Device still active
+2020-02-29 12:41:03.986   2   INF   Starting device loop
+2020-02-29 12:41:03.986   2   INF   Downloading actual state
+2020-02-29 12:41:04.024   2   INF   Actual state downloaded, elapsed: 37.797474ms
+2020-02-29 12:41:04.025   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:41:04.025   2   INF   Checking open order
+2020-02-29 12:41:04.072   2   INF   Open order checked, elapsed: 46.890281ms
+2020-02-29 12:41:04.072   2   INF   Actual open order: 0
+2020-02-29 12:41:04.072   2   INF   Checking open downtime
+2020-02-29 12:41:04.091   2   INF   Open downtime checked, elapsed: 19.28346ms
+2020-02-29 12:41:04.091   2   INF   Actual open downtime: 0
+2020-02-29 12:41:04.091   2   INF   Poweroff state
+2020-02-29 12:41:04.092   2   INF   Loop ended, elapsed: 105.288909ms
+2020-02-29 12:41:04.092   2   INF   Sleeping for 9.894659682s
+2020-02-29 12:41:13.987   2   INF   Device still active
+2020-02-29 12:41:13.987   2   INF   Starting device loop
+2020-02-29 12:41:13.987   2   INF   Downloading actual state
+2020-02-29 12:41:14.020   2   INF   Actual state downloaded, elapsed: 32.637574ms
+2020-02-29 12:41:14.020   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:41:14.020   2   INF   Checking open order
+2020-02-29 12:41:14.049   2   INF   Open order checked, elapsed: 29.631097ms
+2020-02-29 12:41:14.050   2   INF   Actual open order: 0
+2020-02-29 12:41:14.050   2   INF   Checking open downtime
+2020-02-29 12:41:14.083   2   INF   Open downtime checked, elapsed: 32.989046ms
+2020-02-29 12:41:14.083   2   INF   Actual open downtime: 0
+2020-02-29 12:41:14.083   2   INF   Poweroff state
+2020-02-29 12:41:14.083   2   INF   Loop ended, elapsed: 96.293887ms
+2020-02-29 12:41:14.083   2   INF   Sleeping for 9.903617005s
+2020-02-29 12:41:23.987   2   INF   Device still active
+2020-02-29 12:41:23.987   2   INF   Starting device loop
+2020-02-29 12:41:23.987   2   INF   Downloading actual state
+2020-02-29 12:41:24.039   2   INF   Actual state downloaded, elapsed: 51.903603ms
+2020-02-29 12:41:24.039   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:41:24.039   2   INF   Checking open order
+2020-02-29 12:41:24.072   2   INF   Open order checked, elapsed: 32.341413ms
+2020-02-29 12:41:24.072   2   INF   Actual open order: 0
+2020-02-29 12:41:24.072   2   INF   Checking open downtime
+2020-02-29 12:41:24.095   2   INF   Open downtime checked, elapsed: 23.236586ms
+2020-02-29 12:41:24.096   2   INF   Actual open downtime: 0
+2020-02-29 12:41:24.096   2   INF   Poweroff state
+2020-02-29 12:41:24.096   2   INF   Loop ended, elapsed: 108.552163ms
+2020-02-29 12:41:24.096   2   INF   Sleeping for 9.891384492s
+2020-02-29 12:41:33.987   2   INF   Device still active
+2020-02-29 12:41:33.988   2   INF   Starting device loop
+2020-02-29 12:41:33.988   2   INF   Downloading actual state
+2020-02-29 12:41:34.024   2   INF   Actual state downloaded, elapsed: 36.646113ms
+2020-02-29 12:41:34.024   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:41:34.025   2   INF   Checking open order
+2020-02-29 12:41:34.051   2   INF   Open order checked, elapsed: 26.790928ms
+2020-02-29 12:41:34.052   2   INF   Actual open order: 0
+2020-02-29 12:41:34.052   2   INF   Checking open downtime
+2020-02-29 12:41:34.078   2   INF   Open downtime checked, elapsed: 26.194469ms
+2020-02-29 12:41:34.078   2   INF   Actual open downtime: 0
+2020-02-29 12:41:34.078   2   INF   Poweroff state
+2020-02-29 12:41:34.078   2   INF   Loop ended, elapsed: 90.703039ms
+2020-02-29 12:41:34.078   2   INF   Sleeping for 9.909187131s
+2020-02-29 12:41:43.988   2   INF   Device still active
+2020-02-29 12:41:43.988   2   INF   Starting device loop
+2020-02-29 12:41:43.988   2   INF   Downloading actual state
+2020-02-29 12:41:44.020   2   INF   Actual state downloaded, elapsed: 31.37601ms
+2020-02-29 12:41:44.020   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:41:44.020   2   INF   Checking open order
+2020-02-29 12:41:44.034   2   INF   Open order checked, elapsed: 13.469742ms
+2020-02-29 12:41:44.034   2   INF   Actual open order: 0
+2020-02-29 12:41:44.034   2   INF   Checking open downtime
+2020-02-29 12:41:44.056   2   INF   Open downtime checked, elapsed: 22.207295ms
+2020-02-29 12:41:44.057   2   INF   Actual open downtime: 0
+2020-02-29 12:41:44.057   2   INF   Poweroff state
+2020-02-29 12:41:44.057   2   INF   Loop ended, elapsed: 68.304553ms
+2020-02-29 12:41:44.057   2   INF   Sleeping for 9.931591658s
+2020-02-29 12:41:53.989   2   INF   Device still active
+2020-02-29 12:41:53.989   2   INF   Starting device loop
+2020-02-29 12:41:53.989   2   INF   Downloading actual state
+2020-02-29 12:41:54.023   2   INF   Actual state downloaded, elapsed: 33.744172ms
+2020-02-29 12:41:54.023   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:41:54.023   2   INF   Checking open order
+2020-02-29 12:41:54.059   2   INF   Open order checked, elapsed: 35.533186ms
+2020-02-29 12:41:54.059   2   INF   Actual open order: 0
+2020-02-29 12:41:54.059   2   INF   Checking open downtime
+2020-02-29 12:41:54.078   2   INF   Open downtime checked, elapsed: 19.338565ms
+2020-02-29 12:41:54.078   2   INF   Actual open downtime: 0
+2020-02-29 12:41:54.079   2   INF   Poweroff state
+2020-02-29 12:41:54.079   2   INF   Loop ended, elapsed: 89.603943ms
+2020-02-29 12:41:54.079   2   INF   Sleeping for 9.910344199s
+2020-02-29 12:42:03.991   2   INF   Device still active
+2020-02-29 12:42:03.991   2   INF   Starting device loop
+2020-02-29 12:42:03.992   2   INF   Downloading actual state
+2020-02-29 12:42:04.038   2   INF   Actual state downloaded, elapsed: 46.275182ms
+2020-02-29 12:42:04.038   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:42:04.038   2   INF   Checking open order
+2020-02-29 12:42:04.073   2   INF   Open order checked, elapsed: 34.81443ms
+2020-02-29 12:42:04.073   2   INF   Actual open order: 0
+2020-02-29 12:42:04.074   2   INF   Checking open downtime
+2020-02-29 12:42:04.099   2   INF   Open downtime checked, elapsed: 25.002609ms
+2020-02-29 12:42:04.099   2   INF   Actual open downtime: 0
+2020-02-29 12:42:04.099   2   INF   Poweroff state
+2020-02-29 12:42:04.099   2   INF   Loop ended, elapsed: 107.221084ms
+2020-02-29 12:42:04.099   2   INF   Sleeping for 9.892707977s
+2020-02-29 12:42:13.994   2   INF   Device still active
+2020-02-29 12:42:13.995   2   INF   Starting device loop
+2020-02-29 12:42:13.995   2   INF   Downloading actual state
+2020-02-29 12:42:14.037   2   INF   Actual state downloaded, elapsed: 42.01404ms
+2020-02-29 12:42:14.037   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:42:14.037   2   INF   Checking open order
+2020-02-29 12:42:14.077   2   INF   Open order checked, elapsed: 39.058521ms
+2020-02-29 12:42:14.077   2   INF   Actual open order: 0
+2020-02-29 12:42:14.077   2   INF   Checking open downtime
+2020-02-29 12:42:14.100   2   INF   Open downtime checked, elapsed: 22.67462ms
+2020-02-29 12:42:14.100   2   INF   Actual open downtime: 0
+2020-02-29 12:42:14.100   2   INF   Poweroff state
+2020-02-29 12:42:14.100   2   INF   Loop ended, elapsed: 104.888105ms
+2020-02-29 12:42:14.100   2   INF   Sleeping for 9.895061998s
+2020-02-29 12:42:23.999   2   INF   Device still active
+2020-02-29 12:42:24.000   2   INF   Starting device loop
+2020-02-29 12:42:24.000   2   INF   Downloading actual state
+2020-02-29 12:42:24.041   2   INF   Actual state downloaded, elapsed: 40.897202ms
+2020-02-29 12:42:24.041   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:42:24.041   2   INF   Checking open order
+2020-02-29 12:42:24.058   2   INF   Open order checked, elapsed: 16.471295ms
+2020-02-29 12:42:24.058   2   INF   Actual open order: 0
+2020-02-29 12:42:24.058   2   INF   Checking open downtime
+2020-02-29 12:42:24.084   2   INF   Open downtime checked, elapsed: 26.012314ms
+2020-02-29 12:42:24.085   2   INF   Actual open downtime: 0
+2020-02-29 12:42:24.085   2   INF   Poweroff state
+2020-02-29 12:42:24.085   2   INF   Loop ended, elapsed: 84.748844ms
+2020-02-29 12:42:24.085   2   INF   Sleeping for 9.915193257s
+2020-02-29 12:42:34.003   2   INF   Device still active
+2020-02-29 12:42:34.003   2   INF   Starting device loop
+2020-02-29 12:42:34.003   2   INF   Downloading actual state
+2020-02-29 12:42:34.046   2   INF   Actual state downloaded, elapsed: 42.669962ms
+2020-02-29 12:42:34.046   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:42:34.046   2   INF   Checking open order
+2020-02-29 12:42:34.087   2   INF   Open order checked, elapsed: 41.018625ms
+2020-02-29 12:42:34.088   2   INF   Actual open order: 0
+2020-02-29 12:42:34.088   2   INF   Checking open downtime
+2020-02-29 12:42:34.110   2   INF   Open downtime checked, elapsed: 22.513487ms
+2020-02-29 12:42:34.110   2   INF   Actual open downtime: 0
+2020-02-29 12:42:34.110   2   INF   Poweroff state
+2020-02-29 12:42:34.110   2   INF   Loop ended, elapsed: 107.333926ms
+2020-02-29 12:42:34.111   2   INF   Sleeping for 9.892613534s
+2020-02-29 12:42:44.004   2   INF   Device still active
+2020-02-29 12:42:44.005   2   INF   Starting device loop
+2020-02-29 12:42:44.005   2   INF   Downloading actual state
+2020-02-29 12:42:44.042   2   INF   Actual state downloaded, elapsed: 36.9829ms
+2020-02-29 12:42:44.042   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:42:44.042   2   INF   Checking open order
+2020-02-29 12:42:44.071   2   INF   Open order checked, elapsed: 29.136663ms
+2020-02-29 12:42:44.071   2   INF   Actual open order: 0
+2020-02-29 12:42:44.072   2   INF   Checking open downtime
+2020-02-29 12:42:44.091   2   INF   Open downtime checked, elapsed: 19.496536ms
+2020-02-29 12:42:44.091   2   INF   Actual open downtime: 0
+2020-02-29 12:42:44.091   2   INF   Poweroff state
+2020-02-29 12:42:44.092   2   INF   Loop ended, elapsed: 86.790621ms
+2020-02-29 12:42:44.092   2   INF   Sleeping for 9.913138516s
+2020-02-29 12:42:54.005   2   INF   Device still active
+2020-02-29 12:42:54.005   2   INF   Starting device loop
+2020-02-29 12:42:54.006   2   INF   Downloading actual state
+2020-02-29 12:42:54.057   2   INF   Actual state downloaded, elapsed: 50.958738ms
+2020-02-29 12:42:54.057   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:42:54.057   2   INF   Checking open order
+2020-02-29 12:42:54.101   2   INF   Open order checked, elapsed: 43.577062ms
+2020-02-29 12:42:54.101   2   INF   Actual open order: 0
+2020-02-29 12:42:54.101   2   INF   Checking open downtime
+2020-02-29 12:42:54.142   2   INF   Open downtime checked, elapsed: 41.073942ms
+2020-02-29 12:42:54.143   2   INF   Actual open downtime: 0
+2020-02-29 12:42:54.143   2   INF   Poweroff state
+2020-02-29 12:42:54.143   2   INF   Loop ended, elapsed: 137.331052ms
+2020-02-29 12:42:54.143   2   INF   Sleeping for 9.862605475s
+2020-02-29 12:43:04.009   2   INF   Device still active
+2020-02-29 12:43:04.009   2   INF   Starting device loop
+2020-02-29 12:43:04.009   2   INF   Downloading actual state
+2020-02-29 12:43:04.058   2   INF   Actual state downloaded, elapsed: 48.150027ms
+2020-02-29 12:43:04.058   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:43:04.058   2   INF   Checking open order
+2020-02-29 12:43:04.109   2   INF   Open order checked, elapsed: 51.157082ms
+2020-02-29 12:43:04.109   2   INF   Actual open order: 0
+2020-02-29 12:43:04.109   2   INF   Checking open downtime
+2020-02-29 12:43:04.137   2   INF   Open downtime checked, elapsed: 27.125401ms
+2020-02-29 12:43:04.137   2   INF   Actual open downtime: 0
+2020-02-29 12:43:04.137   2   INF   Poweroff state
+2020-02-29 12:43:04.137   2   INF   Loop ended, elapsed: 127.774732ms
+2020-02-29 12:43:04.137   2   INF   Sleeping for 9.872171488s
+2020-02-29 12:43:14.011   2   INF   Device still active
+2020-02-29 12:43:14.011   2   INF   Starting device loop
+2020-02-29 12:43:14.012   2   INF   Downloading actual state
+2020-02-29 12:43:14.088   2   INF   Actual state downloaded, elapsed: 76.209558ms
+2020-02-29 12:43:14.088   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:43:14.088   2   INF   Checking open order
+2020-02-29 12:43:14.122   2   INF   Open order checked, elapsed: 33.780992ms
+2020-02-29 12:43:14.122   2   INF   Actual open order: 0
+2020-02-29 12:43:14.122   2   INF   Checking open downtime
+2020-02-29 12:43:14.149   2   INF   Open downtime checked, elapsed: 26.614272ms
+2020-02-29 12:43:14.149   2   INF   Actual open downtime: 0
+2020-02-29 12:43:14.149   2   INF   Poweroff state
+2020-02-29 12:43:14.149   2   INF   Loop ended, elapsed: 137.926388ms
+2020-02-29 12:43:14.150   2   INF   Sleeping for 9.861962561s
+2020-02-29 12:43:24.013   2   INF   Device still active
+2020-02-29 12:43:24.013   2   INF   Starting device loop
+2020-02-29 12:43:24.013   2   INF   Downloading actual state
+2020-02-29 12:43:24.081   2   INF   Actual state downloaded, elapsed: 67.342595ms
+2020-02-29 12:43:24.081   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:43:24.081   2   INF   Checking open order
+2020-02-29 12:43:24.119   2   INF   Open order checked, elapsed: 37.217921ms
+2020-02-29 12:43:24.119   2   INF   Actual open order: 0
+2020-02-29 12:43:24.119   2   INF   Checking open downtime
+2020-02-29 12:43:24.151   2   INF   Open downtime checked, elapsed: 31.963466ms
+2020-02-29 12:43:24.151   2   INF   Actual open downtime: 0
+2020-02-29 12:43:24.151   2   INF   Poweroff state
+2020-02-29 12:43:24.151   2   INF   Loop ended, elapsed: 137.869996ms
+2020-02-29 12:43:24.151   2   INF   Sleeping for 9.862038374s
+2020-02-29 12:43:34.014   2   INF   Device still active
+2020-02-29 12:43:34.014   2   INF   Starting device loop
+2020-02-29 12:43:34.014   2   INF   Downloading actual state
+2020-02-29 12:43:34.055   2   INF   Actual state downloaded, elapsed: 41.274589ms
+2020-02-29 12:43:34.055   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:43:34.055   2   INF   Checking open order
+2020-02-29 12:43:34.085   2   INF   Open order checked, elapsed: 29.838897ms
+2020-02-29 12:43:34.086   2   INF   Actual open order: 0
+2020-02-29 12:43:34.086   2   INF   Checking open downtime
+2020-02-29 12:43:34.118   2   INF   Open downtime checked, elapsed: 32.569787ms
+2020-02-29 12:43:34.119   2   INF   Actual open downtime: 0
+2020-02-29 12:43:34.119   2   INF   Poweroff state
+2020-02-29 12:43:34.119   2   INF   Loop ended, elapsed: 104.837511ms
+2020-02-29 12:43:34.119   2   INF   Sleeping for 9.895090074s
+2020-02-29 12:43:44.017   2   INF   Device still active
+2020-02-29 12:43:44.018   2   INF   Starting device loop
+2020-02-29 12:43:44.018   2   INF   Downloading actual state
+2020-02-29 12:43:44.054   2   INF   Actual state downloaded, elapsed: 36.174318ms
+2020-02-29 12:43:44.055   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:43:44.055   2   INF   Checking open order
+2020-02-29 12:43:44.087   2   INF   Open order checked, elapsed: 31.908133ms
+2020-02-29 12:43:44.087   2   INF   Actual open order: 0
+2020-02-29 12:43:44.087   2   INF   Checking open downtime
+2020-02-29 12:43:44.123   2   INF   Open downtime checked, elapsed: 35.221688ms
+2020-02-29 12:43:44.123   2   INF   Actual open downtime: 0
+2020-02-29 12:43:44.123   2   INF   Poweroff state
+2020-02-29 12:43:44.123   2   INF   Loop ended, elapsed: 105.205754ms
+2020-02-29 12:43:44.124   2   INF   Sleeping for 9.894654935s
+2020-02-29 12:43:54.020   2   INF   Device still active
+2020-02-29 12:43:54.020   2   INF   Starting device loop
+2020-02-29 12:43:54.020   2   INF   Downloading actual state
+2020-02-29 12:43:54.104   2   INF   Actual state downloaded, elapsed: 83.620244ms
+2020-02-29 12:43:54.104   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:43:54.104   2   INF   Checking open order
+2020-02-29 12:43:54.140   2   INF   Open order checked, elapsed: 36.242812ms
+2020-02-29 12:43:54.141   2   INF   Actual open order: 0
+2020-02-29 12:43:54.141   2   INF   Checking open downtime
+2020-02-29 12:43:54.189   2   INF   Open downtime checked, elapsed: 48.498739ms
+2020-02-29 12:43:54.190   2   INF   Actual open downtime: 0
+2020-02-29 12:43:54.190   2   INF   Poweroff state
+2020-02-29 12:43:54.190   2   INF   Loop ended, elapsed: 169.8097ms
+2020-02-29 12:43:54.190   2   INF   Sleeping for 9.830060204s
+2020-02-29 12:44:04.020   2   INF   Device still active
+2020-02-29 12:44:04.021   2   INF   Starting device loop
+2020-02-29 12:44:04.021   2   INF   Downloading actual state
+2020-02-29 12:44:04.072   2   INF   Actual state downloaded, elapsed: 50.882397ms
+2020-02-29 12:44:04.072   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:44:04.072   2   INF   Checking open order
+2020-02-29 12:44:04.099   2   INF   Open order checked, elapsed: 26.846808ms
+2020-02-29 12:44:04.099   2   INF   Actual open order: 0
+2020-02-29 12:44:04.099   2   INF   Checking open downtime
+2020-02-29 12:44:04.127   2   INF   Open downtime checked, elapsed: 27.956959ms
+2020-02-29 12:44:04.127   2   INF   Actual open downtime: 0
+2020-02-29 12:44:04.128   2   INF   Poweroff state
+2020-02-29 12:44:04.128   2   INF   Loop ended, elapsed: 106.789158ms
+2020-02-29 12:44:04.128   2   INF   Sleeping for 9.893121613s
+2020-02-29 12:44:14.021   2   INF   Device still active
+2020-02-29 12:44:14.021   2   INF   Starting device loop
+2020-02-29 12:44:14.022   2   INF   Downloading actual state
+2020-02-29 12:44:14.066   2   INF   Actual state downloaded, elapsed: 44.508107ms
+2020-02-29 12:44:14.066   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:44:14.066   2   INF   Checking open order
+2020-02-29 12:44:14.103   2   INF   Open order checked, elapsed: 37.038915ms
+2020-02-29 12:44:14.104   2   INF   Actual open order: 0
+2020-02-29 12:44:14.104   2   INF   Checking open downtime
+2020-02-29 12:44:14.125   2   INF   Open downtime checked, elapsed: 20.648503ms
+2020-02-29 12:44:14.125   2   INF   Actual open downtime: 0
+2020-02-29 12:44:14.125   2   INF   Poweroff state
+2020-02-29 12:44:14.125   2   INF   Loop ended, elapsed: 103.734601ms
+2020-02-29 12:44:14.125   2   INF   Sleeping for 9.896185282s
+2020-02-29 12:44:24.023   2   INF   Device still active
+2020-02-29 12:44:24.024   2   INF   Device not active, stopped running
+2020-02-29 12:44:24.046   2   INF   Device started running
+2020-02-29 12:44:24.047   2   INF   Device directory exists
+2020-02-29 12:44:24.047   2   INF   Device not active, stopped running
+2020-02-29 12:44:53.444   2   INF   Device started running
+2020-02-29 12:44:53.444   2   INF   Device directory exists
+2020-02-29 12:44:53.444   2   INF   Starting device loop
+2020-02-29 12:44:53.444   2   INF   Downloading actual state
+2020-02-29 12:44:53.475   2   INF   Actual state downloaded, elapsed: 30.087648ms
+2020-02-29 12:44:53.475   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:44:53.475   2   INF   Checking open order
+2020-02-29 12:44:53.510   2   INF   Open order checked, elapsed: 35.012375ms
+2020-02-29 12:44:53.510   2   INF   Actual open order: 0
+2020-02-29 12:44:53.510   2   INF   Checking open downtime
+2020-02-29 12:44:53.531   2   INF   Open downtime checked, elapsed: 20.78938ms
+2020-02-29 12:44:53.531   2   INF   Actual open downtime: 0
+2020-02-29 12:44:53.531   2   INF   Poweroff state
+2020-02-29 12:44:53.531   2   INF   Loop ended, elapsed: 86.985479ms
+2020-02-29 12:44:53.531   2   INF   Sleeping for 9.912962135s
+2020-02-29 12:45:03.445   2   INF   Device still active
+2020-02-29 12:45:03.445   2   INF   Starting device loop
+2020-02-29 12:45:03.445   2   INF   Downloading actual state
+2020-02-29 12:45:03.479   2   INF   Actual state downloaded, elapsed: 34.505731ms
+2020-02-29 12:45:03.480   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:45:03.480   2   INF   Checking open order
+2020-02-29 12:45:03.512   2   INF   Open order checked, elapsed: 32.305707ms
+2020-02-29 12:45:03.512   2   INF   Actual open order: 0
+2020-02-29 12:45:03.512   2   INF   Checking open downtime
+2020-02-29 12:45:03.523   2   INF   Open downtime checked, elapsed: 11.022836ms
+2020-02-29 12:45:03.524   2   INF   Actual open downtime: 0
+2020-02-29 12:45:03.524   2   INF   Poweroff state
+2020-02-29 12:45:03.524   2   INF   Loop ended, elapsed: 78.964446ms
+2020-02-29 12:45:03.524   2   INF   Sleeping for 9.920968055s
+2020-02-29 12:45:13.447   2   INF   Device still active
+2020-02-29 12:45:13.447   2   INF   Starting device loop
+2020-02-29 12:45:13.447   2   INF   Downloading actual state
+2020-02-29 12:45:13.504   2   INF   Actual state downloaded, elapsed: 56.401366ms
+2020-02-29 12:45:13.504   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:45:13.504   2   INF   Checking open order
+2020-02-29 12:45:13.544   2   INF   Open order checked, elapsed: 39.572046ms
+2020-02-29 12:45:13.544   2   INF   Actual open order: 0
+2020-02-29 12:45:13.544   2   INF   Checking open downtime
+2020-02-29 12:45:13.567   2   INF   Open downtime checked, elapsed: 22.54665ms
+2020-02-29 12:45:13.567   2   INF   Actual open downtime: 0
+2020-02-29 12:45:13.567   2   INF   Poweroff state
+2020-02-29 12:45:13.567   2   INF   Loop ended, elapsed: 120.245986ms
+2020-02-29 12:45:13.567   2   INF   Sleeping for 9.879680023s
+2020-02-29 12:45:23.448   2   INF   Device still active
+2020-02-29 12:45:23.448   2   INF   Starting device loop
+2020-02-29 12:45:23.449   2   INF   Downloading actual state
+2020-02-29 12:45:23.491   2   INF   Actual state downloaded, elapsed: 42.435849ms
+2020-02-29 12:45:23.491   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:45:23.491   2   INF   Checking open order
+2020-02-29 12:45:23.510   2   INF   Open order checked, elapsed: 18.153348ms
+2020-02-29 12:45:23.510   2   INF   Actual open order: 0
+2020-02-29 12:45:23.510   2   INF   Checking open downtime
+2020-02-29 12:45:23.579   2   INF   Open downtime checked, elapsed: 68.961758ms
+2020-02-29 12:45:23.579   2   INF   Actual open downtime: 0
+2020-02-29 12:45:23.579   2   INF   Poweroff state
+2020-02-29 12:45:23.579   2   INF   Loop ended, elapsed: 130.82362ms
+2020-02-29 12:45:23.579   2   INF   Sleeping for 9.86909232s
+2020-02-29 12:45:33.449   2   INF   Device still active
+2020-02-29 12:45:33.449   2   INF   Starting device loop
+2020-02-29 12:45:33.449   2   INF   Downloading actual state
+2020-02-29 12:45:33.486   2   INF   Actual state downloaded, elapsed: 36.554401ms
+2020-02-29 12:45:33.486   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:45:33.486   2   INF   Checking open order
+2020-02-29 12:45:33.551   2   INF   Open order checked, elapsed: 65.097848ms
+2020-02-29 12:45:33.551   2   INF   Actual open order: 0
+2020-02-29 12:45:33.551   2   INF   Checking open downtime
+2020-02-29 12:45:33.582   2   INF   Open downtime checked, elapsed: 30.542691ms
+2020-02-29 12:45:33.582   2   INF   Actual open downtime: 0
+2020-02-29 12:45:33.582   2   INF   Poweroff state
+2020-02-29 12:45:33.582   2   INF   Loop ended, elapsed: 133.381911ms
+2020-02-29 12:45:33.583   2   INF   Sleeping for 9.866468953s
+2020-02-29 12:45:43.450   2   INF   Device still active
+2020-02-29 12:45:43.450   2   INF   Starting device loop
+2020-02-29 12:45:43.450   2   INF   Downloading actual state
+2020-02-29 12:45:43.515   2   INF   Actual state downloaded, elapsed: 64.240281ms
+2020-02-29 12:45:43.515   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:45:43.515   2   INF   Checking open order
+2020-02-29 12:45:43.573   2   INF   Open order checked, elapsed: 57.522277ms
+2020-02-29 12:45:43.573   2   INF   Actual open order: 0
+2020-02-29 12:45:43.573   2   INF   Checking open downtime
+2020-02-29 12:45:43.615   2   INF   Open downtime checked, elapsed: 42.267785ms
+2020-02-29 12:45:43.616   2   INF   Actual open downtime: 0
+2020-02-29 12:45:43.616   2   INF   Poweroff state
+2020-02-29 12:45:43.616   2   INF   Loop ended, elapsed: 165.817646ms
+2020-02-29 12:45:43.616   2   INF   Sleeping for 9.834086822s
+2020-02-29 12:45:53.450   2   INF   Device still active
+2020-02-29 12:45:53.450   2   INF   Starting device loop
+2020-02-29 12:45:53.450   2   INF   Downloading actual state
+2020-02-29 12:45:53.478   2   INF   Actual state downloaded, elapsed: 27.763644ms
+2020-02-29 12:45:53.479   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:45:53.479   2   INF   Checking open order
+2020-02-29 12:45:53.494   2   INF   Open order checked, elapsed: 15.081765ms
+2020-02-29 12:45:53.494   2   INF   Actual open order: 0
+2020-02-29 12:45:53.494   2   INF   Checking open downtime
+2020-02-29 12:45:53.528   2   INF   Open downtime checked, elapsed: 33.923844ms
+2020-02-29 12:45:53.528   2   INF   Actual open downtime: 0
+2020-02-29 12:45:53.528   2   INF   Poweroff state
+2020-02-29 12:45:53.528   2   INF   Loop ended, elapsed: 77.819187ms
+2020-02-29 12:45:53.528   2   INF   Sleeping for 9.922108276s
+2020-02-29 12:46:03.451   2   INF   Device still active
+2020-02-29 12:46:03.451   2   INF   Starting device loop
+2020-02-29 12:46:03.451   2   INF   Downloading actual state
+2020-02-29 12:46:03.490   2   INF   Actual state downloaded, elapsed: 39.307844ms
+2020-02-29 12:46:03.491   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:46:03.491   2   INF   Checking open order
+2020-02-29 12:46:03.523   2   INF   Open order checked, elapsed: 32.154682ms
+2020-02-29 12:46:03.523   2   INF   Actual open order: 0
+2020-02-29 12:46:03.523   2   INF   Checking open downtime
+2020-02-29 12:46:03.544   2   INF   Open downtime checked, elapsed: 20.974908ms
+2020-02-29 12:46:03.544   2   INF   Actual open downtime: 0
+2020-02-29 12:46:03.544   2   INF   Poweroff state
+2020-02-29 12:46:03.544   2   INF   Loop ended, elapsed: 93.400252ms
+2020-02-29 12:46:03.545   2   INF   Sleeping for 9.906500139s
+2020-02-29 12:46:13.452   2   INF   Device not active
+2020-02-29 12:46:13.452   2   INF   Device not active, stopped running
+2020-02-29 12:46:13.454   2   INF   Device started running
+2020-02-29 12:46:13.454   2   INF   Device directory exists
+2020-02-29 12:46:13.454   2   INF   Starting device loop
+2020-02-29 12:46:13.454   2   INF   Downloading actual state
+2020-02-29 12:46:13.497   2   INF   Actual state downloaded, elapsed: 42.80968ms
+2020-02-29 12:46:13.498   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:46:13.498   2   INF   Checking open order
+2020-02-29 12:46:13.538   2   INF   Open order checked, elapsed: 40.037814ms
+2020-02-29 12:46:13.538   2   INF   Actual open order: 0
+2020-02-29 12:46:13.538   2   INF   Checking open downtime
+2020-02-29 12:46:13.564   2   INF   Open downtime checked, elapsed: 25.436899ms
+2020-02-29 12:46:13.564   2   INF   Actual open downtime: 0
+2020-02-29 12:46:13.564   2   INF   Poweroff state
+2020-02-29 12:46:13.564   2   INF   Loop ended, elapsed: 109.978671ms
+2020-02-29 12:46:13.564   2   INF   Sleeping for 9.889967345s
+2020-02-29 12:46:23.454   2   INF   Device still active
+2020-02-29 12:46:23.455   2   INF   Starting device loop
+2020-02-29 12:46:23.455   2   INF   Downloading actual state
+2020-02-29 12:46:23.480   2   INF   Actual state downloaded, elapsed: 25.06994ms
+2020-02-29 12:46:23.480   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:46:23.480   2   INF   Checking open order
+2020-02-29 12:46:23.497   2   INF   Open order checked, elapsed: 17.12242ms
+2020-02-29 12:46:23.498   2   INF   Actual open order: 0
+2020-02-29 12:46:23.498   2   INF   Checking open downtime
+2020-02-29 12:46:23.533   2   INF   Open downtime checked, elapsed: 34.709831ms
+2020-02-29 12:46:23.533   2   INF   Actual open downtime: 0
+2020-02-29 12:46:23.533   2   INF   Poweroff state
+2020-02-29 12:46:23.533   2   INF   Loop ended, elapsed: 78.185543ms
+2020-02-29 12:46:23.533   2   INF   Sleeping for 9.921767277s
+2020-02-29 12:46:33.455   2   INF   Device still active
+2020-02-29 12:46:33.455   2   INF   Starting device loop
+2020-02-29 12:46:33.455   2   INF   Downloading actual state
+2020-02-29 12:46:33.491   2   INF   Actual state downloaded, elapsed: 35.789816ms
+2020-02-29 12:46:33.491   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:46:33.491   2   INF   Checking open order
+2020-02-29 12:46:33.520   2   INF   Open order checked, elapsed: 28.609831ms
+2020-02-29 12:46:33.520   2   INF   Actual open order: 0
+2020-02-29 12:46:33.520   2   INF   Checking open downtime
+2020-02-29 12:46:33.544   2   INF   Open downtime checked, elapsed: 23.857613ms
+2020-02-29 12:46:33.545   2   INF   Actual open downtime: 0
+2020-02-29 12:46:33.545   2   INF   Poweroff state
+2020-02-29 12:46:33.545   2   INF   Loop ended, elapsed: 89.520387ms
+2020-02-29 12:46:33.545   2   INF   Sleeping for 9.910418474s
+2020-02-29 12:46:43.456   2   INF   Device still active
+2020-02-29 12:46:43.456   2   INF   Starting device loop
+2020-02-29 12:46:43.456   2   INF   Downloading actual state
+2020-02-29 12:46:43.548   2   INF   Actual state downloaded, elapsed: 91.380325ms
+2020-02-29 12:46:43.548   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:46:43.548   2   INF   Checking open order
+2020-02-29 12:46:43.573   2   INF   Open order checked, elapsed: 24.5208ms
+2020-02-29 12:46:43.573   2   INF   Actual open order: 0
+2020-02-29 12:46:43.573   2   INF   Checking open downtime
+2020-02-29 12:46:43.592   2   INF   Open downtime checked, elapsed: 19.46044ms
+2020-02-29 12:46:43.593   2   INF   Actual open downtime: 0
+2020-02-29 12:46:43.593   2   INF   Poweroff state
+2020-02-29 12:46:43.593   2   INF   Loop ended, elapsed: 136.371603ms
+2020-02-29 12:46:43.593   2   INF   Sleeping for 9.86353927s
+2020-02-29 12:46:53.457   2   INF   Device still active
+2020-02-29 12:46:53.457   2   INF   Starting device loop
+2020-02-29 12:46:53.457   2   INF   Downloading actual state
+2020-02-29 12:46:53.502   2   INF   Actual state downloaded, elapsed: 44.375038ms
+2020-02-29 12:46:53.502   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:46:53.502   2   INF   Checking open order
+2020-02-29 12:46:53.544   2   INF   Open order checked, elapsed: 42.048388ms
+2020-02-29 12:46:53.544   2   INF   Actual open order: 0
+2020-02-29 12:46:53.544   2   INF   Checking open downtime
+2020-02-29 12:46:53.577   2   INF   Open downtime checked, elapsed: 32.95261ms
+2020-02-29 12:46:53.578   2   INF   Actual open downtime: 0
+2020-02-29 12:46:53.578   2   INF   Poweroff state
+2020-02-29 12:46:53.578   2   INF   Loop ended, elapsed: 120.477254ms
+2020-02-29 12:46:53.578   2   INF   Sleeping for 9.879472763s
+2020-02-29 12:47:03.457   2   INF   Device still active
+2020-02-29 12:47:03.457   2   INF   Starting device loop
+2020-02-29 12:47:03.458   2   INF   Downloading actual state
+2020-02-29 12:47:03.514   2   INF   Actual state downloaded, elapsed: 55.961963ms
+2020-02-29 12:47:03.514   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:47:03.514   2   INF   Checking open order
+2020-02-29 12:47:03.538   2   INF   Open order checked, elapsed: 24.471681ms
+2020-02-29 12:47:03.539   2   INF   Actual open order: 0
+2020-02-29 12:47:03.539   2   INF   Checking open downtime
+2020-02-29 12:47:03.561   2   INF   Open downtime checked, elapsed: 21.81373ms
+2020-02-29 12:47:03.561   2   INF   Actual open downtime: 0
+2020-02-29 12:47:03.561   2   INF   Poweroff state
+2020-02-29 12:47:03.561   2   INF   Loop ended, elapsed: 103.315522ms
+2020-02-29 12:47:03.561   2   INF   Sleeping for 9.896556006s
+2020-02-29 12:47:13.458   2   INF   Device still active
+2020-02-29 12:47:13.458   2   INF   Starting device loop
+2020-02-29 12:47:13.458   2   INF   Downloading actual state
+2020-02-29 12:47:13.499   2   INF   Actual state downloaded, elapsed: 40.994762ms
+2020-02-29 12:47:13.499   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:47:13.500   2   INF   Checking open order
+2020-02-29 12:47:13.528   2   INF   Open order checked, elapsed: 28.188787ms
+2020-02-29 12:47:13.528   2   INF   Actual open order: 0
+2020-02-29 12:47:13.528   2   INF   Checking open downtime
+2020-02-29 12:47:13.555   2   INF   Open downtime checked, elapsed: 26.795789ms
+2020-02-29 12:47:13.555   2   INF   Actual open downtime: 0
+2020-02-29 12:47:13.555   2   INF   Poweroff state
+2020-02-29 12:47:13.555   2   INF   Loop ended, elapsed: 97.00646ms
+2020-02-29 12:47:13.555   2   INF   Sleeping for 9.902916785s
+2020-02-29 12:47:23.459   2   INF   Device still active
+2020-02-29 12:47:23.459   2   INF   Starting device loop
+2020-02-29 12:47:23.459   2   INF   Downloading actual state
+2020-02-29 12:47:23.487   2   INF   Actual state downloaded, elapsed: 27.739478ms
+2020-02-29 12:47:23.487   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:47:23.487   2   INF   Checking open order
+2020-02-29 12:47:23.514   2   INF   Open order checked, elapsed: 27.309044ms
+2020-02-29 12:47:23.515   2   INF   Actual open order: 0
+2020-02-29 12:47:23.515   2   INF   Checking open downtime
+2020-02-29 12:47:23.557   2   INF   Open downtime checked, elapsed: 41.341622ms
+2020-02-29 12:47:23.557   2   INF   Actual open downtime: 0
+2020-02-29 12:47:23.557   2   INF   Poweroff state
+2020-02-29 12:47:23.557   2   INF   Loop ended, elapsed: 97.979289ms
+2020-02-29 12:47:23.557   2   INF   Sleeping for 9.901924868s
+2020-02-29 12:47:33.459   2   INF   Device still active
+2020-02-29 12:47:33.459   2   INF   Starting device loop
+2020-02-29 12:47:33.460   2   INF   Downloading actual state
+2020-02-29 12:47:33.511   2   INF   Actual state downloaded, elapsed: 51.397625ms
+2020-02-29 12:47:33.511   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:47:33.511   2   INF   Checking open order
+2020-02-29 12:47:33.540   2   INF   Open order checked, elapsed: 28.817475ms
+2020-02-29 12:47:33.541   2   INF   Actual open order: 0
+2020-02-29 12:47:33.541   2   INF   Checking open downtime
+2020-02-29 12:47:33.562   2   INF   Open downtime checked, elapsed: 21.021877ms
+2020-02-29 12:47:33.562   2   INF   Actual open downtime: 0
+2020-02-29 12:47:33.562   2   INF   Poweroff state
+2020-02-29 12:47:33.563   2   INF   Loop ended, elapsed: 103.003017ms
+2020-02-29 12:47:33.563   2   INF   Sleeping for 9.896934021s
+2020-02-29 12:47:43.460   2   INF   Device still active
+2020-02-29 12:47:43.460   2   INF   Starting device loop
+2020-02-29 12:47:43.460   2   INF   Downloading actual state
+2020-02-29 12:47:43.516   2   INF   Actual state downloaded, elapsed: 55.710884ms
+2020-02-29 12:47:43.516   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:47:43.516   2   INF   Checking open order
+2020-02-29 12:47:43.542   2   INF   Open order checked, elapsed: 25.838751ms
+2020-02-29 12:47:43.542   2   INF   Actual open order: 0
+2020-02-29 12:47:43.543   2   INF   Checking open downtime
+2020-02-29 12:47:43.568   2   INF   Open downtime checked, elapsed: 25.476927ms
+2020-02-29 12:47:43.568   2   INF   Actual open downtime: 0
+2020-02-29 12:47:43.568   2   INF   Poweroff state
+2020-02-29 12:47:43.568   2   INF   Loop ended, elapsed: 108.217666ms
+2020-02-29 12:47:43.569   2   INF   Sleeping for 9.891728217s
+2020-02-29 12:47:53.461   2   INF   Device still active
+2020-02-29 12:47:53.461   2   INF   Starting device loop
+2020-02-29 12:47:53.461   2   INF   Downloading actual state
+2020-02-29 12:47:53.495   2   INF   Actual state downloaded, elapsed: 34.146191ms
+2020-02-29 12:47:53.495   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:47:53.495   2   INF   Checking open order
+2020-02-29 12:47:53.528   2   INF   Open order checked, elapsed: 32.648129ms
+2020-02-29 12:47:53.529   2   INF   Actual open order: 0
+2020-02-29 12:47:53.529   2   INF   Checking open downtime
+2020-02-29 12:47:53.559   2   INF   Open downtime checked, elapsed: 29.794452ms
+2020-02-29 12:47:53.559   2   INF   Actual open downtime: 0
+2020-02-29 12:47:53.559   2   INF   Poweroff state
+2020-02-29 12:47:53.559   2   INF   Loop ended, elapsed: 97.896531ms
+2020-02-29 12:47:53.559   2   INF   Sleeping for 9.902055134s
+2020-02-29 12:48:03.461   2   INF   Device still active
+2020-02-29 12:48:03.461   2   INF   Starting device loop
+2020-02-29 12:48:03.461   2   INF   Downloading actual state
+2020-02-29 12:48:03.490   2   INF   Actual state downloaded, elapsed: 28.261442ms
+2020-02-29 12:48:03.490   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:48:03.490   2   INF   Checking open order
+2020-02-29 12:48:03.518   2   INF   Open order checked, elapsed: 27.379018ms
+2020-02-29 12:48:03.518   2   INF   Actual open order: 0
+2020-02-29 12:48:03.518   2   INF   Checking open downtime
+2020-02-29 12:48:03.570   2   INF   Open downtime checked, elapsed: 51.970883ms
+2020-02-29 12:48:03.570   2   INF   Actual open downtime: 0
+2020-02-29 12:48:03.570   2   INF   Poweroff state
+2020-02-29 12:48:03.570   2   INF   Loop ended, elapsed: 108.899107ms
+2020-02-29 12:48:03.570   2   INF   Sleeping for 9.891032555s
+2020-02-29 12:48:13.462   2   INF   Device still active
+2020-02-29 12:48:13.462   2   INF   Starting device loop
+2020-02-29 12:48:13.462   2   INF   Downloading actual state
+2020-02-29 12:48:13.490   2   INF   Actual state downloaded, elapsed: 27.514286ms
+2020-02-29 12:48:13.490   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:48:13.490   2   INF   Checking open order
+2020-02-29 12:48:13.545   2   INF   Open order checked, elapsed: 54.440242ms
+2020-02-29 12:48:13.545   2   INF   Actual open order: 0
+2020-02-29 12:48:13.545   2   INF   Checking open downtime
+2020-02-29 12:48:13.574   2   INF   Open downtime checked, elapsed: 28.956576ms
+2020-02-29 12:48:13.574   2   INF   Actual open downtime: 0
+2020-02-29 12:48:13.575   2   INF   Poweroff state
+2020-02-29 12:48:13.575   2   INF   Loop ended, elapsed: 112.487816ms
+2020-02-29 12:48:13.575   2   INF   Sleeping for 9.88743248s
+2020-02-29 12:48:23.463   2   INF   Device still active
+2020-02-29 12:48:23.463   2   INF   Starting device loop
+2020-02-29 12:48:23.463   2   INF   Downloading actual state
+2020-02-29 12:48:23.512   2   INF   Actual state downloaded, elapsed: 48.881786ms
+2020-02-29 12:48:23.512   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:48:23.512   2   INF   Checking open order
+2020-02-29 12:48:23.550   2   INF   Open order checked, elapsed: 38.076152ms
+2020-02-29 12:48:23.551   2   INF   Actual open order: 0
+2020-02-29 12:48:23.551   2   INF   Checking open downtime
+2020-02-29 12:48:23.568   2   INF   Open downtime checked, elapsed: 17.209797ms
+2020-02-29 12:48:23.568   2   INF   Actual open downtime: 0
+2020-02-29 12:48:23.568   2   INF   Poweroff state
+2020-02-29 12:48:23.568   2   INF   Loop ended, elapsed: 105.315571ms
+2020-02-29 12:48:23.568   2   INF   Sleeping for 9.894633608s
+2020-02-29 12:48:33.463   2   INF   Device still active
+2020-02-29 12:48:33.464   2   INF   Starting device loop
+2020-02-29 12:48:33.464   2   INF   Downloading actual state
+2020-02-29 12:48:33.516   2   INF   Actual state downloaded, elapsed: 51.527191ms
+2020-02-29 12:48:33.516   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:48:33.516   2   INF   Checking open order
+2020-02-29 12:48:33.554   2   INF   Open order checked, elapsed: 37.031792ms
+2020-02-29 12:48:33.554   2   INF   Actual open order: 0
+2020-02-29 12:48:33.554   2   INF   Checking open downtime
+2020-02-29 12:48:33.591   2   INF   Open downtime checked, elapsed: 36.696463ms
+2020-02-29 12:48:33.591   2   INF   Actual open downtime: 0
+2020-02-29 12:48:33.591   2   INF   Poweroff state
+2020-02-29 12:48:33.591   2   INF   Loop ended, elapsed: 126.939607ms
+2020-02-29 12:48:33.591   2   INF   Sleeping for 9.872975706s
+2020-02-29 12:48:43.464   2   INF   Device still active
+2020-02-29 12:48:43.465   2   INF   Starting device loop
+2020-02-29 12:48:43.465   2   INF   Downloading actual state
+2020-02-29 12:48:43.552   2   INF   Actual state downloaded, elapsed: 86.397653ms
+2020-02-29 12:48:43.552   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:48:43.552   2   INF   Checking open order
+2020-02-29 12:48:43.591   2   INF   Open order checked, elapsed: 39.233246ms
+2020-02-29 12:48:43.592   2   INF   Actual open order: 0
+2020-02-29 12:48:43.592   2   INF   Checking open downtime
+2020-02-29 12:48:43.642   2   INF   Open downtime checked, elapsed: 49.686904ms
+2020-02-29 12:48:43.642   2   INF   Actual open downtime: 0
+2020-02-29 12:48:43.642   2   INF   Poweroff state
+2020-02-29 12:48:43.642   2   INF   Loop ended, elapsed: 177.101639ms
+2020-02-29 12:48:43.642   2   INF   Sleeping for 9.822717394s
+2020-02-29 12:48:53.466   2   INF   Device still active
+2020-02-29 12:48:53.466   2   INF   Starting device loop
+2020-02-29 12:48:53.466   2   INF   Downloading actual state
+2020-02-29 12:48:53.548   2   INF   Actual state downloaded, elapsed: 82.099778ms
+2020-02-29 12:48:53.549   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:48:53.549   2   INF   Checking open order
+2020-02-29 12:48:53.591   2   INF   Open order checked, elapsed: 41.312975ms
+2020-02-29 12:48:53.591   2   INF   Actual open order: 0
+2020-02-29 12:48:53.591   2   INF   Checking open downtime
+2020-02-29 12:48:53.629   2   INF   Open downtime checked, elapsed: 38.203307ms
+2020-02-29 12:48:53.629   2   INF   Actual open downtime: 0
+2020-02-29 12:48:53.630   2   INF   Poweroff state
+2020-02-29 12:48:53.630   2   INF   Loop ended, elapsed: 163.880098ms
+2020-02-29 12:48:53.630   2   INF   Sleeping for 9.835969566s
+2020-02-29 12:49:03.470   2   INF   Device still active
+2020-02-29 12:49:03.470   2   INF   Starting device loop
+2020-02-29 12:49:03.471   2   INF   Downloading actual state
+2020-02-29 12:49:03.516   2   INF   Actual state downloaded, elapsed: 44.402765ms
+2020-02-29 12:49:03.516   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:49:03.516   2   INF   Checking open order
+2020-02-29 12:49:03.545   2   INF   Open order checked, elapsed: 28.686083ms
+2020-02-29 12:49:03.545   2   INF   Actual open order: 0
+2020-02-29 12:49:03.545   2   INF   Checking open downtime
+2020-02-29 12:49:03.574   2   INF   Open downtime checked, elapsed: 29.167908ms
+2020-02-29 12:49:03.574   2   INF   Actual open downtime: 0
+2020-02-29 12:49:03.574   2   INF   Poweroff state
+2020-02-29 12:49:03.574   2   INF   Loop ended, elapsed: 103.552714ms
+2020-02-29 12:49:03.575   2   INF   Sleeping for 9.896359882s
+2020-02-29 12:49:13.473   2   INF   Device still active
+2020-02-29 12:49:13.474   2   INF   Starting device loop
+2020-02-29 12:49:13.474   2   INF   Downloading actual state
+2020-02-29 12:49:13.614   2   INF   Actual state downloaded, elapsed: 139.376056ms
+2020-02-29 12:49:13.614   2   INF   Actual workplace state: Poweroff
+2020-02-29 12:49:13.614   2   INF   Checking open order
+2020-02-29 12:49:13.656   2   INF   Open order checked, elapsed: 41.86242ms
+2020-02-29 12:49:13.656   2   INF   Actual open order: 0
+2020-02-29 12:49:13.656   2   INF   Checking open downtime
+2020-02-29 12:49:13.683   2   INF   Open downtime checked, elapsed: 27.021509ms
+2020-02-29 12:49:13.683   2   INF   Actual open downtime: 0
+2020-02-29 12:49:13.684   2   INF   Poweroff state
+2020-02-29 12:49:13.684   2   INF   Loop ended, elapsed: 209.633635ms
+2020-02-29 12:49:13.684   2   INF   Sleeping for 9.790246004s
+2020-02-29 12:49:23.475   2   INF   Device still active
+2020-02-29 12:49:23.475   2   INF   Device not active, stopped running
+2020-02-29 12:49:23.499   2   INF   Device started running
+2020-02-29 12:49:23.499   2   INF   Device directory exists
+2020-02-29 12:49:23.499   2   INF   Device not active, stopped running
