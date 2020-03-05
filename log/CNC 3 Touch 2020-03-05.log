@@ -196,3 +196,92 @@
 2020-03-05 13:22:12.848   CNC 3 Touch   INF   Device started running
 2020-03-05 13:22:12.848   CNC 3 Touch   INF   Device directory exists
 2020-03-05 13:22:12.849   CNC 3 Touch   INF   Device not active, stopped running
+2020-03-05 13:44:13.554   CNC 3 Touch   INF   Device started running
+2020-03-05 13:44:13.554   CNC 3 Touch   INF   Device directory exists
+2020-03-05 13:44:13.554   CNC 3 Touch   INF   Starting device loop
+2020-03-05 13:44:13.554   CNC 3 Touch   INF   Downloading actual state
+2020-03-05 13:44:13.663   CNC 3 Touch   INF   Actual state downloaded, elapsed: 108.588045ms
+2020-03-05 13:44:13.663   CNC 3 Touch   INF   Actual workplace state: Production
+2020-03-05 13:44:13.663   CNC 3 Touch   INF   Checking open order
+2020-03-05 13:44:13.770   CNC 3 Touch   INF   Open order checked, elapsed: 106.086846ms
+2020-03-05 13:44:13.770   CNC 3 Touch   INF   Actual open order: 0
+2020-03-05 13:44:13.770   CNC 3 Touch   INF   Checking open downtime
+2020-03-05 13:44:13.851   CNC 3 Touch   INF   Open downtime checked, elapsed: 80.352381ms
+2020-03-05 13:44:13.852   CNC 3 Touch   INF   Actual open downtime: 0
+2020-03-05 13:44:13.852   CNC 3 Touch   INF   Production state
+2020-03-05 13:44:13.852   CNC 3 Touch   INF   Opening order
+2020-03-05 13:44:13.932   CNC 3 Touch   INF   Order opened, elapsed: 79.534078ms
+2020-03-05 13:44:13.932   CNC 3 Touch   INF   Loop ended, elapsed: 377.737258ms
+2020-03-05 13:44:13.932   CNC 3 Touch   INF   Sleeping for 9.622174639s
+2020-03-05 13:44:23.555   CNC 3 Touch   INF   Device still active
+2020-03-05 13:44:23.555   CNC 3 Touch   INF   Device not active, stopped running
+2020-03-05 13:45:25.075   CNC 3 Touch   INF   Device started running
+2020-03-05 13:45:25.075   CNC 3 Touch   INF   Device directory exists
+2020-03-05 13:45:25.075   CNC 3 Touch   INF   Starting device loop
+2020-03-05 13:45:25.075   CNC 3 Touch   INF   Downloading actual state
+2020-03-05 13:45:25.105   CNC 3 Touch   INF   Actual state downloaded, elapsed: 29.846879ms
+2020-03-05 13:45:25.106   CNC 3 Touch   INF   Actual workplace state: Production
+2020-03-05 13:45:25.106   CNC 3 Touch   INF   Checking open order
+2020-03-05 13:45:25.192   CNC 3 Touch   INF   Open order checked, elapsed: 86.469107ms
+2020-03-05 13:45:25.193   CNC 3 Touch   INF   Actual open order: 137
+2020-03-05 13:45:25.193   CNC 3 Touch   INF   Checking open downtime
+2020-03-05 13:45:25.265   CNC 3 Touch   INF   Open downtime checked, elapsed: 72.457062ms
+2020-03-05 13:45:25.266   CNC 3 Touch   INF   Actual open downtime: 0
+2020-03-05 13:45:25.266   CNC 3 Touch   INF   Production state
+2020-03-05 13:45:25.266   CNC 3 Touch   INF   Updating order data
+2020-03-05 13:45:25.451   CNC 3 Touch   INF   Order data updated, elapsed: 185.242949ms
+2020-03-05 13:45:25.452   CNC 3 Touch   INF   Loop ended, elapsed: 376.183868ms
+2020-03-05 13:45:25.452   CNC 3 Touch   INF   Sleeping for 9.623653163s
+2020-03-05 13:45:35.076   CNC 3 Touch   INF   Device still active
+2020-03-05 13:45:35.076   CNC 3 Touch   INF   Starting device loop
+2020-03-05 13:45:35.076   CNC 3 Touch   INF   Downloading actual state
+2020-03-05 13:45:35.133   CNC 3 Touch   INF   Actual state downloaded, elapsed: 57.060559ms
+2020-03-05 13:45:35.133   CNC 3 Touch   INF   Actual workplace state: Production
+2020-03-05 13:45:35.133   CNC 3 Touch   INF   Checking open order
+2020-03-05 13:45:35.230   CNC 3 Touch   INF   Open order checked, elapsed: 97.138733ms
+2020-03-05 13:45:35.231   CNC 3 Touch   INF   Actual open order: 137
+2020-03-05 13:45:35.231   CNC 3 Touch   INF   Checking open downtime
+2020-03-05 13:45:35.322   CNC 3 Touch   INF   Open downtime checked, elapsed: 90.783478ms
+2020-03-05 13:45:35.322   CNC 3 Touch   INF   Actual open downtime: 0
+2020-03-05 13:45:35.322   CNC 3 Touch   INF   Production state
+2020-03-05 13:45:35.322   CNC 3 Touch   INF   Updating order data
+2020-03-05 13:45:35.489   CNC 3 Touch   INF   Order data updated, elapsed: 166.285664ms
+2020-03-05 13:45:35.489   CNC 3 Touch   INF   Loop ended, elapsed: 412.918557ms
+2020-03-05 13:45:35.489   CNC 3 Touch   INF   Sleeping for 9.586944664s
+2020-03-05 13:45:45.076   CNC 3 Touch   INF   Device still active
+2020-03-05 13:45:45.076   CNC 3 Touch   INF   Starting device loop
+2020-03-05 13:45:45.077   CNC 3 Touch   INF   Downloading actual state
+2020-03-05 13:45:45.176   CNC 3 Touch   INF   Actual state downloaded, elapsed: 99.647433ms
+2020-03-05 13:45:45.177   CNC 3 Touch   INF   Actual workplace state: Production
+2020-03-05 13:45:45.177   CNC 3 Touch   INF   Checking open order
+2020-03-05 13:45:45.274   CNC 3 Touch   INF   Open order checked, elapsed: 97.357757ms
+2020-03-05 13:45:45.274   CNC 3 Touch   INF   Actual open order: 137
+2020-03-05 13:45:45.275   CNC 3 Touch   INF   Checking open downtime
+2020-03-05 13:45:45.364   CNC 3 Touch   INF   Open downtime checked, elapsed: 89.445127ms
+2020-03-05 13:45:45.364   CNC 3 Touch   INF   Actual open downtime: 0
+2020-03-05 13:45:45.364   CNC 3 Touch   INF   Production state
+2020-03-05 13:45:45.364   CNC 3 Touch   INF   Updating order data
+2020-03-05 13:45:45.494   CNC 3 Touch   INF   Order data updated, elapsed: 129.110534ms
+2020-03-05 13:45:45.494   CNC 3 Touch   INF   Loop ended, elapsed: 417.256441ms
+2020-03-05 13:45:45.494   CNC 3 Touch   INF   Sleeping for 9.582614478s
+2020-03-05 13:45:55.077   CNC 3 Touch   INF   Device still active
+2020-03-05 13:45:55.077   CNC 3 Touch   INF   Starting device loop
+2020-03-05 13:45:55.077   CNC 3 Touch   INF   Downloading actual state
+2020-03-05 13:45:55.122   CNC 3 Touch   INF   Actual state downloaded, elapsed: 45.027538ms
+2020-03-05 13:45:55.122   CNC 3 Touch   INF   Actual workplace state: Production
+2020-03-05 13:45:55.123   CNC 3 Touch   INF   Checking open order
+2020-03-05 13:45:55.170   CNC 3 Touch   INF   Open order checked, elapsed: 46.878162ms
+2020-03-05 13:45:55.170   CNC 3 Touch   INF   Actual open order: 137
+2020-03-05 13:45:55.170   CNC 3 Touch   INF   Checking open downtime
+2020-03-05 13:45:55.187   CNC 3 Touch   INF   Open downtime checked, elapsed: 17.345194ms
+2020-03-05 13:45:55.187   CNC 3 Touch   INF   Actual open downtime: 0
+2020-03-05 13:45:55.188   CNC 3 Touch   INF   Production state
+2020-03-05 13:45:55.188   CNC 3 Touch   INF   Updating order data
+2020-03-05 13:45:55.287   CNC 3 Touch   INF   Order data updated, elapsed: 99.376415ms
+2020-03-05 13:45:55.287   CNC 3 Touch   INF   Loop ended, elapsed: 210.082447ms
+2020-03-05 13:45:55.287   CNC 3 Touch   INF   Sleeping for 9.789836207s
+2020-03-05 13:46:05.078   CNC 3 Touch   INF   Device still active
+2020-03-05 13:46:05.078   CNC 3 Touch   INF   Device not active, stopped running
+2020-03-05 13:46:05.095   CNC 3 Touch   INF   Device started running
+2020-03-05 13:46:05.096   CNC 3 Touch   INF   Device directory exists
+2020-03-05 13:46:05.097   CNC 3 Touch   INF   Device not active, stopped running

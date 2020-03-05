@@ -75,17 +75,20 @@ func OpenDowntime(device zapsi_database.Device, actualWorkplaceState zapsi_datab
 	defer db.Close()
 	var noReasonDowntime zapsi_database.Downtime
 	db.Where("name = ?", "No reason downtime").Find(&noReasonDowntime)
+	var deviceWorkplaceRecord zapsi_database.DeviceWorkplaceRecord
+	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
 	var downtimeToSave zapsi_database.DownTimeRecord
 	downtimeToSave.DateTimeStart = actualWorkplaceState.DateTimeStart
 	if openOrderId > 0 {
 		downtimeToSave.OrderRecordId = sql.NullInt32{Int32: int32(openOrderId)}
 		var deviceUserRecord zapsi_database.UserRecord
-		db.Where("device_order_record_id = ?", openOrderId).Find(&deviceUserRecord)
+		db.Where("order_record_id = ?", openOrderId).Find(&deviceUserRecord)
 		downtimeToSave.UserId = sql.NullInt32{Int32: int32(deviceUserRecord.UserId)}
 	}
 	downtimeToSave.Duration = time.Now().Sub(actualWorkplaceState.DateTimeStart)
 	downtimeToSave.DeviceId = device.ID
 	downtimeToSave.DowntimeId = noReasonDowntime.ID
+	downtimeToSave.WorkplaceId = deviceWorkplaceRecord.WorkplaceID
 	db.Save(&downtimeToSave)
 	LogInfo(device.Name, "Downtime opened, elapsed: "+time.Since(timer).String())
 

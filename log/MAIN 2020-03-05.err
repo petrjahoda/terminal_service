@@ -1,0 +1,5 @@
+2020-03-05 13:42:17.927   MAIN   ERR   Problem opening zapsi3 database: pq: sorry, too many clients already
+2020-03-05 13:42:17.931   MAIN   ERR   Problem opening zapsi3 database: pq: sorry, too many clients already
+2020-03-05 13:42:27.931   MAIN   ERR   Problem opening zapsi3 database: pq: sorry, too many clients already
+2020-03-05 13:42:45.955   MAIN   ERR   Problem opening zapsi3 database: pq: sorry, too many clients already
+2020-03-05 13:42:45.959   MAIN   ERR   Problem opening zapsi3 database: pq: sorry, too many clients already
