@@ -310,3 +310,27 @@
 2020-03-05 13:46:05.095   CNC 0 Touch   INF   Device started running
 2020-03-05 13:46:05.096   CNC 0 Touch   INF   Device directory exists
 2020-03-05 13:46:05.096   CNC 0 Touch   INF   Device not active, stopped running
+2020-03-05 14:28:59.250   CNC 0 Touch   INF   Device started running
+2020-03-05 14:28:59.250   CNC 0 Touch   INF   Device directory exists
+2020-03-05 14:28:59.250   CNC 0 Touch   INF   Starting device loop
+2020-03-05 14:28:59.250   CNC 0 Touch   INF   Downloading actual state
+2020-03-05 14:28:59.266   CNC 0 Touch   INF   Actual state downloaded, elapsed: 16.038535ms
+2020-03-05 14:28:59.266   CNC 0 Touch   INF   Actual workplace state: Downtime
+2020-03-05 14:28:59.267   CNC 0 Touch   INF   Checking open order
+2020-03-05 14:28:59.325   CNC 0 Touch   INF   Open order checked, elapsed: 58.041643ms
+2020-03-05 14:28:59.325   CNC 0 Touch   INF   Actual open order: 144
+2020-03-05 14:28:59.325   CNC 0 Touch   INF   Checking open downtime
+2020-03-05 14:28:59.404   CNC 0 Touch   INF   Open downtime checked, elapsed: 79.415811ms
+2020-03-05 14:28:59.405   CNC 0 Touch   INF   Actual open downtime: 0
+2020-03-05 14:28:59.405   CNC 0 Touch   INF   Downtime state
+2020-03-05 14:28:59.405   CNC 0 Touch   INF   Opening downtime
+2020-03-05 14:28:59.516   CNC 0 Touch   INF   Downtime opened, elapsed: 111.557839ms
+2020-03-05 14:28:59.517   CNC 0 Touch   INF   Updating order data
+2020-03-05 14:28:59.633   CNC 0 Touch   INF   Order data updated, elapsed: 116.617879ms
+2020-03-05 14:28:59.634   CNC 0 Touch   INF   Loop ended, elapsed: 383.341712ms
+2020-03-05 14:28:59.634   CNC 0 Touch   INF   Sleeping for 9.616569559s
+2020-03-05 14:29:09.250   CNC 0 Touch   INF   Device still active
+2020-03-05 14:29:09.251   CNC 0 Touch   INF   Device not active, stopped running
+2020-03-05 14:29:09.256   CNC 0 Touch   INF   Device started running
+2020-03-05 14:29:09.256   CNC 0 Touch   INF   Device directory exists
+2020-03-05 14:29:09.256   CNC 0 Touch   INF   Device not active, stopped running

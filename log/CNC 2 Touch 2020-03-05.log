@@ -314,3 +314,23 @@
 2020-03-05 13:46:05.095   CNC 2 Touch   INF   Device started running
 2020-03-05 13:46:05.096   CNC 2 Touch   INF   Device directory exists
 2020-03-05 13:46:05.096   CNC 2 Touch   INF   Device not active, stopped running
+2020-03-05 14:28:59.250   CNC 2 Touch   INF   Device started running
+2020-03-05 14:28:59.250   CNC 2 Touch   INF   Device directory exists
+2020-03-05 14:28:59.250   CNC 2 Touch   INF   Starting device loop
+2020-03-05 14:28:59.250   CNC 2 Touch   INF   Downloading actual state
+2020-03-05 14:28:59.312   CNC 2 Touch   INF   Actual state downloaded, elapsed: 61.403242ms
+2020-03-05 14:28:59.312   CNC 2 Touch   INF   Actual workplace state: Poweroff
+2020-03-05 14:28:59.312   CNC 2 Touch   INF   Checking open order
+2020-03-05 14:28:59.381   CNC 2 Touch   INF   Open order checked, elapsed: 68.987737ms
+2020-03-05 14:28:59.381   CNC 2 Touch   INF   Actual open order: 0
+2020-03-05 14:28:59.382   CNC 2 Touch   INF   Checking open downtime
+2020-03-05 14:28:59.449   CNC 2 Touch   INF   Open downtime checked, elapsed: 67.768102ms
+2020-03-05 14:28:59.450   CNC 2 Touch   INF   Actual open downtime: 0
+2020-03-05 14:28:59.450   CNC 2 Touch   INF   Poweroff state
+2020-03-05 14:28:59.450   CNC 2 Touch   INF   Loop ended, elapsed: 199.626358ms
+2020-03-05 14:28:59.450   CNC 2 Touch   INF   Sleeping for 9.800310812s
+2020-03-05 14:29:09.250   CNC 2 Touch   INF   Device still active
+2020-03-05 14:29:09.251   CNC 2 Touch   INF   Device not active, stopped running
+2020-03-05 14:29:09.256   CNC 2 Touch   INF   Device started running
+2020-03-05 14:29:09.256   CNC 2 Touch   INF   Device directory exists
+2020-03-05 14:29:09.256   CNC 2 Touch   INF   Device not active, stopped running
