@@ -20,6 +20,9 @@ adhere to [Semantic Versioning](http://semver.org/spec/v2.0.0.html) rules.
 - when saving order, order_id is set to internal
 - when saving downtime, workplace_id added 
 
+#### Fixed
+- when saving downtime_records, adding user only when record in user_records
+
 
 ## [2020.1.2.29] - 2020-02-29
 

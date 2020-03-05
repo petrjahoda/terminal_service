@@ -242,3 +242,145 @@
 2020-03-05 14:29:09.814   MAIN   INF   Stopped on platform darwin-launchd
 2020-03-05 14:29:12.921   MAIN   INF   Starting Terminal Service on darwin-launchd
 2020-03-05 14:29:13.740   MAIN   INF   Stopped on platform darwin-launchd
+2020-03-05 14:32:24.666   MAIN   INF   Starting Terminal Service on darwin-launchd
+2020-03-05 14:32:29.671   MAIN   INF   Terminal Service version 2020.1.3.5 started
+2020-03-05 14:32:29.672   MAIN   INF   Updating program version in database
+2020-03-05 14:32:29.694   MAIN   INF   Program version updated, elapsed: 22.221686ms
+2020-03-05 14:32:29.694   MAIN   INF   Program running
+2020-03-05 14:32:29.694   MAIN   INF   Updating active devices
+2020-03-05 14:32:29.705   MAIN   INF   Active devices updated, elapsed: 10.481916ms
+2020-03-05 14:32:29.705   MAIN   INF   Deleting old log files
+2020-03-05 14:32:29.705   MAIN   INF   Old log files deleted, elapsed: 231.659µs
+2020-03-05 14:32:29.705   MAIN   INF   Active devices: 10, running devices: 0
+2020-03-05 14:32:29.706   MAIN   INF   Sleeping for 9.988669363s
+2020-03-05 14:32:39.695   MAIN   INF   Program running
+2020-03-05 14:32:39.695   MAIN   INF   Updating active devices
+2020-03-05 14:32:39.714   MAIN   INF   Active devices updated, elapsed: 18.76578ms
+2020-03-05 14:32:39.714   MAIN   INF   Deleting old log files
+2020-03-05 14:32:39.715   MAIN   INF   Old log files deleted, elapsed: 242.03µs
+2020-03-05 14:32:39.715   MAIN   INF   Active devices: 10, running devices: 5
+2020-03-05 14:32:39.715   MAIN   INF   Sleeping for 9.97985581s
+2020-03-05 14:32:40.182   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:32:41.186   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:32:42.190   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:32:43.193   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:32:44.196   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:32:45.200   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:32:46.202   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:32:47.203   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:32:48.206   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:32:49.211   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:32:49.699   MAIN   INF   Program running
+2020-03-05 14:32:49.699   MAIN   INF   Updating active devices
+2020-03-05 14:32:49.713   MAIN   INF   Active devices updated, elapsed: 13.215183ms
+2020-03-05 14:32:49.713   MAIN   INF   Deleting old log files
+2020-03-05 14:32:49.713   MAIN   INF   Old log files deleted, elapsed: 307.11µs
+2020-03-05 14:32:49.713   MAIN   INF   Active devices: 10, running devices: 5
+2020-03-05 14:32:49.713   MAIN   INF   Sleeping for 9.985416861s
+2020-03-05 14:32:51.727   MAIN   INF   Starting Terminal Service on darwin-launchd
+2020-03-05 14:32:56.729   MAIN   INF   Terminal Service version 2020.1.3.5 started
+2020-03-05 14:32:56.730   MAIN   INF   Updating program version in database
+2020-03-05 14:32:56.750   MAIN   INF   Program version updated, elapsed: 20.399289ms
+2020-03-05 14:32:56.750   MAIN   INF   Program running
+2020-03-05 14:32:56.750   MAIN   INF   Updating active devices
+2020-03-05 14:32:56.762   MAIN   INF   Active devices updated, elapsed: 11.196332ms
+2020-03-05 14:32:56.762   MAIN   INF   Deleting old log files
+2020-03-05 14:32:56.762   MAIN   INF   Old log files deleted, elapsed: 208.241µs
+2020-03-05 14:32:56.762   MAIN   INF   Active devices: 10, running devices: 0
+2020-03-05 14:32:56.762   MAIN   INF   Sleeping for 9.987934192s
+2020-03-05 14:33:06.751   MAIN   INF   Program running
+2020-03-05 14:33:06.751   MAIN   INF   Updating active devices
+2020-03-05 14:33:06.766   MAIN   INF   Active devices updated, elapsed: 14.378576ms
+2020-03-05 14:33:06.766   MAIN   INF   Deleting old log files
+2020-03-05 14:33:06.766   MAIN   INF   Old log files deleted, elapsed: 203.042µs
+2020-03-05 14:33:06.766   MAIN   INF   Active devices: 10, running devices: 0
+2020-03-05 14:33:06.766   MAIN   INF   Sleeping for 9.984389873s
+2020-03-05 14:33:15.391   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:33:16.394   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:33:16.751   MAIN   INF   Program running
+2020-03-05 14:33:16.751   MAIN   INF   Updating active devices
+2020-03-05 14:33:16.765   MAIN   INF   Active devices updated, elapsed: 13.300854ms
+2020-03-05 14:33:16.765   MAIN   INF   Deleting old log files
+2020-03-05 14:33:16.766   MAIN   INF   Old log files deleted, elapsed: 334.649µs
+2020-03-05 14:33:16.766   MAIN   INF   Active devices: 10, running devices: 10
+2020-03-05 14:33:16.766   MAIN   INF   Sleeping for 9.984780731s
+2020-03-05 14:33:17.398   MAIN   INF   Stopped on platform darwin-launchd
+2020-03-05 14:33:19.451   MAIN   INF   Starting Terminal Service on darwin-launchd
+2020-03-05 14:33:24.455   MAIN   INF   Terminal Service version 2020.1.3.5 started
+2020-03-05 14:33:24.456   MAIN   INF   Updating program version in database
+2020-03-05 14:33:24.472   MAIN   INF   Program version updated, elapsed: 16.285787ms
+2020-03-05 14:33:24.472   MAIN   INF   Program running
+2020-03-05 14:33:24.472   MAIN   INF   Updating active devices
+2020-03-05 14:33:24.483   MAIN   INF   Active devices updated, elapsed: 10.480307ms
+2020-03-05 14:33:24.483   MAIN   INF   Deleting old log files
+2020-03-05 14:33:24.483   MAIN   INF   Old log files deleted, elapsed: 232.952µs
+2020-03-05 14:33:24.483   MAIN   INF   Active devices: 10, running devices: 0
+2020-03-05 14:33:24.484   MAIN   INF   Sleeping for 9.988635398s
+2020-03-05 14:33:28.581   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:33:29.585   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:33:30.591   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:33:31.595   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:33:32.599   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:33:33.604   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:33:34.478   MAIN   INF   Program running
+2020-03-05 14:33:34.478   MAIN   INF   Updating active devices
+2020-03-05 14:33:34.492   MAIN   INF   Active devices updated, elapsed: 14.032163ms
+2020-03-05 14:33:34.493   MAIN   INF   Deleting old log files
+2020-03-05 14:33:34.493   MAIN   INF   Old log files deleted, elapsed: 210.098µs
+2020-03-05 14:33:34.493   MAIN   INF   Active devices: 10, running devices: 0
+2020-03-05 14:33:34.493   MAIN   INF   Sleeping for 9.984515094s
+2020-03-05 14:33:34.609   MAIN   INF   Stopped on platform darwin-launchd
+2020-03-05 14:34:01.761   MAIN   INF   Starting Terminal Service on darwin-launchd
+2020-03-05 14:34:06.765   MAIN   INF   Terminal Service version 2020.1.3.5 started
+2020-03-05 14:34:06.766   MAIN   INF   Updating program version in database
+2020-03-05 14:34:06.783   MAIN   INF   Program version updated, elapsed: 16.893442ms
+2020-03-05 14:34:06.783   MAIN   INF   Program running
+2020-03-05 14:34:06.783   MAIN   INF   Updating active devices
+2020-03-05 14:34:06.794   MAIN   INF   Active devices updated, elapsed: 10.845576ms
+2020-03-05 14:34:06.794   MAIN   INF   Deleting old log files
+2020-03-05 14:34:06.794   MAIN   INF   Old log files deleted, elapsed: 214.648µs
+2020-03-05 14:34:06.794   MAIN   INF   Active devices: 10, running devices: 0
+2020-03-05 14:34:06.795   MAIN   INF   Sleeping for 9.988274727s
+2020-03-05 14:34:08.167   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:35:42.182   MAIN   INF   Starting Terminal Service on darwin-launchd
+2020-03-05 14:35:47.183   MAIN   INF   Terminal Service version 2020.1.3.5 started
+2020-03-05 14:35:47.183   MAIN   INF   Updating program version in database
+2020-03-05 14:35:47.200   MAIN   INF   Program version updated, elapsed: 16.481074ms
+2020-03-05 14:35:47.200   MAIN   INF   Program running
+2020-03-05 14:35:47.200   MAIN   INF   Updating active devices
+2020-03-05 14:35:47.211   MAIN   INF   Active devices updated, elapsed: 11.343248ms
+2020-03-05 14:35:47.212   MAIN   INF   Deleting old log files
+2020-03-05 14:35:47.212   MAIN   INF   Old log files deleted, elapsed: 216.621µs
+2020-03-05 14:35:47.212   MAIN   INF   Active devices: 10, running devices: 0
+2020-03-05 14:35:47.212   MAIN   INF   Sleeping for 9.987729738s
+2020-03-05 14:35:57.205   MAIN   INF   Program running
+2020-03-05 14:35:57.205   MAIN   INF   Updating active devices
+2020-03-05 14:35:57.255   MAIN   INF   Active devices updated, elapsed: 49.204266ms
+2020-03-05 14:35:57.255   MAIN   INF   Deleting old log files
+2020-03-05 14:35:57.256   MAIN   INF   Old log files deleted, elapsed: 594.955µs
+2020-03-05 14:35:57.256   MAIN   INF   Active devices: 10, running devices: 10
+2020-03-05 14:35:57.257   MAIN   INF   Sleeping for 9.94750173s
+2020-03-05 14:36:07.209   MAIN   INF   Program running
+2020-03-05 14:36:07.210   MAIN   INF   Updating active devices
+2020-03-05 14:36:07.242   MAIN   INF   Active devices updated, elapsed: 31.454036ms
+2020-03-05 14:36:07.242   MAIN   INF   Deleting old log files
+2020-03-05 14:36:07.242   MAIN   INF   Old log files deleted, elapsed: 222.781µs
+2020-03-05 14:36:07.242   MAIN   INF   Active devices: 10, running devices: 10
+2020-03-05 14:36:07.242   MAIN   INF   Sleeping for 9.967106829s
+2020-03-05 14:36:08.487   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:36:09.489   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:36:10.490   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:36:11.493   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:36:12.497   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:36:13.498   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:36:14.499   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:36:15.500   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:36:16.502   MAIN   INF   Stopping, still running devices: 10
+2020-03-05 14:36:17.211   MAIN   INF   Program running
+2020-03-05 14:36:17.211   MAIN   INF   Updating active devices
+2020-03-05 14:36:17.237   MAIN   INF   Active devices updated, elapsed: 25.653194ms
+2020-03-05 14:36:17.238   MAIN   INF   Deleting old log files
+2020-03-05 14:36:17.238   MAIN   INF   Old log files deleted, elapsed: 202.086µs
+2020-03-05 14:36:17.238   MAIN   INF   Active devices: 10, running devices: 0
+2020-03-05 14:36:17.238   MAIN   INF   Sleeping for 9.97314433s
+2020-03-05 14:36:17.506   MAIN   INF   Stopped on platform darwin-launchd

@@ -80,10 +80,13 @@ func OpenDowntime(device zapsi_database.Device, actualWorkplaceState zapsi_datab
 	var downtimeToSave zapsi_database.DownTimeRecord
 	downtimeToSave.DateTimeStart = actualWorkplaceState.DateTimeStart
 	if openOrderId > 0 {
-		downtimeToSave.OrderRecordId = sql.NullInt32{Int32: int32(openOrderId)}
+		downtimeToSave.OrderRecordId = sql.NullInt32{Int32: int32(openOrderId), Valid: true}
 		var deviceUserRecord zapsi_database.UserRecord
 		db.Where("order_record_id = ?", openOrderId).Find(&deviceUserRecord)
-		downtimeToSave.UserId = sql.NullInt32{Int32: int32(deviceUserRecord.UserId)}
+		userIsValid := deviceUserRecord.UserId != 0
+		if userIsValid {
+			downtimeToSave.UserId = sql.NullInt32{Int32: int32(deviceUserRecord.UserId), Valid: true}
+		}
 	}
 	downtimeToSave.Duration = time.Now().Sub(actualWorkplaceState.DateTimeStart)
 	downtimeToSave.DeviceId = device.ID
