@@ -103,12 +103,15 @@ func OpenOrder(device zapsi_database.Device, actualWorkplaceState zapsi_database
 	}
 	defer db.Close()
 	var deviceWorkplaceRecord zapsi_database.DeviceWorkplaceRecord
+	var order zapsi_database.Order
+	db.Where("name = ?", "Internal").Find(&order)
 	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
 	var orderToSave zapsi_database.OrderRecord
 	orderToSave.DateTimeStart = actualWorkplaceState.DateTimeStart
 	orderToSave.Duration = time.Now().Sub(actualWorkplaceState.DateTimeStart)
 	orderToSave.DeviceId = device.ID
 	orderToSave.WorkplaceId = deviceWorkplaceRecord.WorkplaceID
+	orderToSave.OrderId = sql.NullInt32{Int32: int32(order.ID), Valid: true}
 	orderToSave.Cavity = 1
 	db.Save(&orderToSave)
 	LogInfo(device.Name, "Order opened, elapsed: "+time.Since(timer).String())

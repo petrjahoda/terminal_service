@@ -14,6 +14,11 @@ adhere to [Semantic Versioning](http://semver.org/spec/v2.0.0.html) rules.
 * ```Fixed``` for any bug fixes.
 * ```Security``` in case of vulnerabilities.
 
+## [2020.1.2.29] - 2020-02-29
+
+### Added
+- when saving order, order_id is set to internal
+
 
 ## [2020.1.2.29] - 2020-02-29
 

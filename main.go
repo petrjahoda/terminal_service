@@ -11,7 +11,7 @@ import (
 	"time"
 )
 
-const version = "2020.1.2.29"
+const version = "2020.1.3.5"
 const programName = "Terminal Service"
 const programDesription = "Created default data for terminals"
 const deleteLogsAfter = 240 * time.Hour
