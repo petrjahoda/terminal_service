@@ -11,13 +11,14 @@ import (
 	"time"
 )
 
-const version = "2020.1.3.31"
+const version = "2020.2.2.18"
 const programName = "Terminal Service"
 const programDesription = "Created default data for terminals"
 const deleteLogsAfter = 240 * time.Hour
 const downloadInSeconds = 10
 
 var serviceRunning = false
+var serviceDirectory string
 
 var (
 	activeDevices  []zapsi_database.Device
@@ -70,6 +71,11 @@ func (p *program) Stop(s service.Service) error {
 	LogInfo("MAIN", "Stopped on platform "+s.Platform())
 	return nil
 }
+
+func init() {
+	serviceDirectory = GetDirectory()
+}
+
 func main() {
 	serviceConfig := &service.Config{
 		Name:        programName,
@@ -97,6 +103,7 @@ func WriteProgramVersionIntoSettings() {
 		activeDevices = nil
 		return
 	}
+	db.LogMode(false)
 	defer db.Close()
 	var settings zapsi_database.Setting
 	db.Where("name=?", programName).Find(&settings)
@@ -179,7 +186,7 @@ func RunDevice(device zapsi_database.Device) {
 }
 
 func CreateDirectoryIfNotExists(device zapsi_database.Device) {
-	deviceDirectory := filepath.Join(".", strconv.Itoa(int(device.ID))+"-"+device.Name)
+	deviceDirectory := filepath.Join(serviceDirectory, strconv.Itoa(int(device.ID))+"-"+device.Name)
 
 	if _, checkPathError := os.Stat(deviceDirectory); checkPathError == nil {
 		LogInfo(device.Name, "Device directory exists")
@@ -235,6 +242,7 @@ func UpdateActiveDevices(reference string) {
 		activeDevices = nil
 		return
 	}
+	db.LogMode(false)
 	defer db.Close()
 	var deviceType zapsi_database.DeviceType
 	db.Where("name=?", "Zapsi Touch").Find(&deviceType)

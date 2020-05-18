@@ -13,6 +13,6 @@ docker rmi -f petrjahoda/terminal_service:latest
 docker build -t petrjahoda/terminal_service:latest .
 docker push petrjahoda/terminal_service:latest
 
-docker rmi -f petrjahoda/terminal_service:2020.1.3
-docker build -t petrjahoda/terminal_service:2020.1.3 .
-docker push petrjahoda/terminal_service:2020.1.3
+docker rmi -f petrjahoda/terminal_service:2020.2.2
+docker build -t petrjahoda/terminal_service:2020.2.2 .
+docker push petrjahoda/terminal_service:2020.2.2

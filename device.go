@@ -17,6 +17,7 @@ func UpdateDowntimeData(device zapsi_database.Device, deviceDowntimeRecordId int
 		activeDevices = nil
 		return
 	}
+	db.LogMode(false)
 	defer db.Close()
 	var openDowntime zapsi_database.DownTimeRecord
 	db.Where("id=?", deviceDowntimeRecordId).Find(&openDowntime)
@@ -35,6 +36,7 @@ func UpdateOrderData(device zapsi_database.Device, deviceOrderRecordId int) {
 		activeDevices = nil
 		return
 	}
+	db.LogMode(false)
 	defer db.Close()
 	var deviceWorkplaceRecord zapsi_database.DeviceWorkplaceRecord
 	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
@@ -72,6 +74,7 @@ func OpenDowntime(device zapsi_database.Device, actualWorkplaceState zapsi_datab
 		activeDevices = nil
 		return
 	}
+	db.LogMode(false)
 	defer db.Close()
 	var noReasonDowntime zapsi_database.Downtime
 	db.Where("name = ?", "No reason downtime").Find(&noReasonDowntime)
@@ -107,6 +110,7 @@ func OpenOrder(device zapsi_database.Device, actualWorkplaceState zapsi_database
 		activeDevices = nil
 		return
 	}
+	db.LogMode(false)
 	defer db.Close()
 	var deviceWorkplaceRecord zapsi_database.DeviceWorkplaceRecord
 	var order zapsi_database.Order
@@ -133,6 +137,7 @@ func CloseDowntime(device zapsi_database.Device, openDowntimeId int) {
 		activeDevices = nil
 		return
 	}
+	db.LogMode(false)
 	defer db.Close()
 	var openDowntime zapsi_database.DownTimeRecord
 	db.Where("id=?", openDowntimeId).Find(&openDowntime)
@@ -153,6 +158,7 @@ func CloseOrder(device zapsi_database.Device, openOrderId int) {
 		activeDevices = nil
 		return
 	}
+	db.LogMode(false)
 	defer db.Close()
 	var deviceWorkplaceRecord zapsi_database.DeviceWorkplaceRecord
 	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
@@ -183,6 +189,7 @@ func CheckOpenDowntime(device zapsi_database.Device) int {
 		activeDevices = nil
 		return 0
 	}
+	db.LogMode(false)
 	defer db.Close()
 	var openDowntime zapsi_database.DownTimeRecord
 	db.Where("device_id=?", device.ID).Where("date_time_end is null").Last(&openDowntime)
@@ -200,6 +207,7 @@ func CheckOpenOrder(device zapsi_database.Device) int {
 		activeDevices = nil
 		return 0
 	}
+	db.LogMode(false)
 	defer db.Close()
 	var openOrder zapsi_database.OrderRecord
 	db.Where("device_id=?", device.ID).Where("date_time_end is null").Last(&openOrder)
@@ -217,6 +225,7 @@ func GetActualState(device zapsi_database.Device) (zapsi_database.State, zapsi_d
 		activeDevices = nil
 		return zapsi_database.State{}, zapsi_database.StateRecord{}
 	}
+	db.LogMode(false)
 	defer db.Close()
 	var deviceWorkplaceRecord zapsi_database.DeviceWorkplaceRecord
 	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
