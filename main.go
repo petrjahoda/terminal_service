@@ -1,9 +1,10 @@
 package main
 
 import (
-	"github.com/jinzhu/gorm"
 	"github.com/kardianos/service"
 	"github.com/petrjahoda/zapsi_database"
+	"gorm.io/driver/postgres"
+	"gorm.io/gorm"
 	"os"
 	"path/filepath"
 	"strconv"
@@ -11,11 +12,11 @@ import (
 	"time"
 )
 
-const version = "2020.2.2.18"
+const version = "2020.3.1.27"
 const programName = "Terminal Service"
-const programDesription = "Created default data for terminals"
-const deleteLogsAfter = 240 * time.Hour
+const programDescription = "Created default data for terminals"
 const downloadInSeconds = 10
+const config = "user=postgres password=Zps05..... dbname=version3 host=database port=5432 sslmode=disable"
 
 var serviceRunning = false
 var serviceDirectory string
@@ -36,18 +37,12 @@ func (p *program) Start(s service.Service) error {
 }
 
 func (p *program) run() {
-	time.Sleep(time.Second * 5)
-	LogDirectoryFileCheck("MAIN")
 	LogInfo("MAIN", programName+" version "+version+" started")
-	CreateConfigIfNotExists()
-	LoadSettingsFromConfigFile()
-	LogDebug("MAIN", "Using ["+DatabaseType+"] on "+DatabaseIpAddress+":"+DatabasePort+" with database "+DatabaseName)
 	WriteProgramVersionIntoSettings()
 	for {
 		start := time.Now()
 		LogInfo("MAIN", "Program running")
 		UpdateActiveDevices("MAIN")
-		DeleteOldLogFiles()
 		LogInfo("MAIN", "Active devices: "+strconv.Itoa(len(activeDevices))+", running devices: "+strconv.Itoa(len(runningDevices)))
 		for _, activeDevice := range activeDevices {
 			activeDeviceIsRunning := CheckDevice(activeDevice)
@@ -72,15 +67,11 @@ func (p *program) Stop(s service.Service) error {
 	return nil
 }
 
-func init() {
-	serviceDirectory = GetDirectory()
-}
-
 func main() {
 	serviceConfig := &service.Config{
 		Name:        programName,
 		DisplayName: programName,
-		Description: programDesription,
+		Description: programDescription,
 	}
 	prg := &program{}
 	s, err := service.New(prg, serviceConfig)
@@ -96,15 +87,12 @@ func main() {
 func WriteProgramVersionIntoSettings() {
 	LogInfo("MAIN", "Updating program version in database")
 	timer := time.Now()
-	connectionString, dialect := zapsi_database.CheckDatabaseType(DatabaseType, DatabaseIpAddress, DatabasePort, DatabaseLogin, DatabaseName, DatabasePassword)
-	db, err := gorm.Open(dialect, connectionString)
+	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
 	if err != nil {
-		LogError("MAIN", "Problem opening "+DatabaseName+" database: "+err.Error())
+		LogError("MAIN", "Problem opening database: "+err.Error())
 		activeDevices = nil
 		return
 	}
-	db.LogMode(false)
-	defer db.Close()
 	var settings zapsi_database.Setting
 	db.Where("name=?", programName).Find(&settings)
 	settings.Name = programName
@@ -169,9 +157,6 @@ func RunDevice(device zapsi_database.Device) {
 				}
 			}
 		}
-		if downtimeIsOpen {
-			UpdateDowntimeData(device, openDowntimeId)
-		}
 		if orderIsOpen {
 			UpdateOrderData(device, openOrderId)
 		}
@@ -187,11 +172,10 @@ func RunDevice(device zapsi_database.Device) {
 
 func CreateDirectoryIfNotExists(device zapsi_database.Device) {
 	deviceDirectory := filepath.Join(serviceDirectory, strconv.Itoa(int(device.ID))+"-"+device.Name)
-
 	if _, checkPathError := os.Stat(deviceDirectory); checkPathError == nil {
 		LogInfo(device.Name, "Device directory exists")
 	} else if os.IsNotExist(checkPathError) {
-		LogWarning(device.Name, "Device directory not exist, creating")
+		LogError(device.Name, "Device directory not exist, creating")
 		mkdirError := os.MkdirAll(deviceDirectory, 0777)
 		if mkdirError != nil {
 			LogError(device.Name, "Unable to create device directory: "+mkdirError.Error())
@@ -235,15 +219,12 @@ func RemoveDeviceFromRunningDevices(device zapsi_database.Device) {
 func UpdateActiveDevices(reference string) {
 	LogInfo("MAIN", "Updating active devices")
 	timer := time.Now()
-	connectionString, dialect := zapsi_database.CheckDatabaseType(DatabaseType, DatabaseIpAddress, DatabasePort, DatabaseLogin, DatabaseName, DatabasePassword)
-	db, err := gorm.Open(dialect, connectionString)
+	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
 	if err != nil {
-		LogError(reference, "Problem opening "+DatabaseName+" database: "+err.Error())
+		LogError(reference, "Problem opening database: "+err.Error())
 		activeDevices = nil
 		return
 	}
-	db.LogMode(false)
-	defer db.Close()
 	var deviceType zapsi_database.DeviceType
 	db.Where("name=?", "Zapsi Touch").Find(&deviceType)
 	db.Where("device_type_id=?", deviceType.ID).Where("activated = ?", "1").Find(&activeDevices)
