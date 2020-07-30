@@ -19,6 +19,8 @@ func UpdateOrderData(device database.Device, deviceOrderRecordId int) {
 		activeDevices = nil
 		return
 	}
+	sqlDB, err := db.DB()
+	defer sqlDB.Close()
 	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
 	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
 	var openOrder database.OrderRecord
@@ -44,7 +46,7 @@ func UpdateOrderData(device database.Device, deviceOrderRecordId int) {
 
 }
 
-func OpenDowntime(device database.Device, actualWorkplaceState database.StateRecord) {
+func OpenDowntime(device database.Device) {
 	LogInfo(device.Name, "Opening downtime")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
@@ -53,6 +55,8 @@ func OpenDowntime(device database.Device, actualWorkplaceState database.StateRec
 		activeDevices = nil
 		return
 	}
+	sqlDB, err := db.DB()
+	defer sqlDB.Close()
 	var noReasonDowntime database.Downtime
 	db.Where("name = ?", "No reason Downtime").Find(&noReasonDowntime)
 	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
@@ -67,7 +71,7 @@ func OpenDowntime(device database.Device, actualWorkplaceState database.StateRec
 
 }
 
-func OpenOrder(device database.Device, actualWorkplaceState database.StateRecord, timezone string) {
+func OpenOrder(device database.Device, timezone string) {
 	LogInfo(device.Name, "Opening order")
 	timer := time.Now()
 	location, err := time.LoadLocation(timezone)
@@ -81,6 +85,8 @@ func OpenOrder(device database.Device, actualWorkplaceState database.StateRecord
 		activeDevices = nil
 		return
 	}
+	sqlDB, err := db.DB()
+	defer sqlDB.Close()
 	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
 	var order database.Order
 	var workplace database.Workplace
@@ -137,6 +143,8 @@ func CloseDowntime(device database.Device, openDowntimeId int) {
 		activeDevices = nil
 		return
 	}
+	sqlDB, err := db.DB()
+	defer sqlDB.Close()
 	var openDowntime database.DownTimeRecord
 	db.Where("id=?", openDowntimeId).Find(&openDowntime)
 	openDowntime.DateTimeEnd = sql.NullTime{Time: time.Now(), Valid: true}
@@ -154,6 +162,8 @@ func CloseOrder(device database.Device, openOrderId int) {
 		activeDevices = nil
 		return
 	}
+	sqlDB, err := db.DB()
+	defer sqlDB.Close()
 	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
 	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
 
@@ -188,6 +198,8 @@ func CheckOpenDowntime(device database.Device) int {
 		activeDevices = nil
 		return 0
 	}
+	sqlDB, err := db.DB()
+	defer sqlDB.Close()
 	var openDowntime database.DownTimeRecord
 	db.Where("device_id=?", device.ID).Where("date_time_end is null").Last(&openDowntime)
 	LogInfo(device.Name, "Open downtime checked, elapsed: "+time.Since(timer).String())
@@ -203,21 +215,25 @@ func CheckOpenOrder(device database.Device) int {
 		activeDevices = nil
 		return 0
 	}
+	sqlDB, err := db.DB()
+	defer sqlDB.Close()
 	var openOrder database.OrderRecord
 	db.Where("device_id=?", device.ID).Where("date_time_end is null").Last(&openOrder)
 	LogInfo(device.Name, "Open order checked, elapsed: "+time.Since(timer).String())
 	return int(openOrder.ID)
 }
 
-func GetActualState(device database.Device) (database.State, database.StateRecord) {
+func GetActualState(device database.Device) database.State {
 	LogInfo(device.Name, "Downloading actual state")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
 	if err != nil {
 		LogError(device.Name, "Problem opening database: "+err.Error())
 		activeDevices = nil
-		return database.State{}, database.StateRecord{}
+		return database.State{}
 	}
+	sqlDB, err := db.DB()
+	defer sqlDB.Close()
 	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
 	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
 	var workplaceState database.StateRecord
@@ -225,6 +241,6 @@ func GetActualState(device database.Device) (database.State, database.StateRecor
 	var actualState database.State
 	db.Where("id=?", workplaceState.StateID).Last(&actualState)
 	LogInfo(device.Name, "Actual state downloaded, elapsed: "+time.Since(timer).String())
-	return actualState, workplaceState
+	return actualState
 
 }

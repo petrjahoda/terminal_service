@@ -94,6 +94,8 @@ func WriteProgramVersionIntoSettings() {
 		activeDevices = nil
 		return
 	}
+	sqlDB, err := db.DB()
+	defer sqlDB.Close()
 	var settings database.Setting
 	db.Where("name=?", programName).Find(&settings)
 	settings.Name = programName
@@ -122,7 +124,7 @@ func RunDevice(device database.Device) {
 	for deviceIsActive && serviceRunning {
 		LogInfo(device.Name, "Starting device loop")
 		timer := time.Now()
-		actualState, actualWorkplaceState := GetActualState(device)
+		actualState := GetActualState(device)
 		var stateNameColored string
 		if actualState.Name == "Poweroff" {
 			stateNameColored = color.Ize(color.Red, actualState.Name)
@@ -153,7 +155,7 @@ func RunDevice(device database.Device) {
 			{
 				LogInfo(device.Name, "Production state")
 				if !orderIsOpen {
-					OpenOrder(device, actualWorkplaceState, timezone)
+					OpenOrder(device, timezone)
 				}
 				if downtimeIsOpen {
 					CloseDowntime(device, openDowntimeId)
@@ -163,7 +165,7 @@ func RunDevice(device database.Device) {
 			{
 				LogInfo(device.Name, "Downtime state")
 				if !downtimeIsOpen {
-					OpenDowntime(device, actualWorkplaceState)
+					OpenDowntime(device)
 				}
 			}
 		}
@@ -235,6 +237,8 @@ func UpdateActiveDevices(reference string) {
 		activeDevices = nil
 		return
 	}
+	sqlDB, err := db.DB()
+	defer sqlDB.Close()
 	var deviceType database.DeviceType
 	db.Where("name=?", "Zapsi Touch").Find(&deviceType)
 	db.Where("device_type_id=?", deviceType.ID).Where("activated = ?", "1").Find(&activeDevices)
@@ -247,6 +251,8 @@ func GetTimeZoneFromDatabase() string {
 		LogError("MAIN", "Problem opening database: "+err.Error())
 		return ""
 	}
+	sqlDB, err := db.DB()
+	defer sqlDB.Close()
 	var settings database.Setting
 	db.Where("name=?", "timezone").Find(&settings)
 	return settings.Value
