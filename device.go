@@ -2,14 +2,15 @@ package main
 
 import (
 	"database/sql"
-	"github.com/petrjahoda/zapsi_database"
+	"github.com/petrjahoda/database"
 	"gorm.io/driver/postgres"
 	_ "gorm.io/driver/postgres"
 	"gorm.io/gorm"
+	"gorm.io/gorm/logger"
 	"time"
 )
 
-func UpdateOrderData(device zapsi_database.Device, deviceOrderRecordId int) {
+func UpdateOrderData(device database.Device, deviceOrderRecordId int) {
 	LogInfo(device.Name, "Updating order data")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
@@ -18,18 +19,18 @@ func UpdateOrderData(device zapsi_database.Device, deviceOrderRecordId int) {
 		activeDevices = nil
 		return
 	}
-	var deviceWorkplaceRecord zapsi_database.DeviceWorkplaceRecord
+	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
 	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
-	var openOrder zapsi_database.OrderRecord
+	var openOrder database.OrderRecord
 	db.Where("id=?", deviceOrderRecordId).Find(&openOrder)
-	var workplacePortOk zapsi_database.WorkplacePort
+	var workplacePortOk database.WorkplacePort
 	db.Where("workplace_id = ?", deviceWorkplaceRecord.WorkplaceID).Where("counter_ok = ?", "1").Find(&workplacePortOk)
 	var countOk int64
-	db.Model(&zapsi_database.DevicePortDigitalRecord{}).Where("device_port_id = ?", workplacePortOk.DevicePortID).Where("date_time>?", openOrder.DateTimeStart).Where("data = 0").Count(&countOk)
-	var workplacePortNok zapsi_database.WorkplacePort
+	db.Model(&database.DevicePortDigitalRecord{}).Where("device_port_id = ?", workplacePortOk.DevicePortID).Where("date_time>?", openOrder.DateTimeStart).Where("data = 0").Count(&countOk)
+	var workplacePortNok database.WorkplacePort
 	db.Where("workplace_id = ?", deviceWorkplaceRecord.WorkplaceID).Where("counter_nok = ?", "1").Find(&workplacePortNok)
 	var countNok int64
-	db.Model(&zapsi_database.DevicePortDigitalRecord{}).Where("device_port_id = ?", workplacePortNok.DevicePortID).Where("date_time>?", openOrder.DateTimeStart).Where("data = 0").Count(&countNok)
+	db.Model(&database.DevicePortDigitalRecord{}).Where("device_port_id = ?", workplacePortNok.DevicePortID).Where("date_time>?", openOrder.DateTimeStart).Where("data = 0").Count(&countNok)
 	averageCycle := 0.0
 	if countOk > 0 {
 		averageCycle = time.Now().Sub(openOrder.DateTimeStart).Seconds() / float64(countOk)
@@ -43,7 +44,7 @@ func UpdateOrderData(device zapsi_database.Device, deviceOrderRecordId int) {
 
 }
 
-func OpenDowntime(device zapsi_database.Device, actualWorkplaceState zapsi_database.StateRecord, openOrderId int) {
+func OpenDowntime(device database.Device, actualWorkplaceState database.StateRecord) {
 	LogInfo(device.Name, "Opening downtime")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
@@ -52,21 +53,12 @@ func OpenDowntime(device zapsi_database.Device, actualWorkplaceState zapsi_datab
 		activeDevices = nil
 		return
 	}
-	var noReasonDowntime zapsi_database.Downtime
-	db.Where("name = ?", "No reason downtime").Find(&noReasonDowntime)
-	var deviceWorkplaceRecord zapsi_database.DeviceWorkplaceRecord
+	var noReasonDowntime database.Downtime
+	db.Where("name = ?", "No reason Downtime").Find(&noReasonDowntime)
+	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
 	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
-	var downtimeToSave zapsi_database.DownTimeRecord
-	downtimeToSave.DateTimeStart = actualWorkplaceState.DateTimeStart
-	if openOrderId > 0 {
-		downtimeToSave.OrderRecordID = openOrderId
-		var deviceUserRecord zapsi_database.UserRecord
-		db.Where("order_record_id = ?", openOrderId).Find(&deviceUserRecord)
-		userIsValid := deviceUserRecord.UserID != 0
-		if userIsValid {
-			downtimeToSave.UserID = deviceUserRecord.UserID
-		}
-	}
+	var downtimeToSave database.DownTimeRecord
+	downtimeToSave.DateTimeStart = time.Now()
 	downtimeToSave.DeviceID = int(device.ID)
 	downtimeToSave.DowntimeID = int(noReasonDowntime.ID)
 	downtimeToSave.WorkplaceID = deviceWorkplaceRecord.WorkplaceID
@@ -75,30 +67,68 @@ func OpenDowntime(device zapsi_database.Device, actualWorkplaceState zapsi_datab
 
 }
 
-func OpenOrder(device zapsi_database.Device, actualWorkplaceState zapsi_database.StateRecord) {
+func OpenOrder(device database.Device, actualWorkplaceState database.StateRecord, timezone string) {
 	LogInfo(device.Name, "Opening order")
 	timer := time.Now()
+	location, err := time.LoadLocation(timezone)
+	if err != nil {
+		LogError("MAIN", "Cannot start order, problem loading location: "+timezone)
+		return
+	}
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
 	if err != nil {
 		LogError(device.Name, "Problem opening database: "+err.Error())
 		activeDevices = nil
 		return
 	}
-	var deviceWorkplaceRecord zapsi_database.DeviceWorkplaceRecord
-	var order zapsi_database.Order
+	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
+	var order database.Order
+	var workplace database.Workplace
+	var workplaceWorkshifts []database.WorkplaceWorkshift
+	var operation database.Operation
+	var workshiftID int
 	db.Where("name = ?", "Internal").Find(&order)
 	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
-	var orderToSave zapsi_database.OrderRecord
-	orderToSave.DateTimeStart = actualWorkplaceState.DateTimeStart
+	db.Where("id = ?", deviceWorkplaceRecord.WorkplaceID).Find(&workplace)
+	db.Where("workplace_id = ?", deviceWorkplaceRecord.WorkplaceID).Find(&workplaceWorkshifts)
+	for _, workplaceWorkshift := range workplaceWorkshifts {
+		var workshift database.Workshift
+		db.Where("id = ?", workplaceWorkshift.WorkshiftID).Find(&workshift)
+		if workshift.WorkshiftStart.Hour() < time.Now().In(location).Hour() && workshift.WorkshiftEnd.Hour() > time.Now().In(location).Hour() {
+			LogInfo(device.Name, "Actual workshift: "+workshift.Name)
+			workshiftID = int(workshift.ID)
+			break
+		} else if workshift.WorkshiftStart.Hour() > workshift.WorkshiftEnd.Hour() {
+			if time.Now().In(location).Hour() < workshift.WorkshiftEnd.Hour() || time.Now().In(location).Hour() > workshift.WorkshiftStart.Hour() {
+				LogInfo(device.Name, "Actual workshift: "+workshift.Name)
+				workshiftID = int(workshift.ID)
+				break
+			}
+		}
+	}
+	db.Where("order_id = ?", order.ID).Find(&operation)
+
+	var orderToSave database.OrderRecord
+	orderToSave.DateTimeStart = time.Now()
 	orderToSave.DeviceID = int(device.ID)
 	orderToSave.WorkplaceID = deviceWorkplaceRecord.WorkplaceID
 	orderToSave.OrderID = int(order.ID)
+	orderToSave.WorkplaceModeID = workplace.WorkplaceModeID
+	orderToSave.WorkshiftID = workshiftID
+	orderToSave.OperationID = int(operation.ID)
 	orderToSave.Cavity = 1
 	db.Save(&orderToSave)
+
+	var userToSave database.UserRecord
+	userToSave.DateTimeStart = time.Now()
+	userToSave.OrderRecordID = int(orderToSave.ID)
+	userToSave.UserID = 1
+	db.Save(&userToSave)
+
 	LogInfo(device.Name, "Order opened, elapsed: "+time.Since(timer).String())
 }
 
-func CloseDowntime(device zapsi_database.Device, openDowntimeId int) {
+func CloseDowntime(device database.Device, openDowntimeId int) {
 	LogInfo(device.Name, "Closing downtime")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
@@ -107,7 +137,7 @@ func CloseDowntime(device zapsi_database.Device, openDowntimeId int) {
 		activeDevices = nil
 		return
 	}
-	var openDowntime zapsi_database.DownTimeRecord
+	var openDowntime database.DownTimeRecord
 	db.Where("id=?", openDowntimeId).Find(&openDowntime)
 	openDowntime.DateTimeEnd = sql.NullTime{Time: time.Now(), Valid: true}
 	db.Save(&openDowntime)
@@ -115,7 +145,7 @@ func CloseDowntime(device zapsi_database.Device, openDowntimeId int) {
 
 }
 
-func CloseOrder(device zapsi_database.Device, openOrderId int) {
+func CloseOrder(device database.Device, openOrderId int) {
 	LogInfo(device.Name, "Closing order")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
@@ -124,14 +154,17 @@ func CloseOrder(device zapsi_database.Device, openOrderId int) {
 		activeDevices = nil
 		return
 	}
-	var deviceWorkplaceRecord zapsi_database.DeviceWorkplaceRecord
+	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
 	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
-	var openOrder zapsi_database.OrderRecord
+
+	var openOrder database.OrderRecord
+	var openUser database.UserRecord
 	db.Where("id=?", openOrderId).Find(&openOrder)
-	var workplacePortOk zapsi_database.WorkplacePort
+	var workplacePortOk database.WorkplacePort
 	db.Where("workplace_id = ?", deviceWorkplaceRecord.WorkplaceID).Where("counter_ok = ?", "1").Find(&workplacePortOk)
+	db.Where("order_record_id = ?", openOrder.ID).Find(&openUser)
 	var countOk int64
-	db.Model(&zapsi_database.DevicePortDigitalRecord{}).Where("device_port_id = ?", workplacePortOk.DevicePortID).Where("date_time>?", openOrder.DateTimeStart).Where("data = 0").Count(&countOk)
+	db.Model(&database.DevicePortDigitalRecord{}).Where("device_port_id = ?", workplacePortOk.DevicePortID).Where("date_time>?", openOrder.DateTimeStart).Where("data = 0").Count(&countOk)
 	averageCycle := 0.0
 	if countOk > 0 {
 		averageCycle = time.Now().Sub(openOrder.DateTimeStart).Seconds() / float64(countOk)
@@ -139,53 +172,57 @@ func CloseOrder(device zapsi_database.Device, openOrderId int) {
 	openOrder.AverageCycle = float32(averageCycle)
 	openOrder.DateTimeEnd = sql.NullTime{Time: time.Now(), Valid: true}
 	db.Save(&openOrder)
+
+	openUser.DateTimeEnd = sql.NullTime{Time: time.Now(), Valid: true}
+	db.Save(&openUser)
+
 	LogInfo(device.Name, "Order closed, elapsed: "+time.Since(timer).String())
 }
 
-func CheckOpenDowntime(device zapsi_database.Device) int {
+func CheckOpenDowntime(device database.Device) int {
 	LogInfo(device.Name, "Checking open downtime")
 	timer := time.Now()
-	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
+	db, err := gorm.Open(postgres.Open(config), &gorm.Config{Logger: logger.Default.LogMode(logger.Silent)})
 	if err != nil {
 		LogError(device.Name, "Problem opening database: "+err.Error())
 		activeDevices = nil
 		return 0
 	}
-	var openDowntime zapsi_database.DownTimeRecord
+	var openDowntime database.DownTimeRecord
 	db.Where("device_id=?", device.ID).Where("date_time_end is null").Last(&openDowntime)
 	LogInfo(device.Name, "Open downtime checked, elapsed: "+time.Since(timer).String())
 	return int(openDowntime.ID)
 }
 
-func CheckOpenOrder(device zapsi_database.Device) int {
+func CheckOpenOrder(device database.Device) int {
 	LogInfo(device.Name, "Checking open order")
 	timer := time.Now()
-	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
+	db, err := gorm.Open(postgres.Open(config), &gorm.Config{Logger: logger.Default.LogMode(logger.Silent)})
 	if err != nil {
 		LogError(device.Name, "Problem opening database: "+err.Error())
 		activeDevices = nil
 		return 0
 	}
-	var openOrder zapsi_database.OrderRecord
+	var openOrder database.OrderRecord
 	db.Where("device_id=?", device.ID).Where("date_time_end is null").Last(&openOrder)
 	LogInfo(device.Name, "Open order checked, elapsed: "+time.Since(timer).String())
 	return int(openOrder.ID)
 }
 
-func GetActualState(device zapsi_database.Device) (zapsi_database.State, zapsi_database.StateRecord) {
+func GetActualState(device database.Device) (database.State, database.StateRecord) {
 	LogInfo(device.Name, "Downloading actual state")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
 	if err != nil {
 		LogError(device.Name, "Problem opening database: "+err.Error())
 		activeDevices = nil
-		return zapsi_database.State{}, zapsi_database.StateRecord{}
+		return database.State{}, database.StateRecord{}
 	}
-	var deviceWorkplaceRecord zapsi_database.DeviceWorkplaceRecord
+	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
 	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
-	var workplaceState zapsi_database.StateRecord
+	var workplaceState database.StateRecord
 	db.Where("workplace_id=?", deviceWorkplaceRecord.WorkplaceID).Last(&workplaceState)
-	var actualState zapsi_database.State
+	var actualState database.State
 	db.Where("id=?", workplaceState.StateID).Last(&actualState)
 	LogInfo(device.Name, "Actual state downloaded, elapsed: "+time.Since(timer).String())
 	return actualState, workplaceState

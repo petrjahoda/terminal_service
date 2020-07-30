@@ -1,8 +1,9 @@
 package main
 
 import (
+	"github.com/TwinProduction/go-color"
 	"github.com/kardianos/service"
-	"github.com/petrjahoda/zapsi_database"
+	"github.com/petrjahoda/database"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"os"
@@ -12,18 +13,18 @@ import (
 	"time"
 )
 
-const version = "2020.3.1.27"
+const version = "2020.3.1.30"
 const programName = "Terminal Service"
 const programDescription = "Created default data for terminals"
 const downloadInSeconds = 10
-const config = "user=postgres password=Zps05..... dbname=version3 host=database port=5432 sslmode=disable"
+const config = "user=postgres password=Zps05..... dbname=version3 host=localhost port=5432 sslmode=disable"
 
 var serviceRunning = false
 var serviceDirectory string
 
 var (
-	activeDevices  []zapsi_database.Device
-	runningDevices []zapsi_database.Device
+	activeDevices  []database.Device
+	runningDevices []database.Device
 	deviceSync     sync.Mutex
 )
 
@@ -93,7 +94,7 @@ func WriteProgramVersionIntoSettings() {
 		activeDevices = nil
 		return
 	}
-	var settings zapsi_database.Setting
+	var settings database.Setting
 	db.Where("name=?", programName).Find(&settings)
 	settings.Name = programName
 	settings.Value = version
@@ -101,7 +102,7 @@ func WriteProgramVersionIntoSettings() {
 	LogInfo("MAIN", "Program version updated, elapsed: "+time.Since(timer).String())
 }
 
-func CheckDevice(device zapsi_database.Device) bool {
+func CheckDevice(device database.Device) bool {
 	for _, runningDevice := range runningDevices {
 		if runningDevice.Name == device.Name {
 			return true
@@ -110,18 +111,27 @@ func CheckDevice(device zapsi_database.Device) bool {
 	return false
 }
 
-func RunDevice(device zapsi_database.Device) {
+func RunDevice(device database.Device) {
 	LogInfo(device.Name, "Device started running")
 	deviceSync.Lock()
 	runningDevices = append(runningDevices, device)
 	deviceSync.Unlock()
 	deviceIsActive := true
 	CreateDirectoryIfNotExists(device)
+	timezone := GetTimeZoneFromDatabase()
 	for deviceIsActive && serviceRunning {
 		LogInfo(device.Name, "Starting device loop")
 		timer := time.Now()
 		actualState, actualWorkplaceState := GetActualState(device)
-		LogInfo(device.Name, "Actual workplace state: "+actualState.Name)
+		var stateNameColored string
+		if actualState.Name == "Poweroff" {
+			stateNameColored = color.Ize(color.Red, actualState.Name)
+		} else if actualState.Name == "Downtime" {
+			stateNameColored = color.Ize(color.Yellow, actualState.Name)
+		} else {
+			stateNameColored = color.Ize(color.White, actualState.Name)
+		}
+		LogInfo(device.Name, "Actual workplace state: "+stateNameColored)
 		openOrderId := CheckOpenOrder(device)
 		LogInfo(device.Name, "Actual open order: "+strconv.Itoa(openOrderId))
 		openDowntimeId := CheckOpenDowntime(device)
@@ -143,7 +153,7 @@ func RunDevice(device zapsi_database.Device) {
 			{
 				LogInfo(device.Name, "Production state")
 				if !orderIsOpen {
-					OpenOrder(device, actualWorkplaceState)
+					OpenOrder(device, actualWorkplaceState, timezone)
 				}
 				if downtimeIsOpen {
 					CloseDowntime(device, openDowntimeId)
@@ -153,7 +163,7 @@ func RunDevice(device zapsi_database.Device) {
 			{
 				LogInfo(device.Name, "Downtime state")
 				if !downtimeIsOpen {
-					OpenDowntime(device, actualWorkplaceState, openOrderId)
+					OpenDowntime(device, actualWorkplaceState)
 				}
 			}
 		}
@@ -170,7 +180,7 @@ func RunDevice(device zapsi_database.Device) {
 
 }
 
-func CreateDirectoryIfNotExists(device zapsi_database.Device) {
+func CreateDirectoryIfNotExists(device database.Device) {
 	deviceDirectory := filepath.Join(serviceDirectory, strconv.Itoa(int(device.ID))+"-"+device.Name)
 	if _, checkPathError := os.Stat(deviceDirectory); checkPathError == nil {
 		LogInfo(device.Name, "Device directory exists")
@@ -187,7 +197,7 @@ func CreateDirectoryIfNotExists(device zapsi_database.Device) {
 	}
 }
 
-func Sleep(device zapsi_database.Device, start time.Time) {
+func Sleep(device database.Device, start time.Time) {
 	if time.Since(start) < (downloadInSeconds * time.Second) {
 		sleepTime := downloadInSeconds*time.Second - time.Since(start)
 		LogInfo(device.Name, "Sleeping for "+sleepTime.String())
@@ -195,7 +205,7 @@ func Sleep(device zapsi_database.Device, start time.Time) {
 	}
 }
 
-func CheckActive(device zapsi_database.Device) bool {
+func CheckActive(device database.Device) bool {
 	for _, activeDevice := range activeDevices {
 		if activeDevice.Name == device.Name {
 			LogInfo(device.Name, "Device still active")
@@ -206,7 +216,7 @@ func CheckActive(device zapsi_database.Device) bool {
 	return false
 }
 
-func RemoveDeviceFromRunningDevices(device zapsi_database.Device) {
+func RemoveDeviceFromRunningDevices(device database.Device) {
 	deviceSync.Lock()
 	for idx, runningDevice := range runningDevices {
 		if device.Name == runningDevice.Name {
@@ -225,8 +235,19 @@ func UpdateActiveDevices(reference string) {
 		activeDevices = nil
 		return
 	}
-	var deviceType zapsi_database.DeviceType
+	var deviceType database.DeviceType
 	db.Where("name=?", "Zapsi Touch").Find(&deviceType)
 	db.Where("device_type_id=?", deviceType.ID).Where("activated = ?", "1").Find(&activeDevices)
 	LogInfo("MAIN", "Active devices updated, elapsed: "+time.Since(timer).String())
+}
+
+func GetTimeZoneFromDatabase() string {
+	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
+	if err != nil {
+		LogError("MAIN", "Problem opening database: "+err.Error())
+		return ""
+	}
+	var settings database.Setting
+	db.Where("name=?", "timezone").Find(&settings)
+	return settings.Value
 }
