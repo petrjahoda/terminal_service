@@ -19,6 +19,9 @@ adhere to [Semantic Versioning](http://semver.org/spec/v2.0.0.html) rules.
 ### Fixed
 - proper behavior with new database structure
 
+### Changed
+- added tzdata to docker image
+
 ## [2020.3.1.27] - 2020-07-27
 
 ### Changed
