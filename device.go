@@ -127,8 +127,8 @@ func OpenOrder(device database.Device, timezone string) {
 	userToSave.DateTimeStart = time.Now()
 	userToSave.OrderRecordID = int(orderToSave.ID)
 	userToSave.UserID = 1
+	userToSave.WorkplaceID = workplace.WorkplaceModeID
 	db.Save(&userToSave)
-
 	LogInfo(device.Name, "Order opened, elapsed: "+time.Since(timer).String())
 }
 
@@ -198,8 +198,10 @@ func CheckOpenDowntime(device database.Device) int {
 	}
 	sqlDB, err := db.DB()
 	defer sqlDB.Close()
+	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
+	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
 	var openDowntime database.DownTimeRecord
-	db.Where("device_id=?", device.ID).Where("date_time_end is null").Last(&openDowntime)
+	db.Where("workplace_id=?", deviceWorkplaceRecord.WorkplaceID).Where("date_time_end is null").Last(&openDowntime)
 	LogInfo(device.Name, "Open downtime checked, elapsed: "+time.Since(timer).String())
 	return int(openDowntime.ID)
 }
@@ -215,8 +217,10 @@ func CheckOpenOrder(device database.Device) int {
 	}
 	sqlDB, err := db.DB()
 	defer sqlDB.Close()
+	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
+	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
 	var openOrder database.OrderRecord
-	db.Where("device_id=?", device.ID).Where("date_time_end is null").Last(&openOrder)
+	db.Where("workplace_id=?", deviceWorkplaceRecord.WorkplaceID).Where("date_time_end is null").Last(&openOrder)
 	LogInfo(device.Name, "Open order checked, elapsed: "+time.Since(timer).String())
 	return int(openOrder.ID)
 }

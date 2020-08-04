@@ -16,6 +16,9 @@ adhere to [Semantic Versioning](http://semver.org/spec/v2.0.0.html) rules.
 
 ## [2020.3.2.4] - 2020-08-04
 
+### Fixed
+- proper creating new order and downtime and user records
+- proper checkign for open order and downtime records
 
 ### Changed
 - updated to latest libraries
