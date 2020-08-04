@@ -4,4 +4,4 @@
 Go service that autonomously created device data for touch terminal.
 
     
-Petr Jahoda © 2020
+tGMS © 2020 Petr Jahoda
