@@ -63,7 +63,6 @@ func OpenDowntime(device database.Device) {
 	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
 	var downtimeToSave database.DownTimeRecord
 	downtimeToSave.DateTimeStart = time.Now()
-	downtimeToSave.DeviceID = int(device.ID)
 	downtimeToSave.DowntimeID = int(noReasonDowntime.ID)
 	downtimeToSave.WorkplaceID = deviceWorkplaceRecord.WorkplaceID
 	db.Save(&downtimeToSave)
@@ -116,7 +115,6 @@ func OpenOrder(device database.Device, timezone string) {
 
 	var orderToSave database.OrderRecord
 	orderToSave.DateTimeStart = time.Now()
-	orderToSave.DeviceID = int(device.ID)
 	orderToSave.WorkplaceID = deviceWorkplaceRecord.WorkplaceID
 	orderToSave.OrderID = int(order.ID)
 	orderToSave.WorkplaceModeID = workplace.WorkplaceModeID

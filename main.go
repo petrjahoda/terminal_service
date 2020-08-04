@@ -13,7 +13,7 @@ import (
 	"time"
 )
 
-const version = "2020.3.1.30"
+const version = "2020.3.2.4"
 const programName = "Terminal Service"
 const programDescription = "Created default data for terminals"
 const downloadInSeconds = 10
