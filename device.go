@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-func UpdateOrderData(device database.Device, deviceOrderRecordId int) {
+func UpdateOpenOrderData(device database.Device, deviceOrderRecordId int) {
 	LogInfo(device.Name, "Updating order data")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
@@ -42,12 +42,12 @@ func UpdateOrderData(device database.Device, deviceOrderRecordId int) {
 	openOrder.CountNok = int(countNok)
 	openOrder.WorkplaceID = deviceWorkplaceRecord.WorkplaceID
 	db.Save(&openOrder)
-	LogInfo(device.Name, "Order data updated, elapsed: "+time.Since(timer).String())
+	LogInfo(device.Name, "Order data updated in "+time.Since(timer).String())
 
 }
 
-func OpenDowntime(device database.Device) {
-	LogInfo(device.Name, "Opening downtime")
+func CreateNewDowntime(device database.Device) {
+	LogInfo(device.Name, "Create new downtime")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
 	if err != nil {
@@ -66,16 +66,16 @@ func OpenDowntime(device database.Device) {
 	downtimeToSave.DowntimeID = int(noReasonDowntime.ID)
 	downtimeToSave.WorkplaceID = deviceWorkplaceRecord.WorkplaceID
 	db.Save(&downtimeToSave)
-	LogInfo(device.Name, "Downtime opened, elapsed: "+time.Since(timer).String())
+	LogInfo(device.Name, "New downtime created in "+time.Since(timer).String())
 
 }
 
-func OpenOrder(device database.Device, timezone string) {
-	LogInfo(device.Name, "Opening order")
+func CreateNewOrder(device database.Device, timezone string) {
+	LogInfo(device.Name, "Creating new order")
 	timer := time.Now()
 	location, err := time.LoadLocation(timezone)
 	if err != nil {
-		LogError("MAIN", "Cannot start order, problem loading location: "+timezone)
+		LogError("MAIN", "Cannot create order, problem loading location: "+timezone)
 		return
 	}
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
@@ -112,7 +112,6 @@ func OpenOrder(device database.Device, timezone string) {
 		}
 	}
 	db.Where("order_id = ?", order.ID).Find(&operation)
-
 	var orderToSave database.OrderRecord
 	orderToSave.DateTimeStart = time.Now()
 	orderToSave.WorkplaceID = deviceWorkplaceRecord.WorkplaceID
@@ -122,18 +121,17 @@ func OpenOrder(device database.Device, timezone string) {
 	orderToSave.OperationID = int(operation.ID)
 	orderToSave.Cavity = 1
 	db.Save(&orderToSave)
-
 	var userToSave database.UserRecord
 	userToSave.DateTimeStart = time.Now()
 	userToSave.OrderRecordID = int(orderToSave.ID)
 	userToSave.UserID = 1
 	userToSave.WorkplaceID = workplace.WorkplaceModeID
 	db.Save(&userToSave)
-	LogInfo(device.Name, "Order opened, elapsed: "+time.Since(timer).String())
+	LogInfo(device.Name, "New Order created in "+time.Since(timer).String())
 }
 
-func CloseDowntime(device database.Device, openDowntimeId int) {
-	LogInfo(device.Name, "Closing downtime")
+func UpdateDowntimeToClosed(device database.Device, openDowntimeId int) {
+	LogInfo(device.Name, "Updating downtime to closed")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
 	if err != nil {
@@ -147,12 +145,12 @@ func CloseDowntime(device database.Device, openDowntimeId int) {
 	db.Where("id=?", openDowntimeId).Find(&openDowntime)
 	openDowntime.DateTimeEnd = sql.NullTime{Time: time.Now(), Valid: true}
 	db.Save(&openDowntime)
-	LogInfo(device.Name, "Downtime closed, elapsed: "+time.Since(timer).String())
+	LogInfo(device.Name, "Downtime updated to closed in "+time.Since(timer).String())
 
 }
 
-func CloseOrder(device database.Device, openOrderId int) {
-	LogInfo(device.Name, "Closing order")
+func UpdateOrderToClosed(device database.Device, openOrderId int) {
+	LogInfo(device.Name, "Updating order to closed")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
 	if err != nil {
@@ -164,7 +162,6 @@ func CloseOrder(device database.Device, openOrderId int) {
 	defer sqlDB.Close()
 	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
 	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
-
 	var openOrder database.OrderRecord
 	var openUser database.UserRecord
 	db.Where("id=?", openOrderId).Find(&openOrder)
@@ -180,15 +177,13 @@ func CloseOrder(device database.Device, openOrderId int) {
 	openOrder.AverageCycle = float32(averageCycle)
 	openOrder.DateTimeEnd = sql.NullTime{Time: time.Now(), Valid: true}
 	db.Save(&openOrder)
-
 	openUser.DateTimeEnd = sql.NullTime{Time: time.Now(), Valid: true}
 	db.Save(&openUser)
-
-	LogInfo(device.Name, "Order closed, elapsed: "+time.Since(timer).String())
+	LogInfo(device.Name, "Order updated to closed in "+time.Since(timer).String())
 }
 
-func CheckOpenDowntime(device database.Device) int {
-	LogInfo(device.Name, "Checking open downtime")
+func ReadOpenDowntime(device database.Device) int {
+	LogInfo(device.Name, "Reading open downtime")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{Logger: logger.Default.LogMode(logger.Silent)})
 	if err != nil {
@@ -202,12 +197,12 @@ func CheckOpenDowntime(device database.Device) int {
 	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
 	var openDowntime database.DownTimeRecord
 	db.Where("workplace_id=?", deviceWorkplaceRecord.WorkplaceID).Where("date_time_end is null").Last(&openDowntime)
-	LogInfo(device.Name, "Open downtime checked, elapsed: "+time.Since(timer).String())
+	LogInfo(device.Name, "Open downtime read in "+time.Since(timer).String())
 	return int(openDowntime.ID)
 }
 
-func CheckOpenOrder(device database.Device) int {
-	LogInfo(device.Name, "Checking open order")
+func ReadOpenOrder(device database.Device) int {
+	LogInfo(device.Name, "Reading open order")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{Logger: logger.Default.LogMode(logger.Silent)})
 	if err != nil {
@@ -221,12 +216,12 @@ func CheckOpenOrder(device database.Device) int {
 	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
 	var openOrder database.OrderRecord
 	db.Where("workplace_id=?", deviceWorkplaceRecord.WorkplaceID).Where("date_time_end is null").Last(&openOrder)
-	LogInfo(device.Name, "Open order checked, elapsed: "+time.Since(timer).String())
+	LogInfo(device.Name, "Open order read in "+time.Since(timer).String())
 	return int(openOrder.ID)
 }
 
-func GetActualState(device database.Device) database.State {
-	LogInfo(device.Name, "Downloading actual state")
+func ReadActualState(device database.Device) database.State {
+	LogInfo(device.Name, "Reading actual state")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
 	if err != nil {
@@ -242,7 +237,7 @@ func GetActualState(device database.Device) database.State {
 	db.Where("workplace_id=?", deviceWorkplaceRecord.WorkplaceID).Last(&workplaceState)
 	var actualState database.State
 	db.Where("id=?", workplaceState.StateID).Last(&actualState)
-	LogInfo(device.Name, "Actual state downloaded, elapsed: "+time.Since(timer).String())
+	LogInfo(device.Name, "Actual state read in "+time.Since(timer).String())
 	return actualState
 
 }
