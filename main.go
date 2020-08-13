@@ -8,14 +8,13 @@ import (
 	"time"
 )
 
-const version = "2020.3.2.5"
+const version = "2020.3.2.13"
 const serviceName = "Terminal Service"
 const serviceDescription = "Created default data for terminals"
 const downloadInSeconds = 10
 const config = "user=postgres password=Zps05..... dbname=version3 host=database port=5432 sslmode=disable"
 
 var serviceRunning = false
-var serviceDirectory string
 
 var (
 	activeDevices  []database.Device
