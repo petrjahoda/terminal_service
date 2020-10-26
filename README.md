@@ -24,7 +24,6 @@ Install under docker runtime using [this dockerfile image](https://github.com/pe
 Check the software running with this command: ```docker stats```. <br/>
 Terminal_service has to be running.
 
-
 ## Additional information
 * working with workplace that has linked devices in  ```device_workplace``` table, device has to of type 'Zapsi Touch' in ```device``` table
 * creates and updates orders in ```order_records``` table

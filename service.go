@@ -13,12 +13,12 @@ func updateProgramVersion() {
 	logInfo("MAIN", "Writing program version into settings")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
+	sqlDB, _ := db.DB()
+	defer sqlDB.Close()
 	if err != nil {
 		logError("MAIN", "Problem opening database: "+err.Error())
 		return
 	}
-	sqlDB, err := db.DB()
-	defer sqlDB.Close()
 	var existingSettings database.Setting
 	db.Where("name=?", serviceName).Find(&existingSettings)
 	existingSettings.Name = serviceName
@@ -137,13 +137,13 @@ func readActiveDevices(reference string) {
 	logInfo("MAIN", "Reading active devices")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
+	sqlDB, _ := db.DB()
+	defer sqlDB.Close()
 	if err != nil {
 		logError(reference, "Problem opening database: "+err.Error())
 		activeDevices = nil
 		return
 	}
-	sqlDB, err := db.DB()
-	defer sqlDB.Close()
 	var deviceType database.DeviceType
 	db.Where("name=?", "Zapsi Touch").Find(&deviceType)
 	db.Where("device_type_id=?", deviceType.ID).Where("activated = ?", "1").Find(&activeDevices)
@@ -154,12 +154,12 @@ func readTimeZoneFromDatabase() string {
 	logInfo("MAIN", "Reading timezone from database")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
+	sqlDB, _ := db.DB()
+	defer sqlDB.Close()
 	if err != nil {
 		logError("MAIN", "Problem opening database: "+err.Error())
 		return ""
 	}
-	sqlDB, err := db.DB()
-	defer sqlDB.Close()
 	var settings database.Setting
 	db.Where("name=?", "timezone").Find(&settings)
 	logInfo("MAIN", "Timezone read in "+time.Since(timer).String())
