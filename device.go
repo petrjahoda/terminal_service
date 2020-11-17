@@ -61,7 +61,7 @@ func createNewDowntime(device database.Device) {
 	db.Where("name = ?", "No reason Downtime").Find(&noReasonDowntime)
 	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
 	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
-	var downtimeToSave database.DownTimeRecord
+	var downtimeToSave database.DowntimeRecord
 	downtimeToSave.DateTimeStart = time.Now()
 	downtimeToSave.DowntimeID = int(noReasonDowntime.ID)
 	downtimeToSave.WorkplaceID = deviceWorkplaceRecord.WorkplaceID
@@ -141,7 +141,7 @@ func updateDowntimeToClosed(device database.Device, openDowntimeId int) {
 		activeDevices = nil
 		return
 	}
-	var openDowntime database.DownTimeRecord
+	var openDowntime database.DowntimeRecord
 	db.Where("id=?", openDowntimeId).Find(&openDowntime)
 	openDowntime.DateTimeEnd = sql.NullTime{Time: time.Now(), Valid: true}
 	db.Save(&openDowntime)
@@ -195,7 +195,7 @@ func readOpenDowntime(device database.Device) int {
 	}
 	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
 	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
-	var openDowntime database.DownTimeRecord
+	var openDowntime database.DowntimeRecord
 	db.Where("workplace_id=?", deviceWorkplaceRecord.WorkplaceID).Where("date_time_end is null").Last(&openDowntime)
 	logInfo(device.Name, "Open downtime read in "+time.Since(timer).String())
 	return int(openDowntime.ID)
