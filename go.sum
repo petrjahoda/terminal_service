@@ -165,6 +165,8 @@ github.com/petrjahoda/database v0.0.0-20201117081450-ebbecafbf163 h1:HxbgqSDhJSl
 github.com/petrjahoda/database v0.0.0-20201117081450-ebbecafbf163/go.mod h1:DILASTW9lOab8F1It7sl0jKA2zAU9Uwe//R2UO9HhNY=
 github.com/petrjahoda/database v0.0.0-20201117090852-47341a185dc1 h1:/CeyhpdHEieI4LkUUL6lwTXbUu3aDOhidh0nhZG9QbU=
 github.com/petrjahoda/database v0.0.0-20201117090852-47341a185dc1/go.mod h1:DILASTW9lOab8F1It7sl0jKA2zAU9Uwe//R2UO9HhNY=
+github.com/petrjahoda/database v0.0.0-20201117102627-93588a38b1e9 h1:wH8RqyqzvlUPbA4FlzVX9yAnOIYGLmAKnKdjK6sjiCk=
+github.com/petrjahoda/database v0.0.0-20201117102627-93588a38b1e9/go.mod h1:DILASTW9lOab8F1It7sl0jKA2zAU9Uwe//R2UO9HhNY=
 github.com/petrjahoda/zapsi_database v0.0.0-20200726084641-7c17802daecd h1:8P6DS/NCpJY+vFwJIYUSaO1LORXd8qED5gfqp584uG0=
 github.com/petrjahoda/zapsi_database v0.0.0-20200726084641-7c17802daecd/go.mod h1:R/uBN73yO+LTwM5JYUEtYi4cl349nZmeb4rdINPSneM=
 github.com/pkg/errors v0.8.1 h1:iURUrRGxPUNPdy5/HRSm+Yj6okJ6UtLINN0Q9M4+h3I=
