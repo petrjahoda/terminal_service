@@ -125,7 +125,7 @@ func createNewOrder(device database.Device, timezone string) {
 	userToSave.DateTimeStart = time.Now()
 	userToSave.OrderRecordID = int(orderToSave.ID)
 	userToSave.UserID = 1
-	userToSave.WorkplaceID = workplace.WorkplaceModeID
+	userToSave.WorkplaceID = int(workplace.ID)
 	db.Save(&userToSave)
 	logInfo(device.Name, "New Order created in "+time.Since(timer).String())
 }

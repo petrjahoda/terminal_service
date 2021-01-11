@@ -14,6 +14,11 @@ adhere to [Semantic Versioning](http://semver.org/spec/v2.0.0.html) rules.
 * ```Fixed``` for any bug fixes.
 * ```Security``` in case of vulnerabilities.
 
+## [2021.1.1.11] - 2021-01-11
+
+### Fixed
+- saving proper workplace_id when saving user_record
+
 ## [2020.4.3.14] - 2020-12-14
 
 ### Changed
