@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-func updateOpenOrderData(device database.Device, deviceOrderRecordId int) {
+func updateOpenOrderData(device database.Device, openOrderRecord database.OrderRecord) {
 	logInfo(device.Name, "Updating order data")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
@@ -21,29 +21,27 @@ func updateOpenOrderData(device database.Device, deviceOrderRecordId int) {
 		activeDevices = nil
 		return
 	}
-	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
-	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
-	var openOrder database.OrderRecord
-	db.Where("id=?", deviceOrderRecordId).Find(&openOrder)
-	var workplacePortOk database.WorkplacePort
-	db.Where("workplace_id = ?", deviceWorkplaceRecord.WorkplaceID).Where("counter_ok = ?", "1").Find(&workplacePortOk)
 	var countOk int64
-	db.Model(&database.DevicePortDigitalRecord{}).Where("device_port_id = ?", workplacePortOk.DevicePortID).Where("date_time>?", openOrder.DateTimeStart).Where("data = 0").Count(&countOk)
-	var workplacePortNok database.WorkplacePort
-	db.Where("workplace_id = ?", deviceWorkplaceRecord.WorkplaceID).Where("counter_nok = ?", "1").Find(&workplacePortNok)
 	var countNok int64
-	db.Model(&database.DevicePortDigitalRecord{}).Where("device_port_id = ?", workplacePortNok.DevicePortID).Where("date_time>?", openOrder.DateTimeStart).Where("data = 0").Count(&countNok)
-	averageCycle := 0.0
-	if countOk > 0 {
-		averageCycle = time.Now().Sub(openOrder.DateTimeStart).Seconds() / float64(countOk)
+	var averageCycle float64
+	var workplacePorts []database.WorkplacePort
+	deviceWorkplaceRecordSync.Lock()
+	db.Where("workplace_id = ?", cachedDeviceWorkplaceRecords[device.ID].WorkplaceID).Find(&workplacePorts)
+	deviceWorkplaceRecordSync.Unlock()
+	for _, port := range workplacePorts {
+		if port.CounterOK {
+			db.Model(&database.DevicePortDigitalRecord{}).Where("device_port_id = ?", port.DevicePortID).Where("date_time>?", openOrderRecord.DateTimeStart).Where("data = 0").Count(&countOk)
+			if countOk > 0 {
+				averageCycle = time.Now().Sub(openOrderRecord.DateTimeStart).Seconds() / float64(countOk)
+			}
+		} else if port.CounterNOK {
+			db.Model(&database.DevicePortDigitalRecord{}).Where("device_port_id = ?", port.DevicePortID).Where("date_time>?", openOrderRecord.DateTimeStart).Where("data = 0").Count(&countNok)
+		}
 	}
-	openOrder.AverageCycle = float32(averageCycle)
-	openOrder.CountOk = int(countOk)
-	openOrder.CountNok = int(countNok)
-	openOrder.WorkplaceID = deviceWorkplaceRecord.WorkplaceID
-	db.Save(&openOrder)
+	deviceWorkplaceRecordSync.Lock()
+	db.Model(&openOrderRecord).Update("average_cycle", float32(averageCycle)).Update("count_ok", int(countOk)).Update("count_nok", int(countNok)).Update("workplace_id", cachedDeviceWorkplaceRecords[device.ID].WorkplaceID)
+	deviceWorkplaceRecordSync.Unlock()
 	logInfo(device.Name, "Order data updated in "+time.Since(timer).String())
-
 }
 
 func createNewDowntime(device database.Device) {
@@ -57,14 +55,10 @@ func createNewDowntime(device database.Device) {
 		activeDevices = nil
 		return
 	}
-	var noReasonDowntime database.Downtime
-	db.Where("name = ?", "No reason Downtime").Find(&noReasonDowntime)
-	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
-	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
 	var downtimeToSave database.DowntimeRecord
 	downtimeToSave.DateTimeStart = time.Now()
-	downtimeToSave.DowntimeID = int(noReasonDowntime.ID)
-	downtimeToSave.WorkplaceID = deviceWorkplaceRecord.WorkplaceID
+	downtimeToSave.DowntimeID = 1
+	downtimeToSave.WorkplaceID = cachedDeviceWorkplaceRecords[device.ID].WorkplaceID
 	db.Save(&downtimeToSave)
 	logInfo(device.Name, "New downtime created in "+time.Since(timer).String())
 
@@ -86,16 +80,9 @@ func createNewOrder(device database.Device, timezone string) {
 		activeDevices = nil
 		return
 	}
-	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
-	var order database.Order
-	var workplace database.Workplace
-	var workplaceWorkshifts []database.WorkplaceWorkshift
-	var operation database.Operation
 	var workshiftID int
-	db.Where("name = ?", "Internal").Find(&order)
-	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
-	db.Where("id = ?", deviceWorkplaceRecord.WorkplaceID).Find(&workplace)
-	db.Where("workplace_id = ?", deviceWorkplaceRecord.WorkplaceID).Find(&workplaceWorkshifts)
+	var workplaceWorkshifts []database.WorkplaceWorkshift
+	db.Where("workplace_id = ?", cachedDeviceWorkplaceRecords[device.ID].WorkplaceID).Find(&workplaceWorkshifts)
 	for _, workplaceWorkshift := range workplaceWorkshifts {
 		var workshift database.Workshift
 		db.Where("id = ?", workplaceWorkshift.WorkshiftID).Find(&workshift)
@@ -111,26 +98,25 @@ func createNewOrder(device database.Device, timezone string) {
 			}
 		}
 	}
-	db.Where("order_id = ?", order.ID).Find(&operation)
 	var orderToSave database.OrderRecord
 	orderToSave.DateTimeStart = time.Now()
-	orderToSave.WorkplaceID = deviceWorkplaceRecord.WorkplaceID
-	orderToSave.OrderID = int(order.ID)
-	orderToSave.WorkplaceModeID = workplace.WorkplaceModeID
+	orderToSave.WorkplaceID = cachedDeviceWorkplaceRecords[device.ID].WorkplaceID
+	orderToSave.OrderID = 1
+	orderToSave.WorkplaceModeID = 1
 	orderToSave.WorkshiftID = workshiftID
-	orderToSave.OperationID = int(operation.ID)
+	orderToSave.OperationID = 1
 	orderToSave.Cavity = 1
 	db.Save(&orderToSave)
 	var userToSave database.UserRecord
 	userToSave.DateTimeStart = time.Now()
 	userToSave.OrderRecordID = int(orderToSave.ID)
 	userToSave.UserID = 1
-	userToSave.WorkplaceID = int(workplace.ID)
+	userToSave.WorkplaceID = cachedDeviceWorkplaceRecords[device.ID].WorkplaceID
 	db.Save(&userToSave)
 	logInfo(device.Name, "New Order created in "+time.Since(timer).String())
 }
 
-func updateDowntimeToClosed(device database.Device, openDowntimeId int) {
+func updateDowntimeToClosed(device database.Device, openDowntimeRecord database.DowntimeRecord) {
 	logInfo(device.Name, "Updating downtime to closed")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
@@ -141,15 +127,12 @@ func updateDowntimeToClosed(device database.Device, openDowntimeId int) {
 		activeDevices = nil
 		return
 	}
-	var openDowntime database.DowntimeRecord
-	db.Where("id=?", openDowntimeId).Find(&openDowntime)
-	openDowntime.DateTimeEnd = sql.NullTime{Time: time.Now(), Valid: true}
-	db.Save(&openDowntime)
+	db.Model(&openDowntimeRecord).Update("date_time_end", sql.NullTime{Time: time.Now(), Valid: true})
 	logInfo(device.Name, "Downtime updated to closed in "+time.Since(timer).String())
 
 }
 
-func updateOrderToClosed(device database.Device, openOrderId int) {
+func updateOrderToClosed(device database.Device, openOrderRecord database.OrderRecord) {
 	logInfo(device.Name, "Updating order to closed")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
@@ -160,29 +143,33 @@ func updateOrderToClosed(device database.Device, openOrderId int) {
 		activeDevices = nil
 		return
 	}
-	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
-	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
-	var openOrder database.OrderRecord
-	var openUser database.UserRecord
-	db.Where("id=?", openOrderId).Find(&openOrder)
-	var workplacePortOk database.WorkplacePort
-	db.Where("workplace_id = ?", deviceWorkplaceRecord.WorkplaceID).Where("counter_ok = ?", "1").Find(&workplacePortOk)
-	db.Where("order_record_id = ?", openOrder.ID).Find(&openUser)
 	var countOk int64
-	db.Model(&database.DevicePortDigitalRecord{}).Where("device_port_id = ?", workplacePortOk.DevicePortID).Where("date_time>?", openOrder.DateTimeStart).Where("data = 0").Count(&countOk)
-	averageCycle := 0.0
-	if countOk > 0 {
-		averageCycle = time.Now().Sub(openOrder.DateTimeStart).Seconds() / float64(countOk)
+	var countNok int64
+	var averageCycle float64
+	var workplacePorts []database.WorkplacePort
+	deviceWorkplaceRecordSync.Lock()
+	db.Where("workplace_id = ?", cachedDeviceWorkplaceRecords[device.ID].WorkplaceID).Find(&workplacePorts)
+	deviceWorkplaceRecordSync.Unlock()
+	for _, port := range workplacePorts {
+		if port.CounterOK {
+			db.Model(&database.DevicePortDigitalRecord{}).Where("device_port_id = ?", port.DevicePortID).Where("date_time>?", openOrderRecord.DateTimeStart).Where("data = 0").Count(&countOk)
+			if countOk > 0 {
+				averageCycle = time.Now().Sub(openOrderRecord.DateTimeStart).Seconds() / float64(countOk)
+			}
+		} else if port.CounterNOK {
+			db.Model(&database.DevicePortDigitalRecord{}).Where("device_port_id = ?", port.DevicePortID).Where("date_time>?", openOrderRecord.DateTimeStart).Where("data = 0").Count(&countNok)
+		}
 	}
-	openOrder.AverageCycle = float32(averageCycle)
-	openOrder.DateTimeEnd = sql.NullTime{Time: time.Now(), Valid: true}
-	db.Save(&openOrder)
-	openUser.DateTimeEnd = sql.NullTime{Time: time.Now(), Valid: true}
-	db.Save(&openUser)
+	db.Model(&openOrderRecord).Update("average_cycle", float32(averageCycle)).Update("date_time_end", sql.NullTime{Time: time.Now(), Valid: true})
+
+	var openUserRecord database.UserRecord
+	db.Where("order_record_id = ?", openOrderRecord.ID).Find(&openUserRecord)
+	db.Model(&openUserRecord).Update("date_time_end", sql.NullTime{Time: time.Now(), Valid: true})
+
 	logInfo(device.Name, "Order updated to closed in "+time.Since(timer).String())
 }
 
-func readOpenDowntime(device database.Device) int {
+func readOpenDowntime(device database.Device) database.DowntimeRecord {
 	logInfo(device.Name, "Reading open downtime")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{Logger: logger.Default.LogMode(logger.Silent)})
@@ -191,17 +178,17 @@ func readOpenDowntime(device database.Device) int {
 	if err != nil {
 		logError(device.Name, "Problem opening database: "+err.Error())
 		activeDevices = nil
-		return 0
+		return database.DowntimeRecord{}
 	}
-	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
-	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
 	var openDowntime database.DowntimeRecord
-	db.Where("workplace_id=?", deviceWorkplaceRecord.WorkplaceID).Where("date_time_end is null").Last(&openDowntime)
+	deviceWorkplaceRecordSync.Lock()
+	db.Where("workplace_id=?", cachedDeviceWorkplaceRecords[device.ID].WorkplaceID).Where("date_time_end is null").Last(&openDowntime)
+	deviceWorkplaceRecordSync.Unlock()
 	logInfo(device.Name, "Open downtime read in "+time.Since(timer).String())
-	return int(openDowntime.ID)
+	return openDowntime
 }
 
-func readOpenOrder(device database.Device) int {
+func readOpenOrder(device database.Device) database.OrderRecord {
 	logInfo(device.Name, "Reading open order")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{Logger: logger.Default.LogMode(logger.Silent)})
@@ -210,14 +197,14 @@ func readOpenOrder(device database.Device) int {
 	if err != nil {
 		logError(device.Name, "Problem opening database: "+err.Error())
 		activeDevices = nil
-		return 0
+		return database.OrderRecord{}
 	}
-	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
-	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
 	var openOrder database.OrderRecord
-	db.Where("workplace_id=?", deviceWorkplaceRecord.WorkplaceID).Where("date_time_end is null").Last(&openOrder)
+	deviceWorkplaceRecordSync.Lock()
+	db.Where("workplace_id=?", cachedDeviceWorkplaceRecords[device.ID].WorkplaceID).Where("date_time_end is null").Last(&openOrder)
+	deviceWorkplaceRecordSync.Unlock()
 	logInfo(device.Name, "Open order read in "+time.Since(timer).String())
-	return int(openOrder.ID)
+	return openOrder
 }
 
 func readActualState(device database.Device) database.State {
@@ -231,13 +218,14 @@ func readActualState(device database.Device) database.State {
 		activeDevices = nil
 		return database.State{}
 	}
-	var deviceWorkplaceRecord database.DeviceWorkplaceRecord
-	db.Where("device_id = ?", device.ID).Find(&deviceWorkplaceRecord)
 	var workplaceState database.StateRecord
-	db.Where("workplace_id=?", deviceWorkplaceRecord.WorkplaceID).Last(&workplaceState)
-	var actualState database.State
-	db.Where("id=?", workplaceState.StateID).Last(&actualState)
+	deviceWorkplaceRecordSync.Lock()
+	db.Where("workplace_id=?", cachedDeviceWorkplaceRecords[device.ID].WorkplaceID).Last(&workplaceState)
+	deviceWorkplaceRecordSync.Unlock()
 	logInfo(device.Name, "Actual state read in "+time.Since(timer).String())
-	return actualState
+	stateSync.Lock()
+	state := cachedStates[uint(workplaceState.StateID)]
+	stateSync.Unlock()
+	return state
 
 }

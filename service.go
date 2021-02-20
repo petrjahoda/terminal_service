@@ -47,52 +47,43 @@ func runDevice(device database.Device) {
 		logInfo(device.Name, "Device main loop started")
 		timer := time.Now()
 		actualState := readActualState(device)
-		var stateNameColored string
-		if actualState.Name == "Poweroff" {
-			stateNameColored = color.Ize(color.Red, actualState.Name)
-		} else if actualState.Name == "Downtime" {
-			stateNameColored = color.Ize(color.Yellow, actualState.Name)
-		} else {
-			stateNameColored = color.Ize(color.White, actualState.Name)
-		}
-		logInfo(device.Name, "Actual workplace state: "+stateNameColored)
-		openOrderId := readOpenOrder(device)
-		logInfo(device.Name, "Actual open order: "+strconv.Itoa(openOrderId))
-		openDowntimeId := readOpenDowntime(device)
-		logInfo(device.Name, "Actual open downtime: "+strconv.Itoa(openDowntimeId))
-		orderIsOpen := openOrderId > 0
-		downtimeIsOpen := openDowntimeId > 0
+		openOrderRecord := readOpenOrder(device)
+		logInfo(device.Name, "Actual open order: "+strconv.Itoa(openOrderRecord.OrderID))
+		openDowntimeRecord := readOpenDowntime(device)
+		logInfo(device.Name, "Actual open downtime: "+strconv.Itoa(openDowntimeRecord.DowntimeID))
+		orderIsOpen := openOrderRecord.ID > 0
+		downtimeIsOpen := openDowntimeRecord.ID > 0
 		switch actualState.Name {
 		case "Poweroff":
 			{
-				logInfo(device.Name, "Poweroff state")
+				logInfo(device.Name, color.Ize(color.Red, actualState.Name+" state"))
 				if orderIsOpen {
-					updateOrderToClosed(device, openOrderId)
+					updateOrderToClosed(device, openOrderRecord)
 				}
 				if downtimeIsOpen {
-					updateDowntimeToClosed(device, openDowntimeId)
+					updateDowntimeToClosed(device, openDowntimeRecord)
 				}
 			}
 		case "Production":
 			{
-				logInfo(device.Name, "Production state")
+				logInfo(device.Name, color.Ize(color.White, actualState.Name+" state"))
 				if !orderIsOpen {
 					createNewOrder(device, timezone)
 				}
 				if downtimeIsOpen {
-					updateDowntimeToClosed(device, openDowntimeId)
+					updateDowntimeToClosed(device, openDowntimeRecord)
 				}
 			}
 		case "Downtime":
 			{
-				logInfo(device.Name, "Downtime state")
+				logInfo(device.Name, color.Ize(color.Yellow, actualState.Name+" state"))
 				if !downtimeIsOpen {
 					createNewDowntime(device)
 				}
 			}
 		}
 		if orderIsOpen {
-			updateOpenOrderData(device, openOrderId)
+			updateOpenOrderData(device, openOrderRecord)
 		}
 
 		logInfo(device.Name, "Device main loop ended in "+time.Since(timer).String())

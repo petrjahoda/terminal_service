@@ -14,6 +14,11 @@ adhere to [Semantic Versioning](http://semver.org/spec/v2.0.0.html) rules.
 * ```Fixed``` for any bug fixes.
 * ```Security``` in case of vulnerabilities.
 
+## [2021.1.2.20] - 2021-01-20
+
+### Changed
+- reduced database calls to minimum
+
 ## [2021.1.1.11] - 2021-01-11
 
 ### Fixed

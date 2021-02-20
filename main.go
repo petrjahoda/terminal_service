@@ -3,12 +3,14 @@ package main
 import (
 	"github.com/kardianos/service"
 	"github.com/petrjahoda/database"
+	"gorm.io/driver/postgres"
+	"gorm.io/gorm"
 	"strconv"
 	"sync"
 	"time"
 )
 
-const version = "2021.1.1.11"
+const version = "2021.1.2.20"
 const serviceName = "Terminal Service"
 const serviceDescription = "Created default data for terminals"
 const downloadInSeconds = 10
@@ -20,6 +22,16 @@ var (
 	activeDevices  []database.Device
 	runningDevices []database.Device
 	deviceSync     sync.Mutex
+)
+
+var (
+	cachedDeviceWorkplaceRecords = map[uint]database.DeviceWorkplaceRecord{}
+	deviceWorkplaceRecordSync    sync.Mutex
+)
+
+var (
+	cachedStates = map[uint]database.State{}
+	stateSync    sync.Mutex
 )
 
 type program struct{}
@@ -65,6 +77,8 @@ func (p *program) run() {
 		logInfo("MAIN", serviceName+" ["+version+"] running")
 		start := time.Now()
 		readActiveDevices("MAIN")
+		readDeviceWorkplaceRecords("MAIN")
+		readActiveStates("MAIN")
 		logInfo("MAIN", "Active devices: "+strconv.Itoa(len(activeDevices))+", running devices: "+strconv.Itoa(len(runningDevices)))
 		for _, activeDevice := range activeDevices {
 			activeDeviceIsRunning := checkDeviceInRunningDevices(activeDevice)
@@ -78,4 +92,50 @@ func (p *program) run() {
 			time.Sleep(sleepTime)
 		}
 	}
+}
+
+func readActiveStates(reference string) {
+	logInfo("MAIN", "Reading states")
+	timer := time.Now()
+	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
+	sqlDB, _ := db.DB()
+	defer sqlDB.Close()
+	if err != nil {
+		logError(reference, "Problem opening database: "+err.Error())
+		activeDevices = nil
+		return
+	}
+	var records []database.State
+	db.Find(&records)
+	if len(records) > 0 {
+		stateSync.Lock()
+		for _, record := range records {
+			cachedStates[record.ID] = record
+		}
+		stateSync.Unlock()
+	}
+	logInfo("MAIN", "States read in "+time.Since(timer).String())
+}
+
+func readDeviceWorkplaceRecords(reference string) {
+	logInfo("MAIN", "Reading device_workplace_records")
+	timer := time.Now()
+	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
+	sqlDB, _ := db.DB()
+	defer sqlDB.Close()
+	if err != nil {
+		logError(reference, "Problem opening database: "+err.Error())
+		activeDevices = nil
+		return
+	}
+	var records []database.DeviceWorkplaceRecord
+	db.Find(&records)
+	if len(records) > 0 {
+		deviceWorkplaceRecordSync.Lock()
+		for _, record := range records {
+			cachedDeviceWorkplaceRecords[uint(record.DeviceID)] = record
+		}
+		deviceWorkplaceRecordSync.Unlock()
+	}
+	logInfo("MAIN", "Devices_workplace_records read in "+time.Since(timer).String())
 }
