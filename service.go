@@ -46,10 +46,17 @@ func runDevice(device database.Device) {
 	for deviceIsActive && serviceRunning {
 		logInfo(device.Name, "Device main loop started")
 		timer := time.Now()
-		actualState := readActualState(device)
-		openOrderRecord := readOpenOrder(device)
+		db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
+		sqlDB, _ := db.DB()
+		if err != nil {
+			logError(device.Name, "Problem opening database: "+err.Error())
+			sleep(device, timer)
+			continue
+		}
+		actualState := readActualState(device, db)
+		openOrderRecord := readOpenOrder(device, db)
 		logInfo(device.Name, "Actual open order: "+strconv.Itoa(openOrderRecord.OrderID))
-		openDowntimeRecord := readOpenDowntime(device)
+		openDowntimeRecord := readOpenDowntime(device, db)
 		logInfo(device.Name, "Actual open downtime: "+strconv.Itoa(openDowntimeRecord.DowntimeID))
 		orderIsOpen := openOrderRecord.ID > 0
 		downtimeIsOpen := openDowntimeRecord.ID > 0
@@ -58,37 +65,38 @@ func runDevice(device database.Device) {
 			{
 				logInfo(device.Name, color.Ize(color.Red, actualState.Name+" state"))
 				if orderIsOpen {
-					updateOrderToClosed(device, openOrderRecord)
+					updateOrderToClosed(device, db, openOrderRecord)
 				}
 				if downtimeIsOpen {
-					updateDowntimeToClosed(device, openDowntimeRecord)
+					updateDowntimeToClosed(device, db, openDowntimeRecord)
 				}
 			}
 		case "Production":
 			{
 				logInfo(device.Name, color.Ize(color.White, actualState.Name+" state"))
 				if !orderIsOpen {
-					createNewOrder(device, timezone)
+					createNewOrder(device, db, timezone)
 				}
 				if downtimeIsOpen {
-					updateDowntimeToClosed(device, openDowntimeRecord)
+					updateDowntimeToClosed(device, db, openDowntimeRecord)
 				}
 			}
 		case "Downtime":
 			{
 				logInfo(device.Name, color.Ize(color.Yellow, actualState.Name+" state"))
 				if !downtimeIsOpen {
-					createNewDowntime(device)
+					createNewDowntime(device, db)
 				}
 			}
 		}
 		if orderIsOpen {
-			updateOpenOrderData(device, openOrderRecord)
+			updateOpenOrderData(device, db, openOrderRecord)
 		}
 
 		logInfo(device.Name, "Device main loop ended in "+time.Since(timer).String())
 		sleep(device, timer)
 		deviceIsActive = checkActive(device)
+		sqlDB.Close()
 	}
 	removeDeviceFromRunningDevices(device)
 	logInfo(device.Name, "Device not active, stopped running")

@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-const version = "2021.1.2.21"
+const version = "2021.1.2.22"
 const serviceName = "Terminal Service"
 const serviceDescription = "Created default data for terminals"
 const downloadInSeconds = 10
@@ -21,17 +21,17 @@ var serviceRunning = false
 var (
 	activeDevices  []database.Device
 	runningDevices []database.Device
-	deviceSync     sync.Mutex
+	deviceSync     sync.RWMutex
 )
 
 var (
 	cachedDeviceWorkplaceRecords = map[uint]database.DeviceWorkplaceRecord{}
-	deviceWorkplaceRecordSync    sync.Mutex
+	deviceWorkplaceRecordSync    sync.RWMutex
 )
 
 var (
 	cachedStates = map[uint]database.State{}
-	stateSync    sync.Mutex
+	stateSync    sync.RWMutex
 )
 
 type program struct{}
