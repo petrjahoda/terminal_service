@@ -94,9 +94,9 @@ func runDevice(device database.Device) {
 		}
 
 		logInfo(device.Name, "Device main loop ended in "+time.Since(timer).String())
+		sqlDB.Close()
 		sleep(device, timer)
 		deviceIsActive = checkActive(device)
-		sqlDB.Close()
 	}
 	removeDeviceFromRunningDevices(device)
 	logInfo(device.Name, "Device not active, stopped running")
