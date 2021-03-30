@@ -60,12 +60,12 @@ func createNewOrder(device database.Device, db *gorm.DB, timezone string) {
 	for _, workplaceWorkshift := range workplaceWorkshifts {
 		var workshift database.Workshift
 		db.Where("id = ?", workplaceWorkshift.WorkshiftID).Find(&workshift)
-		if workshift.WorkshiftStart.Hour() < time.Now().In(location).Hour() && workshift.WorkshiftEnd.Hour() > time.Now().In(location).Hour() {
+		if workshift.WorkshiftStart.Hour() <= time.Now().In(location).Hour() && workshift.WorkshiftEnd.Hour() >= time.Now().In(location).Hour() {
 			logInfo(device.Name, "Actual workshift: "+workshift.Name)
 			workshiftID = int(workshift.ID)
 			break
-		} else if workshift.WorkshiftStart.Hour() > workshift.WorkshiftEnd.Hour() {
-			if time.Now().In(location).Hour() < workshift.WorkshiftEnd.Hour() || time.Now().In(location).Hour() > workshift.WorkshiftStart.Hour() {
+		} else if workshift.WorkshiftStart.Hour() >= workshift.WorkshiftEnd.Hour() {
+			if time.Now().In(location).Hour() <= workshift.WorkshiftEnd.Hour() || time.Now().In(location).Hour() >= workshift.WorkshiftStart.Hour() {
 				logInfo(device.Name, "Actual workshift: "+workshift.Name)
 				workshiftID = int(workshift.ID)
 				break

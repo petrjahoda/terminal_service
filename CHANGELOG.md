@@ -20,6 +20,9 @@ adhere to [Semantic Versioning](http://semver.org/spec/v2.0.0.html) rules.
 - updated to latest go
 - updated to latest libraries
 
+### Fixed
+- proper loading shift when saving order record
+
 ## [2021.1.3.18] - 2021-03-18
 
 ### Changed
