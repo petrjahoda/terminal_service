@@ -383,6 +383,8 @@ github.com/petrjahoda/database v0.0.0-20210407071335-c1822632bead h1:rYJvRCNUrnt
 github.com/petrjahoda/database v0.0.0-20210407071335-c1822632bead/go.mod h1:E+P9M/94uFSgcYyt/0OHCpWoFN9kGkThs9FJaidsoUw=
 github.com/petrjahoda/database v0.0.0-20210503075300-4065c9b2e89c h1:5YUs/5wcGAYzppV4kXYHFZWpj4xQfq92zQruGXkHI2U=
 github.com/petrjahoda/database v0.0.0-20210503075300-4065c9b2e89c/go.mod h1:UgaIy/nawsyKt65wpovf4igGaNF7ox4PvvhA28cON14=
+github.com/petrjahoda/database v0.0.0-20210513073534-5ea21c3f0575 h1:0jnt2WHpFHgzPNGShzwVhhqUt3W4jkSgaC+gh15vv/M=
+github.com/petrjahoda/database v0.0.0-20210513073534-5ea21c3f0575/go.mod h1:UgaIy/nawsyKt65wpovf4igGaNF7ox4PvvhA28cON14=
 github.com/petrjahoda/zapsi_database v0.0.0-20200726084641-7c17802daecd h1:8P6DS/NCpJY+vFwJIYUSaO1LORXd8qED5gfqp584uG0=
 github.com/petrjahoda/zapsi_database v0.0.0-20200726084641-7c17802daecd/go.mod h1:R/uBN73yO+LTwM5JYUEtYi4cl349nZmeb4rdINPSneM=
 github.com/pierrec/lz4 v1.0.2-0.20190131084431-473cd7ce01a1/go.mod h1:3/3N9NVKO0jef7pBehbT1qWhCMrIgbYNnFAZCqQ5LRc=
@@ -513,6 +515,8 @@ golang.org/x/crypto v0.0.0-20210322153248-0c34fe9e7dc2 h1:It14KIkyBFYkHkwZ7k45mi
 golang.org/x/crypto v0.0.0-20210322153248-0c34fe9e7dc2/go.mod h1:T9bdIzuCu7OtxOm1hfPfRQxPLYneinmdGuTeoZ9dtd4=
 golang.org/x/crypto v0.0.0-20210421170649-83a5a9bb288b h1:7mWr3k41Qtv8XlltBkDkl8LoP3mpSgBW8BUoxtEdbXg=
 golang.org/x/crypto v0.0.0-20210421170649-83a5a9bb288b/go.mod h1:T9bdIzuCu7OtxOm1hfPfRQxPLYneinmdGuTeoZ9dtd4=
+golang.org/x/crypto v0.0.0-20210506145944-38f3c27a63bf h1:B2n+Zi5QeYRDAEodEu72OS36gmTWjgpXr2+cWcBW90o=
+golang.org/x/crypto v0.0.0-20210506145944-38f3c27a63bf/go.mod h1:P+XmwS30IXTQdn5tA2iutPOUgjI07+tq3H3K9MVA1s8=
 golang.org/x/exp v0.0.0-20190121172915-509febef88a4/go.mod h1:CJ0aWSM057203Lf6IL+f9T1iT9GByDxfZKAQTCR3kQA=
 golang.org/x/lint v0.0.0-20181026193005-c67002cb31c3/go.mod h1:UVdnD1Gm6xHRNCYTkRU2/jEulfH38KcIWyp/GAMgvoE=
 golang.org/x/lint v0.0.0-20190227174305-5b3e6a55c961/go.mod h1:wehouNa3lNwaWXcvxsM5YxQ5yQlVC4a0KAMCusXpPoU=
@@ -609,6 +613,8 @@ golang.org/x/sys v0.0.0-20210412220455-f1c623a9e750 h1:ZBu6861dZq7xBnG1bn5SRU0vA
 golang.org/x/sys v0.0.0-20210412220455-f1c623a9e750/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20210502180810-71e4cd670f79 h1:RX8C8PRZc2hTIod4ds8ij+/4RQX3AqhYj3uOHmyaz4E=
 golang.org/x/sys v0.0.0-20210502180810-71e4cd670f79/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
+golang.org/x/sys v0.0.0-20210511113859-b0526f3d8744 h1:yhBbb4IRs2HS9PPlAg6DMC6mUOKexJBNsLf4Z+6En1Q=
+golang.org/x/sys v0.0.0-20210511113859-b0526f3d8744/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/term v0.0.0-20201113234701-d7a72108b828/go.mod h1:Nr5EML6q2oocZ2LXRh80K7BxOlk5/8JxuGnuhpl+muw=
 golang.org/x/term v0.0.0-20201117132131-f5c789dd3221/go.mod h1:Nr5EML6q2oocZ2LXRh80K7BxOlk5/8JxuGnuhpl+muw=
 golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1/go.mod h1:bj7SfCRtBDWHUb9snDiAeCFNEtKQo2Wmx5Cou7ajbmo=
@@ -714,6 +720,8 @@ gorm.io/driver/postgres v1.0.6 h1:9sqNcNC9PCkZ6tMzWF1cEE2PARlCONgSqRobszSTffw=
 gorm.io/driver/postgres v1.0.6/go.mod h1:r0nvX27yHDNbVeXMM9Y+9i5xSePcT18RfH8clP6wpwI=
 gorm.io/driver/postgres v1.0.8 h1:PAgM+PaHOSAeroTjHkCHCBIHHoBIf9RgPWGo8dF2DA8=
 gorm.io/driver/postgres v1.0.8/go.mod h1:4eOzrI1MUfm6ObJU/UcmbXyiHSs8jSwH95G5P5dxcAg=
+gorm.io/driver/postgres v1.1.0 h1:afBljg7PtJ5lA6YUWluV2+xovIPhS+YiInuL3kUjrbk=
+gorm.io/driver/postgres v1.1.0/go.mod h1:hXQIwafeRjJvUm+OMxcFWyswJ/vevcpPLlGocwAwuqw=
 gorm.io/gorm v0.2.19/go.mod h1:0HFTzE/SqkGTzK6TlDPPQbAYCluiVvhzoA1+aVyzenw=
 gorm.io/gorm v0.2.24 h1:NKjfopoXim5xAHYkt/uN0n7ZNmyoXZ9FEZUX4ijzXlI=
 gorm.io/gorm v0.2.24/go.mod h1:0HFTzE/SqkGTzK6TlDPPQbAYCluiVvhzoA1+aVyzenw=
