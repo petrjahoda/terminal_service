@@ -132,14 +132,14 @@ func removeDeviceFromRunningDevices(device database.Device) {
 	deviceSync.Unlock()
 }
 
-func readActiveDevices(reference string) {
+func readActiveDevices() {
 	logInfo("MAIN", "Reading active devices")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
 	sqlDB, _ := db.DB()
 	defer sqlDB.Close()
 	if err != nil {
-		logError(reference, "Problem opening database: "+err.Error())
+		logError("MAIN", "Problem opening database: "+err.Error())
 		activeDevices = nil
 		return
 	}
