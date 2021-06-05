@@ -29,6 +29,11 @@ var (
 	stateSync    sync.Mutex
 )
 
+var (
+	cachedDeviceWorkplaceRecords = map[uint]database.DeviceWorkplaceRecord{}
+	deviceWorkplaceRecordSync    sync.RWMutex
+)
+
 type program struct{}
 
 func main() {
@@ -72,6 +77,7 @@ func (p *program) run() {
 		logInfo("MAIN", serviceName+" ["+version+"] running")
 		start := time.Now()
 		readActiveDevices()
+		readDeviceWorkplaceRecords()
 		readActiveStates()
 		logInfo("MAIN", "Active devices: "+strconv.Itoa(len(activeDevices))+", running devices: "+strconv.Itoa(len(runningDevices)))
 		for _, activeDevice := range activeDevices {
@@ -108,4 +114,27 @@ func readActiveStates() {
 		stateSync.Unlock()
 	}
 	logInfo("MAIN", "States read in "+time.Since(timer).String())
+}
+
+func readDeviceWorkplaceRecords() {
+	logInfo("MAIN", "Reading device_workplace_records")
+	timer := time.Now()
+	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
+	sqlDB, _ := db.DB()
+	defer sqlDB.Close()
+	if err != nil {
+		logError("MAIN", "Problem opening database: "+err.Error())
+		activeDevices = nil
+		return
+	}
+	var records []database.DeviceWorkplaceRecord
+	db.Find(&records)
+	if len(records) > 0 {
+		deviceWorkplaceRecordSync.Lock()
+		for _, record := range records {
+			cachedDeviceWorkplaceRecords[uint(record.DeviceID)] = record
+		}
+		deviceWorkplaceRecordSync.Unlock()
+	}
+	logInfo("MAIN", "Devices_workplace_records read in "+time.Since(timer).String())
 }

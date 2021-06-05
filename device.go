@@ -118,8 +118,7 @@ func updateOrderToClosed(device database.Device, db *gorm.DB, openOrderRecord da
 			db.Model(&database.DevicePortDigitalRecord{}).Where("device_port_id = ?", port.DevicePortID).Where("date_time>?", openOrderRecord.DateTimeStart).Where("data = 0").Count(&countNok)
 		}
 	}
-	db.Model(&openOrderRecord).Update("average_cycle", float32(averageCycle)).Update("date_time_end", sql.NullTime{Time: time.Now(), Valid: true})
-
+	db.Model(&openOrderRecord).Update("average_cycle", float32(averageCycle)).Update("date_time_end", sql.NullTime{Time: state.DateTimeStart, Valid: true})
 	var openUserRecord database.UserRecord
 	db.Where("order_record_id = ?", openOrderRecord.ID).Find(&openUserRecord)
 	db.Model(&openUserRecord).Update("date_time_end", sql.NullTime{Time: state.DateTimeStart, Valid: true})
