@@ -34,11 +34,11 @@ func updateOpenOrderData(device database.Device, db *gorm.DB, openOrderRecord da
 	logInfo(device.Name, "Order data updated in "+time.Since(timer).String())
 }
 
-func createNewDowntime(device database.Device, db *gorm.DB) {
+func createNewDowntime(device database.Device, db *gorm.DB, state database.StateRecord) {
 	logInfo(device.Name, "Create new downtime")
 	timer := time.Now()
 	var downtimeToSave database.DowntimeRecord
-	downtimeToSave.DateTimeStart = time.Now()
+	downtimeToSave.DateTimeStart = state.DateTimeStart
 	downtimeToSave.DowntimeID = 1
 	downtimeToSave.WorkplaceID = cachedDeviceWorkplaceRecords[device.ID].WorkplaceID
 	db.Save(&downtimeToSave)
@@ -46,7 +46,7 @@ func createNewDowntime(device database.Device, db *gorm.DB) {
 
 }
 
-func createNewOrder(device database.Device, db *gorm.DB, timezone string) {
+func createNewOrder(device database.Device, db *gorm.DB, timezone string, state database.StateRecord) {
 	logInfo(device.Name, "Creating new order")
 	timer := time.Now()
 	location, err := time.LoadLocation(timezone)
@@ -73,7 +73,7 @@ func createNewOrder(device database.Device, db *gorm.DB, timezone string) {
 		}
 	}
 	var orderToSave database.OrderRecord
-	orderToSave.DateTimeStart = time.Now()
+	orderToSave.DateTimeStart = state.DateTimeStart
 	orderToSave.WorkplaceID = cachedDeviceWorkplaceRecords[device.ID].WorkplaceID
 	orderToSave.OrderID = 1
 	orderToSave.WorkplaceModeID = 1
@@ -82,7 +82,7 @@ func createNewOrder(device database.Device, db *gorm.DB, timezone string) {
 	orderToSave.Cavity = 1
 	db.Save(&orderToSave)
 	var userToSave database.UserRecord
-	userToSave.DateTimeStart = time.Now()
+	userToSave.DateTimeStart = state.DateTimeStart
 	userToSave.OrderRecordID = int(orderToSave.ID)
 	userToSave.UserID = 1
 	userToSave.WorkplaceID = cachedDeviceWorkplaceRecords[device.ID].WorkplaceID
@@ -90,15 +90,15 @@ func createNewOrder(device database.Device, db *gorm.DB, timezone string) {
 	logInfo(device.Name, "New Order created in "+time.Since(timer).String())
 }
 
-func updateDowntimeToClosed(device database.Device, db *gorm.DB, openDowntimeRecord database.DowntimeRecord) {
+func updateDowntimeToClosed(device database.Device, db *gorm.DB, openDowntimeRecord database.DowntimeRecord, state database.StateRecord) {
 	logInfo(device.Name, "Updating downtime to closed")
 	timer := time.Now()
-	db.Model(&openDowntimeRecord).Update("date_time_end", sql.NullTime{Time: time.Now(), Valid: true})
+	db.Model(&openDowntimeRecord).Update("date_time_end", sql.NullTime{Time: state.DateTimeStart, Valid: true})
 	logInfo(device.Name, "Downtime updated to closed in "+time.Since(timer).String())
 
 }
 
-func updateOrderToClosed(device database.Device, db *gorm.DB, openOrderRecord database.OrderRecord) {
+func updateOrderToClosed(device database.Device, db *gorm.DB, openOrderRecord database.OrderRecord, state database.StateRecord) {
 	logInfo(device.Name, "Updating order to closed")
 	timer := time.Now()
 	var countOk int64
@@ -122,7 +122,7 @@ func updateOrderToClosed(device database.Device, db *gorm.DB, openOrderRecord da
 
 	var openUserRecord database.UserRecord
 	db.Where("order_record_id = ?", openOrderRecord.ID).Find(&openUserRecord)
-	db.Model(&openUserRecord).Update("date_time_end", sql.NullTime{Time: time.Now(), Valid: true})
+	db.Model(&openUserRecord).Update("date_time_end", sql.NullTime{Time: state.DateTimeStart, Valid: true})
 
 	logInfo(device.Name, "Order updated to closed in "+time.Since(timer).String())
 }
@@ -149,7 +149,7 @@ func readOpenOrder(device database.Device, db *gorm.DB) database.OrderRecord {
 	return openOrder
 }
 
-func readActualState(device database.Device, db *gorm.DB) database.State {
+func readActualState(device database.Device, db *gorm.DB) (database.State, database.StateRecord) {
 	logInfo(device.Name, "Reading actual state")
 	timer := time.Now()
 	var workplaceState database.StateRecord
@@ -160,6 +160,6 @@ func readActualState(device database.Device, db *gorm.DB) database.State {
 	stateSync.Lock()
 	state := cachedStates[uint(workplaceState.StateID)]
 	stateSync.Unlock()
-	return state
+	return state, workplaceState
 
 }

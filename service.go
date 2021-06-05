@@ -53,7 +53,7 @@ func runDevice(device database.Device) {
 			sleep(device, timer)
 			continue
 		}
-		actualState := readActualState(device, db)
+		actualState, workplaceState := readActualState(device, db)
 		openOrderRecord := readOpenOrder(device, db)
 		logInfo(device.Name, "Actual open order: "+strconv.Itoa(openOrderRecord.OrderID))
 		openDowntimeRecord := readOpenDowntime(device, db)
@@ -65,27 +65,27 @@ func runDevice(device database.Device) {
 			{
 				logInfo(device.Name, color.Ize(color.Red, actualState.Name+" state"))
 				if orderIsOpen {
-					updateOrderToClosed(device, db, openOrderRecord)
+					updateOrderToClosed(device, db, openOrderRecord, workplaceState)
 				}
 				if downtimeIsOpen {
-					updateDowntimeToClosed(device, db, openDowntimeRecord)
+					updateDowntimeToClosed(device, db, openDowntimeRecord, workplaceState)
 				}
 			}
 		case "Production":
 			{
 				logInfo(device.Name, color.Ize(color.White, actualState.Name+" state"))
 				if !orderIsOpen {
-					createNewOrder(device, db, timezone)
+					createNewOrder(device, db, timezone, workplaceState)
 				}
 				if downtimeIsOpen {
-					updateDowntimeToClosed(device, db, openDowntimeRecord)
+					updateDowntimeToClosed(device, db, openDowntimeRecord, workplaceState)
 				}
 			}
 		case "Downtime":
 			{
 				logInfo(device.Name, color.Ize(color.Yellow, actualState.Name+" state"))
 				if !downtimeIsOpen {
-					createNewDowntime(device, db)
+					createNewDowntime(device, db, workplaceState)
 				}
 			}
 		}

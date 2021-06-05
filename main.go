@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-const version = "2021.2.2.13"
+const version = "2021.2.3.5"
 const serviceName = "Terminal Service"
 const serviceDescription = "Created default data for terminals"
 const downloadInSeconds = 10
