@@ -125,7 +125,6 @@ func readLatestWorkplaceOrderRecords() {
 	defer sqlDB.Close()
 	if err != nil {
 		logError("MAIN", "Problem opening database: "+err.Error())
-		activeDevices = nil
 		return
 	}
 	var orderRecords []database.OrderRecord
@@ -147,7 +146,6 @@ func readLatestWorkplaceDowntimeRecords() {
 	defer sqlDB.Close()
 	if err != nil {
 		logError("MAIN", "Problem opening database: "+err.Error())
-		activeDevices = nil
 		return
 	}
 	var downtimeRecords []database.DowntimeRecord
@@ -169,7 +167,6 @@ func readLatestWorkplaceStateRecords() {
 	defer sqlDB.Close()
 	if err != nil {
 		logError("MAIN", "Problem opening database: "+err.Error())
-		activeDevices = nil
 		return
 	}
 	var stateRecords []database.StateRecord
@@ -190,7 +187,6 @@ func readActiveStates() {
 	defer sqlDB.Close()
 	if err != nil {
 		logError("MAIN", "Problem opening database: "+err.Error())
-		activeDevices = nil
 		return
 	}
 	var records []database.State
@@ -213,7 +209,6 @@ func readDeviceWorkplaceRecords() {
 	defer sqlDB.Close()
 	if err != nil {
 		logError("MAIN", "Problem opening database: "+err.Error())
-		activeDevices = nil
 		return
 	}
 	var records []database.DeviceWorkplaceRecord
