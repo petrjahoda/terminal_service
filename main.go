@@ -220,7 +220,9 @@ func readDeviceWorkplaceRecords() {
 			deviceWorkplaceRecordSync.Unlock()
 			var workplacePorts []database.WorkplacePort
 			db.Where("workplace_id = ?", record.WorkplaceID).Find(&workplacePorts)
+			workplacePortSync.Lock()
 			cachedWorkplacePorts[record.WorkplaceID] = workplacePorts
+			workplacePortSync.Unlock()
 		}
 
 	}

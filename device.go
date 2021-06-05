@@ -14,7 +14,9 @@ func updateOpenOrderData(device database.Device, db *gorm.DB, deviceWorkplaceRec
 	var countOk int64
 	var countNok int64
 	var averageCycle float64
+	workplacePortSync.Lock()
 	workplacePorts := cachedWorkplacePorts[deviceWorkplaceRecord.WorkplaceID]
+	workplacePortSync.Unlock()
 	for _, port := range workplacePorts {
 		if port.CounterOK {
 			db.Model(&database.DevicePortDigitalRecord{}).Where("device_port_id = ?", port.DevicePortID).Where("date_time>?", openOrderRecord.DateTimeStart).Where("data = 0").Count(&countOk)
@@ -101,7 +103,9 @@ func updateOrderToClosed(device database.Device, db *gorm.DB, deviceWorkplaceRec
 	var countOk int64
 	var countNok int64
 	var averageCycle float64
+	workplacePortSync.Lock()
 	workplacePorts := cachedWorkplacePorts[deviceWorkplaceRecord.WorkplaceID]
+	workplacePortSync.Unlock()
 	for _, port := range workplacePorts {
 		if port.CounterOK {
 			db.Model(&database.DevicePortDigitalRecord{}).Where("device_port_id = ?", port.DevicePortID).Where("date_time>?", openOrderRecord.DateTimeStart).Where("data = 0").Count(&countOk)
