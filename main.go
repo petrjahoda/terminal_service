@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-const version = "2021.2.2.13"
+const version = "2021.2.3.5"
 const serviceName = "Terminal Service"
 const serviceDescription = "Created default data for terminals"
 const downloadInSeconds = 10
@@ -21,17 +21,37 @@ var serviceRunning = false
 var (
 	activeDevices  []database.Device
 	runningDevices []database.Device
-	deviceSync     sync.RWMutex
+	deviceSync     sync.Mutex
+)
+
+var (
+	cachedWorkplaceStateRecords = map[int]int{}
+	workplaceStateRecordSync    sync.Mutex
+)
+
+var (
+	cachedWorkplaceDowntimeRecords = map[int]uint{}
+	workplaceDowntimeRecordSync    sync.Mutex
+)
+
+var (
+	cachedWorkplaceOrderRecords = map[int]database.OrderRecord{}
+	workplaceOrderRecordSync    sync.Mutex
 )
 
 var (
 	cachedDeviceWorkplaceRecords = map[uint]database.DeviceWorkplaceRecord{}
-	deviceWorkplaceRecordSync    sync.RWMutex
+	deviceWorkplaceRecordSync    sync.Mutex
+)
+
+var (
+	cachedWorkplacePorts = map[int][]database.WorkplacePort{}
+	workplacePortSync    sync.Mutex
 )
 
 var (
 	cachedStates = map[uint]database.State{}
-	stateSync    sync.RWMutex
+	stateSync    sync.Mutex
 )
 
 type program struct{}
@@ -76,9 +96,12 @@ func (p *program) run() {
 	for {
 		logInfo("MAIN", serviceName+" ["+version+"] running")
 		start := time.Now()
-		readActiveDevices("MAIN")
-		readDeviceWorkplaceRecords("MAIN")
-		readActiveStates("MAIN")
+		readActiveDevices()
+		readDeviceWorkplaceRecords()
+		readActiveStates()
+		readLatestWorkplaceStateRecords()
+		readLatestWorkplaceDowntimeRecords()
+		readLatestWorkplaceOrderRecords()
 		logInfo("MAIN", "Active devices: "+strconv.Itoa(len(activeDevices))+", running devices: "+strconv.Itoa(len(runningDevices)))
 		for _, activeDevice := range activeDevices {
 			activeDeviceIsRunning := checkDeviceInRunningDevices(activeDevice)
@@ -94,14 +117,79 @@ func (p *program) run() {
 	}
 }
 
-func readActiveStates(reference string) {
+func readLatestWorkplaceOrderRecords() {
+	logInfo("MAIN", "Reading workplace order records")
+	timer := time.Now()
+	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
+	sqlDB, _ := db.DB()
+	defer sqlDB.Close()
+	if err != nil {
+		logError("MAIN", "Problem opening database: "+err.Error())
+		activeDevices = nil
+		return
+	}
+	var orderRecords []database.OrderRecord
+	db.Where("date_time_end is null").Find(&orderRecords)
+	workplaceOrderRecordSync.Lock()
+	cachedWorkplaceOrderRecords = make(map[int]database.OrderRecord)
+	for _, record := range orderRecords {
+		cachedWorkplaceOrderRecords[record.WorkplaceID] = record
+	}
+	workplaceOrderRecordSync.Unlock()
+	logInfo("MAIN", "Workplace order records read in "+time.Since(timer).String())
+}
+
+func readLatestWorkplaceDowntimeRecords() {
+	logInfo("MAIN", "Reading workplace downtime records")
+	timer := time.Now()
+	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
+	sqlDB, _ := db.DB()
+	defer sqlDB.Close()
+	if err != nil {
+		logError("MAIN", "Problem opening database: "+err.Error())
+		activeDevices = nil
+		return
+	}
+	var downtimeRecords []database.DowntimeRecord
+	db.Where("date_time_end is null").Find(&downtimeRecords)
+	workplaceDowntimeRecordSync.Lock()
+	cachedWorkplaceDowntimeRecords = make(map[int]uint)
+	for _, record := range downtimeRecords {
+		cachedWorkplaceDowntimeRecords[record.WorkplaceID] = record.ID
+	}
+	workplaceDowntimeRecordSync.Unlock()
+	logInfo("MAIN", "Workplace downtime records read in "+time.Since(timer).String())
+}
+
+func readLatestWorkplaceStateRecords() {
+	logInfo("MAIN", "Reading workplace state records")
+	timer := time.Now()
+	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
+	sqlDB, _ := db.DB()
+	defer sqlDB.Close()
+	if err != nil {
+		logError("MAIN", "Problem opening database: "+err.Error())
+		activeDevices = nil
+		return
+	}
+	var stateRecords []database.StateRecord
+	db.Raw("select * from state_records where id in (select distinct max(id) as id from state_records group by workplace_id)").Find(&stateRecords)
+	workplaceStateRecordSync.Lock()
+	for _, record := range stateRecords {
+		cachedWorkplaceStateRecords[record.WorkplaceID] = record.StateID
+	}
+	workplaceStateRecordSync.Unlock()
+	logInfo("MAIN", "Workplace state records read in "+time.Since(timer).String())
+}
+
+func readActiveStates() {
 	logInfo("MAIN", "Reading states")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
 	sqlDB, _ := db.DB()
 	defer sqlDB.Close()
 	if err != nil {
-		logError(reference, "Problem opening database: "+err.Error())
+		logError("MAIN", "Problem opening database: "+err.Error())
 		activeDevices = nil
 		return
 	}
@@ -117,25 +205,29 @@ func readActiveStates(reference string) {
 	logInfo("MAIN", "States read in "+time.Since(timer).String())
 }
 
-func readDeviceWorkplaceRecords(reference string) {
+func readDeviceWorkplaceRecords() {
 	logInfo("MAIN", "Reading device_workplace_records")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
 	sqlDB, _ := db.DB()
 	defer sqlDB.Close()
 	if err != nil {
-		logError(reference, "Problem opening database: "+err.Error())
+		logError("MAIN", "Problem opening database: "+err.Error())
 		activeDevices = nil
 		return
 	}
 	var records []database.DeviceWorkplaceRecord
 	db.Find(&records)
 	if len(records) > 0 {
-		deviceWorkplaceRecordSync.Lock()
 		for _, record := range records {
+			deviceWorkplaceRecordSync.Lock()
 			cachedDeviceWorkplaceRecords[uint(record.DeviceID)] = record
+			deviceWorkplaceRecordSync.Unlock()
+			var workplacePorts []database.WorkplacePort
+			db.Where("workplace_id = ?", record.WorkplaceID).Find(&workplacePorts)
+			cachedWorkplacePorts[record.WorkplaceID] = workplacePorts
 		}
-		deviceWorkplaceRecordSync.Unlock()
+
 	}
 	logInfo("MAIN", "Devices_workplace_records read in "+time.Since(timer).String())
 }

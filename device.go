@@ -8,16 +8,13 @@ import (
 	"time"
 )
 
-func updateOpenOrderData(device database.Device, db *gorm.DB, openOrderRecord database.OrderRecord) {
+func updateOpenOrderData(device database.Device, db *gorm.DB, deviceWorkplaceRecord database.DeviceWorkplaceRecord, openOrderRecord database.OrderRecord) {
 	logInfo(device.Name, "Updating order data")
 	timer := time.Now()
 	var countOk int64
 	var countNok int64
 	var averageCycle float64
-	var workplacePorts []database.WorkplacePort
-	deviceWorkplaceRecordSync.Lock()
-	db.Where("workplace_id = ?", cachedDeviceWorkplaceRecords[device.ID].WorkplaceID).Find(&workplacePorts)
-	deviceWorkplaceRecordSync.Unlock()
+	workplacePorts := cachedWorkplacePorts[deviceWorkplaceRecord.WorkplaceID]
 	for _, port := range workplacePorts {
 		if port.CounterOK {
 			db.Model(&database.DevicePortDigitalRecord{}).Where("device_port_id = ?", port.DevicePortID).Where("date_time>?", openOrderRecord.DateTimeStart).Where("data = 0").Count(&countOk)
@@ -90,24 +87,21 @@ func createNewOrder(device database.Device, db *gorm.DB, timezone string) {
 	logInfo(device.Name, "New Order created in "+time.Since(timer).String())
 }
 
-func updateDowntimeToClosed(device database.Device, db *gorm.DB, openDowntimeRecord database.DowntimeRecord) {
+func updateDowntimeToClosed(device database.Device, db *gorm.DB, deviceWorkplaceRecord database.DeviceWorkplaceRecord) {
 	logInfo(device.Name, "Updating downtime to closed")
 	timer := time.Now()
-	db.Model(&openDowntimeRecord).Update("date_time_end", sql.NullTime{Time: time.Now(), Valid: true})
+	db.Exec("update downtime_records set date_time_end = ? where id = ?", time.Now(), cachedWorkplaceDowntimeRecords[deviceWorkplaceRecord.WorkplaceID])
 	logInfo(device.Name, "Downtime updated to closed in "+time.Since(timer).String())
 
 }
 
-func updateOrderToClosed(device database.Device, db *gorm.DB, openOrderRecord database.OrderRecord) {
+func updateOrderToClosed(device database.Device, db *gorm.DB, deviceWorkplaceRecord database.DeviceWorkplaceRecord, openOrderRecord database.OrderRecord) {
 	logInfo(device.Name, "Updating order to closed")
 	timer := time.Now()
 	var countOk int64
 	var countNok int64
 	var averageCycle float64
-	var workplacePorts []database.WorkplacePort
-	deviceWorkplaceRecordSync.Lock()
-	db.Where("workplace_id = ?", cachedDeviceWorkplaceRecords[device.ID].WorkplaceID).Find(&workplacePorts)
-	deviceWorkplaceRecordSync.Unlock()
+	workplacePorts := cachedWorkplacePorts[deviceWorkplaceRecord.WorkplaceID]
 	for _, port := range workplacePorts {
 		if port.CounterOK {
 			db.Model(&database.DevicePortDigitalRecord{}).Where("device_port_id = ?", port.DevicePortID).Where("date_time>?", openOrderRecord.DateTimeStart).Where("data = 0").Count(&countOk)
@@ -119,11 +113,9 @@ func updateOrderToClosed(device database.Device, db *gorm.DB, openOrderRecord da
 		}
 	}
 	db.Model(&openOrderRecord).Update("average_cycle", float32(averageCycle)).Update("date_time_end", sql.NullTime{Time: time.Now(), Valid: true})
-
 	var openUserRecord database.UserRecord
 	db.Where("order_record_id = ?", openOrderRecord.ID).Find(&openUserRecord)
 	db.Model(&openUserRecord).Update("date_time_end", sql.NullTime{Time: time.Now(), Valid: true})
-
 	logInfo(device.Name, "Order updated to closed in "+time.Since(timer).String())
 }
 

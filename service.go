@@ -5,7 +5,6 @@ import (
 	"github.com/petrjahoda/database"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
-	"strconv"
 	"time"
 )
 
@@ -53,44 +52,52 @@ func runDevice(device database.Device) {
 			sleep(device, timer)
 			continue
 		}
-		actualState := readActualState(device, db)
-		openOrderRecord := readOpenOrder(device, db)
-		logInfo(device.Name, "Actual open order: "+strconv.Itoa(openOrderRecord.OrderID))
-		openDowntimeRecord := readOpenDowntime(device, db)
-		logInfo(device.Name, "Actual open downtime: "+strconv.Itoa(openDowntimeRecord.DowntimeID))
-		orderIsOpen := openOrderRecord.ID > 0
-		downtimeIsOpen := openDowntimeRecord.ID > 0
-		switch actualState.Name {
+		deviceWorkplaceRecordSync.Lock()
+		deviceWorkplaceRecord := cachedDeviceWorkplaceRecords[device.ID]
+		deviceWorkplaceRecordSync.Unlock()
+		workplaceDowntimeRecordSync.Lock()
+		downtimeIsOpen := cachedWorkplaceDowntimeRecords[deviceWorkplaceRecord.WorkplaceID] > 0
+		workplaceDowntimeRecordSync.Unlock()
+		workplaceOrderRecordSync.Lock()
+		orderIsOpen := cachedWorkplaceOrderRecords[deviceWorkplaceRecord.WorkplaceID].ID > 0
+		workplaceOrderRecordSync.Unlock()
+		workplaceStateRecordSync.Lock()
+		cachedWorkplaceState := cachedWorkplaceStateRecords[deviceWorkplaceRecord.WorkplaceID]
+		workplaceStateRecordSync.Unlock()
+		stateSync.Lock()
+		cachedStateName := cachedStates[uint(cachedWorkplaceState)].Name
+		stateSync.Unlock()
+		switch cachedStateName {
 		case "Poweroff":
 			{
-				logInfo(device.Name, color.Ize(color.Red, actualState.Name+" state"))
+				logInfo(device.Name, color.Ize(color.Red, cachedStateName+" state"))
 				if orderIsOpen {
-					updateOrderToClosed(device, db, openOrderRecord)
+					updateOrderToClosed(device, db, deviceWorkplaceRecord, cachedWorkplaceOrderRecords[deviceWorkplaceRecord.WorkplaceID])
 				}
 				if downtimeIsOpen {
-					updateDowntimeToClosed(device, db, openDowntimeRecord)
+					updateDowntimeToClosed(device, db, deviceWorkplaceRecord)
 				}
 			}
 		case "Production":
 			{
-				logInfo(device.Name, color.Ize(color.White, actualState.Name+" state"))
+				logInfo(device.Name, color.Ize(color.White, cachedStateName+" state"))
 				if !orderIsOpen {
 					createNewOrder(device, db, timezone)
 				}
 				if downtimeIsOpen {
-					updateDowntimeToClosed(device, db, openDowntimeRecord)
+					updateDowntimeToClosed(device, db, deviceWorkplaceRecord)
 				}
 			}
 		case "Downtime":
 			{
-				logInfo(device.Name, color.Ize(color.Yellow, actualState.Name+" state"))
+				logInfo(device.Name, color.Ize(color.Yellow, cachedStateName+" state"))
 				if !downtimeIsOpen {
 					createNewDowntime(device, db)
 				}
 			}
 		}
 		if orderIsOpen {
-			updateOpenOrderData(device, db, openOrderRecord)
+			updateOpenOrderData(device, db, deviceWorkplaceRecord, cachedWorkplaceOrderRecords[deviceWorkplaceRecord.WorkplaceID])
 		}
 
 		logInfo(device.Name, "Device main loop ended in "+time.Since(timer).String())
@@ -132,20 +139,18 @@ func removeDeviceFromRunningDevices(device database.Device) {
 	deviceSync.Unlock()
 }
 
-func readActiveDevices(reference string) {
+func readActiveDevices() {
 	logInfo("MAIN", "Reading active devices")
 	timer := time.Now()
 	db, err := gorm.Open(postgres.Open(config), &gorm.Config{})
 	sqlDB, _ := db.DB()
 	defer sqlDB.Close()
 	if err != nil {
-		logError(reference, "Problem opening database: "+err.Error())
+		logError("MAIN", "Problem opening database: "+err.Error())
 		activeDevices = nil
 		return
 	}
-	var deviceType database.DeviceType
-	db.Where("name=?", "Zapsi Touch").Find(&deviceType)
-	db.Where("device_type_id=?", deviceType.ID).Where("activated = ?", "1").Find(&activeDevices)
+	db.Where("device_type_id=(select id from device_types where name = 'Zapsi Touch')").Where("activated = ?", "1").Find(&activeDevices)
 	logInfo("MAIN", "Active devices read in "+time.Since(timer).String())
 }
 
