@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-const version = "2021.2.3.5"
+const version = "2021.2.3.14"
 const serviceName = "Terminal Service"
 const serviceDescription = "Created default data for terminals"
 const downloadInSeconds = 10
@@ -75,6 +75,7 @@ func (p *program) run() {
 	updateProgramVersion()
 	for {
 		logInfo("MAIN", serviceName+" ["+version+"] running")
+		logInfo("MAIN", "© "+strconv.Itoa(time.Now().Year())+" Petr Jahoda")
 		start := time.Now()
 		readActiveDevices()
 		readDeviceWorkplaceRecords()
