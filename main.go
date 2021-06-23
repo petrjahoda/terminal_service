@@ -10,11 +10,11 @@ import (
 	"time"
 )
 
-const version = "2021.2.3.14"
+const version = "2021.2.3.23"
 const serviceName = "Terminal Service"
 const serviceDescription = "Created default data for terminals"
 const downloadInSeconds = 10
-const config = "user=postgres password=pj79.. dbname=system host=database port=5432 sslmode=disable application_name=terminal_service"
+const config = "user=postgres password=pj79.. dbname=system host=localhost port=5432 sslmode=disable application_name=terminal_service"
 
 var serviceRunning = false
 
