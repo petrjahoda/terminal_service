@@ -48,7 +48,7 @@ func createNewDowntime(device database.Device, db *gorm.DB, state database.State
 		}
 	}
 	if openOrderRecord.ID > 0 {
-		downtimeToSave.OrderID = sql.NullInt32{
+		downtimeToSave.OrderRecordID = sql.NullInt32{
 			Int32: int32(openOrderRecord.ID),
 			Valid: true,
 		}
@@ -93,12 +93,6 @@ func createNewOrder(device database.Device, db *gorm.DB, timezone string, state 
 	orderToSave.OperationID = 1
 	orderToSave.Cavity = 1
 	db.Save(&orderToSave)
-	var userToSave database.UserRecord
-	userToSave.DateTimeStart = state.DateTimeStart
-	userToSave.OrderRecordID = int(orderToSave.ID)
-	userToSave.UserID = 1
-	userToSave.WorkplaceID = cachedDeviceWorkplaceRecords[device.ID].WorkplaceID
-	db.Save(&userToSave)
 	logInfo(device.Name, "New Order created in "+time.Since(timer).String())
 }
 
