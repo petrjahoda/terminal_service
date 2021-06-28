@@ -85,7 +85,7 @@ func runDevice(device database.Device) {
 			{
 				logInfo(device.Name, color.Ize(color.Yellow, actualState.Name+" state"))
 				if !downtimeIsOpen {
-					createNewDowntime(device, db, actualStateRecord)
+					createNewDowntime(device, db, actualStateRecord, openOrderRecord)
 				}
 			}
 		}

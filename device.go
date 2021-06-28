@@ -34,13 +34,25 @@ func updateOpenOrderData(device database.Device, db *gorm.DB, openOrderRecord da
 	logInfo(device.Name, "Order data updated in "+time.Since(timer).String())
 }
 
-func createNewDowntime(device database.Device, db *gorm.DB, state database.StateRecord) {
+func createNewDowntime(device database.Device, db *gorm.DB, state database.StateRecord, openOrderRecord database.OrderRecord) {
 	logInfo(device.Name, "Create new downtime")
 	timer := time.Now()
 	var downtimeToSave database.DowntimeRecord
 	downtimeToSave.DateTimeStart = state.DateTimeStart
 	downtimeToSave.DowntimeID = 1
 	downtimeToSave.WorkplaceID = cachedDeviceWorkplaceRecords[device.ID].WorkplaceID
+	if openOrderRecord.UserId.Valid {
+		downtimeToSave.UserID = sql.NullInt32{
+			Int32: openOrderRecord.UserId.Int32,
+			Valid: true,
+		}
+	}
+	if openOrderRecord.ID > 0 {
+		downtimeToSave.OrderID = sql.NullInt32{
+			Int32: int32(openOrderRecord.ID),
+			Valid: true,
+		}
+	}
 	db.Save(&downtimeToSave)
 	logInfo(device.Name, "New downtime created in "+time.Since(timer).String())
 
